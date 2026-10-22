@@ -1,0 +1,1399 @@
+{
+  "bundleCode": "ch04-fltrp-lesson4",
+  "rev": 6,
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第4课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P19/P22/P24 (课文1–3 dialogues)",
+    "extractedPages": "1–60 (full)",
+    "notes": "Vocab from 生词 tables 4-2/4-4/4-6. Example sentences from vocab cards (no English in source). Dialogue lines + pinyin from screenshots. Translated sentences: title (p2), intros (p5/15/39), grammar explanations (p13/14/37/38). SKIPPED as unreadable/ambiguous extraction: p14 numbered sub-items (1)(2)(3) (garbled digit/hanzi order in PDF text layer), p38 measure-word formula chips (English alignment unreliable), p4 warm-up picture-matching items, p16/p40 listening MCQ stems (exercise apparatus, not course sentences), extension chips. RESOLVED 2026-10-21: dialogue line originally extracted as 她今年十二。 (screenshot pinyin shí'sì conflicted with the PDF p40 answer key); the INSTRUCTOR confirmed the printed book reads 她今年十四。 / shí'sì — hanzi, segments and pinyin updated accordingly, provenance 'source'. Sentence pinyin absent from source completed per instructor request (2026-10-21) and tagged 'instructor-requested'."
+  },
+  "payload": {
+    "chapter": {
+      "num": 4,
+      "title": "我有两个孩子 I have two children",
+      "sourceFile": "《新HSK教程1》第4课.pdf",
+      "representative": {
+        "hanzi": "我有两个孩子",
+        "pinyin": "Wǒ yǒu liǎng gè háizi",
+        "english": "I have two children"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "english": "have",
+        "pos": "v.",
+        "sourcePage": 6,
+        "sourceItemId": "W4-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "多少",
+        "pinyin": "duōshao",
+        "english": "how many/much",
+        "pos": "pron.",
+        "sourcePage": 6,
+        "sourceItemId": "W4-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "gè",
+        "english": "a general measure word",
+        "pos": "m.",
+        "sourcePage": 6,
+        "sourceItemId": "W4-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "哥哥",
+        "pinyin": "gēge",
+        "english": "elder brother",
+        "pos": "n.",
+        "sourcePage": 17,
+        "sourceItemId": "W4-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "呢",
+        "pinyin": "ne",
+        "english": "used at the end of a question",
+        "pos": "part.",
+        "sourcePage": 17,
+        "sourceItemId": "W4-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "没有",
+        "pinyin": "méiyǒu",
+        "english": "not have",
+        "pos": "v.",
+        "sourcePage": 17,
+        "sourceItemId": "W4-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "家",
+        "pinyin": "jiā",
+        "english": "family",
+        "pos": "n.",
+        "sourcePage": 17,
+        "sourceItemId": "W4-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "几",
+        "pinyin": "jǐ",
+        "english": "how many",
+        "pos": "pron.",
+        "sourcePage": 17,
+        "sourceItemId": "W4-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "口",
+        "pinyin": "kǒu",
+        "english": "for family members, knives, etc.",
+        "pos": "m.",
+        "sourcePage": 18,
+        "sourceItemId": "W4-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "爸爸",
+        "pinyin": "bàba",
+        "english": "father",
+        "pos": "n.",
+        "sourcePage": 18,
+        "sourceItemId": "W4-4-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "妈妈",
+        "pinyin": "māma",
+        "english": "mother",
+        "pos": "n.",
+        "sourcePage": 18,
+        "sourceItemId": "W4-4-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "妹妹",
+        "pinyin": "mèimei",
+        "english": "younger sister",
+        "pos": "n.",
+        "sourcePage": 18,
+        "sourceItemId": "W4-4-9",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "和",
+        "pinyin": "hé",
+        "english": "and",
+        "pos": "conj.",
+        "sourcePage": 18,
+        "sourceItemId": "W4-4-10",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "儿子",
+        "pinyin": "érzi",
+        "english": "son",
+        "pos": "n.",
+        "sourcePage": 42,
+        "sourceItemId": "W4-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "孩子",
+        "pinyin": "háizi",
+        "english": "children",
+        "pos": "n.",
+        "sourcePage": 42,
+        "sourceItemId": "W4-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "女儿",
+        "pinyin": "nǚ’ér",
+        "english": "daughter",
+        "pos": "n.",
+        "sourcePage": 42,
+        "sourceItemId": "W4-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "岁",
+        "pinyin": "suì",
+        "english": "year (of age)",
+        "pos": "m.",
+        "sourcePage": 42,
+        "sourceItemId": "W4-6-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "他",
+        "pinyin": "tā",
+        "english": "he; him",
+        "pos": "pron.",
+        "sourcePage": 43,
+        "sourceItemId": "W4-6-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "今年",
+        "pinyin": "jīnnián",
+        "english": "this year",
+        "pos": "n.",
+        "sourcePage": 43,
+        "sourceItemId": "W4-6-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "多",
+        "pinyin": "duō",
+        "english": "how; to what extent",
+        "pos": "pron.",
+        "sourcePage": 43,
+        "sourceItemId": "W4-6-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "大",
+        "pinyin": "dà",
+        "english": "(of age) old",
+        "pos": "adj.",
+        "sourcePage": 43,
+        "sourceItemId": "W4-6-8",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "我有两个孩子",
+        "pinyin": "Wǒ yǒu liǎng gè háizi",
+        "english": "I have two children",
+        "segments": [
+          "我",
+          "有",
+          "两个",
+          "孩子"
+        ],
+        "sourcePage": 2,
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "在家里，刘明和王一雪在聊天儿。",
+        "pinyin": "Zài jiā lǐ, Liú Míng hé Wáng Yīxuě zài liáotiānr.",
+        "english": "At home, Liu Ming and Wang Yixue were chatting.",
+        "segments": [
+          "在家里",
+          "，",
+          "刘明",
+          "和",
+          "王一雪",
+          "在",
+          "聊天儿",
+          "。"
+        ],
+        "sourcePage": 5,
+        "sourceItemId": "S-intro1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "在公司里，王一雪和杨同乐休息时聊天儿。",
+        "pinyin": "Zài gōngsī lǐ, Wáng Yīxuě hé Yáng Tónglè xiūxi shí liáotiānr.",
+        "english": "At the company, Wang Yixue and Yang Tongle were chatting during a break.",
+        "segments": [
+          "在公司里",
+          "，",
+          "王一雪",
+          "和",
+          "杨同乐",
+          "休息时",
+          "聊天儿",
+          "。"
+        ],
+        "sourcePage": 15,
+        "sourceItemId": "S-intro2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "在街上，王一雪带着儿子偶遇杨同乐。",
+        "pinyin": "Zài jiē shang, Wáng Yīxuě dài zhe érzi ǒuyù Yáng Tónglè.",
+        "english": "On the street, Wang Yixue ran into Yang Tongle while she was out with her son.",
+        "segments": [
+          "在街上",
+          "，",
+          "王一雪",
+          "带着",
+          "儿子",
+          "偶遇",
+          "杨同乐",
+          "。"
+        ],
+        "sourcePage": 39,
+        "sourceItemId": "S-intro3",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "本课“有”表示领有，否定形式为“没/没有”。",
+        "pinyin": "Běn kè “yǒu” biǎoshì lǐngyǒu, fǒudìng xíngshì wéi “méi/méiyǒu”.",
+        "english": "The word “有” in this lesson indicates possession. Its negative form is “没/没有”.",
+        "segments": [
+          "本课",
+          "“有”",
+          "表示",
+          "领有",
+          "，",
+          "否定形式",
+          "为",
+          "“没/没有”",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "S-grammar1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "汉语中，数字有阿拉伯数字和汉字两种写法，例如“1”和“一”。",
+        "pinyin": "Hànyǔ zhōng, shùzì yǒu Ālābó shùzì hé Hànzì liǎng zhǒng xiěfǎ, lìrú “1” hé “yī”.",
+        "english": "In Chinese, numbers can be written in two forms: Arabic numerals (e.g, “1”) and Chinese characters (e.g, “一”).",
+        "segments": [
+          "汉语中",
+          "，",
+          "数字",
+          "有",
+          "阿拉伯数字",
+          "和",
+          "汉字",
+          "两种",
+          "写法",
+          "，",
+          "例如",
+          "“1”",
+          "和",
+          "“一”",
+          "。"
+        ],
+        "sourcePage": 14,
+        "sourceItemId": "S-grammar2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "本课“呢”在句末，表示疑问，询问上文提到的情况。",
+        "pinyin": "Běn kè “ne” zài jù mò, biǎoshì yíwèn, xúnwèn shàngwén tídào de qíngkuàng.",
+        "english": "The word “呢” in this lesson is used at the end of a sentence to indicate a question, inquiring about the situation mentioned previously.",
+        "segments": [
+          "本课",
+          "“呢”",
+          "在",
+          "句末",
+          "，",
+          "表示",
+          "疑问",
+          "，",
+          "询问",
+          "上文",
+          "提到",
+          "的",
+          "情况",
+          "。"
+        ],
+        "sourcePage": 37,
+        "sourceItemId": "S-grammar3",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "表达数量时，汉语数词后一般要带量词。",
+        "pinyin": "Biǎodá shùliàng shí, Hànyǔ shùcí hòu yìbān yào dài liàngcí.",
+        "english": "When expressing quantity, a Chinese numeral is generally followed by a measure word.",
+        "segments": [
+          "表达数量时",
+          "，",
+          "汉语",
+          "数词",
+          "后",
+          "一般",
+          "要",
+          "带",
+          "量词",
+          "。"
+        ],
+        "sourcePage": 38,
+        "sourceItemId": "S-grammar4",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他有女朋友。",
+        "pinyin": "Tā yǒu nǚpéngyou.",
+        "segments": [
+          "他",
+          "有",
+          "女朋友",
+          "。"
+        ],
+        "sourcePage": 7,
+        "sourceItemId": "EX-有-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你有法国同学吗？",
+        "pinyin": "Nǐ yǒu Fǎguó tóngxué ma?",
+        "segments": [
+          "你",
+          "有",
+          "法国",
+          "同学",
+          "吗",
+          "？"
+        ],
+        "sourcePage": 7,
+        "sourceItemId": "EX-有-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你还有多少钱?",
+        "pinyin": "Nǐ hái yǒu duōshao qián?",
+        "segments": [
+          "你",
+          "还",
+          "有",
+          "多少",
+          "钱",
+          "?"
+        ],
+        "sourcePage": 8,
+        "sourceItemId": "EX-多少-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你们学校有多少学生？",
+        "pinyin": "Nǐmen xuéxiào yǒu duōshao xuéshēng?",
+        "segments": [
+          "你们",
+          "学校",
+          "有",
+          "多少",
+          "学生",
+          "？"
+        ],
+        "sourcePage": 8,
+        "sourceItemId": "EX-多少-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我有一个姐姐。",
+        "pinyin": "Wǒ yǒu yí gè jiějie.",
+        "segments": [
+          "我",
+          "有",
+          "一个",
+          "姐姐",
+          "。"
+        ],
+        "sourcePage": 9,
+        "sourceItemId": "EX-个-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是一个学生。",
+        "pinyin": "Tā shì yí gè xuéshēng.",
+        "segments": [
+          "他",
+          "是",
+          "一个",
+          "学生",
+          "。"
+        ],
+        "sourcePage": 9,
+        "sourceItemId": "EX-个-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是王老师的哥哥。",
+        "pinyin": "Tā shì Wáng lǎoshī de gēge.",
+        "segments": [
+          "他",
+          "是",
+          "王老师",
+          "的",
+          "哥哥",
+          "。"
+        ],
+        "sourcePage": 19,
+        "sourceItemId": "EX-哥哥-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她哥哥很好。",
+        "pinyin": "Tā gēge hěn hǎo.",
+        "segments": [
+          "她",
+          "哥哥",
+          "很",
+          "好",
+          "。"
+        ],
+        "sourcePage": 19,
+        "sourceItemId": "EX-哥哥-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我叫陈天中，你呢？",
+        "pinyin": "Wǒ jiào Chén Tiānzhōng, nǐ ne?",
+        "segments": [
+          "我",
+          "叫",
+          "陈天中",
+          "，",
+          "你",
+          "呢",
+          "？"
+        ],
+        "sourcePage": 20,
+        "sourceItemId": "EX-呢-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我有三个泰国同学，你呢？",
+        "pinyin": "Wǒ yǒu sān gè Tàiguó tóngxué, nǐ ne?",
+        "segments": [
+          "我",
+          "有",
+          "三个",
+          "泰国",
+          "同学",
+          "，",
+          "你",
+          "呢",
+          "？"
+        ],
+        "sourcePage": 20,
+        "sourceItemId": "EX-呢-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他还没有女朋友。",
+        "pinyin": "Tā hái méiyǒu nǚpéngyou.",
+        "segments": [
+          "他",
+          "还",
+          "没有",
+          "女朋友",
+          "。"
+        ],
+        "sourcePage": 21,
+        "sourceItemId": "EX-没有-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我没有哥哥。",
+        "pinyin": "Wǒ méiyǒu gēge.",
+        "segments": [
+          "我",
+          "没有",
+          "哥哥",
+          "。"
+        ],
+        "sourcePage": 21,
+        "sourceItemId": "EX-没有-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "我家有三口人。",
+        "pinyin": "Wǒ jiā yǒu sān kǒu rén.",
+        "segments": [
+          "我家",
+          "有",
+          "三口",
+          "人",
+          "。"
+        ],
+        "sourcePage": 22,
+        "sourceItemId": "EX-家-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她家没有狗。",
+        "pinyin": "Tā jiā méiyǒu gǒu.",
+        "segments": [
+          "她",
+          "家",
+          "没有",
+          "狗",
+          "。"
+        ],
+        "sourcePage": 22,
+        "sourceItemId": "EX-家-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他有几个哥哥？",
+        "pinyin": "Tā yǒu jǐ gè gēge?",
+        "segments": [
+          "他",
+          "有",
+          "几个",
+          "哥哥",
+          "？"
+        ],
+        "sourcePage": 23,
+        "sourceItemId": "EX-几-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你家有几口人？",
+        "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+        "segments": [
+          "你",
+          "家",
+          "有",
+          "几",
+          "口",
+          "人",
+          "？"
+        ],
+        "sourcePage": 23,
+        "sourceItemId": "EX-几-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "我家有五口人。",
+        "pinyin": "Wǒ jiā yǒu wǔ kǒu rén.",
+        "segments": [
+          "我家",
+          "有",
+          "五口",
+          "人",
+          "。"
+        ],
+        "sourcePage": 24,
+        "sourceItemId": "EX-口-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是白家月的爸爸。",
+        "pinyin": "Tā shì Bái Jiāyuè de bàba.",
+        "segments": [
+          "他",
+          "是",
+          "白家月",
+          "的",
+          "爸爸",
+          "。"
+        ],
+        "sourcePage": 25,
+        "sourceItemId": "EX-爸爸-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我爸爸的工作很忙。",
+        "pinyin": "Wǒ bàba de gōngzuò hěn máng.",
+        "segments": [
+          "我",
+          "爸爸",
+          "的",
+          "工作",
+          "很",
+          "忙",
+          "。"
+        ],
+        "sourcePage": 25,
+        "sourceItemId": "EX-爸爸-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他妈妈在法国。",
+        "pinyin": "Tā māma zài Fǎguó.",
+        "segments": [
+          "他",
+          "妈妈",
+          "在",
+          "法国",
+          "。"
+        ],
+        "sourcePage": 26,
+        "sourceItemId": "EX-妈妈-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我很想妈妈。",
+        "pinyin": "Wǒ hěn xiǎng māma.",
+        "segments": [
+          "我",
+          "很",
+          "想",
+          "妈妈",
+          "。"
+        ],
+        "sourcePage": 26,
+        "sourceItemId": "EX-妈妈-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她是我的妹妹。",
+        "pinyin": "Tā shì wǒ de mèimei.",
+        "segments": [
+          "她",
+          "是",
+          "我",
+          "的",
+          "妹妹",
+          "。"
+        ],
+        "sourcePage": 27,
+        "sourceItemId": "EX-妹妹-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他没有妹妹。",
+        "pinyin": "Tā méiyǒu mèimei.",
+        "segments": [
+          "他",
+          "没有",
+          "妹妹",
+          "。"
+        ],
+        "sourcePage": 27,
+        "sourceItemId": "EX-妹妹-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我和她是同学。",
+        "pinyin": "Wǒ hé tā shì tóngxué.",
+        "segments": [
+          "我",
+          "和",
+          "她",
+          "是",
+          "同学",
+          "。"
+        ],
+        "sourcePage": 28,
+        "sourceItemId": "EX-和-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "哥哥和妹妹一起学中文。",
+        "pinyin": "Gēge hé mèimei yìqǐ xué Zhōngwén.",
+        "segments": [
+          "哥哥",
+          "和",
+          "妹妹",
+          "一起",
+          "学",
+          "中文",
+          "。"
+        ],
+        "sourcePage": 28,
+        "sourceItemId": "EX-和-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是李老师的儿子。",
+        "pinyin": "Tā shì Lǐ lǎoshī de érzi.",
+        "segments": [
+          "他",
+          "是",
+          "李老师",
+          "的",
+          "儿子",
+          "。"
+        ],
+        "sourcePage": 44,
+        "sourceItemId": "EX-儿子-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是家里的第一个儿子。",
+        "pinyin": "Tā shì jiā lǐ de dì yī gè érzi.",
+        "segments": [
+          "他",
+          "是",
+          "家里",
+          "的",
+          "第一个",
+          "儿子",
+          "。"
+        ],
+        "sourcePage": 44,
+        "sourceItemId": "EX-儿子-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我们都是她的孩子。",
+        "pinyin": "Wǒmen dōu shì tā de háizi.",
+        "segments": [
+          "我们",
+          "都",
+          "是",
+          "她",
+          "的",
+          "孩子",
+          "。"
+        ],
+        "sourcePage": 45,
+        "sourceItemId": "EX-孩子-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他还是一个孩子。",
+        "pinyin": "Tā hái shì yí gè háizi.",
+        "segments": [
+          "他",
+          "还",
+          "是",
+          "一个",
+          "孩子",
+          "。"
+        ],
+        "sourcePage": 45,
+        "sourceItemId": "EX-孩子-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她喜欢女儿。",
+        "pinyin": "Tā xǐhuan nǚ’ér.",
+        "segments": [
+          "她",
+          "喜欢",
+          "女儿",
+          "。"
+        ],
+        "sourcePage": 46,
+        "sourceItemId": "EX-女儿-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她是家里的第二个女儿。",
+        "pinyin": "Tā shì jiā lǐ de dì èr gè nǚ’ér.",
+        "segments": [
+          "她",
+          "是",
+          "家里",
+          "的",
+          "第二个",
+          "女儿",
+          "。"
+        ],
+        "sourcePage": 46,
+        "sourceItemId": "EX-女儿-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你几岁了？",
+        "pinyin": "Nǐ jǐ suì le?",
+        "segments": [
+          "你",
+          "几",
+          "岁",
+          "了",
+          "？"
+        ],
+        "sourcePage": 47,
+        "sourceItemId": "EX-岁-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我十岁了。",
+        "pinyin": "Wǒ shí suì le.",
+        "segments": [
+          "我",
+          "十",
+          "岁",
+          "了",
+          "。"
+        ],
+        "sourcePage": 47,
+        "sourceItemId": "EX-岁-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是你哥哥吗？",
+        "pinyin": "Tā shì nǐ gēge ma?",
+        "segments": [
+          "他",
+          "是",
+          "你",
+          "哥哥",
+          "吗",
+          "？"
+        ],
+        "sourcePage": 48,
+        "sourceItemId": "EX-他-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是我同学。",
+        "pinyin": "Tā shì wǒ tóngxué.",
+        "segments": [
+          "他",
+          "是",
+          "我",
+          "同学",
+          "。"
+        ],
+        "sourcePage": 48,
+        "sourceItemId": "EX-他-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今年是2026年。",
+        "pinyin": "Jīnnián shì èr líng èr liù nián.",
+        "segments": [
+          "今年",
+          "是",
+          "2026",
+          "年",
+          "。"
+        ],
+        "sourcePage": 49,
+        "sourceItemId": "EX-今年-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今年他还在中国。",
+        "pinyin": "Jīnnián tā hái zài Zhōngguó.",
+        "segments": [
+          "今年",
+          "他",
+          "还",
+          "在",
+          "中国",
+          "。"
+        ],
+        "sourcePage": 49,
+        "sourceItemId": "EX-今年-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你儿子多大？",
+        "pinyin": "Nǐ érzi duō dà?",
+        "segments": [
+          "你",
+          "儿子",
+          "多大",
+          "？"
+        ],
+        "sourcePage": 50,
+        "sourceItemId": "EX-多-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "这件衣服很贵。",
+        "pinyin": "Zhè jiàn yīfu hěn guì.",
+        "segments": [
+          "这",
+          "件",
+          "衣服",
+          "很",
+          "贵",
+          "。"
+        ],
+        "sourcePage": 50,
+        "sourceItemId": "EX-多-2A",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "多贵？",
+        "pinyin": "Duō guì?",
+        "segments": [
+          "多",
+          "贵",
+          "？"
+        ],
+        "sourcePage": 50,
+        "sourceItemId": "EX-多-2B",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "500块！",
+        "pinyin": "Wǔbǎi kuài!",
+        "segments": [
+          "500",
+          "块",
+          "！"
+        ],
+        "sourcePage": 50,
+        "sourceItemId": "EX-多-2C",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她才两岁大。",
+        "pinyin": "Tā cái liǎng suì dà.",
+        "segments": [
+          "她",
+          "才",
+          "两",
+          "岁",
+          "大",
+          "。"
+        ],
+        "sourcePage": 51,
+        "sourceItemId": "EX-大-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他姐姐今年多大？",
+        "pinyin": "Tā jiějie jīnnián duō dà?",
+        "segments": [
+          "他",
+          "姐姐",
+          "今年",
+          "多大",
+          "？"
+        ],
+        "sourcePage": 51,
+        "sourceItemId": "EX-大-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她多大了？",
+        "pinyin": "Tā duō dà le?",
+        "segments": [
+          "她",
+          "多大",
+          "了",
+          "？"
+        ],
+        "sourcePage": 51,
+        "sourceItemId": "EX-大-3",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她有一个姐姐。",
+        "pinyin": "Tā yǒu yí gè jiějie.",
+        "segments": [
+          "她",
+          "有",
+          "一个",
+          "姐姐",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "S-read1-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我没姐姐。",
+        "pinyin": "Wǒ méi jiějie.",
+        "segments": [
+          "我",
+          "没",
+          "姐姐",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "S-read1-3a",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我没有姐姐。",
+        "pinyin": "Wǒ méiyǒu jiějie.",
+        "segments": [
+          "我",
+          "没有",
+          "姐姐",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "S-read1-3b",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "A……，B呢？",
+        "pinyin": "A……, B ne?",
+        "segments": [
+          "A……",
+          "，",
+          "B",
+          "呢",
+          "？"
+        ],
+        "sourcePage": 37,
+        "sourceItemId": "S-grammar5",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我叫白家月，你呢？",
+        "pinyin": "Wǒ jiào Bái Jiāyuè, nǐ ne?",
+        "segments": [
+          "我",
+          "叫",
+          "白家月",
+          "，",
+          "你",
+          "呢",
+          "？"
+        ],
+        "sourcePage": 37,
+        "sourceItemId": "S-read2-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我是中国人，你呢？",
+        "pinyin": "Wǒ shì Zhōngguó rén, nǐ ne?",
+        "segments": [
+          "我",
+          "是",
+          "中国人",
+          "，",
+          "你",
+          "呢",
+          "？"
+        ],
+        "sourcePage": 37,
+        "sourceItemId": "S-read2-3",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "四口",
+        "pinyin": "sì kǒu",
+        "segments": [
+          "四",
+          "口"
+        ],
+        "sourcePage": 38,
+        "sourceItemId": "S-read3-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "四口人",
+        "pinyin": "sì kǒu rén",
+        "segments": [
+          "四",
+          "口",
+          "人"
+        ],
+        "sourcePage": 38,
+        "sourceItemId": "S-read3-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "两个",
+        "pinyin": "liǎng gè",
+        "segments": [
+          "两",
+          "个"
+        ],
+        "sourcePage": 38,
+        "sourceItemId": "S-read3-3",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "两个学生",
+        "pinyin": "liǎng gè xuéshēng",
+        "segments": [
+          "两个",
+          "学生"
+        ],
+        "sourcePage": 38,
+        "sourceItemId": "S-read3-4",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "一飞忙吗？",
+        "pinyin": "Yīfēi máng ma?",
+        "segments": [
+          "一飞",
+          "忙",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "D1-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "她很忙。",
+        "pinyin": "Tā hěn máng.",
+        "segments": [
+          "她",
+          "很",
+          "忙",
+          "。"
+        ],
+        "sourceItemId": "D1-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "她有多少个学生？",
+        "pinyin": "Tā yǒu duōshao gè xuéshēng?",
+        "segments": [
+          "她",
+          "有",
+          "多少",
+          "个",
+          "学生",
+          "？"
+        ],
+        "sourceItemId": "D1-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 3,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "她有二十个学生。",
+        "pinyin": "Tā yǒu èrshí gè xuéshēng.",
+        "segments": [
+          "她",
+          "有",
+          "二十个",
+          "学生",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "S-read1-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "我有两个哥哥，你呢？",
+        "pinyin": "Wǒ yǒu liǎng gè gēge, nǐ ne?",
+        "segments": [
+          "我",
+          "有",
+          "两个",
+          "哥哥",
+          "，",
+          "你",
+          "呢",
+          "？"
+        ],
+        "sourcePage": 37,
+        "sourceItemId": "S-read2-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "我家有四口人，爸爸、妈妈、妹妹和我。",
+        "pinyin": "Wǒ jiā yǒu sì kǒu rén: bàba, māma, mèimei hé wǒ.",
+        "segments": [
+          "我家",
+          "有",
+          "四口",
+          "人",
+          "，",
+          "爸爸",
+          "、",
+          "妈妈",
+          "、",
+          "妹妹",
+          "和",
+          "我",
+          "。"
+        ],
+        "sourceItemId": "D2-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "这是您儿子吗？",
+        "pinyin": "Zhè shì nín érzi ma?",
+        "segments": [
+          "这",
+          "是",
+          "您",
+          "儿子",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "D3-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "是的。",
+        "pinyin": "Shì de.",
+        "segments": [
+          "是",
+          "的",
+          "。"
+        ],
+        "sourceItemId": "D3-2a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "我有两个孩子，一个儿子，一个女儿。",
+        "pinyin": "Wǒ yǒu liǎng gè háizi, yí gè érzi, yí gè nǚ’ér.",
+        "segments": [
+          "我",
+          "有",
+          "两个",
+          "孩子",
+          "，",
+          "一个",
+          "儿子",
+          "，",
+          "一个",
+          "女儿",
+          "。"
+        ],
+        "sourceItemId": "D3-2b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "您儿子几岁？",
+        "pinyin": "Nín érzi jǐ suì?",
+        "segments": [
+          "您",
+          "儿子",
+          "几",
+          "岁",
+          "？"
+        ],
+        "sourceItemId": "D3-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "他今年五岁。",
+        "pinyin": "Tā jīnnián wǔ suì.",
+        "segments": [
+          "他",
+          "今年",
+          "五",
+          "岁",
+          "。"
+        ],
+        "sourceItemId": "D3-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "您女儿多大？",
+        "pinyin": "Nín nǚ’ér duō dà?",
+        "segments": [
+          "您",
+          "女儿",
+          "多大",
+          "？"
+        ],
+        "sourceItemId": "D3-5",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "她今年十四。",
+        "pinyin": "Tā jīnnián shí'sì.",
+        "segments": [
+          "她",
+          "今年",
+          "十四",
+          "。"
+        ],
+        "sourceItemId": "D3-6",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 6,
+          "speaker": "王一雪"
+        },
+        "note": "Instructor confirmed (2026-10-21) that the printed book reads 十四 / shí'sì; earlier screenshot-vs-key conflict resolved per instructor authority."
+      }
+    ]
+  }
+}

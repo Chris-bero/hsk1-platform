@@ -1,0 +1,108 @@
+V	现在	xiànzài	now	n.	6	W7-2-1
+V	点	diǎn	o’clock	m.	6	W7-2-2
+V	早上	zǎoshang	(early) morning	n.	6	W7-2-3
+V	上午	shàngwǔ	morning	n.	6	W7-2-4
+V	分	fēn	minute	m.	7	W7-2-5
+V	课	kè	class; lesson	n.	7	W7-2-6
+V	下午	xiàwǔ	afternoon	n.	7	W7-2-7
+V	见	jiàn	meet	v.	7	W7-2-8
+V	吧	ba	used at the end of a sentence to express suggestions, consultations, advice, or requests	part.	7	W7-2-9
+V	电影院	diànyǐngyuàn	cinema	n.	28	W7-4-1
+V	看	kàn	watch; see; read; look at	v.	28	W7-4-2
+V	电影	diànyǐng	movie; film	n.	28	W7-4-3
+V	事	shì	thing; affair	n.	28	W7-4-4
+V	上课	shàngkè	attend a class	v.	29	W7-4-5
+V	呢	ne	marker of a declarative sentence	part.	29	W7-4-6
+V	半	bàn	half	num.	29	W7-4-7
+V	下课	xiàkè	dismiss a class	v.	29	W7-4-8
+V	在	zài	be at/in/on	v.	48	W7-6-1
+V	家	jiā	home	n.	48	W7-6-2
+V	里	li/lǐ	inner; inside	n.	48	W7-6-3
+V	晚上	wǎnshang	evening	n.	48	W7-6-4
+V	医院	yīyuàn	hospital	n.	48	W7-6-5
+V	上班	shàngbān	go to work	v.	49	W7-6-6
+V	店	diàn	shop; store	n.	49	W7-6-7
+V	菜	cài	vegetable; greens	n.	49	W7-6-8
+V	分钟	fēnzhōng	minute	m.	49	W7-6-9
+V	后	hòu	after; later	n.	49	W7-6-10
+S	我晚上六点半下班	Wǒ wǎnshang liù diǎn bàn xiàbān	I'll finish work at 6:30 in the evening	2	S-title	source	我|晚上|六点半|下班
+S	白家月和安妮在打电话。	Bái Jiāyuè hé Ānnī zài dǎ diànhuà.	Bai Jiayue and Annie were talking on the phone.	5	S-intro1	req	白家月|和|安妮|在|打电话|。
+S	在校园里，李文遇到白家月。	Zài xiàoyuán lǐ, Lǐ Wén yùdào Bái Jiāyuè.	On campus, Li Wen came across Bai Jiayue.	26	S-intro2	req	在校园里|，|李文|遇到|白家月|。
+S	王一雪在办公室给刘明打电话。	Wáng Yīxuě zài bàngōngshì gěi Liú Míng dǎ diànhuà.	Wang Yixue was calling Liu Ming at the office.	46	S-intro3	req	王一雪|在|办公室|给|刘明|打电话|。
+S	在汉语中，副词、时间词语作状语时，一般都要在动词或形容词前。	Zài Hànyǔ zhōng, fùcí, shíjiān cíyǔ zuò zhuàngyǔ shí, yìbān dōu yào zài dòngcí huò xíngróngcí qián.	In Chinese, when adverbs and time expressions function as adverbials, they are generally placed before verbs or adjectives.	44	S-grammar1	req	在|汉语|中|，|副词|、|时间|词语|作|状语|时|，|一般|都|要|在|动词|或|形容词|前|。
+S	……呢。表示确认的事实。	……ne. Biǎoshì quèrèn de shìshí.	“呢” is used to indicate confirmed facts.	45	S-grammar2	req	……|呢。|表示|确认|的|事实|。
+S	现在我要去看书了。	Wǒ xiànzài yào qù kàn shū le.		8	EX-现在-1	req	现在|我|要|去|看书|了|。
+S	你现在去学校吗？	Nǐ xiànzài qù xuéxiào ma?		8	EX-现在-2	req	你|现在|去|学校|吗|？
+S	我家七点吃晚饭。	Wǒ jiā qī diǎn chī wǎnfàn.		9	EX-点-1	req	我|家|七点|吃|晚饭|。
+S	现在是3点10分。	Xiànzài shì sān diǎn shí fēn.		10	EX-分-1	req	现在|是|3|点|10|分|。
+S	早上好！	Zǎoshang hǎo!		11	EX-早上-1	req	早上|好|！
+S	我早上坐出租车去上班。	Wǒ zǎoshang zuò chūzūchē qù shàngbān.		11	EX-早上-2	req	我|早上|坐|出租车|去|上班|。
+S	上午我不休息。	Shàngwǔ wǒ bù xiūxi.		12	EX-上午-1	req	上午|我|不|休息|。
+S	他上午打了一个电话。	Tā shàngwǔ dǎ le yí gè diànhuà.		12	EX-上午-2	req	他|上午|打|了|一个|电话|。
+S	下午4点爸爸回家了。	Xiàwǔ sì diǎn bàba huí jiā le.		13	EX-下午-1	req	下午|4|点|爸爸|回家|了|。
+S	我们今天下午不上课。	Wǒmen jīntiān xiàwǔ bú shàngkè.		13	EX-下午-2	req	我们|今天|下午|不|上课|。
+S	我今天有很多课。	Wǒ jīntiān yǒu hěn duō kè.		14	EX-课-1	req	我|今天|有|很多|课|。
+S	今天我们学第三课。	Jīntiān wǒmen xué dì sān kè.		14	EX-课-2	req	今天|我们|学|第三课|。
+S	明天见！	Míngtiān jiàn!		15	EX-见-1	req	明天|见|！
+S	我们下午三点在家家超市见。	Wǒmen xiàwǔ sān diǎn zài Jiājiā Chāoshì jiàn.		15	EX-见-2	req	我们|下午|三点|在|家家|超市|见|。
+S	我们去那家饭店吃饭吧。	Wǒmen qù nà jiā fàndiàn chī fàn ba.		16	EX-吧-1	req	我们|去|那家|饭店|吃饭|吧|。
+S	你早点儿休息吧。	Nǐ zǎo diǎnr xiūxi ba.		16	EX-吧-2	req	你|早点儿|休息|吧|。
+S	我们现在走吧。	Wǒmen xiànzài zǒu ba.		16	EX-吧-3	req	我们|现在|走|吧|。
+S	电影院人很多。	Diànyǐngyuàn rén hěn duō.		30	EX-电影院-1	req	电影院|人|很多|。
+S	我和妈妈去电影院看电影。	Wǒ hé māma qù diànyǐngyuàn kàn diànyǐng.		30	EX-电影院-2	req	我|和|妈妈|去|电影院|看电影|。
+S	今年我看了很多书。	Jīnnián wǒ kàn le hěn duō shū.		31	EX-看-1	req	今年|我|看|了|很多|书|。
+S	爸爸在看电视。	Bàba zài kàn diànshì.		31	EX-看-2	req	爸爸|在|看|电视|。
+S	这个电影很好看。	Zhège diànyǐng hěn hǎokàn.		32	EX-电影-1	req	这个|电影|很|好看|。
+S	她喜欢看中国电影。	Tā xǐhuan kàn Zhōngguó diànyǐng.		32	EX-电影-2	req	她|喜欢|看|中国|电影|。
+S	我这个星期事太多了。	Wǒ zhège xīngqī shì tài duō le.		33	EX-事-1	req	我|这个|星期|事|太多|了|。
+S	他有很多事要忙。	Tā yǒu hěn duō shì yào máng.		33	EX-事-2	req	他|有|很多|事|要|忙|。
+S	同学们在上课。	Tóngxuémen zài shàngkè.		34	EX-上课-1	req	同学们|在|上课|。
+S	我病了，不能去上课了。	Wǒ bìng le, bù néng qù shàngkè le.		34	EX-上课-2	req	我|病|了|，|不能|去|上课|了|。
+S	下课了，我要去吃饭。	Xiàkè le, wǒ yào qù chī fàn.		35	EX-下课-1	req	下课|了|，|我|要|去|吃饭|。
+S	下课后我要和朋友看电影。	Xiàkè hòu wǒ yào hé péngyou kàn diànyǐng.		35	EX-下课-2	req	下课|后|我|要|和|朋友|看电影|。
+S	我在吃饭呢。	Wǒ zài chī fàn ne.		36	EX-呢-1	req	我|在|吃饭|呢|。
+S	外边下雨呢。	Wàibian xià yǔ ne.		36	EX-呢-2	req	外边|下雨|呢|。
+S	我吃了半个苹果。	Wǒ chī le bàn gè píngguǒ.		37	EX-半-1	req	我|吃|了|半个|苹果|。
+S	她半年没回家了。	Tā bàn nián méi huí jiā le.		37	EX-半-2	req	她|半年|没|回家|了|。
+S	我在学校呢。	Wǒ zài xuéxiào ne.		50	EX-在-1	req	我|在|学校|呢|。
+S	我的手机在房间里。	Wǒ de shǒujī zài fángjiān lǐ.		50	EX-在-2	req	我|的|手机|在|房间|里|。
+S	你现在在家吗？	Nǐ xiànzài zài jiā ma?		50	EX-在-3	req	你|现在|在|家|吗|？
+S	我星期五回家。	Wǒ xīngqīwǔ huí jiā.		51	EX-家-1	req	我|星期五|回家|。
+S	您家真漂亮。	Nín jiā zhēn piàoliang.		51	EX-家-2	req	您|家|真|漂亮|。
+S	学校里有很多学生。	Xuéxiào lǐ yǒu hěn duō xuéshēng.		52	EX-里-1	req	学校|里|有|很多|学生|。
+S	小猫在房间里边呢。	Xiǎo māo zài fángjiān lǐbian ne.		52	EX-里-2	req	小猫|在|房间|里边|呢|。
+S	晚上好！	Wǎnshang hǎo!		53	EX-晚上-1	req	晚上|好|！
+S	晚上大家都在家里看电视。	Wǎnshang dàjiā dōu zài jiā lǐ kàn diànshì.		53	EX-晚上-2	req	晚上|大家|都|在|家|里|看|电视|。
+S	他生病去医院了。	Tā shēng bìng qù yīyuàn le.		54	EX-医院-1	req	他|生病|去|医院|了|。
+S	我爸爸在医院工作。	Wǒ bàba zài yīyuàn gōngzuò.		54	EX-医院-2	req	我|爸爸|在|医院|工作|。
+S	爸爸妈妈上班，我上学。	Bàba māma shàngbān, wǒ shàngxué.		55	EX-上班-1	req	爸爸妈妈|上班|，|我|上学|。
+S	我生病了，没去上班。	Wǒ shēng bìng le, méi qù shàngbān.		55	EX-上班-2	req	我|生病|了|，|没|去|上班|。
+S	你吃点儿菜吧。	Nǐ chī diǎnr cài ba.		56	EX-菜-1	req	你|吃|点儿|菜|吧|。
+S	我明天早上去店里买菜。	Wǒ míngtiān zǎoshang qù diàn lǐ mǎi cài.		56	EX-菜-2	req	我|明天|早上|去|店|里|买菜|。
+S	你去菜店买些菜吧。	Nǐ qù cài diàn mǎi xiē cài ba.		57	EX-店-1	req	你|去|菜店|买|些|菜|吧|。
+S	这家店卖电脑和手机。	Zhè jiā diàn mài diànnǎo hé shǒujī.		57	EX-店-2	req	这|家|店|卖|电脑|和|手机|。
+S	我还有十分钟能到。	Wǒ hái yǒu shí fēnzhōng néng dào.		58	EX-分钟-1	req	我|还|有|十分钟|能|到|。
+S	弟弟看了十分钟电视。	Dìdi kàn le shí fēnzhōng diànshì.		58	EX-分钟-2	req	弟弟|看|了|十分钟|电视|。
+S	我20分钟后到。	Wǒ èrshí fēnzhōng hòu dào.		59	EX-后-1	req	我|20|分钟|后|到|。
+S	我坐在他后边。	Wǒ zuò zài tā hòubian.		59	EX-后-2	req	我|坐|在|他|后边|。
+S	我不想去。	Wǒ bù xiǎng qù.		44	S-read1-1	req	我|不|想|去|。
+S	妹妹很高兴。	Mèimei hěn gāoxìng.		44	S-read1-2	req	妹妹|很|高兴|。
+S	她上午十点半上课。	Tā shàngwǔ shí diǎn bàn shàngkè.		44	S-read1-3	req	她|上午|十点半|上课|。
+S	我明天下午两点还上课呢。	Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne.		45	S-read2-1	req	我|明天|下午|两点|还|上课|呢|。
+S	妹妹会做两个菜呢。	Mèimei huì zuò liǎng gè cài ne.		45	S-read2-2	req	妹妹|会|做|两个|菜|呢|。
+S	李文晚上还有事呢。	Lǐ Wén wǎnshang hái yǒu shì ne.		45	S-read2-3	req	李文|晚上|还|有|事|呢|。
+S	现在几点？	Xiànzài jǐ diǎn?		9	EX-点-0	src	现在|几点|？	1,1,白家月
+S	早上八点四十。	Zǎoshang bā diǎn sìshí.		-	D1-2	src	早上|八点四十|。	1,2,安妮
+S	我上午十点十分有课。	Wǒ shàngwǔ shí diǎn shí fēn yǒu kè.		-	D1-3	src	我|上午|十点十分|有|课|。	1,3,白家月
+S	好的，我们下午两点见吧。	Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba.		-	D1-4	src	好|的|，|我们|下午|两点|见|吧|。	1,4,安妮
+S	下午我想去电影院看电影，你去吗？	Xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma?		-	D2-1	src	下午|我|想|去|电影院|看电影|，|你|去|吗|？	2,1,李文
+S	我不想去，下午还有事。	Wǒ bù xiǎng qù, xiàwǔ hái yu shì.		-	D2-2	src	我|不|想|去|，|下午|还|有|事|。	2,2,白家月
+S	好的。	Hǎo de.		-	D2-3a	src	好|的|。	2,3,李文
+S	明天呢？	Míngtiān ne?		-	D2-3b	src	明天|呢|？	2,3,李文
+S	我明天下午两点还上课呢，四点半下课。	Wǒ míngtiān xiàwǔ liǎng diǎn hái shàngkè ne, sì diǎn bàn xiàkè.		-	D2-4	src	我|明天|下午|两点|还|上课|呢|，|四点半|下课|。	2,4,白家月
+S	喂，你在哪儿呢？	Wèi, nǐ zài nǎr ne?		-	D3-1	src	喂|，|你|在|哪儿|呢|？	3,1,王一雪
+S	我在家里呢。	Wǒ zài jiā lǐ ne.		-	D3-2	src	我|在|家|里|呢|。	3,2,刘明
+S	我晚上六点半下班。	Wǒ wǎnshang liù diǎn bàn xiàbān.		-	D3-3	src	我|晚上|六点半|下班|。	3,3,王一雪
+S	我八点去医院上班。	Wǒ bā diǎn qù yīyuàn shàngbān.		-	D3-4	src	我|八点|去|医院|上班|。	3,4,刘明
+S	好的，你去店里买些菜吧。	Hǎo de, nǐ qù diàn lǐ mǎi xiē cài ba.		-	D3-5	src	好|的|，|你|去|店|里|买|些|菜|吧|。	3,5,王一雪
+S	好，我十分钟后去。	Hǎo, wǒ shí fēnzhōng hòu qù.		-	D3-6	src	好|，|我|十分钟|后|去|。	3,6,刘明

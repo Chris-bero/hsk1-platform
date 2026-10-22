@@ -1,0 +1,104 @@
+V	杯子	bēizi	cup; glass	n.	6	W10-2-1
+V	售货员	shòuhuòyuán	shop assistant; salesperson; vendor	n.	6	W10-2-2
+V	这边	zhèbiān	here; this side	pron.	6	W10-2-3
+V	钱	qián	money	n.	6	W10-2-4
+V	这些	zhèxiē	these	pron.	6	W10-2-5
+V	块	kuài	for silver dollars or paper money	m.	6	W10-2-6
+V	那些	nàxiē	those	pron.	6	W10-2-7
+V	这儿	zhèr	here	pron.	23	W10-4-1
+V	水果	shuǐguǒ	fruit	n.	23	W10-4-2
+V	少	shǎo	few; little	adj.	23	W10-4-3
+V	斤	jīn	jin	m.	23	W10-4-4
+V	苹果	píngguǒ	apple	n.	23	W10-4-5
+V	便宜	piányi	cheap; affordable	adj.	23	W10-4-6
+V	商店	shāngdiàn	stop; store	n.	38	W10-6-1
+V	衣服	yīfu	clothes	n.	38	W10-6-2
+V	件	jiàn	piece	m.	38	W10-6-3
+V	元	yuán	yuan	m.	38	W10-6-4
+V	怎么样	zěnmeyàng	(used to enquire about the nature, condition, manner, etc. of sth) how	pron.	38	W10-6-5
+V	贵	guì	expensive	adj.	39	W10-6-6
+V	穿	chuān	wear; put on	v.	39	W10-6-7
+V	女	nǚ	female; women	adj.	39	W10-6-8
+V	男	nán	male; man	adj.	39	W10-6-9
+V	那儿	nàr	there; that place	pron.	39	W10-6-10
+S	这儿的苹果真便宜！	Zhèr de píngguǒ zhēn piányi!	The apples here are really affordable!	2	S-title	source	这儿|的|苹果|真|便宜|！
+S	在一家小店，王一雪在买杯子。	Zài yì jiā xiǎo diàn, Wáng Yīxuě zài mǎi bēizi.	In a small shop, Wang Yixue was buying a cup.	5	S-intro1	req	在|一家|小店|，|王一雪|在|买|杯子|。
+S	在菜市场，王一雪在买水果。	Zài càishìchǎng, Wáng Yīxuě zài mǎi shuǐguǒ.	At the market, Wang Yixue was buying fruit.	21	S-intro2	req	在|菜市场|，|王一雪|在|买|水果|。
+S	在商场里，刘明和王一雪在给孩子买衣服。	Zài shāngchǎng lǐ, Liú Míng hé Wáng Yīxuě zài gěi háizi mǎi yīfu.	In the shopping mall, Liu Ming and WangYixue were shopping for clothes for their children.	36	S-intro3	req	在|商场|里|，|刘明|和|王一雪|在|给|孩子|买|衣服|。
+S	中国的货币叫人民币。人民币的单位由大到小是“元、角、分”，口语中也分别说“块、毛、分”。表达顺序是：元/块→角/毛→分。	Zhōngguó de huòbì jiào Rénmínbì. Rénmínbì de dānwèi yóu dà dào xiǎo shì “yuán, jiǎo, fēn”, kǒuyǔ zhōng yě fēnbié shuō “kuài, máo, fēn”. Biǎodá shùnxù shì: yuán/kuài→jiǎo/mao→fēn.	China’s currency is known as Renminbi (RMB). Its units, ranked from the largest to the smallest, are “yuan”, “jiao, and “fen”, which are colloquially referred to as “kuai”, “mao”, and “fen” respectively. The standard order of denomination is: yuan/kuai→jiao/mao→fen.	19	S-grammar1	req	中国|的|货币|叫|人民币|。|人民币|的|单位|由|大|到|小|是|“元、角、分”|，|口语|中|也|分别|说|“块、毛、分”|。|表达|顺序|是|：|元/块|→|角/毛|→|分|。
+S	形容词可以直接作谓语，前面可用程度副词或否定副词。	Xíngróngcí kěyǐ zhíjiē zuò wèiyǔ, qiánmiàn kě yòng chéngdù fùcí huò fǒudìng fùcí.	Adjectives can be used directly as predicates, with adverbs of degree or negative adverbs optionally placed before them.	35	S-grammar2	req	形容词|可以|直接|作|谓语|，|前面|可|用|程度|副词|或|否定|副词|。
+S	疑问代词“怎么样”用于征求意见、询问状况等。	Yíwèndàicí “zěnmeyàng” yòng yú zhēngqiú yìjiàn, xúnwèn zhuàngkuàng děng.	The interrogative pronoun “怎么样” is used to ask for opinions or inquire about a situation, and so on.	58	S-grammar3	req	疑问代词|“怎么样”|用于|征求|意见|、|询问|状况|等|。
+S	三元两角八分=三块两毛八分	Sān yuán liǎng jiǎo bā fēn = sān kuài liǎng máo bā fēn		19	S-read0-1	req	三元两角八分|=|三块两毛八分
+S	这个杯子太小了。	Zhège bēizi tài xiǎo le.		7	EX-杯子-1	req	这个|杯子|太|小|了|。
+S	昨天我买了四个杯子。	Zuótiān wǒ mǎi le sì gè bēizi.		7	EX-杯子-2	req	昨天|我|买|了|四个|杯子|。
+S	我是这个商店的售货员。	Wǒ shì zhège shāngdiàn de shòuhuòyuán.		8	EX-售货员-1	req	我|是|这个|商店|的|售货员|。
+S	这个杯子多少钱？	Zhège bēizi duōshao qián?		8	EX-售货员-A	req	这个|杯子|多少|钱|？
+S	不知道，问一下售货员吧。	Bù zhīdao, wèn yíxià shòuhuòyuán ba.		8	EX-售货员-B	req	不知道|，|问|一下|售货员|吧|。
+S	来这边坐吧。	Lái zhèbiān zuò ba.		9	EX-这边-1	req	来|这边|坐|吧|。
+S	我住在这边。	Wǒ zhù zài zhèbiān.		9	EX-这边-2	req	我|住|在|这边|。
+S	她这个月没有钱了。	Tā zhège yuè méiyǒu qián le.		10	EX-钱-1	req	她|这个|月|没有|钱|了|。
+S	这些苹果八块钱。	Zhèxiē píngguǒ bā kuài qián.		10	EX-钱-2	req	这些|苹果|八块|钱|。
+S	这些苹果15块钱？	Zhèxiē píngguǒ shíwǔ kuài qián?		11	EX-块-1	req	这些|苹果|15|块|钱|？
+S	这本书40块钱。	Zhè běn shū sìshí kuài qián.		11	EX-块-2	req	这|本|书|40|块|钱|。
+S	这些人我都认识。	Zhèxiē rén wǒ dōu rènshi.		12	EX-这些-1	req	这些|人|我|都|认识|。
+S	这些东西都是你的吗？	Zhèxiē dōngxi dōu shì nǐ de ma?		12	EX-这些-2	req	这些|东西|都|是|你|的|吗|？
+S	那些书是我的。	Nàxiē shū shì wǒ de.		13	EX-那些-1	req	那些|书|是|我|的|。
+S	那些人来做什么？	Nàxiē rén lái zuò shénme?		13	EX-那些-2	req	那些|人|来|做|什么|？
+S	请问，这儿卖水果吗？	Qǐngwèn, zhèr mài shuǐguǒ ma?		24	EX-这儿-1	req	请问|，|这儿|卖|水果|吗|？
+S	这儿有一些苹果。	Zhèr yǒu yìxiē píngguǒ.		24	EX-这儿-2	req	这儿|有|一些|苹果|。
+S	你喜欢吃什么水果？	Nǐ xǐhuan chī shénme shuǐguǒ?		25	EX-水果-1	req	你|喜欢|吃|什么|水果|？
+S	水果店在哪儿？	Shuǐguǒ diàn zài nǎr?		25	EX-水果-2	req	水果店|在|哪儿|？
+S	今天她买了不少水果。	Jīntiān tā mǎi le bùshǎo shuǐguǒ.		26	EX-少-1	req	今天|她|买|了|不少|水果|。
+S	她认识的中国朋友很少。	Tā rènshi de Zhōngguó péngyou hěn shǎo.		26	EX-少-2	req	她|认识|的|中国|朋友|很|少|。
+S	我买了一斤苹果，很便宜。	Wǒ mǎi le yì jīn píngguǒ, hěn piányi.		27	EX-斤-1	req	我|买|了|一斤|苹果|，|很|便宜|。
+S	我早上吃了一个苹果。	Wǒ zǎoshang chī le yí gè píngguǒ.		28	EX-苹果-1	req	我|早上|吃|了|一个|苹果|。
+S	我去超市买了些苹果。	Wǒ qù chāoshì mǎi le xiē píngguǒ.		28	EX-苹果-2	req	我|去|超市|买|了|些|苹果|。
+S	这件衣服不贵，很便宜。	Zhè jiàn yīfu bú guì, hěn piányi.		29	EX-便宜-1	req	这|件|衣服|不|贵|，|很|便宜|。
+S	我觉得这个手机不便宜。	Wǒ juède zhège shǒujī bù piányi.		29	EX-便宜-2	req	我|觉得|这个|手机|不|便宜|。
+S	妈妈去商店买了几件衣服。	Māma qù shāngdiàn mǎi le jǐ jiàn yīfu.		40	EX-商店-1	req	妈妈|去|商店|买|了|几件|衣服|。
+S	这家商店很小，东西不多。	Zhè jiā shāngdiàn hěn xiǎo, dōngxi bù duō.		40	EX-商店-2	req	这|家|商店|很|小|，|东西|不|多|。
+S	这件衣服是谁的？	Zhè jiàn yīfu shì shéi de?		41	EX-衣服-1	req	这|件|衣服|是|谁|的|？
+S	我在外面买衣服呢，不在家。	Wǒ zài wàimian mǎi yīfu ne, bú zài jiā.		41	EX-衣服-2	req	我|在|外面|买|衣服|呢|，|不|在|家|。
+S	这件事妈妈不知道，你不要说。	Zhè jiàn shì māma bù zhīdao, nǐ bú yào shuō.		42	EX-件-1	req	这|件|事|妈妈|不|知道|，|你|不要|说|。
+S	我昨天买了三件衣服。	Wǒ zuótiān mǎi le sān jiàn yīfu.		42	EX-件-2	req	我|昨天|买|了|三件|衣服|。
+S	这件衣服一百元。	Zhè jiàn yīfu yìbǎi yuán.		43	EX-元-1	req	这|件|衣服|一百|元|。
+S	我喜欢的那个杯子卖二十元。	Wǒ xǐhuan de nàge bēizi mài èrshí yuán.		43	EX-元-2	req	我|喜欢|的|那个|杯子|卖|二十|元|。
+S	这件衣服怎么样?	Zhè jiàn yīfu zěnmeyàng?		44	EX-怎么样-1	req	这|件|衣服|怎么样|?
+S	你觉得昨天的电影怎么样？	Nǐ juède zuótiān de diànyǐng zěnmeyàng?		44	EX-怎么样-2	req	你|觉得|昨天|的|电影|怎么样|？
+S	这个手机太贵了！	Zhège shǒujī tài guì le!		45	EX-贵-1	req	这个|手机|太|贵|了|！
+S	这件衣服我很喜欢，也不贵。	Zhè jiàn yīfu wǒ hěn xǐhuan, yě bú guì.		45	EX-贵-2	req	这|件|衣服|我|很|喜欢|，|也|不|贵|。
+S	她今天穿的那件衣服很漂亮。	Tā jīntiān chuān de nà jiàn yīfu hěn piàoliang.		46	EX-穿-1	req	她|今天|穿|的|那|件|衣服|很|漂亮|。
+S	弟弟不想穿这件衣服，要穿那件。	Dìdi bù xiǎng chuān zhè jiàn yīfu, yào chuān nà jiàn.		46	EX-穿-2	req	弟弟|不|想|穿|这|件|衣服|，|要|穿|那|件|。
+S	请女同学们来这边。	Qǐng nǚ tóngxuémen lái zhèbiān.		47	EX-女-1	req	请|女|同学们|来|这边|。
+S	我不认识那个女老师。	Wǒ bú rènshi nàge nǚ lǎoshī.		47	EX-女-2	req	我|不|认识|那个|女|老师|。
+S	我们医院有很多男医生。	Wǒmen yīyuàn yǒu hěn duō nán yīshēng.		48	EX-男-1	req	我们|医院|有|很多|男|医生|。
+S	那个男同学是谁？	Nàge nán tóngxué shì shéi?		48	EX-男-2	req	那个|男|同学|是|谁|？
+S	看，那儿有很多学生。	Kàn, nàr yǒu hěn duō xuéshēng.		49	EX-那儿-1	req	看|，|那儿|有|很多|学生|。
+S	我们去那儿玩吧。	Wǒmen qù nàr wán ba.		49	EX-那儿-2	req	我们|去|那儿|玩|吧|。
+S	我的房间不大。	Wǒ de fángjiān bú dà.		35	S-read1-2	req	我|的|房间|不|大|。
+S	那个苹果好吃。	Nàge píngguǒ hǎochī.		35	S-read1-3	req	那个|苹果|好吃|。
+S	这个杯子怎么样？	Zhège bēizi zěnmeyàng?		58	S-read2-1A	req	这个|杯子|怎么样|？
+S	我很喜欢，也不贵。	Wǒ hěn xǐhuan, yě bú guì.		58	S-read2-1B	req	我|很|喜欢|，|也|不|贵|。
+S	这本书怎么样？	Zhè běn shū zěnmeyàng?		58	S-read2-2A	req	这|本|书|怎么样|？
+S	很好看。	Hěn hǎokàn.		58	S-read2-2B	req	很|好看|。
+S	这个菜怎么样？	Zhège cài zěnmeyàng?		58	S-read2-3A	req	这个|菜|怎么样|？
+S	这个菜不太好吃，我不喜欢。	Zhège cài bú tài hǎochī, wǒ bù xǐhuan.		58	S-read2-3B	req	这个|菜|不太|好吃|，|我|不|喜欢|。
+S	请问，有杯子吗？	Qǐngwèn, yǒu bēizi ma?		-	D1-1	src	请问|，|有|杯子|吗|？	1,1,王一雪
+S	有，杯子在这边。	Yǒu, bēizi zài zhèbiān.		-	D1-2	src	有|，|杯子|在|这边|。	1,2,售货员
+S	多少钱一个？	Duōshao qián yí gè?		-	D1-3	src	多少|钱|一个|？	1,3,王一雪
+S	这些五块钱一个，那些十块钱一个。	Zhèxiē wǔ kuài qián yí gè, nàxiē shí kuài qián yí gè.		-	D1-4	src	这些|五块|钱|一个|，|那些|十块|钱|一个|。	1,4,售货员
+S	我买这个吧。	Wǒ mǎi zhège ba.		-	D1-5	src	我|买|这个|吧|。	1,5,王一雪
+S	这儿的水果真不少！	Zhèr de shuǐguǒ zhēn bù shǎo!		35	S-read1-1	src	这儿|的|水果|真|不少|！	2,1,王一雪
+S	您想买什么？	Nín xiǎng mǎi shénme?		-	D2-2	src	您|想|买|什么|？	2,2,售货员
+S	我想买两斤苹果。	Wǒ xiǎng mǎi liǎng jīn píngguǒ.		-	D2-3	src	我|想|买|两斤|苹果|。	2,3,王一雪
+S	苹果三块五一斤。	Píngguǒ sān kuài wǔ yì jīn.		27	D2-4a	src	苹果|三块五|一斤|。	2,4,售货员
+S	这些七块二，七块钱吧。	Zhèxiē qī kuài èr, qī kuài qián ba.		-	D2-4b	src	这些|七块二|，|七块|钱|吧|。	2,4,售货员
+S	好的，这儿的苹果真便宜！	Hǎo de, zhèr de píngguǒ zhēn piányi!		-	D2-5	src	好|的|，|这儿|的|苹果|真|便宜|！	2,5,王一雪
+S	这家商店衣服真多！	Zhè jiā shāngdiàn yīfu zhēn duō!		-	D3-1a	src	这|家|商店|衣服|真|多|！	3,1,王一雪
+S	这件一百元，怎么样？	Zhè jiàn yìbǎi yuán, zěnmeyàng?		-	D3-1b	src	这|件|一百|元|，|怎么样|？	3,1,王一雪
+S	好看，也不贵。	Hǎokàn, yě bú guì.		-	D3-2	src	好看|，|也|不|贵|。	3,2,刘明
+S	小雪能穿，买一件吧。	Xiǎoxuě néng chuān, mǎi yí jiàn ba.		-	D3-3	src	小雪|能|穿|，|买|一件|吧|。	3,3,王一雪
+S	好的。	Hǎo de.		-	D3-4a	src	好|的|。	3,4,刘明
+S	小明能穿吗？	Xiǎomíng néng chuān ma?		-	D3-4b	src	小明|能|穿|吗|？	3,4,刘明
+S	不能。	Bù néng.		-	D3-5a	src	不能|。	3,5,王一雪
+S	这些是女孩子穿的衣服，男孩子的衣服在那儿。	Zhèxiē shì nǚ háizi chuān de yīfu, nán háizi de yīfu zài nàr.		-	D3-5b	src	这些|是|女孩子|穿|的|衣服|，|男孩子|的|衣服|在|那儿|。	3,5,王一雪

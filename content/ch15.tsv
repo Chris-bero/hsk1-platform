@@ -1,0 +1,80 @@
+V	爱	ài	like; be fond of	v.	8	W15-2-1
+V	哪个	nǎge	which	pron.	8	W15-2-2
+V	去年	qùnián	last year	n.	16	W15-4-1
+V	男朋友	nánpéngyou	boyfriend	n.	16	W15-4-2
+V	几	jǐ	a few; several	num.	16	W15-4-3
+V	年	nián	year	n.	16	W15-4-4
+V	好玩儿	hǎowánr	fun; interesting	adj.	16	W15-4-5
+V	西安	Xī'ān	Xi'an	propn	16	W15-4-6
+V	北京	Běijīng	Beijing	propn	16	W15-4-7
+V	飞机	fēijī	plane	n.	29	W15-6-1
+V	要	yào	need; take	v.	29	W15-6-2
+V	小时	xiǎoshí	hour	n.	29	W15-6-3
+V	家人	jiārén	family (member)	n.	29	W15-6-4
+V	时间	shíjiān	(duration of) time	n.	29	W15-6-5
+V	机场	jīchǎng	airport	n.	30	W15-6-6
+V	接	jiē	meet; welcome	v.	30	W15-6-7
+V	住	zhù	live; stay	v.	30	W15-6-8
+V	早	zǎo	early	adj.	30	W15-6-9
+V	那	nà	then	conj.	30	W15-6-10
+V	大兴机场	Dàxīng Jīchǎng	Daxing Airport	propn	30	W15-6-11
+S	大兴机场见！	Dàxīng Jīchǎng jiàn!	See you at Daxing Airport!	2	S-title	source	大兴机场|见|！
+S	在李文家，李文邀请陈天中、白家月等朋友品尝中餐。	Zài Lǐ Wén jiā, Lǐ Wén yāoqǐng Chén Tiānzhōng, Bái Jiāyuè děng péngyou pǐncháng Zhōngcān.	At Li Wen's home, Li Wen invited friends., including Chen Tianzhong and Bai Jiayue, to taste Chinese food.	5	S-intro1	req	在|李文|家|，|李文|邀请|陈天中|、|白家月|等|朋友|品尝|中餐|。
+S	在李文家，大家边吃饭边谈论假期计划。	Zài Lǐ Wén jiā, dàjiā biān chī fàn biān tánlùn jiàqī jìhuà.	At Li Wen's home, everyone was talking about their holiday plans while eating.	14	S-intro2	req	在|李文|家|，|大家|边|吃饭|边|谈论|假期|计划|。
+S	在教室外，白家月、安妮和王老师在谈论去北京旅游的事。	Zài jiàoshì wài, Bái Jiāyuè, Ānnī hé Wáng lǎoshī zài tánlùn qù Běijīng lǚyóu de shì.	Outside the classroom, Bai Jiayue, Annie, and Ms.Wang were talking about traveling to Beijing.	26	S-intro3	req	在|教室|外|，|白家月|、|安妮|和|王老师|在|谈论|去|北京|旅游|的|事|。
+S	并列复句由两个或两个以上逻辑关联、结构对称的小句构成。本册学习并列复句“……，还/也……”。	Bìngliè fùjù yóu liǎng gè huò liǎng gè yǐshàng luójí guānlián, jiégòu duìchèn de xiǎojù gòuchéng. Běn cè xuéxí bìngliè fùjù "……, hái/yě……".	A coordinate compound sentence consists of two or more clauses that are logically related and structurally parallel. In this volume, we focus on the coordinate compound sentence "……, 还/也……".	13	S-grammar1	req	并列|复句|由|两个|或|两个|以上|逻辑|关联|、|结构|对称|的|小句|构成|。|本册|学习|并列|复句|“……，还/也……”|。
+S	你爱看什么电影？	Nǐ ài kàn shénme diànyǐng?		9	EX-爱-1	req	你|爱|看|什么|电影|？
+S	姐姐很爱学习。	Jiějie hěn ài xuéxí.		9	EX-爱-2	req	姐姐|很|爱|学习|。
+S	这两个手机，你想买哪个？	Zhè liǎng gè shǒujī, nǐ xiǎng mǎi nǎge?		10	EX-哪个-1	req	这|两个|手机|，|你|想|买|哪个|？
+S	哪件衣服是你的？	Nǎ jiàn yīfu shì nǐ de?		10	EX-哪个-2	req	哪|件|衣服|是|你|的|？
+S	去年我还在上中学。	Qùnián wǒ hái zài shàng zhōngxué.		17	EX-去年-1	req	去年|我|还|在|上|中学|。
+S	那是去年的事了。	Nà shì qùnián de shì le.		17	EX-去年-2	req	那|是|去年|的|事|了|。
+S	她的男朋友是医生。	Tā de nánpéngyou shì yīshēng.		18	EX-男朋友-1	req	她|的|男朋友|是|医生|。
+S	我和我男朋友是中学同学。	Wǒ hé wǒ nánpéngyou shì zhōngxué tóngxué.		18	EX-男朋友-2	req	我|和|我|男朋友|是|中学|同学|。
+S	几天前我看见他了。	Jǐ tiān qián wǒ kànjiàn tā le.		19	EX-几-1	req	几|天|前|我|看见|他|了|。
+S	我想去书店买几本书。	Wǒ xiǎng qù shūdiàn mǎi jǐ běn shū.		19	EX-几-2	req	我|想|去|书店|买|几|本|书|。
+S	你来中国几年了？	Nǐ lái Zhōngguó jǐ nián le?		20	EX-年-1	req	你|来|中国|几|年|了|？
+S	他学习中文两年了。	Tā xuéxí Zhōngwén liǎng nián le.		20	EX-年-2	req	他|学习|中文|两年|了|。
+S	我觉得这里不太好玩儿。	Wǒ juède zhèlǐ bú tài hǎowánr.		21	EX-好玩儿-1	req	我|觉得|这里|不|太|好玩儿|。
+S	北京好玩儿吗？	Běijīng hǎowánr ma?		21	EX-好玩儿-2	req	北京|好玩儿|吗|？
+S	我们坐飞机去北京吧。	Wǒmen zuò fēijī qù Běijīng ba.		31	EX-飞机-1	req	我们|坐|飞机|去|北京|吧|。
+S	在飞机上，我认识了一个中国朋友。	Zài fēijī shang, wǒ rènshi le yí gè Zhōngguó péngyou.		31	EX-飞机-2	req	在|飞机|上|，|我|认识|了|一个|中国|朋友|。
+S	你做饭要几个鸡蛋？	Nǐ zuò fàn yào jǐ gè jīdàn?		32	EX-要-1	req	你|做饭|要|几个|鸡蛋|？
+S	你买电脑要多少钱？	Nǐ mǎi diànnǎo yào duōshao qián?		32	EX-要-2	req	你|买|电脑|要|多少|钱|？
+S	我们开车去西安要六个小时。	Wǒmen kāichē qù Xī'ān yào liù gè xiǎoshí.		32	EX-要-3	req	我们|开车|去|西安|要|六个|小时|。
+S	我们两个小时后在学校书店见。	Wǒmen liǎng gè xiǎoshí hòu zài xuéxiào shūdiàn jiàn.		33	EX-小时-1	req	我们|两个|小时|后|在|学校|书店|见|。
+S	我今天上了四个小时的课。	Wǒ jīntiān shàng le sì gè xiǎoshí de kè.		33	EX-小时-2	req	我|今天|上|了|四个|小时|的|课|。
+S	我爱我的家人。	Wǒ ài wǒ de jiārén.		34	EX-家人-1	req	我|爱|我|的|家人|。
+S	星期天我想和家人去外边玩。	Xīngqītiān wǒ xiǎng hé jiārén qù wàibian wán.		34	EX-家人-2	req	星期天|我|想|和|家人|去|外边|玩|。
+S	我现在很忙，没有时间。	Wǒ xiànzài hěn máng, méiyǒu shíjiān.		35	EX-时间-1	req	我|现在|很|忙|，|没有|时间|。
+S	你在这家公司工作多长时间了？	Nǐ zài zhè jiā gōngsī gōngzuò duō cháng shíjiān le?		35	EX-时间-2	req	你|在|这|家|公司|工作|多|长|时间|了|？
+S	我们去机场要多长时间？	Wǒmen qù jīchǎng yào duō cháng shíjiān?		36	EX-机场-1	req	我们|去|机场|要|多|长|时间|？
+S	明天早上我要去机场接朋友。	Míngtiān zǎoshang wǒ yào qù jīchǎng jiē péngyou.		36	EX-机场-2	req	明天|早上|我|要|去|机场|接|朋友|。
+S	妈妈来学校接我回家。	Māma lái xuéxiào jiē wǒ huí jiā.		37	EX-接-1	req	妈妈|来|学校|接|我|回家|。
+S	下午四点，你可以去接一下王先生吗？	Xiàwǔ sì diǎn, nǐ kěyǐ qù jiē yíxià Wáng xiānsheng ma?		37	EX-接-2	req	下午|四点|，|你|可以|去|接|一下|王先生|吗|？
+S	我们要在这里住三天。	Wǒmen yào zài zhèlǐ zhù sān tiān.		38	EX-住-1	req	我们|要|在|这里|住|三天|。
+S	你现在住在哪儿？	Nǐ xiànzài zhù zài nǎr?		38	EX-住-2	req	你|现在|住|在|哪儿|？
+S	我们早点儿去机场吧。	Wǒmen zǎodiǎnr qù jīchǎng ba.		39	EX-早-1	req	我们|早点儿|去|机场|吧|。
+S	时间还早呢，我们再睡半个小时吧。	Shíjiān hái zǎo ne, wǒmen zài shuì bàn gè xiǎoshí ba.		39	EX-早-2	req	时间|还|早|呢|，|我们|再|睡|半个|小时|吧|。
+S	妈妈，我写了一个小时的字了。	Māma, wǒ xiě le yí gè xiǎoshí de zì le.		40	EX-那-A	req	妈妈|，|我|写|了|一个|小时|的|字|了|。
+S	那休息一下吧。	Nà xiūxi yíxià ba.		40	EX-那-B	req	那|休息|一下|吧|。
+S	下雨了。	Xià yǔ le.		40	EX-那-C	req	下雨|了|。
+S	那我们在家里玩。	Nà wǒmen zài jiā lǐ wán.		40	EX-那-D	req	那|我们|在|家|里|玩|。
+S	王老师是北京人，李文也是北京人。	Wáng lǎoshī shì Běijīng rén, Lǐ Wén yě shì Běijīng rén.		13	S-read1-2	req	王老师|是|北京人|，|李文|也|是|北京人|。
+S	我喜欢喝中国茶，还喜欢吃中国菜。	Wǒ xǐhuan hē Zhōngguó chá, hái xǐhuan chī Zhōngguó cài.		13	S-read1-3	req	我|喜欢|喝|中国|茶|，|还|喜欢|吃|中国|菜|。
+S	你们爱吃哪个菜？	Nǐmen ài chī nǎge cài?		-	D1-1	src	你们|爱|吃|哪个|菜|？	1,1,李文
+S	我喜欢这个，也喜欢那个。	Wǒ xǐhuan zhège, yě xǐhuan nàge.		13	S-read1-1	src	我|喜欢|这个|，|也|喜欢|那个|。	1,2,白家月
+S	这些菜都好吃，还很好看。	Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.		-	D1-3	src	这些|菜|都|好吃|，|还|很|好看|。	1,3,陈天中
+S	我爱吃中国菜，也喜欢做。	Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò.		-	D1-4a	src	我|爱|吃|中国|菜|，|也|喜欢|做|。	1,4,李文
+S	大家多吃点儿。	Dàjiā duō chī diǎnr.		-	D1-4b	src	大家|多|吃|点儿|。	1,4,李文
+S	你们都想去哪儿？	Nǐmen dōu xiǎng qù nǎr?		-	D2-1	src	你们|都|想|去|哪儿|？	2,1,李文
+S	去年我和男朋友去了西安，今年我想去北京。	Qùnián wǒ hé nánpéngyou qùle Xī'ān, jīnnián wǒ xiǎng qù Běijīng.		-	D2-2	src	去年|我|和|男朋友|去|了|西安|，|今年|我|想|去|北京|。	2,2,安妮
+S	前几年我去了西安，非常好玩儿。	Qián jǐ nián wǒ qùle Xī'ān, fēicháng hǎowánr.		-	D2-3a	src	前|几|年|我|去|了|西安|，|非常|好玩儿|。	2,3,白家月
+S	今年我也想去北京。	Jīnnián wǒ yě xiǎng qù Běijīng.		-	D2-3b	src	今年|我|也|想|去|北京|。	2,3,白家月
+S	我和王老师都是北京人，北京非常漂亮。	Wǒ hé Wáng lǎoshī dōu shì Běijīng rén, Běijīng fēicháng piàoliang.		-	D2-4	src	我|和|王老师|都|是|北京人|，|北京|非常|漂亮|。	2,4,李文
+S	你们的飞机到北京要几个小时？	Nǐmen de fēijī dào Běijīng yào jǐ gè xiǎoshí?		-	D3-1	src	你们|的|飞机|到|北京|要|几个|小时|？	3,1,王一飞
+S	九个小时。	Jiǔ gè xiǎoshí.		-	D3-2	src	九个|小时|。	3,2,白家月
+S	我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。	Wǒ jiārén dōu zài Běijīng, Xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.		-	D3-3	src	我|家人|都|在|北京|，|星期天|我|姐姐|也|有|时间|，|她|可以|去|机场|接|你们|，|你们|也|可以|住|我|家|。	3,3,王一飞
+S	我们星期日早上八点到大兴机场，早不早？	Wǒmen Xīngqīrì zǎoshang bā diǎn dào Dàxīng Jīchǎng, zǎo bu zǎo?		-	D3-4	src	我们|星期日|早上|八点|到|大兴机场|，|早|不|早|？	3,4,安妮
+S	不早。	Bù zǎo.		-	D3-5	src	不|早|。	3,5,王一飞
+S	谢谢老师！那我们和您姐姐在大兴机场见！	Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng Jīchǎng jiàn!		-	D3-6	src	谢谢|老师|！|那|我们|和|您|姐姐|在|大兴机场|见|！	3,6,白家月

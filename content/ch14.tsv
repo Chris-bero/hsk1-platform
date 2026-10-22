@@ -1,0 +1,114 @@
+V	上	shàng	go up	v.	7	W14-2-1
+V	火车	huǒchē	train	n.	7	W14-2-2
+V	中午	zhōngwǔ	noon	n.	7	W14-2-3
+V	开	kāi	(of vehicles) depart; leave	v.	7	W14-2-4
+V	有些	yǒuxiē	(indicating a part) some	pron.	7	W14-2-5
+V	有的	yǒude	some	pron.	7	W14-2-6
+V	了	le	used after a verb to indicate the completion of an action	part.	7	W14-2-7
+V	写	xiě	write	v.	25	W14-4-1
+V	都	dōu	all; both	adv.	25	W14-4-2
+V	听见	tīngjiàn	hear	v.	25	W14-4-3
+V	不要	búyào	don't	adv.	25	W14-4-4
+V	说话	shuōhuà	say; speak; talk	v.	25	W14-4-5
+V	听	tīng	listen to; hear	v.	25	W14-4-6
+V	哪些	nǎxiē	which	pron.	25	W14-4-7
+V	字	zì	character; word	n.	25	W14-4-8
+V	汉语	Hànyǔ	Chinese language	propn	26	W14-4-9
+V	汉字	Hànzì	Chinese character	propn	26	W14-4-10
+V	明年	míngnián	next year	n.	47	W14-6-1
+V	上	shàng	begin to do sth at a fixed time	v.	47	W14-6-2
+V	中学	zhōngxué	middle school	n.	47	W14-6-3
+V	小学	xiǎoxué	primary school	n.	47	W14-6-4
+V	中学生	zhōngxuéshēng	middle school student	n.	47	W14-6-5
+V	小学生	xiǎoxuéshēng	primary school student	n.	47	W14-6-6
+V	上学	shàngxué	start school; go to school	v.	48	W14-6-7
+V	他们	tāmen	they; them	pron.	48	W14-6-8
+V	她们	tāmen	(referring to female people) they; them	pron.	48	W14-6-9
+V	它们	tāmen	(plural of 它) they; them; their	pron.	48	W14-6-10
+V	晚	wǎn	late	adj.	48	W14-6-11
+S	我看了一个电影	Wǒ kànle yí gè diànyǐng	I watched a movie	2	S-title	source	我|看了|一个|电影
+S	在教室里，下课后，白家月和陈天中在谈论上一次课外旅行。	Zài jiàoshì lǐ, xiàkè hòu, Bái Jiāyuè hé Chén Tiānzhōng zài tánlùn shàng yí cì kèwài lǚxíng.	After class,BaiJiayue andChen Tianzhong were talking about their last school trip in the classroom.	5	S-intro1	req	在教室里|，|下课后|，|白家月|和|陈天中|在|谈论|上一次|课外|旅行|。
+S	在课堂上，王一飞询问学生们的学习情况。	Zài kètáng shàng, Wáng Yīfēi xúnwèn xuéshēngmen de xuéxí qíngkuàng.	In class, Wang Yifei was asking the students about their learning porcess	23	S-intro2	req	在|课堂|上|，|王一飞|询问|学生们|的|学习|情况|。
+S	在家里，刘明和王一雪在谈论孩子的升学情况。	Zài jiā lǐ, Liú Míng hé Wáng Yīxuě zài tánlùn háizi de shēngxué qíngkuàng.	At home, Liu Ming and Wang Yixue were talking about their children's school admission.	45	S-intro3	req	在家里|，|刘明|和|王一雪|在|谈论|孩子|的|升学|情况|。
+S	动词+了，表示动作行为已经发生或完成。表示否定：没+动词	Dòngcí + le, biǎoshì dòngzuò xíngwéi yǐjīng fāshēng huò wánchéng. Biǎoshì fǒudìng: méi + dòngcí	This structure indicates that an action has occurred or been completed. This structure is used to negate.	20	S-grammar1	req	动词|+|了|，|表示|动作|行为|已经|发生|或|完成|。|表示|否定|：|没|+|动词
+S	本册中的“上课、下课、上班、下班、说话、读书、睡觉、看病、生病”等是一类特殊的动词结构，可分可合，合在一起时是词，中间加其他成分则变成短语，所以被称为离合词。离合词分离时，可插入的成分有限。	Běn cè zhōng de “shàngkè, xiàkè, shàngbān, xiàbān, shuōhuà, dúshū, shuìjiào, kànbìng, shēng bìng” děng shì yí lèi tèshū de dòngcí jiégòu, kě fēn kě hé, hé zài yìqǐ shí shì cí, zhōngjiān jiā qítā chéngfèn zé biàn chéng duǎnyǔ, suǒyǐ bèi chēng wéi líhécí. Líhécí fēnlí shí, kě chārù de chéngfèn yǒuxiàn.	In this volume, words such as “上课”, “下课”, “上班”, “下班”, “说话”, “读书”, “睡觉”, “看病”, and “生病” belong to a special type of verbal structure. These words can be either combined or separated: When combined, they function as single words, when elements are inserted between their components, they become phrases. Therefore, they are referred to as separable words. When separable words are split, the types of elements that can be inserted are limited.	21	S-grammar2	req	本册|中|的|“上课、下课、上班、下班、说话、读书、睡觉、看病、生病”|等|是|一类|特殊|的|动词|结构|，|可|分|可|合|，|合|在|一起|时|是|词|，|中间|加|其他|成分|则|变成|短语|，|所以|被|称为|离合词|。|离合词|分离|时|，|可|插入|的|成分|有限|。
+S	范围副词“都”表示全部、总括，总括的对象在“都”前。否定时，否定词在“都”后。	Fànwéi fùcí “dōu” biǎoshì quánbù, zǒngkuò, zǒngkuò de duìxiàng zài “dōu” qián. Fǒudìng shí, fǒudìngcí zài “dōu” hòu.	The scope adverb “都” means “all” or “in general”. The object being generalized is placed before “都”. When negating, the negative word is placed after “都”.	44	S-grammar3	req	范围|副词|“都”|表示|全部|、|总括|，|总括|的|对象|在|“都”|前|。|否定|时|，|否定|词|在|“都”|后|。
+S	我们什么时候上飞机？	Wǒmen shénme shíhou shàng fēijī?		8	EX-上-1	req	我们|什么|时候|上|飞机|？
+S	上车后，我睡了一觉。	Shàng chē hòu, wǒ shuì le yí jiào.		8	EX-上-2	req	上车|后|，|我|睡|了|一觉|。
+S	我们坐火车去北京吧。	Wǒmen zuò huǒchē qù Běijīng ba.		9	EX-火车-1	req	我们|坐|火车|去|北京|吧|。
+S	你们的火车几点开？	Nǐmen de huǒchē jǐ diǎn kāi?		9	EX-火车-2	req	你们|的|火车|几点|开|？
+S	今天中午真热！	Jīntiān zhōngwǔ zhēn rè!		10	EX-中午-1	req	今天|中午|真|热|！
+S	我们中午去北京饭店吃饭吧。	Wǒmen zhōngwǔ qù Běijīng Fàndiàn chī fàn ba.		10	EX-中午-2	req	我们|中午|去|北京|饭店|吃饭|吧|。
+S	看，火车开了。	Kàn, huǒchē kāi le.		11	EX-开-1	req	看|，|火车|开|了|。
+S	车什么时候开？	Chē shénme shíhou kāi?		11	EX-开-2	req	车|什么|时候|开|？
+S	有些学生在上课，有些在外面玩。	Yǒuxiē xuéshēng zài shàngkè, yǒuxiē zài wàimian wán.		12	EX-有些-1	req	有些|学生|在|上课|，|有些|在|外面|玩|。
+S	有些人不喜欢看书，喜欢看电影。	Yǒuxiē rén bù xǐhuan kàn shū, xǐhuan kàn diànyǐng.		12	EX-有些-2	req	有些|人|不|喜欢|看书|，|喜欢|看电影|。
+S	有的人喜欢吃包子，有的人喜欢吃面条儿。	Yǒude rén xǐhuan chī bāozi, yǒude rén xǐhuan chī miàntiáor.		13	EX-有的-1	req	有的|人|喜欢|吃|包子|，|有的|人|喜欢|吃|面条儿|。
+S	有的小朋友在玩，有的在看书。	Yǒude xiǎopéngyǒu zài wán, yǒude zài kàn shū.		13	EX-有的-2	req	有的|小朋友|在|玩|，|有的|在|看书|。
+S	这些书有的还是新书呢。	Zhèxiē shū yǒude háishì xīn shū ne.		13	EX-有的-3	req	这些|书|有的|还是|新书|呢|。
+S	你们吃了饭再回家吧。	Nǐmen chī le fàn zài huí jiā ba.		14	EX-了-1	req	你们|吃|了|饭|再|回家|吧|。
+S	我买了一只小狗。	Wǒ mǎi le yì zhī xiǎo gǒu.		14	EX-了-2	req	我|买|了|一只|小狗|。
+S	请在这里写你的名字。	Qǐng zài zhèlǐ xiě nǐ de míngzi.		27	EX-写-1	req	请|在|这里|写|你|的|名字|。
+S	她会写一些汉字。	Tā huì xiě yìxiē Hànzì.		27	EX-写-2	req	她|会|写|一些|汉字|。
+S	这个电影大家都觉得很好。	Zhège diànyǐng dàjiā dōu juède hěn hǎo.		28	EX-都-1	req	这个|电影|大家|都|觉得|很|好|。
+S	他们都是我的朋友。	Tāmen dōu shì wǒ de péngyou.		28	EX-都-2	req	他们|都|是|我|的|朋友|。
+S	我说的话你听见了吗？	Wǒ shuō de huà nǐ tīngjiàn le ma?		29	EX-听见-A	req	我|说|的|话|你|听见|了|吗|？
+S	对不起，我没听见。	Duìbuqǐ, wǒ méi tīngjiàn.		29	EX-听见-B	req	对不起|，|我|没|听见|。
+S	我听不见老师说的话。	Wǒ tīng bu jiàn lǎoshī shuō de huà.		29	EX-听见-2	req	我|听|不|见|老师|说|的|话|。
+S	不要唱歌了，爸爸在工作呢。	Búyào chàng gē le, bàba zài gōngzuò ne.		30	EX-不要-1	req	不要|唱歌|了|，|爸爸|在|工作|呢|。
+S	你不要说了，我不想听。	Nǐ búyào shuō le, wǒ bù xiǎng tīng.		30	EX-不要-2	req	你|不要|说|了|，|我|不|想|听|。
+S	我女儿两岁了，还不会说话呢。	Wǒ nǚ'ér liǎng suì le, hái bú huì shuōhuà ne.		31	EX-说话-1	req	我|女儿|两|岁|了|，|还|不会|说话|呢|。
+S	昨天他和我说了很多话。	Zuótiān tā hé wǒ shuō le hěn duō huà.		31	EX-说话-2	req	昨天|他|和|我|说|了|很多|话|。
+S	她很喜欢听中文歌。	Tā hěn xǐhuan tīng Zhōngwén gē.		32	EX-听-1	req	她|很|喜欢|听|中文|歌|。
+S	你听，火车来了。	Nǐ tīng, huǒchē lái le.		32	EX-听-2	req	你|听|，|火车|来|了|。
+S	哪些书是你的？	Nǎxiē shū shì nǐ de?		33	EX-哪些-1	req	哪些|书|是|你|的|？
+S	今天我们要做哪些事？	Jīntiān wǒmen yào zuò nǎxiē shì?		33	EX-哪些-2	req	今天|我们|要|做|哪些|事|？
+S	我弟弟还不会写字。	Wǒ dìdi hái bú huì xiězì.		34	EX-字-1	req	我|弟弟|还|不会|写字|。
+S	他写了20个字，想休息一下。	Tā xiě le èrshí gè zì, xiǎng xiūxi yíxià.		34	EX-字-2	req	他|写|了|20|个|字|，|想|休息|一下|。
+S	我喜欢学汉语。	Wǒ xǐhuan xué Hànyǔ.		35	EX-汉语-1	req	我|喜欢|学|汉语|。
+S	他是我们的汉语老师。	Tā shì wǒmen de Hànyǔ lǎoshī.		35	EX-汉语-2	req	他|是|我们|的|汉语|老师|。
+S	我想学习写汉字。	Wǒ xiǎng xuéxí xiě Hànzì.		36	EX-汉字-1	req	我|想|学习|写|汉字|。
+S	他觉得写汉字非常好玩。	Tā juède xiě Hànzì fēicháng hǎowán.		36	EX-汉字-2	req	他|觉得|写|汉字|非常|好玩|。
+S	明年哥哥上大学。	Míngnián gēge shàng dàxué.		49	EX-明年-1	req	明年|哥哥|上|大学|。
+S	我们明年要去北京玩。	Wǒmen míngnián yào qù Běijīng wán.		49	EX-明年-2	req	我们|明年|要|去|北京|玩|。
+S	我八点上课。	Wǒ bā diǎn shàngkè.		50	EX-上2-1	req	我|八点|上课|。
+S	弟弟明年上小学。	Dìdi míngnián shàng xiǎoxué.		50	EX-上2-2	req	弟弟|明年|上|小学|。
+S	这是我的中学。	Zhè shì wǒ de zhōngxué.		51	EX-中学-1	req	这|是|我|的|中学|。
+S	上中学后，姐姐中午不回家了。	Shàng zhōngxué hòu, jiějie zhōngwǔ bù huí jiā le.		51	EX-中学-2	req	上|中学|后|，|姐姐|中午|不|回家|了|。
+S	他儿子13岁，是中学生了。	Tā érzi shísān suì, shì zhōngxuéshēng le.		52	EX-中学生-1	req	他|儿子|13|岁|，|是|中学生|了|。
+S	这些中学生很喜欢学习。	Zhèxiē zhōngxuéshēng hěn xǐhuan xuéxí.		52	EX-中学生-2	req	这些|中学生|很|喜欢|学习|。
+S	我爸爸是小学老师。	Wǒ bàba shì xiǎoxué lǎoshī.		53	EX-小学-1	req	我|爸爸|是|小学|老师|。
+S	我的小学很大、很漂亮。	Wǒ de xiǎoxué hěn dà, hěn piàoliang.		53	EX-小学-2	req	我|的|小学|很|大|、|很|漂亮|。
+S	他们都是小学生。	Tāmen dōu shì xiǎoxuéshēng.		54	EX-小学生-1	req	他们|都|是|小学生|。
+S	小学生要多读书。	Xiǎoxuéshēng yào duō dúshū.		54	EX-小学生-2	req	小学生|要|多|读书|。
+S	我今天生病了，不去上学。	Wǒ jīntiān shēng bìng le, bú qù shàngxué.		55	EX-上学-1	req	我|今天|生病|了|，|不|去|上学|。
+S	妹妹上了一年学，学了很多东西。	Mèimei shàng le yì nián xué, xué le hěn duō dōngxi.		55	EX-上学-2	req	妹妹|上|了|一年|学|，|学|了|很多|东西|。
+S	他们都是爸爸的朋友。	Tāmen dōu shì bàba de péngyou.		56	EX-他们-1	req	他们|都|是|爸爸|的|朋友|。
+S	我昨天看见他们了。	Wǒ zuótiān kànjiàn tāmen le.		56	EX-他们-2	req	我|昨天|看见|他们|了|。
+S	她们三个人是好朋友。	Tāmen sān gè rén shì hǎo péngyou.		57	EX-她们-1	req	她们|三个|人|是|好|朋友|。
+S	她们都喜欢听歌、看电影。	Tāmen dōu xǐhuan tīng gē, kàn diànyǐng.		57	EX-她们-2	req	她们|都|喜欢|听|歌|、|看|电影|。
+S	我家有一只猫和一只狗，我很喜欢它们。	Wǒ jiā yǒu yì zhī māo hé yì zhī gǒu, wǒ hěn xǐhuan tāmen.		58	EX-它们-1	req	我|家|有|一只|猫|和|一只|狗|，|我|很|喜欢|它们|。
+S	它们都在椅子上睡觉呢。	Tāmen dōu zài yǐzi shang shuìjiào ne.		58	EX-它们-2	req	它们|都|在|椅子|上|睡觉|呢|。
+S	太晚了，我们回家吧。	Tài wǎn le, wǒmen huí jiā ba.		59	EX-晚-1	req	太|晚|了|，|我们|回家|吧|。
+S	对不起，我今天来晚了。	Duìbuqǐ, wǒ jīntiān lái wǎn le.		59	EX-晚-2	req	对不起|，|我|今天|来|晚|了|。
+S	我买了一个新电脑。	Wǒ mǎi le yí gè xīn diànnǎo.		20	S-read1-2	req	我|买|了|一个|新|电脑|。
+S	我昨天没去商店买东西。	Wǒ zuótiān méi qù shāngdiàn mǎi dōngxi.		20	S-read1-3	req	我|昨天|没|去|商店|买|东西|。
+S	我和我的朋友们都去。	Wǒ hé wǒ de péngyoumen dōu qù.		44	S-read2-2	req	我|和|我|的|朋友们|都|去|。
+S	同学们都没听见。	Tóngxuémen dōu méi tīngjiàn.		44	S-read2-3	req	同学们|都|没|听见|。
+S	你们上火车后看见王老师了吗？	Nǐmen shàng huǒchē hòu kànjiàn Wáng lǎoshī le ma?		-	D1-1	src	你们|上|火车|后|看见|王老师|了|吗|？	1,1,白家月
+S	没看见。	Méi kànjiàn.		-	D1-2a	src	没|看见|。	1,2,陈天中
+S	中午车开后，有些人在看书，有些人睡觉了。	Zhōngwǔ chē kāi hòu, yǒuxiē rén zài kàn shū, yǒuxiē rén shuìjiào le.		-	D1-2b	src	中午|车|开|后|，|有些人|在|看书|，|有些人|睡觉|了|。	1,2,陈天中
+S	你呢？	Nǐ ne?		-	D1-3	src	你|呢|？	1,3,白家月
+S	我看了一个电影。	Wǒ kànle yí gè diànyǐng.		20	S-read1-1	src	我|看了|一个|电影|。	1,4,陈天中
+S	你们会说汉语了，也会写汉字了吗？	Nǐmen huì shuō Hànyǔ le, yě huì xiě Hànzì le ma?		-	D2-1	src	你们|会|说|汉语|了|，|也|会|写|汉字|了|吗|？	2,1,王一飞
+S	我们都会写了。	Wǒmen dōu huì xiě le.		44	D2-2	src	我们|都|会|写|了|。	2,2,白家月
+S	老师，我听不见。	Lǎoshī, wǒ tīng bu jiàn.		-	D2-3	src	老师|，|我|听|不|见|。	2,3,陈天中
+S	请大家不要说话！	Qǐng dàjiā búyào shuōhuà!		-	D2-4a	src	请|大家|不要|说话|！	2,4,王一飞
+S	请听老师的问题：你们都会写哪些汉字了？	Qǐng tīng lǎoshī de wèntí: Nǐmen dōu huì xiě nǎxiē Hànzì le?		-	D2-4b	src	请|听|老师|的|问题|：|你们|都|会|写|哪些|汉字|了|？	2,4,王一飞
+S	我会写这些字了，您看！	Wǒ huì xiě zhèxiē zì le, nín kàn!		-	D2-5	src	我|会|写|这些|字|了|，|您|看|！	2,5,陈天中
+S	明年女儿上中学。	Míngnián nǚ'ér shàng zhōngxué.		-	D3-1	src	明年|女儿|上|中学|。	3,1,刘明
+S	对。儿子也上小学了。	Duì. Érzi yě shàng xiǎoxué le.		-	D3-2	src	对|。|儿子|也|上|小学|了|。	3,2,王一雪
+S	我们家有了一个中学生。	Wǒmen jiā yǒule yí gè zhōngxuéshēng.		-	D3-3	src	我们|家|有了|一个|中学生|。	3,3,刘明
+S	还有了一个小学生。	Hái yǒule yí gè xiǎoxuéshēng.		-	D3-4	src	还|有了|一个|小学生|。	3,4,王一雪
+S	上学后，他们都忙了。	Shàngxué hòu, tāmen dōu máng le.		-	D3-5	src	上学|后|，|他们|都|忙|了|。	3,5,刘明
+S	是的。太晚了，睡觉吧。	Shì de. Tài wǎn le, shuìjiào ba.		-	D3-6	src	是|的|。|太|晚|了|，|睡觉|吧|。	3,6,王一雪

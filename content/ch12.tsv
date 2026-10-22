@@ -1,0 +1,111 @@
+V	天气	tiānqì	weather	n.	7	W12-2-1
+V	这里	zhèlǐ	here	pron.	7	W12-2-2
+V	天	tiān	weather	n.	7	W12-2-3
+V	下雨	xià yǔ	rain		7	W12-2-4
+V	了	le	used at the end of a sentence to indicate a change of situation or state	part.	7	W12-2-5
+V	雨	yǔ	rain	n.	8	W12-2-6
+V	有点儿	yǒudiǎnr	rather; a bit	adv.	8	W12-2-7
+V	觉得	juéde	feel	v.	8	W12-2-8
+V	冷	lěng	cold	adj.	8	W12-2-9
+V	下	xià	(of rain, snow, etc) come down; fall	v.	29	W12-4-1
+V	雪	xuě	snow	n.	29	W12-4-2
+V	来	lái	come	v.	29	W12-4-3
+V	公司	gōngsī	company	n.	29	W12-4-4
+V	生病	shēngbìng	fall ill	v.	29	W12-4-5
+V	看病	kànbìng	(of a patient) see a doctor	v.	29	W12-4-6
+V	病	bìng	fall ill	v.	44	W12-6-1
+V	一点儿	yìdiǎnr	some	num.-m.	44	W12-6-2
+V	药	yào	medicine	n.	44	W12-6-3
+V	天	tiān	day	m.	44	W12-6-4
+V	回	huí	return; go back	v.	44	W12-6-5
+V	再	zài	then; only then	adv.	45	W12-6-6
+V	喝	hē	drink	v.	45	W12-6-7
+V	热	rè	hot; warm	adj.	45	W12-6-8
+V	水	shuǐ	water	n.	45	W12-6-9
+S	昨天下雪了	Zuótiān xià xuě le	It snowed yesterday	2	S-title	source	昨天|下雪|了
+S	王一雪给王一飞打电话，询问王一飞那边的情况。	Wáng Yīxuě gěi Wáng Yīfēi dǎ diànhuà, xúnwèn Wáng Yīfēi nàbian de qíngkuàng.	Wang Yixue was calling Wang Yifei to ask about the situation on her end.	5	S-intro1	req	王一雪|给|王一飞|打电话|，|询问|王一飞|那边|的|情况|。
+S	在公司电梯里，王一雪和杨同乐在聊天儿。	Zài gōngsī diàntī lǐ, Wáng Yīxuě hé Yáng Tónglè zài liáotiānr.	In the company elevator, Wang Yixue and Yang Tongle were chatting.	27	S-intro2	req	在|公司|电梯|里|，|王一雪|和|杨同乐|在|聊天儿|。
+S	昨天在医院，医生给杨同乐看病。	Zuótiān zài yīyuàn, yīshēng gěi Yáng Tónglè kànbìng.	Yesterday at the hospital, the doctor examined Yang Tongle.	42	S-intro3	req	昨天|在|医院|，|医生|给|杨同乐|看病|。
+S	非主谓句是由词或短语构成、不分主语和谓语的句子，口语中常用。	Fēi zhǔwèi jù shì yóu cí huò duǎnyǔ gòuchéng, bù fēn zhǔyǔ hé wèiyǔ de jùzi, kǒuyǔ zhōng cháng yòng.	Non-subject-predicate sentences are composed of words or phrases without distinct subjects or predicates, and are commonly used in colloquial speech.	25	S-grammar1	req	非主谓句|是|由|词|或|短语|构成|、|不|分|主语|和|谓语|的|句子|，|口语|中|常用|。
+S	语气助词“了(1)”位于句子末尾或句中停顿的地方，表示有变化或出现新情况。否定回答时，用副词“没”，句子末尾不用“了”。	Yǔqì zhùcí “le (1)” wèiyú jùzi mòwěi huò jù zhōng tíngdùn de dìfang, biǎoshì yǒu biànhuà huò chūxiàn xīn qíngkuàng. Fǒudìng huídá shí, yòng fùcí “méi”, jùzi mòwěi bú yòng “le”.	The modal particle “了(1)” is placed at the end of a sentence or at a pause within a sentence to indicate a change or a new situation. For negative responses, the adverb “没” is used. And “了” is omitted at the end of the sentence.	26	S-grammar2	req	语气|助词|“了(1)”|位于|句子|末尾|或|句|中|停顿|的|地方|，|表示|有|变化|或|出现|新|情况|。|否定|回答|时|，|用|副词|“没”|，|句子|末尾|不|用|“了”|。
+S	“太……了”用于感叹程度很高或很深。	“Tài……le” yòng yú gǎntàn chéngdù hěn gāo huò hěn shēn.	The “太……了” pattern expresses a very high or intense degree of exclamation.	41	S-grammar3	req	“太……了”|用于|感叹|程度|很|高|或|很|深|。
+S	今天天气不太好。	Jīntiān tiānqì bú tài hǎo.		9	EX-天气-B	req	今天|天气|不|太|好|。
+S	今天是个好天气。	Jīntiān shì gè hǎo tiānqì.		9	EX-天气-1	req	今天|是|个|好|天气|。
+S	今天的天不好。	Jīntiān de tiān bù hǎo.		10	EX-天-1	req	今天|的|天|不|好|。
+S	明天是好天吗？	Míngtiān shì hǎo tiān ma?		10	EX-天-2	req	明天|是|好|天|吗|？
+S	下雨了，太冷了。	Xià yǔ le, tài lěng le.		11	EX-下雨-1	req	下雨|了|，|太|冷|了|。
+S	这里很少下雨。	Zhèlǐ hěn shǎo xià yǔ.		11	EX-下雨-2	req	这里|很|少|下|雨|。
+S	外面下大雨呢。	Wàimian xià dà yǔ ne.		12	EX-雨-1	req	外面|下|大雨|呢|。
+S	雨天你坐出租车去上班吧。	Yǔtiān nǐ zuò chūzūchē qù shàngbān ba.		12	EX-雨-2	req	雨天|你|坐|出租车|去|上班|吧|。
+S	你觉得我做的菜怎么样？	Nǐ juède wǒ zuò de cài zěnmeyàng?		13	EX-觉得-1	req	你|觉得|我|做|的|菜|怎么样|？
+S	他觉得这儿的茶不好喝。	Tā juède zhèr de chá bù hǎohē.		13	EX-觉得-2	req	他|觉得|这儿|的|茶|不|好喝|。
+S	今天的天有点儿不好。	Jīntiān de tiān yǒudiǎnr bù hǎo.		14	EX-有点儿-1	req	今天|的|天|有点儿|不|好|。
+S	我有点儿冷。	Wǒ yǒudiǎnr lěng.		14	EX-有点儿-2	req	我|有点儿|冷|。
+S	今天太冷了！	Jīntiān tài lěng le!		15	EX-冷-1	req	今天|太|冷|了|！
+S	昨天下雪了，非常冷。	Zuótiān xià xuě le, fēicháng lěng.		15	EX-冷-2	req	昨天|下雪|了|，|非常|冷|。
+S	我们可以在这里买些水果。	Wǒmen kěyǐ zài zhèlǐ mǎi xiē shuǐguǒ.		16	EX-这里-1	req	我们|可以|在|这里|买|些|水果|。
+S	你喜欢这里吗？	Nǐ xǐhuan zhèlǐ ma?		16	EX-这里-2	req	你|喜欢|这里|吗|？
+S	她去上海了。	Tā qù Shànghǎi le.		17	EX-了-1	req	她|去|上海|了|。
+S	我生病了，不能去北京了。	Wǒ shēng bìng le, bù néng qù Běijīng le.		17	EX-了-2	req	我|生病|了|，|不能|去|北京|了|。
+S	哥哥是大学生了，妹妹还是小学生。	Gēge shì dàxuéshēng le, mèimei háishì xiǎoxuéshēng.		17	EX-了-3	req	哥哥|是|大学生|了|，|妹妹|还是|小学生|。
+S	昨天下雨了。	Zuótiān xià yǔ le.		30	EX-下-1	req	昨天|下雨|了|。
+S	明天下雪，你多穿点儿。	Míngtiān xià xuě, nǐ duō chuān diǎnr.		30	EX-下-2	req	明天|下雪|，|你|多|穿|点儿|。
+S	我喜欢下雪天。	Wǒ xǐhuan xià xuě tiān.		31	EX-雪-1	req	我|喜欢|下|雪|天|。
+S	下大雪了，弟弟很高兴。	Xià dà xuě le, dìdi hěn gāoxìng.		31	EX-雪-2	req	下|大雪|了|，|弟弟|很|高兴|。
+S	他来中国一年了。	Tā lái Zhōngguó yì nián le.		32	EX-来-1	req	他|来|中国|一年|了|。
+S	我朋友晚上来我家吃饭。	Wǒ péngyou wǎnshang lái wǒ jiā chī fàn.		32	EX-来-2	req	我|朋友|晚上|来|我|家|吃饭|。
+S	我们公司不大。	Wǒmen gōngsī bú dà.		33	EX-公司-1	req	我们|公司|不|大|。
+S	我在这家公司工作五年了。	Wǒ zài zhè jiā gōngsī gōngzuò wǔ nián le.		33	EX-公司-2	req	我|在|这|家|公司|工作|五年|了|。
+S	我生病了，不能和你去看电影了。	Wǒ shēng bìng le, bù néng hé nǐ qù kàn diànyǐng le.		34	EX-生病-1	req	我|生病|了|，|不能|和|你|去|看|电影|了|。
+S	你昨天没来学校，生病了吗？	Nǐ zuótiān méi lái xuéxiào, shēng bìng le ma?		34	EX-生病-2	req	你|昨天|没|来|学校|，|生病|了|吗|？
+S	我下午去医院看病。	Wǒ xiàwǔ qù yīyuàn kànbìng.		35	EX-看病-1	req	我|下午|去|医院|看病|。
+S	妈妈生病了，现在要去看病。	Māma shēng bìng le, xiànzài yào qù kànbìng.		35	EX-看病-2	req	妈妈|生病|了|，|现在|要|去|看病|。
+S	你病了吗？	Nǐ bìng le ma?		46	EX-病-1	req	你|病|了|吗|？
+S	他今天病了，不能去上学了。	Tā jīntiān bìng le, bù néng qù shàngxué le.		46	EX-病-2	req	他|今天|病|了|，|不能|去|上学|了|。
+S	弟弟病了，我去买点儿药。	Dìdi bìng le, wǒ qù mǎi diǎnr yào.		47	EX-药-1	req	弟弟|病|了|，|我|去|买|点儿|药|。
+S	医生说这个药要吃两个星期。	Yīshēng shuō zhège yào yào chī liǎng gè xīngqī.		47	EX-药-2	req	医生|说|这个|药|要|吃|两个|星期|。
+S	你吃一点儿水果吧。	Nǐ chī yìdiǎnr shuǐguǒ ba.		48	EX-一点儿-1a	req	你|吃|一点儿|水果|吧|。
+S	你吃点儿水果吧。	Nǐ chī diǎnr shuǐguǒ ba.		48	EX-一点儿-1b	req	你|吃|点儿|水果|吧|。
+S	太贵了，便宜一点儿吧。	Tài guì le, piányi yìdiǎnr ba.		48	EX-一点儿-2a	req	太|贵|了|，|便宜|一点儿|吧|。
+S	太贵了，便宜点儿吧。	Tài guì le, piányi diǎnr ba.		48	EX-一点儿-2b	req	太|贵|了|，|便宜|点儿|吧|。
+S	明天我要去北京。	Míngtiān wǒ yào qù Běijīng.		49	EX-天-3A	req	明天|我|要|去|北京|。
+S	去几天？	Qù jǐ tiān?		49	EX-天-3B	req	去|几|天|？
+S	今天是我上大学的第一天。	Jīntiān shì wǒ shàng dàxué de dì yī tiān.		49	EX-天-3	req	今天|是|我|上|大学|的|第一|天|。
+S	他晚上不回学校了。	Tā wǎnshang bù huí xuéxiào le.		50	EX-回-1	req	他|晚上|不|回|学校|了|。
+S	他今年八月回国。	Tā jīnnián bā yuè huí guó.		50	EX-回-2	req	他|今年|八月|回国|。
+S	你们吃了饭再回家吧。	Nǐmen chī le fàn zài huí jiā ba.		51	EX-再-1	req	你们|吃|了|饭|再|回家|吧|。
+S	你打电话问一下再去吧。	Nǐ dǎ diànhuà wèn yíxià zài qù ba.		51	EX-再-2	req	你|打电话|问|一下|再|去|吧|。
+S	她喜欢喝中国茶。	Tā xǐhuan hē Zhōngguó chá.		52	EX-喝-1	req	她|喜欢|喝|中国|茶|。
+S	天气太热了，多喝点儿水吧。	Tiānqì tài rè le, duō hē diǎnr shuǐ ba.		52	EX-喝-2	req	天气|太|热|了|，|多|喝|点儿|水|吧|。
+S	今天天气不太热。	Jīntiān tiānqì bú tài rè.		53	EX-热-1	req	今天|天气|不|太|热|。
+S	昨天很热。	Zuótiān hěn rè.		53	EX-热-2	req	昨天|很|热|。
+S	请问，有热水吗？	Qǐngwèn, yǒu rè shuǐ ma?		54	EX-水-1	req	请问|，|有|热水|吗|？
+S	正在喝水的那个人是谁？	Zhèngzài hē shuǐ de nàge rén shì shéi?		54	EX-水-2	req	正在|喝|水|的|那个|人|是|谁|？
+S	下雨了。	Xià yǔ le.		25	S-read1-1	req	下雨|了|。
+S	下雪了。	Xià xuě le.		25	S-read1-2	req	下雪|了|。
+S	上课了。	Shàngkè le.		25	S-read1-3	req	上课|了|。
+S	真漂亮！	Zhēn piàoliang!		25	S-read1-4	req	真|漂亮|！
+S	对不起！	Duìbuqǐ!		25	S-read1-5	req	对不起|！
+S	没关系！	Méi guānxi!		25	S-read1-6	req	没关系|！
+S	十二点了，吃午饭吧。	Shí'èr diǎn le, chī wǔfàn ba.		26	S-read2-2	req	十二|点|了|，|吃|午饭|吧|。
+S	弟弟起床了吗？	Dìdi qǐchuáng le ma?		26	S-read2-3A	req	弟弟|起床|了|吗|？
+S	没起床呢。	Méi qǐchuáng ne.		26	S-read2-3B	req	没|起床|呢|。
+S	太冷了！	Tài lěng le!		41	S-read3-1	req	太|冷|了|！
+S	这个杯子太小了。	Zhège bēizi tài xiǎo le.		41	S-read3-2	req	这个|杯子|太|小|了|。
+S	我们今天太高兴了！	Wǒmen jīntiān tài gāoxìng le!		41	S-read3-3	req	我们|今天|太|高兴|了|！
+S	太好吃了！	Tài hǎochī le!		41	S-read3-4	req	太|好吃|了|！
+S	今天天气怎么样？	Jīntiān tiānqì zěnmeyàng?		9	D1-1	src	今天|天气|怎么样|？	1,1,王一雪
+S	这里的天不太好，下雨了。	Zhèlǐ de tiān bù tài hǎo, xià yǔ le.		-	D1-2	src	这里|的|天|不|太|好|，|下雨|了|。	1,2,王一飞
+S	雨大吗？	Yǔ dà ma?		-	D1-3	src	雨|大|吗|？	1,3,王一雪
+S	有点儿大，我觉得很冷。	Yǒudiǎnr dà, wǒ juède hěn lěng.		-	D1-4	src	有点儿|大|，|我|觉得|很|冷|。	1,4,王一飞
+S	昨天下雪了。	Zuótiān xià xuě le.		25	S-read1-2b	src	昨天|下雪|了|。	2,1,王一雪
+S	是的，太冷了。	Shì de, tài lěng le.		-	D2-2	src	是|的|，|太|冷|了|。	2,2,杨同乐
+S	你昨天没来公司，生病了？	Nǐ zuótiān méi lái gōngsī, shēng bìng le?		-	D2-3	src	你|昨天|没|来|公司|，|生病|了|？	2,3,王一雪
+S	对，我昨天去医院看病了。	Duì, wǒ zuótiān qù yīyuàn kànbìng le.		-	D2-4	src	对|，|我|昨天|去|医院|看病|了|。	2,4,杨同乐
+S	医生，我病了。	Yīshēng, wǒ bìng le.		-	D3-1	src	医生|，|我|病|了|。	3,1,杨同乐
+S	我看看。	Wǒ kànkan.		-	D3-2a	src	我|看看|。	3,2,胡医生
+S	你觉得怎么样？	Nǐ juède zěnmeyàng?		-	D3-2b	src	你|觉得|怎么样|？	3,2,胡医生
+S	我很冷。	Wǒ hěn lěng.		-	D3-3	src	我|很|冷|。	3,3,杨同乐
+S	好的，吃一点儿药，今天休息半天吧。	Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàn tiān ba.		-	D3-4	src	好|的|，|吃|一点儿|药|，|今天|休息|半天|吧|。	3,4,胡医生
+S	好的。	Hǎo de.		-	D3-5	src	好|的|。	3,5,杨同乐
+S	回家后再喝些热水。	Huí jiā hòu zài hē xiē rè shuǐ.		-	D3-6	src	回家|后|再|喝|些|热水|。	3,6,胡医生

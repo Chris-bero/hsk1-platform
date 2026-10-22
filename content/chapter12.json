@@ -1,0 +1,1707 @@
+{
+  "bundleCode": "ch12-fltrp-lesson12",
+  "rev": 8,
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第12课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P87/P89/P91 (课文1–3 dialogues)",
+    "extractedPages": "1–65 (full)",
+    "notes": "Vocab from 生词 tables 12-2/12-4/12-6. NOTE: 天 appears twice in source with distinct senses (n. weather 12-2 / m. day 12-6); both kept as separate source items; C→E and listening questions for these two are auto-flagged 'review' (ambiguous prompt) and excluded from practice/exams until instructor decision; E→C unaffected; matching/triple skip duplicate-hanzi words at runtime. Example sentences from vocab cards (no English in source); p48 equality pairs kept as four separate source sentences. Dialogue lines + pinyin from screenshots; multi-sentence lines split (我看看。你觉得怎么样？). Skipped: p4 warm-up items, p6/p28/p43 listening stems, p32 chip 小王，你来一下 (garbled extraction), extension chips. Sentence pinyin absent from source completed per instructor request (2026-10-21), tagged instructor-requested."
+  },
+  "payload": {
+    "chapter": {
+      "num": 12,
+      "title": "昨天下雪了 It snowed yesterday",
+      "sourceFile": "《新HSK教程1》第12课.pdf",
+      "representative": {
+        "hanzi": "昨天下雪了",
+        "pinyin": "Zuótiān xià xuě le",
+        "english": "It snowed yesterday"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "天气",
+        "pinyin": "tiānqì",
+        "english": "weather",
+        "pos": "n.",
+        "sourcePage": 7,
+        "sourceItemId": "W12-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "这里",
+        "pinyin": "zhèlǐ",
+        "english": "here",
+        "pos": "pron.",
+        "sourcePage": 7,
+        "sourceItemId": "W12-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "english": "weather",
+        "pos": "n.",
+        "sourcePage": 7,
+        "sourceItemId": "W12-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "下雨",
+        "pinyin": "xià yǔ",
+        "english": "rain",
+        "pos": "",
+        "sourcePage": 7,
+        "sourceItemId": "W12-2-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "english": "used at the end of a sentence to indicate a change of situation or state",
+        "pos": "part.",
+        "sourcePage": 7,
+        "sourceItemId": "W12-2-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "雨",
+        "pinyin": "yǔ",
+        "english": "rain",
+        "pos": "n.",
+        "sourcePage": 8,
+        "sourceItemId": "W12-2-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "有点儿",
+        "pinyin": "yǒudiǎnr",
+        "english": "rather; a bit",
+        "pos": "adv.",
+        "sourcePage": 8,
+        "sourceItemId": "W12-2-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "觉得",
+        "pinyin": "juéde",
+        "english": "feel",
+        "pos": "v.",
+        "sourcePage": 8,
+        "sourceItemId": "W12-2-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "冷",
+        "pinyin": "lěng",
+        "english": "cold",
+        "pos": "adj.",
+        "sourcePage": 8,
+        "sourceItemId": "W12-2-9",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "下",
+        "pinyin": "xià",
+        "english": "(of rain, snow, etc) come down; fall",
+        "pos": "v.",
+        "sourcePage": 29,
+        "sourceItemId": "W12-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "雪",
+        "pinyin": "xuě",
+        "english": "snow",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W12-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "english": "come",
+        "pos": "v.",
+        "sourcePage": 29,
+        "sourceItemId": "W12-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "公司",
+        "pinyin": "gōngsī",
+        "english": "company",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W12-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "生病",
+        "pinyin": "shēngbìng",
+        "english": "fall ill",
+        "pos": "v.",
+        "sourcePage": 29,
+        "sourceItemId": "W12-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "看病",
+        "pinyin": "kànbìng",
+        "english": "(of a patient) see a doctor",
+        "pos": "v.",
+        "sourcePage": 29,
+        "sourceItemId": "W12-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "病",
+        "pinyin": "bìng",
+        "english": "fall ill",
+        "pos": "v.",
+        "sourcePage": 44,
+        "sourceItemId": "W12-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "一点儿",
+        "pinyin": "yìdiǎnr",
+        "english": "some",
+        "pos": "num.-m.",
+        "sourcePage": 44,
+        "sourceItemId": "W12-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "药",
+        "pinyin": "yào",
+        "english": "medicine",
+        "pos": "n.",
+        "sourcePage": 44,
+        "sourceItemId": "W12-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "english": "day",
+        "pos": "m.",
+        "sourcePage": 44,
+        "sourceItemId": "W12-6-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "回",
+        "pinyin": "huí",
+        "english": "return; go back",
+        "pos": "v.",
+        "sourcePage": 44,
+        "sourceItemId": "W12-6-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "再",
+        "pinyin": "zài",
+        "english": "then; only then",
+        "pos": "adv.",
+        "sourcePage": 45,
+        "sourceItemId": "W12-6-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "喝",
+        "pinyin": "hē",
+        "english": "drink",
+        "pos": "v.",
+        "sourcePage": 45,
+        "sourceItemId": "W12-6-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "热",
+        "pinyin": "rè",
+        "english": "hot; warm",
+        "pos": "adj.",
+        "sourcePage": 45,
+        "sourceItemId": "W12-6-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "水",
+        "pinyin": "shuǐ",
+        "english": "water",
+        "pos": "n.",
+        "sourcePage": 45,
+        "sourceItemId": "W12-6-9",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "昨天下雪了",
+        "pinyin": "Zuótiān xià xuě le",
+        "segments": [
+          "昨天",
+          "下雪",
+          "了"
+        ],
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source",
+        "english": "It snowed yesterday",
+        "sourcePage": 2
+      },
+      {
+        "hanzi": "王一雪给王一飞打电话，询问王一飞那边的情况。",
+        "pinyin": "Wáng Yīxuě gěi Wáng Yīfēi dǎ diànhuà, xúnwèn Wáng Yīfēi nàbian de qíngkuàng.",
+        "segments": [
+          "王一雪",
+          "给",
+          "王一飞",
+          "打电话",
+          "，",
+          "询问",
+          "王一飞",
+          "那边",
+          "的",
+          "情况",
+          "。"
+        ],
+        "sourceItemId": "S-intro1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "Wang Yixue was calling Wang Yifei to ask about the situation on her end.",
+        "sourcePage": 5
+      },
+      {
+        "hanzi": "在公司电梯里，王一雪和杨同乐在聊天儿。",
+        "pinyin": "Zài gōngsī diàntī lǐ, Wáng Yīxuě hé Yáng Tónglè zài liáotiānr.",
+        "segments": [
+          "在",
+          "公司",
+          "电梯",
+          "里",
+          "，",
+          "王一雪",
+          "和",
+          "杨同乐",
+          "在",
+          "聊天儿",
+          "。"
+        ],
+        "sourceItemId": "S-intro2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "In the company elevator, Wang Yixue and Yang Tongle were chatting.",
+        "sourcePage": 27
+      },
+      {
+        "hanzi": "昨天在医院，医生给杨同乐看病。",
+        "pinyin": "Zuótiān zài yīyuàn, yīshēng gěi Yáng Tónglè kànbìng.",
+        "segments": [
+          "昨天",
+          "在",
+          "医院",
+          "，",
+          "医生",
+          "给",
+          "杨同乐",
+          "看病",
+          "。"
+        ],
+        "sourceItemId": "S-intro3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "Yesterday at the hospital, the doctor examined Yang Tongle.",
+        "sourcePage": 42
+      },
+      {
+        "hanzi": "非主谓句是由词或短语构成、不分主语和谓语的句子，口语中常用。",
+        "pinyin": "Fēi zhǔwèi jù shì yóu cí huò duǎnyǔ gòuchéng, bù fēn zhǔyǔ hé wèiyǔ de jùzi, kǒuyǔ zhōng cháng yòng.",
+        "segments": [
+          "非主谓句",
+          "是",
+          "由",
+          "词",
+          "或",
+          "短语",
+          "构成",
+          "、",
+          "不",
+          "分",
+          "主语",
+          "和",
+          "谓语",
+          "的",
+          "句子",
+          "，",
+          "口语",
+          "中",
+          "常用",
+          "。"
+        ],
+        "sourceItemId": "S-grammar1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "Non-subject-predicate sentences are composed of words or phrases without distinct subjects or predicates, and are commonly used in colloquial speech.",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "语气助词“了(1)”位于句子末尾或句中停顿的地方，表示有变化或出现新情况。否定回答时，用副词“没”，句子末尾不用“了”。",
+        "pinyin": "Yǔqì zhùcí “le (1)” wèiyú jùzi mòwěi huò jù zhōng tíngdùn de dìfang, biǎoshì yǒu biànhuà huò chūxiàn xīn qíngkuàng. Fǒudìng huídá shí, yòng fùcí “méi”, jùzi mòwěi bú yòng “le”.",
+        "segments": [
+          "语气",
+          "助词",
+          "“了(1)”",
+          "位于",
+          "句子",
+          "末尾",
+          "或",
+          "句",
+          "中",
+          "停顿",
+          "的",
+          "地方",
+          "，",
+          "表示",
+          "有",
+          "变化",
+          "或",
+          "出现",
+          "新",
+          "情况",
+          "。",
+          "否定",
+          "回答",
+          "时",
+          "，",
+          "用",
+          "副词",
+          "“没”",
+          "，",
+          "句子",
+          "末尾",
+          "不",
+          "用",
+          "“了”",
+          "。"
+        ],
+        "sourceItemId": "S-grammar2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "The modal particle “了(1)” is placed at the end of a sentence or at a pause within a sentence to indicate a change or a new situation. For negative responses, the adverb “没” is used. And “了” is omitted at the end of the sentence.",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "“太……了”用于感叹程度很高或很深。",
+        "pinyin": "“Tài……le” yòng yú gǎntàn chéngdù hěn gāo huò hěn shēn.",
+        "segments": [
+          "“太……了”",
+          "用于",
+          "感叹",
+          "程度",
+          "很",
+          "高",
+          "或",
+          "很",
+          "深",
+          "。"
+        ],
+        "sourceItemId": "S-grammar3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "The “太……了” pattern expresses a very high or intense degree of exclamation.",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "今天天气不太好。",
+        "pinyin": "Jīntiān tiānqì bú tài hǎo.",
+        "segments": [
+          "今天",
+          "天气",
+          "不",
+          "太",
+          "好",
+          "。"
+        ],
+        "sourceItemId": "EX-天气-B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "今天是个好天气。",
+        "pinyin": "Jīntiān shì gè hǎo tiānqì.",
+        "segments": [
+          "今天",
+          "是",
+          "个",
+          "好",
+          "天气",
+          "。"
+        ],
+        "sourceItemId": "EX-天气-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "今天的天不好。",
+        "pinyin": "Jīntiān de tiān bù hǎo.",
+        "segments": [
+          "今天",
+          "的",
+          "天",
+          "不",
+          "好",
+          "。"
+        ],
+        "sourceItemId": "EX-天-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "明天是好天吗？",
+        "pinyin": "Míngtiān shì hǎo tiān ma?",
+        "segments": [
+          "明天",
+          "是",
+          "好",
+          "天",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-天-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "下雨了，太冷了。",
+        "pinyin": "Xià yǔ le, tài lěng le.",
+        "segments": [
+          "下雨",
+          "了",
+          "，",
+          "太",
+          "冷",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-下雨-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 11
+      },
+      {
+        "hanzi": "这里很少下雨。",
+        "pinyin": "Zhèlǐ hěn shǎo xià yǔ.",
+        "segments": [
+          "这里",
+          "很",
+          "少",
+          "下",
+          "雨",
+          "。"
+        ],
+        "sourceItemId": "EX-下雨-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 11
+      },
+      {
+        "hanzi": "外面下大雨呢。",
+        "pinyin": "Wàimian xià dà yǔ ne.",
+        "segments": [
+          "外面",
+          "下",
+          "大雨",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "EX-雨-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 12
+      },
+      {
+        "hanzi": "雨天你坐出租车去上班吧。",
+        "pinyin": "Yǔtiān nǐ zuò chūzūchē qù shàngbān ba.",
+        "segments": [
+          "雨天",
+          "你",
+          "坐",
+          "出租车",
+          "去",
+          "上班",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-雨-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 12
+      },
+      {
+        "hanzi": "你觉得我做的菜怎么样？",
+        "pinyin": "Nǐ juède wǒ zuò de cài zěnmeyàng?",
+        "segments": [
+          "你",
+          "觉得",
+          "我",
+          "做",
+          "的",
+          "菜",
+          "怎么样",
+          "？"
+        ],
+        "sourceItemId": "EX-觉得-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "他觉得这儿的茶不好喝。",
+        "pinyin": "Tā juède zhèr de chá bù hǎohē.",
+        "segments": [
+          "他",
+          "觉得",
+          "这儿",
+          "的",
+          "茶",
+          "不",
+          "好喝",
+          "。"
+        ],
+        "sourceItemId": "EX-觉得-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "今天的天有点儿不好。",
+        "pinyin": "Jīntiān de tiān yǒudiǎnr bù hǎo.",
+        "segments": [
+          "今天",
+          "的",
+          "天",
+          "有点儿",
+          "不",
+          "好",
+          "。"
+        ],
+        "sourceItemId": "EX-有点儿-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 14
+      },
+      {
+        "hanzi": "我有点儿冷。",
+        "pinyin": "Wǒ yǒudiǎnr lěng.",
+        "segments": [
+          "我",
+          "有点儿",
+          "冷",
+          "。"
+        ],
+        "sourceItemId": "EX-有点儿-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 14
+      },
+      {
+        "hanzi": "今天太冷了！",
+        "pinyin": "Jīntiān tài lěng le!",
+        "segments": [
+          "今天",
+          "太",
+          "冷",
+          "了",
+          "！"
+        ],
+        "sourceItemId": "EX-冷-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 15
+      },
+      {
+        "hanzi": "昨天下雪了，非常冷。",
+        "pinyin": "Zuótiān xià xuě le, fēicháng lěng.",
+        "segments": [
+          "昨天",
+          "下雪",
+          "了",
+          "，",
+          "非常",
+          "冷",
+          "。"
+        ],
+        "sourceItemId": "EX-冷-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 15
+      },
+      {
+        "hanzi": "我们可以在这里买些水果。",
+        "pinyin": "Wǒmen kěyǐ zài zhèlǐ mǎi xiē shuǐguǒ.",
+        "segments": [
+          "我们",
+          "可以",
+          "在",
+          "这里",
+          "买",
+          "些",
+          "水果",
+          "。"
+        ],
+        "sourceItemId": "EX-这里-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 16
+      },
+      {
+        "hanzi": "你喜欢这里吗？",
+        "pinyin": "Nǐ xǐhuan zhèlǐ ma?",
+        "segments": [
+          "你",
+          "喜欢",
+          "这里",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-这里-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 16
+      },
+      {
+        "hanzi": "她去上海了。",
+        "pinyin": "Tā qù Shànghǎi le.",
+        "segments": [
+          "她",
+          "去",
+          "上海",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-了-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "我生病了，不能去北京了。",
+        "pinyin": "Wǒ shēng bìng le, bù néng qù Běijīng le.",
+        "segments": [
+          "我",
+          "生病",
+          "了",
+          "，",
+          "不能",
+          "去",
+          "北京",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-了-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "哥哥是大学生了，妹妹还是小学生。",
+        "pinyin": "Gēge shì dàxuéshēng le, mèimei háishì xiǎoxuéshēng.",
+        "segments": [
+          "哥哥",
+          "是",
+          "大学生",
+          "了",
+          "，",
+          "妹妹",
+          "还是",
+          "小学生",
+          "。"
+        ],
+        "sourceItemId": "EX-了-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "昨天下雨了。",
+        "pinyin": "Zuótiān xià yǔ le.",
+        "segments": [
+          "昨天",
+          "下雨",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-下-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 30
+      },
+      {
+        "hanzi": "明天下雪，你多穿点儿。",
+        "pinyin": "Míngtiān xià xuě, nǐ duō chuān diǎnr.",
+        "segments": [
+          "明天",
+          "下雪",
+          "，",
+          "你",
+          "多",
+          "穿",
+          "点儿",
+          "。"
+        ],
+        "sourceItemId": "EX-下-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 30
+      },
+      {
+        "hanzi": "我喜欢下雪天。",
+        "pinyin": "Wǒ xǐhuan xià xuě tiān.",
+        "segments": [
+          "我",
+          "喜欢",
+          "下",
+          "雪",
+          "天",
+          "。"
+        ],
+        "sourceItemId": "EX-雪-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 31
+      },
+      {
+        "hanzi": "下大雪了，弟弟很高兴。",
+        "pinyin": "Xià dà xuě le, dìdi hěn gāoxìng.",
+        "segments": [
+          "下",
+          "大雪",
+          "了",
+          "，",
+          "弟弟",
+          "很",
+          "高兴",
+          "。"
+        ],
+        "sourceItemId": "EX-雪-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 31
+      },
+      {
+        "hanzi": "他来中国一年了。",
+        "pinyin": "Tā lái Zhōngguó yì nián le.",
+        "segments": [
+          "他",
+          "来",
+          "中国",
+          "一年",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-来-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "我朋友晚上来我家吃饭。",
+        "pinyin": "Wǒ péngyou wǎnshang lái wǒ jiā chī fàn.",
+        "segments": [
+          "我",
+          "朋友",
+          "晚上",
+          "来",
+          "我",
+          "家",
+          "吃饭",
+          "。"
+        ],
+        "sourceItemId": "EX-来-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "我们公司不大。",
+        "pinyin": "Wǒmen gōngsī bú dà.",
+        "segments": [
+          "我们",
+          "公司",
+          "不",
+          "大",
+          "。"
+        ],
+        "sourceItemId": "EX-公司-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我在这家公司工作五年了。",
+        "pinyin": "Wǒ zài zhè jiā gōngsī gōngzuò wǔ nián le.",
+        "segments": [
+          "我",
+          "在",
+          "这",
+          "家",
+          "公司",
+          "工作",
+          "五年",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-公司-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我生病了，不能和你去看电影了。",
+        "pinyin": "Wǒ shēng bìng le, bù néng hé nǐ qù kàn diànyǐng le.",
+        "segments": [
+          "我",
+          "生病",
+          "了",
+          "，",
+          "不能",
+          "和",
+          "你",
+          "去",
+          "看",
+          "电影",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-生病-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "你昨天没来学校，生病了吗？",
+        "pinyin": "Nǐ zuótiān méi lái xuéxiào, shēng bìng le ma?",
+        "segments": [
+          "你",
+          "昨天",
+          "没",
+          "来",
+          "学校",
+          "，",
+          "生病",
+          "了",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-生病-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "我下午去医院看病。",
+        "pinyin": "Wǒ xiàwǔ qù yīyuàn kànbìng.",
+        "segments": [
+          "我",
+          "下午",
+          "去",
+          "医院",
+          "看病",
+          "。"
+        ],
+        "sourceItemId": "EX-看病-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "妈妈生病了，现在要去看病。",
+        "pinyin": "Māma shēng bìng le, xiànzài yào qù kànbìng.",
+        "segments": [
+          "妈妈",
+          "生病",
+          "了",
+          "，",
+          "现在",
+          "要",
+          "去",
+          "看病",
+          "。"
+        ],
+        "sourceItemId": "EX-看病-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "你病了吗？",
+        "pinyin": "Nǐ bìng le ma?",
+        "segments": [
+          "你",
+          "病",
+          "了",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-病-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 46
+      },
+      {
+        "hanzi": "他今天病了，不能去上学了。",
+        "pinyin": "Tā jīntiān bìng le, bù néng qù shàngxué le.",
+        "segments": [
+          "他",
+          "今天",
+          "病",
+          "了",
+          "，",
+          "不能",
+          "去",
+          "上学",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-病-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 46
+      },
+      {
+        "hanzi": "弟弟病了，我去买点儿药。",
+        "pinyin": "Dìdi bìng le, wǒ qù mǎi diǎnr yào.",
+        "segments": [
+          "弟弟",
+          "病",
+          "了",
+          "，",
+          "我",
+          "去",
+          "买",
+          "点儿",
+          "药",
+          "。"
+        ],
+        "sourceItemId": "EX-药-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 47
+      },
+      {
+        "hanzi": "医生说这个药要吃两个星期。",
+        "pinyin": "Yīshēng shuō zhège yào yào chī liǎng gè xīngqī.",
+        "segments": [
+          "医生",
+          "说",
+          "这个",
+          "药",
+          "要",
+          "吃",
+          "两个",
+          "星期",
+          "。"
+        ],
+        "sourceItemId": "EX-药-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 47
+      },
+      {
+        "hanzi": "你吃一点儿水果吧。",
+        "pinyin": "Nǐ chī yìdiǎnr shuǐguǒ ba.",
+        "segments": [
+          "你",
+          "吃",
+          "一点儿",
+          "水果",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-一点儿-1a",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "你吃点儿水果吧。",
+        "pinyin": "Nǐ chī diǎnr shuǐguǒ ba.",
+        "segments": [
+          "你",
+          "吃",
+          "点儿",
+          "水果",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-一点儿-1b",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "太贵了，便宜一点儿吧。",
+        "pinyin": "Tài guì le, piányi yìdiǎnr ba.",
+        "segments": [
+          "太",
+          "贵",
+          "了",
+          "，",
+          "便宜",
+          "一点儿",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-一点儿-2a",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "太贵了，便宜点儿吧。",
+        "pinyin": "Tài guì le, piányi diǎnr ba.",
+        "segments": [
+          "太",
+          "贵",
+          "了",
+          "，",
+          "便宜",
+          "点儿",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-一点儿-2b",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "明天我要去北京。",
+        "pinyin": "Míngtiān wǒ yào qù Běijīng.",
+        "segments": [
+          "明天",
+          "我",
+          "要",
+          "去",
+          "北京",
+          "。"
+        ],
+        "sourceItemId": "EX-天-3A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "去几天？",
+        "pinyin": "Qù jǐ tiān?",
+        "segments": [
+          "去",
+          "几",
+          "天",
+          "？"
+        ],
+        "sourceItemId": "EX-天-3B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "今天是我上大学的第一天。",
+        "pinyin": "Jīntiān shì wǒ shàng dàxué de dì yī tiān.",
+        "segments": [
+          "今天",
+          "是",
+          "我",
+          "上",
+          "大学",
+          "的",
+          "第一",
+          "天",
+          "。"
+        ],
+        "sourceItemId": "EX-天-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "他晚上不回学校了。",
+        "pinyin": "Tā wǎnshang bù huí xuéxiào le.",
+        "segments": [
+          "他",
+          "晚上",
+          "不",
+          "回",
+          "学校",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-回-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 50
+      },
+      {
+        "hanzi": "他今年八月回国。",
+        "pinyin": "Tā jīnnián bā yuè huí guó.",
+        "segments": [
+          "他",
+          "今年",
+          "八月",
+          "回国",
+          "。"
+        ],
+        "sourceItemId": "EX-回-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 50
+      },
+      {
+        "hanzi": "你们吃了饭再回家吧。",
+        "pinyin": "Nǐmen chī le fàn zài huí jiā ba.",
+        "segments": [
+          "你们",
+          "吃",
+          "了",
+          "饭",
+          "再",
+          "回家",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-再-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 51
+      },
+      {
+        "hanzi": "你打电话问一下再去吧。",
+        "pinyin": "Nǐ dǎ diànhuà wèn yíxià zài qù ba.",
+        "segments": [
+          "你",
+          "打电话",
+          "问",
+          "一下",
+          "再",
+          "去",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-再-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 51
+      },
+      {
+        "hanzi": "她喜欢喝中国茶。",
+        "pinyin": "Tā xǐhuan hē Zhōngguó chá.",
+        "segments": [
+          "她",
+          "喜欢",
+          "喝",
+          "中国",
+          "茶",
+          "。"
+        ],
+        "sourceItemId": "EX-喝-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 52
+      },
+      {
+        "hanzi": "天气太热了，多喝点儿水吧。",
+        "pinyin": "Tiānqì tài rè le, duō hē diǎnr shuǐ ba.",
+        "segments": [
+          "天气",
+          "太",
+          "热",
+          "了",
+          "，",
+          "多",
+          "喝",
+          "点儿",
+          "水",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-喝-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 52
+      },
+      {
+        "hanzi": "今天天气不太热。",
+        "pinyin": "Jīntiān tiānqì bú tài rè.",
+        "segments": [
+          "今天",
+          "天气",
+          "不",
+          "太",
+          "热",
+          "。"
+        ],
+        "sourceItemId": "EX-热-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 53
+      },
+      {
+        "hanzi": "昨天很热。",
+        "pinyin": "Zuótiān hěn rè.",
+        "segments": [
+          "昨天",
+          "很",
+          "热",
+          "。"
+        ],
+        "sourceItemId": "EX-热-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 53
+      },
+      {
+        "hanzi": "请问，有热水吗？",
+        "pinyin": "Qǐngwèn, yǒu rè shuǐ ma?",
+        "segments": [
+          "请问",
+          "，",
+          "有",
+          "热水",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-水-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 54
+      },
+      {
+        "hanzi": "正在喝水的那个人是谁？",
+        "pinyin": "Zhèngzài hē shuǐ de nàge rén shì shéi?",
+        "segments": [
+          "正在",
+          "喝",
+          "水",
+          "的",
+          "那个",
+          "人",
+          "是",
+          "谁",
+          "？"
+        ],
+        "sourceItemId": "EX-水-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 54
+      },
+      {
+        "hanzi": "下雨了。",
+        "pinyin": "Xià yǔ le.",
+        "segments": [
+          "下雨",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "S-read1-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "下雪了。",
+        "pinyin": "Xià xuě le.",
+        "segments": [
+          "下雪",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "S-read1-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "上课了。",
+        "pinyin": "Shàngkè le.",
+        "segments": [
+          "上课",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "S-read1-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "真漂亮！",
+        "pinyin": "Zhēn piàoliang!",
+        "segments": [
+          "真",
+          "漂亮",
+          "！"
+        ],
+        "sourceItemId": "S-read1-4",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "对不起！",
+        "pinyin": "Duìbuqǐ!",
+        "segments": [
+          "对不起",
+          "！"
+        ],
+        "sourceItemId": "S-read1-5",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "没关系！",
+        "pinyin": "Méi guānxi!",
+        "segments": [
+          "没关系",
+          "！"
+        ],
+        "sourceItemId": "S-read1-6",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "十二点了，吃午饭吧。",
+        "pinyin": "Shí'èr diǎn le, chī wǔfàn ba.",
+        "segments": [
+          "十二",
+          "点",
+          "了",
+          "，",
+          "吃",
+          "午饭",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "S-read2-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "弟弟起床了吗？",
+        "pinyin": "Dìdi qǐchuáng le ma?",
+        "segments": [
+          "弟弟",
+          "起床",
+          "了",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "S-read2-3A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "没起床呢。",
+        "pinyin": "Méi qǐchuáng ne.",
+        "segments": [
+          "没",
+          "起床",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "S-read2-3B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "太冷了！",
+        "pinyin": "Tài lěng le!",
+        "segments": [
+          "太",
+          "冷",
+          "了",
+          "！"
+        ],
+        "sourceItemId": "S-read3-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "这个杯子太小了。",
+        "pinyin": "Zhège bēizi tài xiǎo le.",
+        "segments": [
+          "这个",
+          "杯子",
+          "太",
+          "小",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "S-read3-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "我们今天太高兴了！",
+        "pinyin": "Wǒmen jīntiān tài gāoxìng le!",
+        "segments": [
+          "我们",
+          "今天",
+          "太",
+          "高兴",
+          "了",
+          "！"
+        ],
+        "sourceItemId": "S-read3-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "太好吃了！",
+        "pinyin": "Tài hǎochī le!",
+        "segments": [
+          "太",
+          "好吃",
+          "了",
+          "！"
+        ],
+        "sourceItemId": "S-read3-4",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "今天天气怎么样？",
+        "pinyin": "Jīntiān tiānqì zěnmeyàng?",
+        "segments": [
+          "今天",
+          "天气",
+          "怎么样",
+          "？"
+        ],
+        "sourceItemId": "D1-1",
+        "pinyinProvenance": "source",
+        "sourcePage": 9,
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "这里的天不太好，下雨了。",
+        "pinyin": "Zhèlǐ de tiān bù tài hǎo, xià yǔ le.",
+        "segments": [
+          "这里",
+          "的",
+          "天",
+          "不",
+          "太",
+          "好",
+          "，",
+          "下雨",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "D1-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "雨大吗？",
+        "pinyin": "Yǔ dà ma?",
+        "segments": [
+          "雨",
+          "大",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "D1-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "有点儿大，我觉得很冷。",
+        "pinyin": "Yǒudiǎnr dà, wǒ juède hěn lěng.",
+        "segments": [
+          "有点儿",
+          "大",
+          "，",
+          "我",
+          "觉得",
+          "很",
+          "冷",
+          "。"
+        ],
+        "sourceItemId": "D1-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "昨天下雪了。",
+        "pinyin": "Zuótiān xià xuě le.",
+        "segments": [
+          "昨天",
+          "下雪",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "S-read1-2b",
+        "pinyinProvenance": "source",
+        "sourcePage": 25,
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "是的，太冷了。",
+        "pinyin": "Shì de, tài lěng le.",
+        "segments": [
+          "是",
+          "的",
+          "，",
+          "太",
+          "冷",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "D2-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "你昨天没来公司，生病了？",
+        "pinyin": "Nǐ zuótiān méi lái gōngsī, shēng bìng le?",
+        "segments": [
+          "你",
+          "昨天",
+          "没",
+          "来",
+          "公司",
+          "，",
+          "生病",
+          "了",
+          "？"
+        ],
+        "sourceItemId": "D2-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "对，我昨天去医院看病了。",
+        "pinyin": "Duì, wǒ zuótiān qù yīyuàn kànbìng le.",
+        "segments": [
+          "对",
+          "，",
+          "我",
+          "昨天",
+          "去",
+          "医院",
+          "看病",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "D2-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "医生，我病了。",
+        "pinyin": "Yīshēng, wǒ bìng le.",
+        "segments": [
+          "医生",
+          "，",
+          "我",
+          "病",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "D3-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "我看看。",
+        "pinyin": "Wǒ kànkan.",
+        "segments": [
+          "我",
+          "看看",
+          "。"
+        ],
+        "sourceItemId": "D3-2a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "胡医生"
+        }
+      },
+      {
+        "hanzi": "你觉得怎么样？",
+        "pinyin": "Nǐ juède zěnmeyàng?",
+        "segments": [
+          "你",
+          "觉得",
+          "怎么样",
+          "？"
+        ],
+        "sourceItemId": "D3-2b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "胡医生"
+        }
+      },
+      {
+        "hanzi": "我很冷。",
+        "pinyin": "Wǒ hěn lěng.",
+        "segments": [
+          "我",
+          "很",
+          "冷",
+          "。"
+        ],
+        "sourceItemId": "D3-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "好的，吃一点儿药，今天休息半天吧。",
+        "pinyin": "Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàn tiān ba.",
+        "segments": [
+          "好",
+          "的",
+          "，",
+          "吃",
+          "一点儿",
+          "药",
+          "，",
+          "今天",
+          "休息",
+          "半天",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "D3-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "胡医生"
+        }
+      },
+      {
+        "hanzi": "好的。",
+        "pinyin": "Hǎo de.",
+        "segments": [
+          "好",
+          "的",
+          "。"
+        ],
+        "sourceItemId": "D3-5",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "回家后再喝些热水。",
+        "pinyin": "Huí jiā hòu zài hē xiē rè shuǐ.",
+        "segments": [
+          "回家",
+          "后",
+          "再",
+          "喝",
+          "些",
+          "热水",
+          "。"
+        ],
+        "sourceItemId": "D3-6",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 6,
+          "speaker": "胡医生"
+        }
+      }
+    ]
+  }
+}

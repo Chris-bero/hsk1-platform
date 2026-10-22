@@ -1,0 +1,107 @@
+V	时候	shíhou	(a point in) time	n.	6	W11-2-1
+V	饭店	fàndiàn	restaurant	n.	6	W11-2-2
+V	知道	zhīdào	know; realize	v.	6	W11-2-3
+V	正在	zhèngzài	in the process of	adv.	6	W11-2-4
+V	找	zhǎo	look for	v.	6	W11-2-5
+V	开车	kāichē	drive (a vehicle)	v.	6	W11-2-6
+V	车	chē	vehicle	n.	6	W11-2-7
+V	在	zài	used to indicate an action in progress	adv.	22	W11-4-1
+V	读	dú	attend school; study	v.	22	W11-4-2
+V	大学	dàxué	university; college	n.	22	W11-4-3
+V	大学生	dàxuéshēng	college/university student	n.	22	W11-4-4
+V	学	xué	study; learn	v.	22	W11-4-5
+V	医	yī	medicine	n.	22	W11-4-6
+V	弟弟	dìdi	younger brother	n.	38	W11-6-1
+V	起床	qǐchuáng	get up; get out of bed	v.	38	W11-6-2
+V	睡觉	shuìjiào	sleep	v.	38	W11-6-3
+V	睡	shuì	sleep	v.	38	W11-6-4
+V	那里	nàlǐ	there; that place	pron.	38	W11-6-5
+V	哪里	nǎlǐ	where	pron.	38	W11-6-6
+V	昨天	zuótiān	yesterday	n.	39	W11-6-7
+V	问	wèn	ask	v.	39	W11-6-8
+V	对	duì	to; towards	prep.	39	W11-6-9
+V	说	shuō	speak; talk; say	v.	39	W11-6-10
+V	要	yào	want; wish	mod.	39	W11-6-11
+V	小朋友	xiǎopéngyǒu	child; kid	n.	39	W11-6-12
+S	我读大学呢	Wǒ dú dàxué ne	I'm studying at university	2	S-title	source	我|读|大学|呢
+S	在路上，李文在找饭店，王一飞给他打电话。	Zài lù shang, Lǐ Wén zài zhǎo fàndiàn, Wáng Yīfēi gěi tā dǎ diànhuà.	On the road, while Li Wen was looking for the restaurant, Wang Yifei called him.	5	S-intro1	req	在|路上|，|李文|在|找|饭店|，|王一飞|给|他|打电话|。
+S	在饭店里，王一飞和李文见面后聊天儿。	Zài fàndiàn lǐ, Wáng Yīfēi hé Lǐ Wén jiànmiàn hòu liáotiānr.	After meeting at the restaurant, Wang Yifei and Li Wen were chatting.	20	S-intro2	req	在|饭店|里|，|王一飞|和|李文|见面|后|聊天儿|。
+S	星期六早上，刘明要去医院加班，出门前和女儿对话。	Xīngqīliù zǎoshang, Liú Míng yào qù yīyuàn jiābān, chūmén qián hé nǚ'ér duìhuà.	On Saturday morning, Liu Ming was going to the hospital to work overtime. Before leaving, he talked with his daughter.	36	S-intro3	req	星期六|早上|，|刘明|要|去|医院|加班|，|出门|前|和|女儿|对话|。
+S	时间副词“在/正在”位于动词前，表示动作正在进行或情况在继续。本课有两种形式:(1)在/正在+动词;(2)在/正在+动词+呢。此外，表达正在做的事情还有第三种形式:(3)动词+呢。否定回答时，使用副词“没(有)”。	Shíjiān fùcí “zài/zhèngzài” wèiyú dòngcí qián, biǎoshì dòngzuò zhèngzài jìnxíng huò qíngkuàng zài jìxù. Běn kè yǒu liǎng zhǒng xíngshì: (1) zài/zhèngzài+verb; (2) zài/zhèngzài+verb+ne. Cǐwài, biǎodá zhèngzài zuò de shìr hái yǒu dì sān zhǒng xíngshì: (3) verb+ne. Fǒudìng huídá shí, shǐyòng fùcí “méi (yǒu)”.	The temporal adverbs “在/在” are placed before a verb, expressing that an action is ongoing or a situation is continuing. This lesson introduces two forms: (1)在/正在+Verb; (2)在/正在+Verb+呢. Additionally, there is a third form to express an ongoing action: (3) Verb+呢. For negative responses, the adverb “没(有)” is used.	34	S-grammar1	req	时间|副词|“在/正在”|位于|动词|前|，|表示|动作|正在|进行|或|情况|在|继续|。|本课|有|两种|形式|:(1)|在/正在|+|动词|;(2)|在/正在|+|动词|+|呢|。|此外|，|表达|正在|做|的|事情|还|有|第三种|形式|:(3)|动词|+|呢|。|否定|回答|时|，|使用|副词|“没(有)”|。
+S	要+动词，表示想做、打算做。	Yào + dòngcí, biǎoshì xiǎng zuò, dǎsuàn zuò.	This structure indicates the desire or intention to do something.	61	S-grammar2	req	要|+|动词|，|表示|想|做|、|打算|做|。
+S	你什么时候回家？	Nǐ shénme shíhou huí jiā?		7	EX-时候-1	req	你|什么|时候|回家|？
+S	你什么时候下课？	Nǐ shénme shíhou xiàkè?		7	EX-时候-2	req	你|什么|时候|下课|？
+S	那家饭店的菜不好吃。	Nà jiā fàndiàn de cài bù hǎochī.		8	EX-饭店-1	req	那|家|饭店|的|菜|不|好吃|。
+S	学校外面有很多饭店。	Xuéxiào wàimian yǒu hěn duō fàndiàn.		8	EX-饭店-2	req	学校|外面|有|很多|饭店|。
+S	我不知道你的衣服在哪儿。	Wǒ bù zhīdào nǐ de yīfu zài nǎr.		9	EX-知道-1	req	我|不|知道|你|的|衣服|在|哪儿|。
+S	你知不知道我要去北京？	Nǐ zhī bu zhīdào wǒ yào qù Běijīng?		9	EX-知道-2	req	你|知|不|知道|我|要|去|北京|？
+S	弟弟正在睡觉呢。	Dìdi zhèngzài shuìjiào ne.		10	EX-正在-1	req	弟弟|正在|睡觉|呢|。
+S	我打电话的时候，她正在开车。	Wǒ dǎ diànhuà de shíhou, tā zhèngzài kāichē.		10	EX-正在-2	req	我|打电话|的|时候|，|她|正在|开车|。
+S	老师有事找你。	Lǎoshī yǒu shì zhǎo nǐ.		11	EX-找-1	req	老师|有|事|找|你|。
+S	你再找找，我昨天还看见它在房间里呢。	Nǐ zài zhǎozhao, wǒ zuótiān hái kànjiàn tā zài fángjiān lǐ ne.		11	EX-找-2	req	你|再|找找|，|我|昨天|还|看见|它|在|房间|里|呢|。
+S	我不会开车。	Wǒ bú huì kāichē.		12	EX-开车-1	req	我|不|会|开车|。
+S	你开车上班吗？	Nǐ kāichē shàngbān ma?		12	EX-开车-2	req	你|开车|上班|吗|？
+S	你开了三个小时车了，休息一下吧。	Nǐ kāi le sān gè xiǎoshí chē le, xiūxi yíxià ba.		12	EX-开车-3	req	你|开|了|三个|小时|车|了|，|休息|一下|吧|。
+S	今天我想坐车上学。	Jīntiān wǒ xiǎng zuò chē shàngxué.		13	EX-车-1	req	今天|我|想|坐|车|上学|。
+S	爸爸想买新车。	Bàba xiǎng mǎi xīn chē.		13	EX-车-2	req	爸爸|想|买|新车|。
+S	我和女朋友在看电影。	Wǒ hé nǚpéngyou zài kàn diànyǐng.		23	EX-在-1	req	我|和|女朋友|在|看|电影|。
+S	爸爸在开车，不能打电话。	Bàba zài kāichē, bù néng dǎ diànhuà.		23	EX-在-2	req	爸爸|在|开车|，|不能|打电话|。
+S	我妹妹正在读小学。	Wǒ mèimei zhèngzài dú xiǎoxué.		24	EX-读-1	req	我|妹妹|正在|读|小学|。
+S	你现在读大学吗？	Nǐ xiànzài dú dàxué ma?		24	EX-读-2	req	你|现在|读|大学|吗|？
+S	他是大学老师。	Tā shì dàxué lǎoshī.		25	EX-大学-1	req	他|是|大学|老师|。
+S	我在北京大学学中文。	Wǒ zài Běijīng Dàxué xué Zhōngwén.		25	EX-大学-2	req	我|在|北京大学|学|中文|。
+S	她哥哥是大学生。	Tā gēge shì dàxuéshēng.		26	EX-大学生-1	req	她|哥哥|是|大学生|。
+S	大学生学习忙不忙？	Dàxuéshēng xuéxí máng bu máng?		26	EX-大学生-2	req	大学生|学习|忙|不|忙|？
+S	妹妹在学写字。	Mèimei zài xué xiězì.		27	EX-学-1	req	妹妹|在|学|写字|。
+S	我想学中文，你呢？	Wǒ xiǎng xué Zhōngwén, nǐ ne?		27	EX-学-2	req	我|想|学|中文|，|你|呢|？
+S	读大学的时候，他学医。	Dú dàxué de shíhou, tā xué yī.		28	EX-医-1	req	读|大学|的|时候|，|他|学|医|。
+S	学医的大学生非常忙。	Xué yī de dàxuéshēng fēicháng máng.		28	EX-医-2	req	学医|的|大学生|非常|忙|。
+S	我弟弟今年十岁了。	Wǒ dìdi jīnnián shí suì le.		40	EX-弟弟-1	req	我|弟弟|今年|十|岁|了|。
+S	这是我弟弟的房间。	Zhè shì wǒ dìdi de fángjiān.		40	EX-弟弟-2	req	这|是|我|弟弟|的|房间|。
+S	起床吧，中午十二点了。	Qǐchuáng ba, zhōngwǔ shí'èr diǎn le.		41	EX-起床-1	req	起床|吧|，|中午|十二|点|了|。
+S	弟弟不想起床，还睡呢。	Dìdi bù xiǎng qǐchuáng, hái shuì ne.		41	EX-起床-2	req	弟弟|不|想|起床|，|还|睡|呢|。
+S	我昨天晚上没睡觉。	Wǒ zuótiān wǎnshang méi shuìjiào.		42	EX-睡觉-1	req	我|昨天|晚上|没|睡觉|。
+S	我在车上睡了一觉。	Wǒ zài chē shang shuì le yí jiào.		42	EX-睡觉-2	req	我|在|车|上|睡|了|一觉|。
+S	爸爸昨晚睡了个好觉。	Bàba zuó wǎn shuì le gè hǎo jiào.		42	EX-睡觉-3	req	爸爸|昨晚|睡|了|个|好|觉|。
+S	小孩子要早睡。	Xiǎo háizi yào zǎo shuì.		43	EX-睡-1	req	小孩子|要|早|睡|。
+S	睡吧，很晚了。	Shuì ba, hěn wǎn le.		43	EX-睡-2	req	睡|吧|，|很|晚|了|。
+S	你去那里找他吧。	Nǐ qù nàlǐ zhǎo tā ba.		44	EX-那里-1	req	你|去|那里|找|他|吧|。
+S	学校外面有一家超市，那里有很多东西。	Xuéxiào wàimian yǒu yì jiā chāoshì, nàlǐ yǒu hěn duō dōngxi.		44	EX-那里-2	req	学校|外面|有|一家|超市|，|那里|有|很多|东西|。
+S	妈妈在哪里？	Māma zài nǎlǐ?		45	EX-哪里-1	req	妈妈|在|哪里|？
+S	你要去哪里？	Nǐ yào qù nǎlǐ?		45	EX-哪里-2	req	你|要|去|哪里|？
+S	昨天我没看见你。	Zuótiān wǒ méi kànjiàn nǐ.		46	EX-昨天-1	req	昨天|我|没|看见|你|。
+S	她昨天没来上课。	Tā zuótiān méi lái shàngkè.		46	EX-昨天-2	req	她|昨天|没|来|上课|。
+S	请问，校医院在哪里？	Qǐngwèn, xiào yīyuàn zài nǎlǐ?		47	EX-问-1	req	请问|，|校|医院|在|哪里|？
+S	您好，我想问一个问题。	Nín hǎo, wǒ xiǎng wèn yí gè wèntí.		47	EX-问-2	req	您|好|，|我|想|问|一个|问题|。
+S	我有事对你说。	Wǒ yǒu shì duì nǐ shuō.		48	EX-对-1	req	我|有|事|对|你|说|。
+S	我男朋友对我很好。	Wǒ nánpéngyou duì wǒ hěn hǎo.		48	EX-对-2	req	我|男朋友|对|我|很|好|。
+S	她会说中文。	Tā huì shuō Zhōngwén.		49	EX-说-1	req	她|会|说|中文|。
+S	听了她的话，我不知道说什么。	Tīng le tā de huà, wǒ bù zhīdào shuō shénme.		49	EX-说-2	req	听|了|她|的|话|，|我|不|知道|说|什么|。
+S	晚上我要和朋友去唱歌。	Wǎnshang wǒ yào hé péngyou qù chàng gē.		50	EX-要-1	req	晚上|我|要|和|朋友|去|唱歌|。
+S	我要去书店买一本书。	Wǒ yào qù shūdiàn mǎi yì běn shū.		50	EX-要-2	req	我|要|去|书店|买|一本|书|。
+S	小朋友，请你不要说话。	Xiǎopéngyǒu, qǐng nǐ bú yào shuōhuà.		51	EX-小朋友-1	req	小朋友|，|请|你|不要|说话|。
+S	小朋友们都喜欢来这里玩。	Xiǎopéngyoumen dōu xǐhuan lái zhèlǐ wán.		51	EX-小朋友-2	req	小朋友们|都|喜欢|来|这里|玩|。
+S	你去没去学校?	Nǐ qù méi qù xuéxiào?		19	S-read1-2	req	你|去|没|去|学校|?
+S	这件衣服好看不好看？	Zhè jiàn yīfu hǎokàn bu hǎokàn?		19	S-read1-3	req	这|件|衣服|好看|不|好看|？
+S	学生们在/正在上课呢。	Xuéshēngmen zài/zhèngzài shàngkè ne.		35	S-read2-2	req	学生们|在/正在|上课|呢|。
+S	我们读书呢。	Wǒmen dúshū ne.		35	S-read2-3	req	我们|读书|呢|。
+S	他今天要和小朋友玩。	Tā jīntiān yào hé xiǎopéngyǒu wán.		61	S-read3-1	req	他|今天|要|和|小朋友|玩|。
+S	妈妈要去超市。	Māma yào qù chāoshì.		61	S-read3-2	req	妈妈|要|去|超市|。
+S	白家月要在家里学中文。	Bái Jiāyuè yào zài jiā lǐ xué Zhōngwén.		61	S-read3-3	req	白家月|要|在|家|里|学|中文|。
+S	喂，李文，你什么时候能到饭店？	Wèi, Lǐ Wén, nǐ shénme shíhou néng dào fàndiàn?		-	D1-1	src	喂|，|李文|，|你|什么|时候|能|到|饭店|？	1,1,王一飞
+S	还不知道，正在找呢。	Hái bù zhīdào, zhèngzài zhǎo ne.		-	D1-2a	src	还|不|知道|，|正在|找|呢|。	1,2,李文
+S	它是不是在超市后边?	Tā shì bú shì zài chāoshì hòubian?		19	S-read1-1	src	它|是|不|是|在|超市|后边|?	1,2,李文
+S	是的。	Shì de.		-	D1-3a	src	是|的|。	1,3,王一飞
+S	你开车没开车？	Nǐ kāichē méi kāichē?		-	D1-3b	src	你|开车|没|开车|？	1,3,王一飞
+S	我没开车，坐车呢。	Wǒ méi kāichē, zuò chē ne.		-	D1-4	src	我|没|开车|，|坐|车|呢|。	1,4,李文
+S	你还在读大学吗？	Nǐ hái zài dú dàxué ma?		35	S-read2-1	src	你|还|在|读|大学|吗|？	2,1,王一飞
+S	对，我读大学呢，还是大学生。	Duì, wǒ dú dàxué ne, háishì dàxuéshēng.		-	D2-2	src	对|，|我|读|大学|呢|，|还是|大学生|。	2,2,李文
+S	你们学习忙不忙？	Nǐmen xuéxí máng bu máng?		-	D2-3	src	你们|学习|忙|不|忙|？	2,3,王一飞
+S	非常忙，我学医，我们的课很多。	Fēicháng máng, wǒ xué yī, wǒmen de kè hěn duō.		-	D2-4	src	非常|忙|，|我|学|医|，|我们|的|课|很|多|。	2,4,李文
+S	弟弟起床没起床呢？	Dìdi qǐchuáng méi qǐchuáng ne?		-	D3-1	src	弟弟|起床|没|起床|呢|？	3,1,刘明
+S	没起床呢，还在睡觉。	Méi qǐchuáng ne, hái zài shuìjiào.		-	D3-2	src	没|起床|呢|，|还|在|睡觉|。	3,2,刘小雪
+S	还睡呢？	Hái shuì ne?		-	D3-3a	src	还|睡|呢|？	3,3,刘明
+S	他今天去不去那里？	Tā jīntiān qù bu qù nàlǐ?		-	D3-3b	src	他|今天|去|不|去|那里|？	3,3,刘明
+S	去哪里？	Qù nǎlǐ?		-	D3-4	src	去|哪里|？	3,4,刘小雪
+S	去超市。	Qù chāoshì.		-	D3-5	src	去|超市|。	3,5,刘明
+S	我昨天问他，他对我说，他不去，他今天要和小朋友玩。	Wǒ zuótiān wèn tā, tā duì wǒ shuō, tā bú qù, tā jīntiān yào hé xiǎopéngyǒu wán.		-	D3-6	src	我|昨天|问|他|，|他|对|我|说|，|他|不|去|，|他|今天|要|和|小朋友|玩|。	3,6,刘小雪

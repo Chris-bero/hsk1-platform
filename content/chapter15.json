@@ -1,0 +1,1336 @@
+{
+  "bundleCode": "ch15-fltrp-lesson15",
+  "rev": 1,
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第15课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P113/P115/P117 (课文1–3 dialogues)",
+    "extractedPages": "1–50 (full)",
+    "notes": "Vocab from 生词 tables 15-2/15-4/15-6 (incl. proper nouns 西安/北京/大兴机场). Example sentences from vocab cards (no English in source). Dialogue lines + pinyin from screenshots; multi-sentence lines split (我爱吃中国菜，也喜欢做。大家多吃点儿。 / 前几年…今年…). Read-aloud 我喜欢这个，也喜欢那个。 merged with identical dialogue line. Source typo preserved verbatim in intro1 English ('friends.,'). Skipped: p4 warm-up items, p6/p15/p27 listening stems, p13 annotation labels, extension chips. Sentence pinyin absent from source completed per instructor request (2026-10-21), tagged instructor-requested."
+  },
+  "payload": {
+    "chapter": {
+      "num": 15,
+      "title": "大兴机场见！ See you at Daxing Airport!",
+      "sourceFile": "《新HSK教程1》第15课.pdf",
+      "representative": {
+        "hanzi": "大兴机场见！",
+        "pinyin": "Dàxīng Jīchǎng jiàn!",
+        "english": "See you at Daxing Airport!"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "爱",
+        "pinyin": "ài",
+        "english": "like; be fond of",
+        "pos": "v.",
+        "sourcePage": 8,
+        "sourceItemId": "W15-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "哪个",
+        "pinyin": "nǎge",
+        "english": "which",
+        "pos": "pron.",
+        "sourcePage": 8,
+        "sourceItemId": "W15-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "去年",
+        "pinyin": "qùnián",
+        "english": "last year",
+        "pos": "n.",
+        "sourcePage": 16,
+        "sourceItemId": "W15-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "男朋友",
+        "pinyin": "nánpéngyou",
+        "english": "boyfriend",
+        "pos": "n.",
+        "sourcePage": 16,
+        "sourceItemId": "W15-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "几",
+        "pinyin": "jǐ",
+        "english": "a few; several",
+        "pos": "num.",
+        "sourcePage": 16,
+        "sourceItemId": "W15-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "年",
+        "pinyin": "nián",
+        "english": "year",
+        "pos": "n.",
+        "sourcePage": 16,
+        "sourceItemId": "W15-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "好玩儿",
+        "pinyin": "hǎowánr",
+        "english": "fun; interesting",
+        "pos": "adj.",
+        "sourcePage": 16,
+        "sourceItemId": "W15-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "西安",
+        "pinyin": "Xī'ān",
+        "english": "Xi'an",
+        "pos": "propn",
+        "sourcePage": 16,
+        "sourceItemId": "W15-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "北京",
+        "pinyin": "Běijīng",
+        "english": "Beijing",
+        "pos": "propn",
+        "sourcePage": 16,
+        "sourceItemId": "W15-4-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "飞机",
+        "pinyin": "fēijī",
+        "english": "plane",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W15-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "english": "need; take",
+        "pos": "v.",
+        "sourcePage": 29,
+        "sourceItemId": "W15-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "小时",
+        "pinyin": "xiǎoshí",
+        "english": "hour",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W15-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "家人",
+        "pinyin": "jiārén",
+        "english": "family (member)",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W15-6-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "时间",
+        "pinyin": "shíjiān",
+        "english": "(duration of) time",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W15-6-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "机场",
+        "pinyin": "jīchǎng",
+        "english": "airport",
+        "pos": "n.",
+        "sourcePage": 30,
+        "sourceItemId": "W15-6-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "接",
+        "pinyin": "jiē",
+        "english": "meet; welcome",
+        "pos": "v.",
+        "sourcePage": 30,
+        "sourceItemId": "W15-6-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "住",
+        "pinyin": "zhù",
+        "english": "live; stay",
+        "pos": "v.",
+        "sourcePage": 30,
+        "sourceItemId": "W15-6-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "早",
+        "pinyin": "zǎo",
+        "english": "early",
+        "pos": "adj.",
+        "sourcePage": 30,
+        "sourceItemId": "W15-6-9",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "那",
+        "pinyin": "nà",
+        "english": "then",
+        "pos": "conj.",
+        "sourcePage": 30,
+        "sourceItemId": "W15-6-10",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "大兴机场",
+        "pinyin": "Dàxīng Jīchǎng",
+        "english": "Daxing Airport",
+        "pos": "propn",
+        "sourcePage": 30,
+        "sourceItemId": "W15-6-11",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "大兴机场见！",
+        "pinyin": "Dàxīng Jīchǎng jiàn!",
+        "segments": [
+          "大兴机场",
+          "见",
+          "！"
+        ],
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source",
+        "english": "See you at Daxing Airport!",
+        "sourcePage": 2
+      },
+      {
+        "hanzi": "在李文家，李文邀请陈天中、白家月等朋友品尝中餐。",
+        "pinyin": "Zài Lǐ Wén jiā, Lǐ Wén yāoqǐng Chén Tiānzhōng, Bái Jiāyuè děng péngyou pǐncháng Zhōngcān.",
+        "segments": [
+          "在",
+          "李文",
+          "家",
+          "，",
+          "李文",
+          "邀请",
+          "陈天中",
+          "、",
+          "白家月",
+          "等",
+          "朋友",
+          "品尝",
+          "中餐",
+          "。"
+        ],
+        "sourceItemId": "S-intro1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "At Li Wen's home, Li Wen invited friends., including Chen Tianzhong and Bai Jiayue, to taste Chinese food.",
+        "sourcePage": 5
+      },
+      {
+        "hanzi": "在李文家，大家边吃饭边谈论假期计划。",
+        "pinyin": "Zài Lǐ Wén jiā, dàjiā biān chī fàn biān tánlùn jiàqī jìhuà.",
+        "segments": [
+          "在",
+          "李文",
+          "家",
+          "，",
+          "大家",
+          "边",
+          "吃饭",
+          "边",
+          "谈论",
+          "假期",
+          "计划",
+          "。"
+        ],
+        "sourceItemId": "S-intro2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "At Li Wen's home, everyone was talking about their holiday plans while eating.",
+        "sourcePage": 14
+      },
+      {
+        "hanzi": "在教室外，白家月、安妮和王老师在谈论去北京旅游的事。",
+        "pinyin": "Zài jiàoshì wài, Bái Jiāyuè, Ānnī hé Wáng lǎoshī zài tánlùn qù Běijīng lǚyóu de shì.",
+        "segments": [
+          "在",
+          "教室",
+          "外",
+          "，",
+          "白家月",
+          "、",
+          "安妮",
+          "和",
+          "王老师",
+          "在",
+          "谈论",
+          "去",
+          "北京",
+          "旅游",
+          "的",
+          "事",
+          "。"
+        ],
+        "sourceItemId": "S-intro3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "Outside the classroom, Bai Jiayue, Annie, and Ms.Wang were talking about traveling to Beijing.",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "并列复句由两个或两个以上逻辑关联、结构对称的小句构成。本册学习并列复句“……，还/也……”。",
+        "pinyin": "Bìngliè fùjù yóu liǎng gè huò liǎng gè yǐshàng luójí guānlián, jiégòu duìchèn de xiǎojù gòuchéng. Běn cè xuéxí bìngliè fùjù \"……, hái/yě……\".",
+        "segments": [
+          "并列",
+          "复句",
+          "由",
+          "两个",
+          "或",
+          "两个",
+          "以上",
+          "逻辑",
+          "关联",
+          "、",
+          "结构",
+          "对称",
+          "的",
+          "小句",
+          "构成",
+          "。",
+          "本册",
+          "学习",
+          "并列",
+          "复句",
+          "“……，还/也……”",
+          "。"
+        ],
+        "sourceItemId": "S-grammar1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "A coordinate compound sentence consists of two or more clauses that are logically related and structurally parallel. In this volume, we focus on the coordinate compound sentence \"……, 还/也……\".",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "你爱看什么电影？",
+        "pinyin": "Nǐ ài kàn shénme diànyǐng?",
+        "segments": [
+          "你",
+          "爱",
+          "看",
+          "什么",
+          "电影",
+          "？"
+        ],
+        "sourceItemId": "EX-爱-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "姐姐很爱学习。",
+        "pinyin": "Jiějie hěn ài xuéxí.",
+        "segments": [
+          "姐姐",
+          "很",
+          "爱",
+          "学习",
+          "。"
+        ],
+        "sourceItemId": "EX-爱-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "这两个手机，你想买哪个？",
+        "pinyin": "Zhè liǎng gè shǒujī, nǐ xiǎng mǎi nǎge?",
+        "segments": [
+          "这",
+          "两个",
+          "手机",
+          "，",
+          "你",
+          "想",
+          "买",
+          "哪个",
+          "？"
+        ],
+        "sourceItemId": "EX-哪个-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "哪件衣服是你的？",
+        "pinyin": "Nǎ jiàn yīfu shì nǐ de?",
+        "segments": [
+          "哪",
+          "件",
+          "衣服",
+          "是",
+          "你",
+          "的",
+          "？"
+        ],
+        "sourceItemId": "EX-哪个-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "去年我还在上中学。",
+        "pinyin": "Qùnián wǒ hái zài shàng zhōngxué.",
+        "segments": [
+          "去年",
+          "我",
+          "还",
+          "在",
+          "上",
+          "中学",
+          "。"
+        ],
+        "sourceItemId": "EX-去年-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "那是去年的事了。",
+        "pinyin": "Nà shì qùnián de shì le.",
+        "segments": [
+          "那",
+          "是",
+          "去年",
+          "的",
+          "事",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-去年-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "她的男朋友是医生。",
+        "pinyin": "Tā de nánpéngyou shì yīshēng.",
+        "segments": [
+          "她",
+          "的",
+          "男朋友",
+          "是",
+          "医生",
+          "。"
+        ],
+        "sourceItemId": "EX-男朋友-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 18
+      },
+      {
+        "hanzi": "我和我男朋友是中学同学。",
+        "pinyin": "Wǒ hé wǒ nánpéngyou shì zhōngxué tóngxué.",
+        "segments": [
+          "我",
+          "和",
+          "我",
+          "男朋友",
+          "是",
+          "中学",
+          "同学",
+          "。"
+        ],
+        "sourceItemId": "EX-男朋友-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 18
+      },
+      {
+        "hanzi": "几天前我看见他了。",
+        "pinyin": "Jǐ tiān qián wǒ kànjiàn tā le.",
+        "segments": [
+          "几",
+          "天",
+          "前",
+          "我",
+          "看见",
+          "他",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-几-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "我想去书店买几本书。",
+        "pinyin": "Wǒ xiǎng qù shūdiàn mǎi jǐ běn shū.",
+        "segments": [
+          "我",
+          "想",
+          "去",
+          "书店",
+          "买",
+          "几",
+          "本",
+          "书",
+          "。"
+        ],
+        "sourceItemId": "EX-几-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "你来中国几年了？",
+        "pinyin": "Nǐ lái Zhōngguó jǐ nián le?",
+        "segments": [
+          "你",
+          "来",
+          "中国",
+          "几",
+          "年",
+          "了",
+          "？"
+        ],
+        "sourceItemId": "EX-年-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 20
+      },
+      {
+        "hanzi": "他学习中文两年了。",
+        "pinyin": "Tā xuéxí Zhōngwén liǎng nián le.",
+        "segments": [
+          "他",
+          "学习",
+          "中文",
+          "两年",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-年-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 20
+      },
+      {
+        "hanzi": "我觉得这里不太好玩儿。",
+        "pinyin": "Wǒ juède zhèlǐ bú tài hǎowánr.",
+        "segments": [
+          "我",
+          "觉得",
+          "这里",
+          "不",
+          "太",
+          "好玩儿",
+          "。"
+        ],
+        "sourceItemId": "EX-好玩儿-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 21
+      },
+      {
+        "hanzi": "北京好玩儿吗？",
+        "pinyin": "Běijīng hǎowánr ma?",
+        "segments": [
+          "北京",
+          "好玩儿",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-好玩儿-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 21
+      },
+      {
+        "hanzi": "我们坐飞机去北京吧。",
+        "pinyin": "Wǒmen zuò fēijī qù Běijīng ba.",
+        "segments": [
+          "我们",
+          "坐",
+          "飞机",
+          "去",
+          "北京",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-飞机-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 31
+      },
+      {
+        "hanzi": "在飞机上，我认识了一个中国朋友。",
+        "pinyin": "Zài fēijī shang, wǒ rènshi le yí gè Zhōngguó péngyou.",
+        "segments": [
+          "在",
+          "飞机",
+          "上",
+          "，",
+          "我",
+          "认识",
+          "了",
+          "一个",
+          "中国",
+          "朋友",
+          "。"
+        ],
+        "sourceItemId": "EX-飞机-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 31
+      },
+      {
+        "hanzi": "你做饭要几个鸡蛋？",
+        "pinyin": "Nǐ zuò fàn yào jǐ gè jīdàn?",
+        "segments": [
+          "你",
+          "做饭",
+          "要",
+          "几个",
+          "鸡蛋",
+          "？"
+        ],
+        "sourceItemId": "EX-要-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "你买电脑要多少钱？",
+        "pinyin": "Nǐ mǎi diànnǎo yào duōshao qián?",
+        "segments": [
+          "你",
+          "买",
+          "电脑",
+          "要",
+          "多少",
+          "钱",
+          "？"
+        ],
+        "sourceItemId": "EX-要-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "我们开车去西安要六个小时。",
+        "pinyin": "Wǒmen kāichē qù Xī'ān yào liù gè xiǎoshí.",
+        "segments": [
+          "我们",
+          "开车",
+          "去",
+          "西安",
+          "要",
+          "六个",
+          "小时",
+          "。"
+        ],
+        "sourceItemId": "EX-要-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "我们两个小时后在学校书店见。",
+        "pinyin": "Wǒmen liǎng gè xiǎoshí hòu zài xuéxiào shūdiàn jiàn.",
+        "segments": [
+          "我们",
+          "两个",
+          "小时",
+          "后",
+          "在",
+          "学校",
+          "书店",
+          "见",
+          "。"
+        ],
+        "sourceItemId": "EX-小时-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我今天上了四个小时的课。",
+        "pinyin": "Wǒ jīntiān shàng le sì gè xiǎoshí de kè.",
+        "segments": [
+          "我",
+          "今天",
+          "上",
+          "了",
+          "四个",
+          "小时",
+          "的",
+          "课",
+          "。"
+        ],
+        "sourceItemId": "EX-小时-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我爱我的家人。",
+        "pinyin": "Wǒ ài wǒ de jiārén.",
+        "segments": [
+          "我",
+          "爱",
+          "我",
+          "的",
+          "家人",
+          "。"
+        ],
+        "sourceItemId": "EX-家人-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "星期天我想和家人去外边玩。",
+        "pinyin": "Xīngqītiān wǒ xiǎng hé jiārén qù wàibian wán.",
+        "segments": [
+          "星期天",
+          "我",
+          "想",
+          "和",
+          "家人",
+          "去",
+          "外边",
+          "玩",
+          "。"
+        ],
+        "sourceItemId": "EX-家人-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "我现在很忙，没有时间。",
+        "pinyin": "Wǒ xiànzài hěn máng, méiyǒu shíjiān.",
+        "segments": [
+          "我",
+          "现在",
+          "很",
+          "忙",
+          "，",
+          "没有",
+          "时间",
+          "。"
+        ],
+        "sourceItemId": "EX-时间-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "你在这家公司工作多长时间了？",
+        "pinyin": "Nǐ zài zhè jiā gōngsī gōngzuò duō cháng shíjiān le?",
+        "segments": [
+          "你",
+          "在",
+          "这",
+          "家",
+          "公司",
+          "工作",
+          "多",
+          "长",
+          "时间",
+          "了",
+          "？"
+        ],
+        "sourceItemId": "EX-时间-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "我们去机场要多长时间？",
+        "pinyin": "Wǒmen qù jīchǎng yào duō cháng shíjiān?",
+        "segments": [
+          "我们",
+          "去",
+          "机场",
+          "要",
+          "多",
+          "长",
+          "时间",
+          "？"
+        ],
+        "sourceItemId": "EX-机场-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 36
+      },
+      {
+        "hanzi": "明天早上我要去机场接朋友。",
+        "pinyin": "Míngtiān zǎoshang wǒ yào qù jīchǎng jiē péngyou.",
+        "segments": [
+          "明天",
+          "早上",
+          "我",
+          "要",
+          "去",
+          "机场",
+          "接",
+          "朋友",
+          "。"
+        ],
+        "sourceItemId": "EX-机场-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 36
+      },
+      {
+        "hanzi": "妈妈来学校接我回家。",
+        "pinyin": "Māma lái xuéxiào jiē wǒ huí jiā.",
+        "segments": [
+          "妈妈",
+          "来",
+          "学校",
+          "接",
+          "我",
+          "回家",
+          "。"
+        ],
+        "sourceItemId": "EX-接-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 37
+      },
+      {
+        "hanzi": "下午四点，你可以去接一下王先生吗？",
+        "pinyin": "Xiàwǔ sì diǎn, nǐ kěyǐ qù jiē yíxià Wáng xiānsheng ma?",
+        "segments": [
+          "下午",
+          "四点",
+          "，",
+          "你",
+          "可以",
+          "去",
+          "接",
+          "一下",
+          "王先生",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-接-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 37
+      },
+      {
+        "hanzi": "我们要在这里住三天。",
+        "pinyin": "Wǒmen yào zài zhèlǐ zhù sān tiān.",
+        "segments": [
+          "我们",
+          "要",
+          "在",
+          "这里",
+          "住",
+          "三天",
+          "。"
+        ],
+        "sourceItemId": "EX-住-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 38
+      },
+      {
+        "hanzi": "你现在住在哪儿？",
+        "pinyin": "Nǐ xiànzài zhù zài nǎr?",
+        "segments": [
+          "你",
+          "现在",
+          "住",
+          "在",
+          "哪儿",
+          "？"
+        ],
+        "sourceItemId": "EX-住-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 38
+      },
+      {
+        "hanzi": "我们早点儿去机场吧。",
+        "pinyin": "Wǒmen zǎodiǎnr qù jīchǎng ba.",
+        "segments": [
+          "我们",
+          "早点儿",
+          "去",
+          "机场",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-早-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 39
+      },
+      {
+        "hanzi": "时间还早呢，我们再睡半个小时吧。",
+        "pinyin": "Shíjiān hái zǎo ne, wǒmen zài shuì bàn gè xiǎoshí ba.",
+        "segments": [
+          "时间",
+          "还",
+          "早",
+          "呢",
+          "，",
+          "我们",
+          "再",
+          "睡",
+          "半个",
+          "小时",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-早-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 39
+      },
+      {
+        "hanzi": "妈妈，我写了一个小时的字了。",
+        "pinyin": "Māma, wǒ xiě le yí gè xiǎoshí de zì le.",
+        "segments": [
+          "妈妈",
+          "，",
+          "我",
+          "写",
+          "了",
+          "一个",
+          "小时",
+          "的",
+          "字",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-那-A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 40
+      },
+      {
+        "hanzi": "那休息一下吧。",
+        "pinyin": "Nà xiūxi yíxià ba.",
+        "segments": [
+          "那",
+          "休息",
+          "一下",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-那-B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 40
+      },
+      {
+        "hanzi": "下雨了。",
+        "pinyin": "Xià yǔ le.",
+        "segments": [
+          "下雨",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-那-C",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 40
+      },
+      {
+        "hanzi": "那我们在家里玩。",
+        "pinyin": "Nà wǒmen zài jiā lǐ wán.",
+        "segments": [
+          "那",
+          "我们",
+          "在",
+          "家",
+          "里",
+          "玩",
+          "。"
+        ],
+        "sourceItemId": "EX-那-D",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 40
+      },
+      {
+        "hanzi": "王老师是北京人，李文也是北京人。",
+        "pinyin": "Wáng lǎoshī shì Běijīng rén, Lǐ Wén yě shì Běijīng rén.",
+        "segments": [
+          "王老师",
+          "是",
+          "北京人",
+          "，",
+          "李文",
+          "也",
+          "是",
+          "北京人",
+          "。"
+        ],
+        "sourceItemId": "S-read1-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "我喜欢喝中国茶，还喜欢吃中国菜。",
+        "pinyin": "Wǒ xǐhuan hē Zhōngguó chá, hái xǐhuan chī Zhōngguó cài.",
+        "segments": [
+          "我",
+          "喜欢",
+          "喝",
+          "中国",
+          "茶",
+          "，",
+          "还",
+          "喜欢",
+          "吃",
+          "中国",
+          "菜",
+          "。"
+        ],
+        "sourceItemId": "S-read1-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "你们爱吃哪个菜？",
+        "pinyin": "Nǐmen ài chī nǎge cài?",
+        "segments": [
+          "你们",
+          "爱",
+          "吃",
+          "哪个",
+          "菜",
+          "？"
+        ],
+        "sourceItemId": "D1-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "我喜欢这个，也喜欢那个。",
+        "pinyin": "Wǒ xǐhuan zhège, yě xǐhuan nàge.",
+        "segments": [
+          "我",
+          "喜欢",
+          "这个",
+          "，",
+          "也",
+          "喜欢",
+          "那个",
+          "。"
+        ],
+        "sourceItemId": "S-read1-1",
+        "pinyinProvenance": "source",
+        "sourcePage": 13,
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "这些菜都好吃，还很好看。",
+        "pinyin": "Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.",
+        "segments": [
+          "这些",
+          "菜",
+          "都",
+          "好吃",
+          "，",
+          "还",
+          "很",
+          "好看",
+          "。"
+        ],
+        "sourceItemId": "D1-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 3,
+          "speaker": "陈天中"
+        }
+      },
+      {
+        "hanzi": "我爱吃中国菜，也喜欢做。",
+        "pinyin": "Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò.",
+        "segments": [
+          "我",
+          "爱",
+          "吃",
+          "中国",
+          "菜",
+          "，",
+          "也",
+          "喜欢",
+          "做",
+          "。"
+        ],
+        "sourceItemId": "D1-4a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "大家多吃点儿。",
+        "pinyin": "Dàjiā duō chī diǎnr.",
+        "segments": [
+          "大家",
+          "多",
+          "吃",
+          "点儿",
+          "。"
+        ],
+        "sourceItemId": "D1-4b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "你们都想去哪儿？",
+        "pinyin": "Nǐmen dōu xiǎng qù nǎr?",
+        "segments": [
+          "你们",
+          "都",
+          "想",
+          "去",
+          "哪儿",
+          "？"
+        ],
+        "sourceItemId": "D2-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "去年我和男朋友去了西安，今年我想去北京。",
+        "pinyin": "Qùnián wǒ hé nánpéngyou qùle Xī'ān, jīnnián wǒ xiǎng qù Běijīng.",
+        "segments": [
+          "去年",
+          "我",
+          "和",
+          "男朋友",
+          "去",
+          "了",
+          "西安",
+          "，",
+          "今年",
+          "我",
+          "想",
+          "去",
+          "北京",
+          "。"
+        ],
+        "sourceItemId": "D2-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "安妮"
+        }
+      },
+      {
+        "hanzi": "前几年我去了西安，非常好玩儿。",
+        "pinyin": "Qián jǐ nián wǒ qùle Xī'ān, fēicháng hǎowánr.",
+        "segments": [
+          "前",
+          "几",
+          "年",
+          "我",
+          "去",
+          "了",
+          "西安",
+          "，",
+          "非常",
+          "好玩儿",
+          "。"
+        ],
+        "sourceItemId": "D2-3a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "今年我也想去北京。",
+        "pinyin": "Jīnnián wǒ yě xiǎng qù Běijīng.",
+        "segments": [
+          "今年",
+          "我",
+          "也",
+          "想",
+          "去",
+          "北京",
+          "。"
+        ],
+        "sourceItemId": "D2-3b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "我和王老师都是北京人，北京非常漂亮。",
+        "pinyin": "Wǒ hé Wáng lǎoshī dōu shì Běijīng rén, Běijīng fēicháng piàoliang.",
+        "segments": [
+          "我",
+          "和",
+          "王老师",
+          "都",
+          "是",
+          "北京人",
+          "，",
+          "北京",
+          "非常",
+          "漂亮",
+          "。"
+        ],
+        "sourceItemId": "D2-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "你们的飞机到北京要几个小时？",
+        "pinyin": "Nǐmen de fēijī dào Běijīng yào jǐ gè xiǎoshí?",
+        "segments": [
+          "你们",
+          "的",
+          "飞机",
+          "到",
+          "北京",
+          "要",
+          "几个",
+          "小时",
+          "？"
+        ],
+        "sourceItemId": "D3-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "九个小时。",
+        "pinyin": "Jiǔ gè xiǎoshí.",
+        "segments": [
+          "九个",
+          "小时",
+          "。"
+        ],
+        "sourceItemId": "D3-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
+        "pinyin": "Wǒ jiārén dōu zài Běijīng, Xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.",
+        "segments": [
+          "我",
+          "家人",
+          "都",
+          "在",
+          "北京",
+          "，",
+          "星期天",
+          "我",
+          "姐姐",
+          "也",
+          "有",
+          "时间",
+          "，",
+          "她",
+          "可以",
+          "去",
+          "机场",
+          "接",
+          "你们",
+          "，",
+          "你们",
+          "也",
+          "可以",
+          "住",
+          "我",
+          "家",
+          "。"
+        ],
+        "sourceItemId": "D3-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "我们星期日早上八点到大兴机场，早不早？",
+        "pinyin": "Wǒmen Xīngqīrì zǎoshang bā diǎn dào Dàxīng Jīchǎng, zǎo bu zǎo?",
+        "segments": [
+          "我们",
+          "星期日",
+          "早上",
+          "八点",
+          "到",
+          "大兴机场",
+          "，",
+          "早",
+          "不",
+          "早",
+          "？"
+        ],
+        "sourceItemId": "D3-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "安妮"
+        }
+      },
+      {
+        "hanzi": "不早。",
+        "pinyin": "Bù zǎo.",
+        "segments": [
+          "不",
+          "早",
+          "。"
+        ],
+        "sourceItemId": "D3-5",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "谢谢老师！那我们和您姐姐在大兴机场见！",
+        "pinyin": "Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng Jīchǎng jiàn!",
+        "segments": [
+          "谢谢",
+          "老师",
+          "！",
+          "那",
+          "我们",
+          "和",
+          "您",
+          "姐姐",
+          "在",
+          "大兴机场",
+          "见",
+          "！"
+        ],
+        "sourceItemId": "D3-6",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 6,
+          "speaker": "白家月"
+        }
+      }
+    ]
+  }
+}

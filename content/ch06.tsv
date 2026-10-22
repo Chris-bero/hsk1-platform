@@ -1,0 +1,92 @@
+V	手机	shǒujī	cell phone	n.	6	W6-2-1
+V	电话	diànhuà	telephone (set); (telephone/phone) call	n.	6	W6-2-2
+V	号	hào	number	n.	6	W6-2-3
+V	明天	míngtiān	tomorrow	n.	15	W6-4-1
+V	去	qù	go to	v.	15	W6-4-2
+V	哪儿	nǎr	where	pron.	15	W6-4-3
+V	想	xiǎng	want; would like	mod.	15	W6-4-4
+V	超市	chāoshì	supermarket	n.	16	W6-4-5
+V	买	mǎi	buy	v.	16	W6-4-6
+V	东西	dōngxi	thing	n.	16	W6-4-7
+V	些	xiē	some; a few	m.	16	W6-4-8
+V	牛奶	niúnǎi	(cow's) milk	n.	16	W6-4-9
+V	吃	chī	eat; have	v.	37	W6-6-1
+V	晚饭	wǎnfàn	dinner; supper	n.	37	W6-6-2
+V	那边	nàbiān	there	pron.	37	W6-6-3
+V	包子	bāozi	steamed stuffed bun	n.	37	W6-6-4
+V	非常	fēicháng	very; extremely	adv.	37	W6-6-5
+V	好吃	hǎochī	tasty; delicious	adj.	38	W6-6-6
+V	米饭	mǐfàn	(cooked) rice	n.	38	W6-6-7
+V	怎么	zěnme	how	pron.	38	W6-6-8
+V	坐	zuò	take; travel by or on	v.	38	W6-6-9
+V	出租车	chūzūchē	taxi	n.	38	W6-6-10
+V	西安饭店	Xī’ān Fàndiàn	Xi’an Restaurant	propn	38	W6-6-11
+S	你的手机号是多少？	Nǐ de shǒujīhào shì duōshao?	What's your cell phone number?	2	S-title	source	你|的|手机号|是|多少|？
+S	在校园里，李文向白家月要手机号。	Zài xiàoyuán lǐ, Lǐ Wén xiàng Bái Jiāyuè yào shǒujīhào.	On campus, Li Wen was asking Bai Jiayue for her cell phone number.	5	S-intro1	req	在校园里|，|李文|向|白家月|要|手机号|。
+S	在教室里，下课后，白家月和陈天中在聊天儿。	Zài jiàoshì lǐ, xiàkè hòu, Bái Jiāyuè hé Chén Tiānzhōng zài liáotiānr.	After class, Bai Jiayue and Chen Tianzhong were chatting in the classroom.	13	S-intro2	req	在教室里|，|下课后|，|白家月|和|陈天中|在|聊天儿|。
+S	在家里，王一雪全家在讨论周末晚餐安排。	Zài jiā lǐ, Wáng Yīxuě quán jiā zài tǎolùn zhōumò wǎncān ānpái.	At home, Wang Yixue's family was discussing the their plans for the weekend dinner.	34	S-intro3	req	在家里|，|王一雪|全家|在|讨论|周末|晚餐|安排|。
+S	想+动词，表示希望、打算。	Xiǎng + dòngcí, biǎoshì xīwàng, dǎsuàn.	This structure indicates desire or intention.	33	S-grammar1	req	想|+|动词|，|表示|希望|、|打算|。
+S	连动句的谓语部分由两个或两个以上动词性短语构成。连动句有两种意义：	Liándòng jù de wèiyǔ bùfen yóu liǎng gè huò liǎng gè yǐshàng dòngcí xìng duǎnyǔ gòuchéng. Liándòng jù yǒu liǎng zhǒng yìyì:	A serial verb sentence consists of two or more verbal phrases in the predicate. It typically expresses two types of meanings:	56	S-grammar2	req	连动句|的|谓语|部分|由|两个|或|两个|以上|动词性|短语|构成|。|连动句|有|两种|意义|：
+S	怎么+动词，询问方式。	Zěnme + dòngcí, xúnwèn fāngshì.	This structure is used to ask about the manner or method of an action.	58	S-grammar3	req	怎么|+|动词|，|询问|方式|。
+S	我喜欢我的新手机。	Wǒ xǐhuan wǒ de xīn shǒujī.		7	EX-手机-1	req	我|喜欢|我|的|新|手机|。
+S	这个手机很好看。	Zhège shǒujī hěn hǎokàn.		7	EX-手机-2	req	这个|手机|很|好看|。
+S	他正在打电话呢。	Tā zhèngzài dǎ diànhuà ne.		8	EX-电话-1	req	他|正在|打电话|呢|。
+S	我们在电话里说吧。	Wǒmen zài diànhuà lǐ shuō ba.		8	EX-电话-2	req	我们|在|电话|里|说|吧|。
+S	你知道他的电话号吗？	Nǐ zhīdao tā de diànhuà hào ma?		9	EX-号-1	req	你|知道|他|的|电话号|吗|？
+S	我的手机号是+86 135××××1160。	Wǒ de shujīhào shì +86 135××××1160.		9	EX-号-2	req	我|的|手机号|是|+86 135××××1160|。
+S	明天我休息，不工作。	Míngtiān wǒ xiūxi, bù gōngzuò.		17	EX-明天-1	req	明天|我|休息|，|不|工作|。
+S	你明天去哪儿？	Nǐ míngtiān qù nǎr?		17	EX-明天-2	req	你|明天|去|哪儿|？
+S	你明天去公司吗？	Nǐ míngtiān qù gōngsī ma?		18	EX-去-1	req	你|明天|去|公司|吗|？
+S	我去学校。	Wǒ qù xuéxiào.		18	EX-去-2	req	我|去|学校|。
+S	你们去哪儿玩？	Nǐmen qù nǎr wán?		19	EX-哪儿-1	req	你们|去|哪儿|玩|？
+S	你家在哪儿？	Nǐ jiā zài nǎr?		19	EX-哪儿-2	req	你|家|在|哪儿|？
+S	我想看电影。	Wǒ xiǎng kàn diànyǐng.		20	EX-想-1	req	我|想|看|电影|。
+S	你想吃面条儿吗？	Nǐ xiǎng chī miàntiáor ma?		20	EX-想-2	req	你|想|吃|面条儿|吗|？
+S	妈妈去超市买菜。	Māma qù chāoshì mǎi cài.		21	EX-超市-1	req	妈妈|去|超市|买菜|。
+S	超市里有很多东西。	Chāoshì lǐ yǒu hěn duō dōngxi.		21	EX-超市-2	req	超市|里|有|很多|东西|。
+S	我买了一个新手机。	Wǒ mǎi le yí gè xīn shǒujī.		22	EX-买-1	req	我|买|了|一个|新|手机|。
+S	妹妹在买衣服。	Mèimei zài mǎi yīfu.		22	EX-买-2	req	妹妹|在|买|衣服|。
+S	这是什么东西？	Zhè shì shénme dōngxi?		23	EX-东西-1	req	这|是|什么|东西|？
+S	我去超市买东西。	Wǒ qù chāoshì mǎi dōngxi.		23	EX-东西-2	req	我|去|超市|买东西|。
+S	你吃些苹果吧。	Nǐ chī xiē píngguǒ ba.		24	EX-些-1	req	你|吃|些|苹果|吧|。
+S	面条儿里放些菜吧。	Miàntiáor lǐ fàng xiē cài ba.		24	EX-些-2	req	面条儿|里|放|些|菜|吧|。
+S	牛奶很好喝。	Niúnǎi hěn hǎohē.		25	EX-牛奶-1	req	牛奶|很|好喝|。
+S	我妹妹爱喝牛奶。	Wǒ mèimei ài hē niúnǎi.		25	EX-牛奶-2	req	我|妹妹|爱|喝|牛奶|。
+S	姐姐在吃饭。	Jiějie zài chī fàn.		39	EX-吃-1	req	姐姐|在|吃饭|。
+S	我喜欢吃水果。	Wǒ xǐhuan chī shuǐguǒ.		39	EX-吃-2	req	我|喜欢|吃|水果|。
+S	我们家六点吃晚饭。	Wǒmen jiā liù diǎn chī wǎnfàn.		40	EX-晚饭-1	req	我们|家|六点|吃|晚饭|。
+S	晚饭你想吃什么？	Wǎnfàn nǐ xiǎng chī shénme?		40	EX-晚饭-2	req	晚饭|你|想|吃|什么|？
+S	看那边！	Kàn nàbiān!		41	EX-那边-1	req	看|那边|！
+S	那边有很多人。	Nàbiān yǒu hěn duō rén.		41	EX-那边-2	req	那边|有|很多|人|。
+S	晚饭我想吃包子。	Wǎnfàn wǒ xiǎng chī bāozi.		42	EX-包子-1	req	晚饭|我|想|吃|包子|。
+S	早上我吃了两个包子。	Zǎoshang wǒ chī le liǎng gè bāozi.		42	EX-包子-2	req	早上|我|吃|了|两个|包子|。
+S	我爸爸做饭非常好吃。	Wǒ bàba zuò fàn fēicháng hǎochī.		43	EX-非常-1	req	我|爸爸|做饭|非常|好吃|。
+S	这本书非常好看。	Zhè běn shū fēicháng hǎokàn.		43	EX-非常-2	req	这|本|书|非常|好看|。
+S	法国菜很好吃。	Fǎguó cài hěn hǎochī.		44	EX-好吃-1	req	法国|菜|很|好吃|。
+S	学校的饭不好吃。	Xuéxiào de fàn bù hǎochī.		44	EX-好吃-2	req	学校|的|饭|不|好吃|。
+S	我喜欢吃米饭。	Wǒ xǐhuan chī mǐfàn.		45	EX-米饭-1	req	我|喜欢|吃|米饭|。
+S	你做米饭了吗？	Nǐ zuò mǐfàn le ma?		45	EX-米饭-2	req	你|做|米饭|了|吗|？
+S	你知道这个菜怎么做吗？	Nǐ zhīdao zhège cài zěnme zuò ma?		46	EX-怎么-1	req	你|知道|这个|菜|怎么|做|吗|？
+S	请问，怎么去这家电影院？	Qǐngwèn, zěnme qù zhè jiā diànyǐngyuàn?		46	EX-怎么-2	req	请问|，|怎么|去|这|家|电影院|？
+S	我坐车去。	Wǒ zuò chē qù.		47	EX-坐-1	req	我|坐|车|去|。
+S	你们可以坐火车。	Nǐmen kěyǐ zuò huǒchē.		47	EX-坐-2	req	你们|可以|坐|火车|。
+S	我现在叫出租车。	Wǒ xiànzài jiào chūzūchē.		48	EX-出租车-1	req	我|现在|叫|出租车|。
+S	他开了两年出租车。	Tā kāi le liǎng nián chūzūchē.		48	EX-出租车-2	req	他|开|了|两年|出租车|。
+S	我想去超市。	Wǒ xiǎng qù chāoshì.		33	S-read1-1	req	我|想|去|超市|。
+S	我哥哥不想休息。	Wǒ gēge bù xiǎng xiūxi.		33	S-read1-2	req	我|哥哥|不|想|休息|。
+S	我们坐出租车去西安饭店。	Wǒmen zuò chūzūchē qù Xī’ān Fàndiàn.		57	S-read2-1	req	我们|坐|出租车|去|西安饭店|。
+S	她怎么去超市？	Tā zěnme qù chāoshì?		58	S-read3-2	req	她|怎么|去|超市|？
+S	家月，你的手机号是多少？	Jiāyuè, nǐ de shujīhào shì duōshao?		-	D1-1	src	家月|，|你|的|手机号|是|多少|？	1,1,李文
+S	我的手机号是+33 601493190。	Wǒ de shujīhào shì sān sān liù líng yāo sì jiǔ sān yāo jiǔ líng.		-	D1-2	src	我|的|手机号|是|+33 601493190|。	1,2,白家月
+S	我的手机号是+86 13552721160。	Wǒ de shǒujīhào shì bā liù yāo sān wǔ wǔ èr qī èr yāo yāo liù líng.		-	D1-3	src	我|的|手机号|是|+86 13552721160|。	1,3,李文
+S	好的。	Hǎo de.		-	D1-4	src	好|的|。	1,4,白家月
+S	家月，明天你去哪儿？	Jiāyuè, míngtiān nǐ qù nǎr?		-	D2-1	src	家月|，|明天|你|去|哪儿|？	2,1,陈天中
+S	我想去超市买东西。	Wǒ xiǎng qù chāoshì mǎi dōngxi.		56	S-read2-0	src	我|想|去|超市|买东西|。	2,2,白家月
+S	你去超市买什么？	Nǐ qù chāoshì mǎi shénme?		-	D2-3	src	你|去|超市|买|什么|？	2,3,陈天中
+S	我想买些牛奶。	Wǒ xiǎng mǎi xiē niúnǎi.		-	D2-4	src	我|想|买|些|牛奶|。	2,4,白家月
+S	星期天我们去哪儿吃晚饭？	Xīngqītiān wǒmen qù nǎr chī wǎnfàn?		-	D3-1	src	星期天|我们|去|哪儿|吃|晚饭|？	3,1,王一雪
+S	我还想去西安饭店。	Wǒ hái xiǎng qù Xī’ān Fàndiàn.		-	D3-2	src	我|还|想|去|西安饭店|。	3,2,刘明
+S	那边的包子非常好吃，我想吃包子。	Nàbiān de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi.		-	D3-3	src	那边|的|包子|非常|好吃|，|我|想|吃|包子|。	3,3,刘小雪
+S	妈妈，我想吃米饭，不想吃包子。	Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi.		-	D3-4	src	妈妈|，|我|想|吃|米饭|，|不|想|吃|包子|。	3,4,刘小明
+S	我们怎么去？	Wǒmen zěnme qù?		58	S-read3-1	src	我们|怎么|去|？	3,5,王一雪
+S	坐出租车去。	Zuò chūzūchē qù.		-	D3-6	src	坐|出租车|去|。	3,6,刘明

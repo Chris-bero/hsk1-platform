@@ -1,0 +1,77 @@
+V	可以	kěyǐ	can; may	mod.	7	W13-2-1
+V	再	zài	once more; again	adv.	7	W13-2-2
+V	问题	wèntí	question; problem	n.	7	W13-2-3
+V	卖	mài	sell	v.	7	W13-2-4
+V	打电话	dǎ diànhuà	make a phone call; call		7	W13-2-5
+V	一下	yíxià	(used after a verb as its complement, indicating an act or an attempt) one time; once	num.-m.	7	W13-2-6
+V	服务员	fúwùyuán	attendant; waiter; waitress	n.	23	W13-4-1
+V	女士	nǚshì	lady; madam	n.	23	W13-4-2
+V	请	qǐng	please	v.	23	W13-4-3
+V	坐	zuò	sit	v.	23	W13-4-4
+V	给	gěi	give	v.	23	W13-4-5
+V	杯	bēi	cup; glass	n.	23	W13-4-6
+V	要	yào	demand; ask for	v.	24	W13-4-7
+V	早饭	zǎofàn	breakfast	n.	24	W13-4-8
+V	这个	zhège	this	pron.	24	W13-4-9
+V	面包	miànbāo	bread	n.	24	W13-4-10
+V	鸡蛋	jīdàn	(hen's) egg	n.	24	W13-4-11
+V	先生	xiānsheng	gentleman; sir	n.	47	W13-6-1
+V	一半	yíbàn	one half; half	num.	47	W13-6-2
+V	茶	chá	tea	n.	47	W13-6-3
+S	请给我一杯茶	Qǐng gěi wǒ yì bēi chá	I'll have a cup of tea, please	2	S-title	source	请|给|我|一杯|茶
+S	教室里，下课后，白家月问王老师问题。	Jiàoshì lǐ, xiàkè hòu, Bái Jiāyuè wèn Wáng lǎoshī wèntí.	In the classroom, after class, Bai Jiayue asked Ms. Wang a question.	5	S-intro1	req	教室里|，|下课后|，|白家月|问|王老师|问题|。
+S	在咖啡馆里，王一雪想吃早餐。	Zài kāfēiguǎn lǐ, Wáng Yīxuě xiǎng chī zǎocān.	In the café, Wang Yixue wanted to have breakfast.	21	S-intro2	req	在|咖啡馆|里|，|王一雪|想|吃|早餐|。
+S	在餐馆里，刘明在点餐。	Zài cānguǎn lǐ, Liú Míng zài diǎncān.	In the restaurant, Liu Ming was ordering food.	45	S-intro3	req	在|餐馆|里|，|刘明|在|点餐|。
+S	双宾语句是一个动词带两个宾语的句子。本册学习“给、问”构成的双宾语句。	Shuāng bīnyǔ jù shì yí gè dòngcí dài liǎng gè bīnyǔ de jùzi. Běn cè xuéxí “gěi, wèn” gòuchéng de shuāng bīnyǔ jù.	A double-object sentence is one where a verb takes two objects. In this volume, we focus on double-object sentences formed by “给” and “问”.	44	S-grammar1	req	双宾语句|是|一个|动词|带|两个|宾语|的|句子|。|本册|学习|“给、问”|构成|的|双宾语句|。
+S	妈妈，我们现在可以吃饭了吗？	Māma, wǒmen xiànzài kěyǐ chī fàn le ma?		8	EX-可以-1	req	妈妈|，|我们|现在|可以|吃饭|了|吗|？
+S	我可以坐在这儿吗？	Wǒ kěyǐ zuò zài zhèr ma?		8	EX-可以-A	req	我|可以|坐|在|这儿|吗|？
+S	可以，你坐吧。	Kěyǐ, nǐ zuò ba.		8	EX-可以-B	req	可以|，|你|坐|吧|。
+S	我想再吃一个苹果。	Wǒ xiǎng zài chī yí gè píngguǒ.		9	EX-再-1	req	我|想|再|吃|一个|苹果|。
+S	妈妈，再给我读一本书吧。	Māma, zài gěi wǒ dú yì běn shū ba.		9	EX-再-2	req	妈妈|，|再|给|我|读|一本|书|吧|。
+S	你有问题可以来问我。	Nǐ yǒu wèntí kěyǐ lái wèn wǒ.		10	EX-问题-1	req	你|有|问题|可以|来|问|我|。
+S	我有很多问题要问老师。	Wǒ yǒu hěn duō wèntí yào wèn lǎoshī.		10	EX-问题-2	req	我|有|很多|问题|要|问|老师|。
+S	那边在卖什么东西？	Nàbian zài mài shénme dōngxi?		11	EX-卖-1	req	那边|在|卖|什么|东西|？
+S	他在一家商店卖水果。	Tā zài yì jiā shāngdiàn mài shuǐguǒ.		11	EX-卖-2	req	他|在|一家|商店|卖|水果|。
+S	老师在打电话呢。	Lǎoshī zài dǎ diànhuà ne.		12	EX-打电话-1	req	老师|在|打电话|呢|。
+S	昨天我给妈妈打了一个电话。	Zuótiān wǒ gěi māma dǎ le yí gè diànhuà.		12	EX-打电话-2	req	昨天|我|给|妈妈|打|了|一个|电话|。
+S	你看一下时间，现在几点了？	Nǐ kàn yíxià shíjiān, xiànzài jǐ diǎn le?		13	EX-一下-1	req	你|看|一下|时间|，|现在|几点|了|？
+S	我们休息一下吧。	Wǒmen xiūxi yíxià ba.		13	EX-一下-2	req	我们|休息|一下|吧|。
+S	我是这个饭馆的服务员。	Wǒ shì zhège fànguǎn de fúwùyuán.		25	EX-服务员-1	req	我|是|这个|饭馆|的|服务员|。
+S	我想找一下这里的服务员。	Wǒ xiǎng zhǎo yíxià zhèlǐ de fúwùyuán.		25	EX-服务员-2	req	我|想|找|一下|这里|的|服务员|。
+S	王女士是我的大学同学。	Wáng nǚshì shì wǒ de dàxué tóngxué.		26	EX-女士-1	req	王女士|是|我|的|大学|同学|。
+S	女士们、先生们，大家好！	Nǚshìmen, xiānshengmen, dàjiā hǎo!		26	EX-女士-2	req	女士们|、|先生们|，|大家|好|！
+S	您请坐，请喝茶。	Nín qǐng zuò, qǐng hē chá.		27	EX-请-1	req	您|请|坐|，|请|喝|茶|。
+S	请给我一杯热水，谢谢。	Qǐng gěi wǒ yì bēi rè shuǐ, xièxie.		27	EX-请-2	req	请|给|我|一杯|热水|，|谢谢|。
+S	我们坐在那边吧。	Wǒmen zuò zài nàbian ba.		28	EX-坐-1	req	我们|坐|在|那边|吧|。
+S	她坐在我前边。	Tā zuò zài wǒ qiánbian.		28	EX-坐-2	req	她|坐|在|我|前边|。
+S	给你一个苹果。	Gěi nǐ yí gè píngguǒ.		29	EX-给-1	req	给|你|一个|苹果|。
+S	哥哥给了我一个新电脑。	Gēge gěi le wǒ yí gè xīn diànnǎo.		29	EX-给-2	req	哥哥|给|了|我|一个|新|电脑|。
+S	我想要一杯茶。	Wǒ xiǎng yào yì bēi chá.		30	EX-杯-1	req	我|想要|一杯|茶|。
+S	今天早上我喝了一杯牛奶。	Jīntiān zǎoshang wǒ hē le yì bēi niúnǎi.		30	EX-杯-2	req	今天|早上|我|喝|了|一杯|牛奶|。
+S	我要一杯热水，谢谢。	Wǒ yào yì bēi rè shuǐ, xièxie.		31	EX-要-1	req	我|要|一杯|热水|，|谢谢|。
+S	儿子想要一个新手机。	Érzi xiǎng yào yí gè xīn shǒujī.		31	EX-要-2	req	儿子|想要|一个|新|手机|。
+S	你吃早饭了吗？	Nǐ chī zǎofàn le ma?		32	EX-早饭-1	req	你|吃|早饭|了|吗|？
+S	今天学校的早饭很好吃。	Jīntiān xuéxiào de zǎofàn hěn hǎochī.		32	EX-早饭-2	req	今天|学校|的|早饭|很|好吃|。
+S	这个房间真大！	Zhège fángjiān zhēn dà!		33	EX-这个-1	req	这个|房间|真|大|！
+S	我喜欢这个杯子。	Wǒ xǐhuan zhège bēizi.		33	EX-这个-2	req	我|喜欢|这个|杯子|。
+S	我想再吃一块面包。	Wǒ xiǎng zài chī yí kuài miànbāo.		34	EX-面包-1	req	我|想|再|吃|一块|面包|。
+S	您做的面包真好吃！	Nín zuò de miànbāo zhēn hǎochī!		34	EX-面包-2	req	您|做|的|面包|真|好吃|！
+S	我昨天在超市买了三斤鸡蛋。	Wǒ zuótiān zài chāoshì mǎi le sān jīn jīdàn.		35	EX-鸡蛋-1	req	我|昨天|在|超市|买|了|三斤|鸡蛋|。
+S	我的早饭是两个鸡蛋、一杯牛奶、一块面包。	Wǒ de zǎofàn shì liǎng gè jīdàn, yì bēi niúnǎi, yí kuài miànbāo.		35	EX-鸡蛋-2	req	我|的|早饭|是|两个|鸡蛋|、|一杯|牛奶|、|一块|面包|。
+S	先生，请坐。	Xiānsheng, qǐng zuò.		48	EX-先生-1	req	先生|，|请|坐|。
+S	李先生今天没上班，您明天再打电话吧。	Lǐ xiānsheng jīntiān méi shàngbān, nín míngtiān zài dǎ diànhuà ba.		48	EX-先生-2	req	李先生|今天|没|上班|，|您|明天|再|打电话|吧|。
+S	这个面包我吃了一半。	Zhège miànbāo wǒ chī le yíbàn.		49	EX-一半-1	req	这个|面包|我|吃|了|一半|。
+S	这个苹果我们一人一半吧。	Zhège píngguǒ wǒmen yì rén yíbàn ba.		49	EX-一半-2	req	这个|苹果|我们|一人|一半|吧|。
+S	很多中国人喜欢喝茶。	Hěn duō Zhōngguó rén xǐhuan hē chá.		50	EX-茶-1	req	很多|中国人|喜欢|喝|茶|。
+S	桌子上有一杯热茶。	Zhuōzi shang yǒu yì bēi rè chá.		50	EX-茶-2	req	桌子上|有|一杯|热|茶|。
+S	我可以再问您一个问题吗？	Wǒ kěyǐ zài wèn nín yí gè wèntí ma?		19	S-read1-1	req	我|可以|再|问|您|一个|问题|吗|？
+S	你们可以看这本书。	Nǐmen kěyǐ kàn zhè běn shū.		19	S-read1-2	req	你们|可以|看|这|本|书|。
+S	我可以坐吗？	Wǒ kěyǐ zuò ma?		19	S-read1-3A	req	我|可以|坐|吗|？
+S	可以，请坐！	Kěyǐ, qǐng zuò!		19	S-read1-3B	req	可以|，|请|坐|！
+S	你可以打电话问一下。	Nǐ kěyǐ dǎ diànhuà wèn yíxià.		20	S-read2-1	req	你|可以|打电话|问|一下|。
+S	请休息一下。	Qǐng xiūxi yíxià.		20	S-read2-2	req	请|休息|一下|。
+S	你看一下吧。	Nǐ kàn yíxià ba.		20	S-read2-3	req	你|看|一下|吧|。
+S	请你读一下这个句子。	Qǐng nǐ dú yíxià zhège jùzi.		20	S-read2-4	req	请|你|读|一下|这个|句子|。
+S	请给我一杯牛奶。	Qǐng gěi wǒ yì bēi niúnǎi.		44	S-read3-1	req	请|给|我|一杯|牛奶|。
+S	白家月给安妮一个苹果。	Bái Jiāyuè gěi Ānnī yí gè píngguǒ.		44	S-read3-2	req	白家月|给|安妮|一个|苹果|。
+S	我问老师两个问题。	Wǒ wèn lǎoshī liǎng gè wèntí.		44	S-read3-3	req	我|问|老师|两个|问题|。

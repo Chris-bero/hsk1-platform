@@ -1,0 +1,1350 @@
+{
+  "bundleCode": "ch06-fltrp-lesson6",
+  "rev": 6,
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第6课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P36/P37/P39 (课文1–3 dialogues)",
+    "extractedPages": "1–62 (full)",
+    "notes": "Vocab from 生词 tables 6-2/6-4/6-6 (incl. proper noun 西安饭店). Example sentences from vocab cards (no English in source). Dialogue lines + pinyin from screenshots; multi-sentence lines split; 好的。 merged across texts 1 and 3. Grammar lines cleaned of inline glosses (想+动词（verb）→ 想+动词, 怎么+动词(verb）→ 怎么+动词) - reported. Source typo preserved verbatim in intro3 English ('the their'). Skipped: p4 warm-up items, p14/p35 listening stems, p56/57 annotation labels, extension chips. Sentence pinyin absent from source completed per instructor request (2026-10-21), tagged instructor-requested."
+  },
+  "payload": {
+    "chapter": {
+      "num": 6,
+      "title": "你的手机号是多少？ What's your cell phone number?",
+      "sourceFile": "《新HSK教程1》第6课.pdf",
+      "representative": {
+        "hanzi": "你的手机号是多少？",
+        "pinyin": "Nǐ de shǒujīhào shì duōshao?",
+        "english": "What's your cell phone number?"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "手机",
+        "pinyin": "shǒujī",
+        "english": "cell phone",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W6-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "电话",
+        "pinyin": "diànhuà",
+        "english": "telephone (set); (telephone/phone) call",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W6-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "号",
+        "pinyin": "hào",
+        "english": "number",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W6-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "明天",
+        "pinyin": "míngtiān",
+        "english": "tomorrow",
+        "pos": "n.",
+        "sourcePage": 15,
+        "sourceItemId": "W6-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "english": "go to",
+        "pos": "v.",
+        "sourcePage": 15,
+        "sourceItemId": "W6-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "哪儿",
+        "pinyin": "nǎr",
+        "english": "where",
+        "pos": "pron.",
+        "sourcePage": 15,
+        "sourceItemId": "W6-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "xiǎng",
+        "english": "want; would like",
+        "pos": "mod.",
+        "sourcePage": 15,
+        "sourceItemId": "W6-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "超市",
+        "pinyin": "chāoshì",
+        "english": "supermarket",
+        "pos": "n.",
+        "sourcePage": 16,
+        "sourceItemId": "W6-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "买",
+        "pinyin": "mǎi",
+        "english": "buy",
+        "pos": "v.",
+        "sourcePage": 16,
+        "sourceItemId": "W6-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "东西",
+        "pinyin": "dōngxi",
+        "english": "thing",
+        "pos": "n.",
+        "sourcePage": 16,
+        "sourceItemId": "W6-4-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "些",
+        "pinyin": "xiē",
+        "english": "some; a few",
+        "pos": "m.",
+        "sourcePage": 16,
+        "sourceItemId": "W6-4-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "牛奶",
+        "pinyin": "niúnǎi",
+        "english": "(cow's) milk",
+        "pos": "n.",
+        "sourcePage": 16,
+        "sourceItemId": "W6-4-9",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "english": "eat; have",
+        "pos": "v.",
+        "sourcePage": 37,
+        "sourceItemId": "W6-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "晚饭",
+        "pinyin": "wǎnfàn",
+        "english": "dinner; supper",
+        "pos": "n.",
+        "sourcePage": 37,
+        "sourceItemId": "W6-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "那边",
+        "pinyin": "nàbiān",
+        "english": "there",
+        "pos": "pron.",
+        "sourcePage": 37,
+        "sourceItemId": "W6-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "包子",
+        "pinyin": "bāozi",
+        "english": "steamed stuffed bun",
+        "pos": "n.",
+        "sourcePage": 37,
+        "sourceItemId": "W6-6-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "非常",
+        "pinyin": "fēicháng",
+        "english": "very; extremely",
+        "pos": "adv.",
+        "sourcePage": 37,
+        "sourceItemId": "W6-6-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "好吃",
+        "pinyin": "hǎochī",
+        "english": "tasty; delicious",
+        "pos": "adj.",
+        "sourcePage": 38,
+        "sourceItemId": "W6-6-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "米饭",
+        "pinyin": "mǐfàn",
+        "english": "(cooked) rice",
+        "pos": "n.",
+        "sourcePage": 38,
+        "sourceItemId": "W6-6-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "怎么",
+        "pinyin": "zěnme",
+        "english": "how",
+        "pos": "pron.",
+        "sourcePage": 38,
+        "sourceItemId": "W6-6-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "坐",
+        "pinyin": "zuò",
+        "english": "take; travel by or on",
+        "pos": "v.",
+        "sourcePage": 38,
+        "sourceItemId": "W6-6-9",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "出租车",
+        "pinyin": "chūzūchē",
+        "english": "taxi",
+        "pos": "n.",
+        "sourcePage": 38,
+        "sourceItemId": "W6-6-10",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "西安饭店",
+        "pinyin": "Xī’ān Fàndiàn",
+        "english": "Xi’an Restaurant",
+        "pos": "propn",
+        "sourcePage": 38,
+        "sourceItemId": "W6-6-11",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "你的手机号是多少？",
+        "pinyin": "Nǐ de shǒujīhào shì duōshao?",
+        "segments": [
+          "你",
+          "的",
+          "手机号",
+          "是",
+          "多少",
+          "？"
+        ],
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source",
+        "english": "What's your cell phone number?",
+        "sourcePage": 2
+      },
+      {
+        "hanzi": "在校园里，李文向白家月要手机号。",
+        "pinyin": "Zài xiàoyuán lǐ, Lǐ Wén xiàng Bái Jiāyuè yào shǒujīhào.",
+        "segments": [
+          "在校园里",
+          "，",
+          "李文",
+          "向",
+          "白家月",
+          "要",
+          "手机号",
+          "。"
+        ],
+        "sourceItemId": "S-intro1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "On campus, Li Wen was asking Bai Jiayue for her cell phone number.",
+        "sourcePage": 5
+      },
+      {
+        "hanzi": "在教室里，下课后，白家月和陈天中在聊天儿。",
+        "pinyin": "Zài jiàoshì lǐ, xiàkè hòu, Bái Jiāyuè hé Chén Tiānzhōng zài liáotiānr.",
+        "segments": [
+          "在教室里",
+          "，",
+          "下课后",
+          "，",
+          "白家月",
+          "和",
+          "陈天中",
+          "在",
+          "聊天儿",
+          "。"
+        ],
+        "sourceItemId": "S-intro2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "After class, Bai Jiayue and Chen Tianzhong were chatting in the classroom.",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "在家里，王一雪全家在讨论周末晚餐安排。",
+        "pinyin": "Zài jiā lǐ, Wáng Yīxuě quán jiā zài tǎolùn zhōumò wǎncān ānpái.",
+        "segments": [
+          "在家里",
+          "，",
+          "王一雪",
+          "全家",
+          "在",
+          "讨论",
+          "周末",
+          "晚餐",
+          "安排",
+          "。"
+        ],
+        "sourceItemId": "S-intro3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "At home, Wang Yixue's family was discussing the their plans for the weekend dinner.",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "想+动词，表示希望、打算。",
+        "pinyin": "Xiǎng + dòngcí, biǎoshì xīwàng, dǎsuàn.",
+        "segments": [
+          "想",
+          "+",
+          "动词",
+          "，",
+          "表示",
+          "希望",
+          "、",
+          "打算",
+          "。"
+        ],
+        "sourceItemId": "S-grammar1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "This structure indicates desire or intention.",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "连动句的谓语部分由两个或两个以上动词性短语构成。连动句有两种意义：",
+        "pinyin": "Liándòng jù de wèiyǔ bùfen yóu liǎng gè huò liǎng gè yǐshàng dòngcí xìng duǎnyǔ gòuchéng. Liándòng jù yǒu liǎng zhǒng yìyì:",
+        "segments": [
+          "连动句",
+          "的",
+          "谓语",
+          "部分",
+          "由",
+          "两个",
+          "或",
+          "两个",
+          "以上",
+          "动词性",
+          "短语",
+          "构成",
+          "。",
+          "连动句",
+          "有",
+          "两种",
+          "意义",
+          "："
+        ],
+        "sourceItemId": "S-grammar2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "A serial verb sentence consists of two or more verbal phrases in the predicate. It typically expresses two types of meanings:",
+        "sourcePage": 56
+      },
+      {
+        "hanzi": "怎么+动词，询问方式。",
+        "pinyin": "Zěnme + dòngcí, xúnwèn fāngshì.",
+        "segments": [
+          "怎么",
+          "+",
+          "动词",
+          "，",
+          "询问",
+          "方式",
+          "。"
+        ],
+        "sourceItemId": "S-grammar3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "This structure is used to ask about the manner or method of an action.",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "我喜欢我的新手机。",
+        "pinyin": "Wǒ xǐhuan wǒ de xīn shǒujī.",
+        "segments": [
+          "我",
+          "喜欢",
+          "我",
+          "的",
+          "新",
+          "手机",
+          "。"
+        ],
+        "sourceItemId": "EX-手机-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 7
+      },
+      {
+        "hanzi": "这个手机很好看。",
+        "pinyin": "Zhège shǒujī hěn hǎokàn.",
+        "segments": [
+          "这个",
+          "手机",
+          "很",
+          "好看",
+          "。"
+        ],
+        "sourceItemId": "EX-手机-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 7
+      },
+      {
+        "hanzi": "他正在打电话呢。",
+        "pinyin": "Tā zhèngzài dǎ diànhuà ne.",
+        "segments": [
+          "他",
+          "正在",
+          "打电话",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "EX-电话-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "我们在电话里说吧。",
+        "pinyin": "Wǒmen zài diànhuà lǐ shuō ba.",
+        "segments": [
+          "我们",
+          "在",
+          "电话",
+          "里",
+          "说",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-电话-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "你知道他的电话号吗？",
+        "pinyin": "Nǐ zhīdao tā de diànhuà hào ma?",
+        "segments": [
+          "你",
+          "知道",
+          "他",
+          "的",
+          "电话号",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-号-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "我的手机号是+86 135××××1160。",
+        "pinyin": "Wǒ de shujīhào shì +86 135××××1160.",
+        "segments": [
+          "我",
+          "的",
+          "手机号",
+          "是",
+          "+86 135××××1160",
+          "。"
+        ],
+        "sourceItemId": "EX-号-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "明天我休息，不工作。",
+        "pinyin": "Míngtiān wǒ xiūxi, bù gōngzuò.",
+        "segments": [
+          "明天",
+          "我",
+          "休息",
+          "，",
+          "不",
+          "工作",
+          "。"
+        ],
+        "sourceItemId": "EX-明天-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "你明天去哪儿？",
+        "pinyin": "Nǐ míngtiān qù nǎr?",
+        "segments": [
+          "你",
+          "明天",
+          "去",
+          "哪儿",
+          "？"
+        ],
+        "sourceItemId": "EX-明天-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "你明天去公司吗？",
+        "pinyin": "Nǐ míngtiān qù gōngsī ma?",
+        "segments": [
+          "你",
+          "明天",
+          "去",
+          "公司",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-去-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 18
+      },
+      {
+        "hanzi": "我去学校。",
+        "pinyin": "Wǒ qù xuéxiào.",
+        "segments": [
+          "我",
+          "去",
+          "学校",
+          "。"
+        ],
+        "sourceItemId": "EX-去-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 18
+      },
+      {
+        "hanzi": "你们去哪儿玩？",
+        "pinyin": "Nǐmen qù nǎr wán?",
+        "segments": [
+          "你们",
+          "去",
+          "哪儿",
+          "玩",
+          "？"
+        ],
+        "sourceItemId": "EX-哪儿-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "你家在哪儿？",
+        "pinyin": "Nǐ jiā zài nǎr?",
+        "segments": [
+          "你",
+          "家",
+          "在",
+          "哪儿",
+          "？"
+        ],
+        "sourceItemId": "EX-哪儿-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "我想看电影。",
+        "pinyin": "Wǒ xiǎng kàn diànyǐng.",
+        "segments": [
+          "我",
+          "想",
+          "看",
+          "电影",
+          "。"
+        ],
+        "sourceItemId": "EX-想-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 20
+      },
+      {
+        "hanzi": "你想吃面条儿吗？",
+        "pinyin": "Nǐ xiǎng chī miàntiáor ma?",
+        "segments": [
+          "你",
+          "想",
+          "吃",
+          "面条儿",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-想-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 20
+      },
+      {
+        "hanzi": "妈妈去超市买菜。",
+        "pinyin": "Māma qù chāoshì mǎi cài.",
+        "segments": [
+          "妈妈",
+          "去",
+          "超市",
+          "买菜",
+          "。"
+        ],
+        "sourceItemId": "EX-超市-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 21
+      },
+      {
+        "hanzi": "超市里有很多东西。",
+        "pinyin": "Chāoshì lǐ yǒu hěn duō dōngxi.",
+        "segments": [
+          "超市",
+          "里",
+          "有",
+          "很多",
+          "东西",
+          "。"
+        ],
+        "sourceItemId": "EX-超市-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 21
+      },
+      {
+        "hanzi": "我买了一个新手机。",
+        "pinyin": "Wǒ mǎi le yí gè xīn shǒujī.",
+        "segments": [
+          "我",
+          "买",
+          "了",
+          "一个",
+          "新",
+          "手机",
+          "。"
+        ],
+        "sourceItemId": "EX-买-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 22
+      },
+      {
+        "hanzi": "妹妹在买衣服。",
+        "pinyin": "Mèimei zài mǎi yīfu.",
+        "segments": [
+          "妹妹",
+          "在",
+          "买",
+          "衣服",
+          "。"
+        ],
+        "sourceItemId": "EX-买-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 22
+      },
+      {
+        "hanzi": "这是什么东西？",
+        "pinyin": "Zhè shì shénme dōngxi?",
+        "segments": [
+          "这",
+          "是",
+          "什么",
+          "东西",
+          "？"
+        ],
+        "sourceItemId": "EX-东西-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 23
+      },
+      {
+        "hanzi": "我去超市买东西。",
+        "pinyin": "Wǒ qù chāoshì mǎi dōngxi.",
+        "segments": [
+          "我",
+          "去",
+          "超市",
+          "买东西",
+          "。"
+        ],
+        "sourceItemId": "EX-东西-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 23
+      },
+      {
+        "hanzi": "你吃些苹果吧。",
+        "pinyin": "Nǐ chī xiē píngguǒ ba.",
+        "segments": [
+          "你",
+          "吃",
+          "些",
+          "苹果",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-些-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 24
+      },
+      {
+        "hanzi": "面条儿里放些菜吧。",
+        "pinyin": "Miàntiáor lǐ fàng xiē cài ba.",
+        "segments": [
+          "面条儿",
+          "里",
+          "放",
+          "些",
+          "菜",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-些-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 24
+      },
+      {
+        "hanzi": "牛奶很好喝。",
+        "pinyin": "Niúnǎi hěn hǎohē.",
+        "segments": [
+          "牛奶",
+          "很",
+          "好喝",
+          "。"
+        ],
+        "sourceItemId": "EX-牛奶-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "我妹妹爱喝牛奶。",
+        "pinyin": "Wǒ mèimei ài hē niúnǎi.",
+        "segments": [
+          "我",
+          "妹妹",
+          "爱",
+          "喝",
+          "牛奶",
+          "。"
+        ],
+        "sourceItemId": "EX-牛奶-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "姐姐在吃饭。",
+        "pinyin": "Jiějie zài chī fàn.",
+        "segments": [
+          "姐姐",
+          "在",
+          "吃饭",
+          "。"
+        ],
+        "sourceItemId": "EX-吃-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 39
+      },
+      {
+        "hanzi": "我喜欢吃水果。",
+        "pinyin": "Wǒ xǐhuan chī shuǐguǒ.",
+        "segments": [
+          "我",
+          "喜欢",
+          "吃",
+          "水果",
+          "。"
+        ],
+        "sourceItemId": "EX-吃-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 39
+      },
+      {
+        "hanzi": "我们家六点吃晚饭。",
+        "pinyin": "Wǒmen jiā liù diǎn chī wǎnfàn.",
+        "segments": [
+          "我们",
+          "家",
+          "六点",
+          "吃",
+          "晚饭",
+          "。"
+        ],
+        "sourceItemId": "EX-晚饭-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 40
+      },
+      {
+        "hanzi": "晚饭你想吃什么？",
+        "pinyin": "Wǎnfàn nǐ xiǎng chī shénme?",
+        "segments": [
+          "晚饭",
+          "你",
+          "想",
+          "吃",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "EX-晚饭-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 40
+      },
+      {
+        "hanzi": "看那边！",
+        "pinyin": "Kàn nàbiān!",
+        "segments": [
+          "看",
+          "那边",
+          "！"
+        ],
+        "sourceItemId": "EX-那边-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "那边有很多人。",
+        "pinyin": "Nàbiān yǒu hěn duō rén.",
+        "segments": [
+          "那边",
+          "有",
+          "很多",
+          "人",
+          "。"
+        ],
+        "sourceItemId": "EX-那边-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "晚饭我想吃包子。",
+        "pinyin": "Wǎnfàn wǒ xiǎng chī bāozi.",
+        "segments": [
+          "晚饭",
+          "我",
+          "想",
+          "吃",
+          "包子",
+          "。"
+        ],
+        "sourceItemId": "EX-包子-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 42
+      },
+      {
+        "hanzi": "早上我吃了两个包子。",
+        "pinyin": "Zǎoshang wǒ chī le liǎng gè bāozi.",
+        "segments": [
+          "早上",
+          "我",
+          "吃",
+          "了",
+          "两个",
+          "包子",
+          "。"
+        ],
+        "sourceItemId": "EX-包子-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 42
+      },
+      {
+        "hanzi": "我爸爸做饭非常好吃。",
+        "pinyin": "Wǒ bàba zuò fàn fēicháng hǎochī.",
+        "segments": [
+          "我",
+          "爸爸",
+          "做饭",
+          "非常",
+          "好吃",
+          "。"
+        ],
+        "sourceItemId": "EX-非常-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 43
+      },
+      {
+        "hanzi": "这本书非常好看。",
+        "pinyin": "Zhè běn shū fēicháng hǎokàn.",
+        "segments": [
+          "这",
+          "本",
+          "书",
+          "非常",
+          "好看",
+          "。"
+        ],
+        "sourceItemId": "EX-非常-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 43
+      },
+      {
+        "hanzi": "法国菜很好吃。",
+        "pinyin": "Fǎguó cài hěn hǎochī.",
+        "segments": [
+          "法国",
+          "菜",
+          "很",
+          "好吃",
+          "。"
+        ],
+        "sourceItemId": "EX-好吃-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "学校的饭不好吃。",
+        "pinyin": "Xuéxiào de fàn bù hǎochī.",
+        "segments": [
+          "学校",
+          "的",
+          "饭",
+          "不",
+          "好吃",
+          "。"
+        ],
+        "sourceItemId": "EX-好吃-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "我喜欢吃米饭。",
+        "pinyin": "Wǒ xǐhuan chī mǐfàn.",
+        "segments": [
+          "我",
+          "喜欢",
+          "吃",
+          "米饭",
+          "。"
+        ],
+        "sourceItemId": "EX-米饭-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 45
+      },
+      {
+        "hanzi": "你做米饭了吗？",
+        "pinyin": "Nǐ zuò mǐfàn le ma?",
+        "segments": [
+          "你",
+          "做",
+          "米饭",
+          "了",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-米饭-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 45
+      },
+      {
+        "hanzi": "你知道这个菜怎么做吗？",
+        "pinyin": "Nǐ zhīdao zhège cài zěnme zuò ma?",
+        "segments": [
+          "你",
+          "知道",
+          "这个",
+          "菜",
+          "怎么",
+          "做",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-怎么-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 46
+      },
+      {
+        "hanzi": "请问，怎么去这家电影院？",
+        "pinyin": "Qǐngwèn, zěnme qù zhè jiā diànyǐngyuàn?",
+        "segments": [
+          "请问",
+          "，",
+          "怎么",
+          "去",
+          "这",
+          "家",
+          "电影院",
+          "？"
+        ],
+        "sourceItemId": "EX-怎么-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 46
+      },
+      {
+        "hanzi": "我坐车去。",
+        "pinyin": "Wǒ zuò chē qù.",
+        "segments": [
+          "我",
+          "坐",
+          "车",
+          "去",
+          "。"
+        ],
+        "sourceItemId": "EX-坐-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 47
+      },
+      {
+        "hanzi": "你们可以坐火车。",
+        "pinyin": "Nǐmen kěyǐ zuò huǒchē.",
+        "segments": [
+          "你们",
+          "可以",
+          "坐",
+          "火车",
+          "。"
+        ],
+        "sourceItemId": "EX-坐-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 47
+      },
+      {
+        "hanzi": "我现在叫出租车。",
+        "pinyin": "Wǒ xiànzài jiào chūzūchē.",
+        "segments": [
+          "我",
+          "现在",
+          "叫",
+          "出租车",
+          "。"
+        ],
+        "sourceItemId": "EX-出租车-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "他开了两年出租车。",
+        "pinyin": "Tā kāi le liǎng nián chūzūchē.",
+        "segments": [
+          "他",
+          "开",
+          "了",
+          "两年",
+          "出租车",
+          "。"
+        ],
+        "sourceItemId": "EX-出租车-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "我想去超市。",
+        "pinyin": "Wǒ xiǎng qù chāoshì.",
+        "segments": [
+          "我",
+          "想",
+          "去",
+          "超市",
+          "。"
+        ],
+        "sourceItemId": "S-read1-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我哥哥不想休息。",
+        "pinyin": "Wǒ gēge bù xiǎng xiūxi.",
+        "segments": [
+          "我",
+          "哥哥",
+          "不",
+          "想",
+          "休息",
+          "。"
+        ],
+        "sourceItemId": "S-read1-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我们坐出租车去西安饭店。",
+        "pinyin": "Wǒmen zuò chūzūchē qù Xī’ān Fàndiàn.",
+        "segments": [
+          "我们",
+          "坐",
+          "出租车",
+          "去",
+          "西安饭店",
+          "。"
+        ],
+        "sourceItemId": "S-read2-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 57
+      },
+      {
+        "hanzi": "她怎么去超市？",
+        "pinyin": "Tā zěnme qù chāoshì?",
+        "segments": [
+          "她",
+          "怎么",
+          "去",
+          "超市",
+          "？"
+        ],
+        "sourceItemId": "S-read3-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "家月，你的手机号是多少？",
+        "pinyin": "Jiāyuè, nǐ de shujīhào shì duōshao?",
+        "segments": [
+          "家月",
+          "，",
+          "你",
+          "的",
+          "手机号",
+          "是",
+          "多少",
+          "？"
+        ],
+        "sourceItemId": "D1-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "我的手机号是+33 601493190。",
+        "pinyin": "Wǒ de shujīhào shì sān sān liù líng yāo sì jiǔ sān yāo jiǔ líng.",
+        "segments": [
+          "我",
+          "的",
+          "手机号",
+          "是",
+          "+33 601493190",
+          "。"
+        ],
+        "sourceItemId": "D1-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "我的手机号是+86 13552721160。",
+        "pinyin": "Wǒ de shǒujīhào shì bā liù yāo sān wǔ wǔ èr qī èr yāo yāo liù líng.",
+        "segments": [
+          "我",
+          "的",
+          "手机号",
+          "是",
+          "+86 13552721160",
+          "。"
+        ],
+        "sourceItemId": "D1-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 3,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "好的。",
+        "pinyin": "Hǎo de.",
+        "segments": [
+          "好",
+          "的",
+          "。"
+        ],
+        "sourceItemId": "D1-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "家月，明天你去哪儿？",
+        "pinyin": "Jiāyuè, míngtiān nǐ qù nǎr?",
+        "segments": [
+          "家月",
+          "，",
+          "明天",
+          "你",
+          "去",
+          "哪儿",
+          "？"
+        ],
+        "sourceItemId": "D2-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "陈天中"
+        }
+      },
+      {
+        "hanzi": "我想去超市买东西。",
+        "pinyin": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+        "segments": [
+          "我",
+          "想",
+          "去",
+          "超市",
+          "买东西",
+          "。"
+        ],
+        "sourceItemId": "S-read2-0",
+        "pinyinProvenance": "source",
+        "sourcePage": 56,
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "你去超市买什么？",
+        "pinyin": "Nǐ qù chāoshì mǎi shénme?",
+        "segments": [
+          "你",
+          "去",
+          "超市",
+          "买",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "D2-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "陈天中"
+        }
+      },
+      {
+        "hanzi": "我想买些牛奶。",
+        "pinyin": "Wǒ xiǎng mǎi xiē niúnǎi.",
+        "segments": [
+          "我",
+          "想",
+          "买",
+          "些",
+          "牛奶",
+          "。"
+        ],
+        "sourceItemId": "D2-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "星期天我们去哪儿吃晚饭？",
+        "pinyin": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+        "segments": [
+          "星期天",
+          "我们",
+          "去",
+          "哪儿",
+          "吃",
+          "晚饭",
+          "？"
+        ],
+        "sourceItemId": "D3-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "我还想去西安饭店。",
+        "pinyin": "Wǒ hái xiǎng qù Xī’ān Fàndiàn.",
+        "segments": [
+          "我",
+          "还",
+          "想",
+          "去",
+          "西安饭店",
+          "。"
+        ],
+        "sourceItemId": "D3-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "那边的包子非常好吃，我想吃包子。",
+        "pinyin": "Nàbiān de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi.",
+        "segments": [
+          "那边",
+          "的",
+          "包子",
+          "非常",
+          "好吃",
+          "，",
+          "我",
+          "想",
+          "吃",
+          "包子",
+          "。"
+        ],
+        "sourceItemId": "D3-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "刘小雪"
+        }
+      },
+      {
+        "hanzi": "妈妈，我想吃米饭，不想吃包子。",
+        "pinyin": "Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi.",
+        "segments": [
+          "妈妈",
+          "，",
+          "我",
+          "想",
+          "吃",
+          "米饭",
+          "，",
+          "不",
+          "想",
+          "吃",
+          "包子",
+          "。"
+        ],
+        "sourceItemId": "D3-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "刘小明"
+        }
+      },
+      {
+        "hanzi": "我们怎么去？",
+        "pinyin": "Wǒmen zěnme qù?",
+        "segments": [
+          "我们",
+          "怎么",
+          "去",
+          "？"
+        ],
+        "sourceItemId": "S-read3-1",
+        "pinyinProvenance": "source",
+        "sourcePage": 58,
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "坐出租车去。",
+        "pinyin": "Zuò chūzūchē qù.",
+        "segments": [
+          "坐",
+          "出租车",
+          "去",
+          "。"
+        ],
+        "sourceItemId": "D3-6",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 6,
+          "speaker": "刘明"
+        }
+      }
+    ]
+  }
+}

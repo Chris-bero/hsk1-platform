@@ -1,0 +1,1473 @@
+{
+  "bundleCode": "ch13-fltrp-lesson13",
+  "rev": 2,
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第13课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P96/P98/P100 (课文1–3 dialogues), received 2026-10-21",
+    "extractedPages": "1–57 (full)",
+    "notes": "Vocab from 生词 tables 13-2/13-4/13-6. Example sentences from vocab cards (no English in source). Read-aloud strings from p19/20/44 incl. the layout-reconstructed 请你读一下这个句子。. Grammar explanation p44 kept with source translation. Skipped: p4 warm-up items, p6/p22/p46 listening stems, p20 annotation labels (动词/宾语1/宾语2), extension chips. Sentence pinyin absent from source completed per instructor request (2026-10-21), tagged instructor-requested."
+  },
+  "payload": {
+    "chapter": {
+      "num": 13,
+      "title": "请给我一杯茶 I'll have a cup of tea, please",
+      "sourceFile": "《新HSK教程1》第13课.pdf",
+      "representative": {
+        "hanzi": "请给我一杯茶",
+        "pinyin": "Qǐng gěi wǒ yì bēi chá",
+        "english": "I'll have a cup of tea, please"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "可以",
+        "pinyin": "kěyǐ",
+        "english": "can; may",
+        "pos": "mod.",
+        "sourcePage": 7,
+        "sourceItemId": "W13-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "再",
+        "pinyin": "zài",
+        "english": "once more; again",
+        "pos": "adv.",
+        "sourcePage": 7,
+        "sourceItemId": "W13-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "问题",
+        "pinyin": "wèntí",
+        "english": "question; problem",
+        "pos": "n.",
+        "sourcePage": 7,
+        "sourceItemId": "W13-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "卖",
+        "pinyin": "mài",
+        "english": "sell",
+        "pos": "v.",
+        "sourcePage": 7,
+        "sourceItemId": "W13-2-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "打电话",
+        "pinyin": "dǎ diànhuà",
+        "english": "make a phone call; call",
+        "pos": "",
+        "sourcePage": 7,
+        "sourceItemId": "W13-2-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "一下",
+        "pinyin": "yíxià",
+        "english": "(used after a verb as its complement, indicating an act or an attempt) one time; once",
+        "pos": "num.-m.",
+        "sourcePage": 7,
+        "sourceItemId": "W13-2-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "服务员",
+        "pinyin": "fúwùyuán",
+        "english": "attendant; waiter; waitress",
+        "pos": "n.",
+        "sourcePage": 23,
+        "sourceItemId": "W13-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "女士",
+        "pinyin": "nǚshì",
+        "english": "lady; madam",
+        "pos": "n.",
+        "sourcePage": 23,
+        "sourceItemId": "W13-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "请",
+        "pinyin": "qǐng",
+        "english": "please",
+        "pos": "v.",
+        "sourcePage": 23,
+        "sourceItemId": "W13-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "坐",
+        "pinyin": "zuò",
+        "english": "sit",
+        "pos": "v.",
+        "sourcePage": 23,
+        "sourceItemId": "W13-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "给",
+        "pinyin": "gěi",
+        "english": "give",
+        "pos": "v.",
+        "sourcePage": 23,
+        "sourceItemId": "W13-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "杯",
+        "pinyin": "bēi",
+        "english": "cup; glass",
+        "pos": "n.",
+        "sourcePage": 23,
+        "sourceItemId": "W13-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "english": "demand; ask for",
+        "pos": "v.",
+        "sourcePage": 24,
+        "sourceItemId": "W13-4-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "早饭",
+        "pinyin": "zǎofàn",
+        "english": "breakfast",
+        "pos": "n.",
+        "sourcePage": 24,
+        "sourceItemId": "W13-4-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "这个",
+        "pinyin": "zhège",
+        "english": "this",
+        "pos": "pron.",
+        "sourcePage": 24,
+        "sourceItemId": "W13-4-9",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "面包",
+        "pinyin": "miànbāo",
+        "english": "bread",
+        "pos": "n.",
+        "sourcePage": 24,
+        "sourceItemId": "W13-4-10",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "鸡蛋",
+        "pinyin": "jīdàn",
+        "english": "(hen's) egg",
+        "pos": "n.",
+        "sourcePage": 24,
+        "sourceItemId": "W13-4-11",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "先生",
+        "pinyin": "xiānsheng",
+        "english": "gentleman; sir",
+        "pos": "n.",
+        "sourcePage": 47,
+        "sourceItemId": "W13-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "一半",
+        "pinyin": "yíbàn",
+        "english": "one half; half",
+        "pos": "num.",
+        "sourcePage": 47,
+        "sourceItemId": "W13-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "english": "tea",
+        "pos": "n.",
+        "sourcePage": 47,
+        "sourceItemId": "W13-6-3",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "请给我一杯茶",
+        "pinyin": "Qǐng gěi wǒ yì bēi chá",
+        "segments": [
+          "请",
+          "给",
+          "我",
+          "一杯",
+          "茶"
+        ],
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source",
+        "english": "I'll have a cup of tea, please",
+        "sourcePage": 2
+      },
+      {
+        "hanzi": "教室里，下课后，白家月问王老师问题。",
+        "pinyin": "Jiàoshì lǐ, xiàkè hòu, Bái Jiāyuè wèn Wáng lǎoshī wèntí.",
+        "segments": [
+          "教室里",
+          "，",
+          "下课后",
+          "，",
+          "白家月",
+          "问",
+          "王老师",
+          "问题",
+          "。"
+        ],
+        "sourceItemId": "S-intro1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "In the classroom, after class, Bai Jiayue asked Ms. Wang a question.",
+        "sourcePage": 5
+      },
+      {
+        "hanzi": "在咖啡馆里，王一雪想吃早餐。",
+        "pinyin": "Zài kāfēiguǎn lǐ, Wáng Yīxuě xiǎng chī zǎocān.",
+        "segments": [
+          "在",
+          "咖啡馆",
+          "里",
+          "，",
+          "王一雪",
+          "想",
+          "吃",
+          "早餐",
+          "。"
+        ],
+        "sourceItemId": "S-intro2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "In the café, Wang Yixue wanted to have breakfast.",
+        "sourcePage": 21
+      },
+      {
+        "hanzi": "在餐馆里，刘明在点餐。",
+        "pinyin": "Zài cānguǎn lǐ, Liú Míng zài diǎncān.",
+        "segments": [
+          "在",
+          "餐馆",
+          "里",
+          "，",
+          "刘明",
+          "在",
+          "点餐",
+          "。"
+        ],
+        "sourceItemId": "S-intro3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "In the restaurant, Liu Ming was ordering food.",
+        "sourcePage": 45
+      },
+      {
+        "hanzi": "双宾语句是一个动词带两个宾语的句子。本册学习“给、问”构成的双宾语句。",
+        "pinyin": "Shuāng bīnyǔ jù shì yí gè dòngcí dài liǎng gè bīnyǔ de jùzi. Běn cè xuéxí “gěi, wèn” gòuchéng de shuāng bīnyǔ jù.",
+        "segments": [
+          "双宾语句",
+          "是",
+          "一个",
+          "动词",
+          "带",
+          "两个",
+          "宾语",
+          "的",
+          "句子",
+          "。",
+          "本册",
+          "学习",
+          "“给、问”",
+          "构成",
+          "的",
+          "双宾语句",
+          "。"
+        ],
+        "sourceItemId": "S-grammar1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "A double-object sentence is one where a verb takes two objects. In this volume, we focus on double-object sentences formed by “给” and “问”.",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "妈妈，我们现在可以吃饭了吗？",
+        "pinyin": "Māma, wǒmen xiànzài kěyǐ chī fàn le ma?",
+        "segments": [
+          "妈妈",
+          "，",
+          "我们",
+          "现在",
+          "可以",
+          "吃饭",
+          "了",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-可以-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "我可以坐在这儿吗？",
+        "pinyin": "Wǒ kěyǐ zuò zài zhèr ma?",
+        "segments": [
+          "我",
+          "可以",
+          "坐",
+          "在",
+          "这儿",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-可以-A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "可以，你坐吧。",
+        "pinyin": "Kěyǐ, nǐ zuò ba.",
+        "segments": [
+          "可以",
+          "，",
+          "你",
+          "坐",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-可以-B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "我想再吃一个苹果。",
+        "pinyin": "Wǒ xiǎng zài chī yí gè píngguǒ.",
+        "segments": [
+          "我",
+          "想",
+          "再",
+          "吃",
+          "一个",
+          "苹果",
+          "。"
+        ],
+        "sourceItemId": "EX-再-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "妈妈，再给我读一本书吧。",
+        "pinyin": "Māma, zài gěi wǒ dú yì běn shū ba.",
+        "segments": [
+          "妈妈",
+          "，",
+          "再",
+          "给",
+          "我",
+          "读",
+          "一本",
+          "书",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-再-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "你有问题可以来问我。",
+        "pinyin": "Nǐ yǒu wèntí kěyǐ lái wèn wǒ.",
+        "segments": [
+          "你",
+          "有",
+          "问题",
+          "可以",
+          "来",
+          "问",
+          "我",
+          "。"
+        ],
+        "sourceItemId": "EX-问题-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "我有很多问题要问老师。",
+        "pinyin": "Wǒ yǒu hěn duō wèntí yào wèn lǎoshī.",
+        "segments": [
+          "我",
+          "有",
+          "很多",
+          "问题",
+          "要",
+          "问",
+          "老师",
+          "。"
+        ],
+        "sourceItemId": "EX-问题-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "那边在卖什么东西？",
+        "pinyin": "Nàbian zài mài shénme dōngxi?",
+        "segments": [
+          "那边",
+          "在",
+          "卖",
+          "什么",
+          "东西",
+          "？"
+        ],
+        "sourceItemId": "EX-卖-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 11
+      },
+      {
+        "hanzi": "他在一家商店卖水果。",
+        "pinyin": "Tā zài yì jiā shāngdiàn mài shuǐguǒ.",
+        "segments": [
+          "他",
+          "在",
+          "一家",
+          "商店",
+          "卖",
+          "水果",
+          "。"
+        ],
+        "sourceItemId": "EX-卖-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 11
+      },
+      {
+        "hanzi": "老师在打电话呢。",
+        "pinyin": "Lǎoshī zài dǎ diànhuà ne.",
+        "segments": [
+          "老师",
+          "在",
+          "打电话",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "EX-打电话-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 12
+      },
+      {
+        "hanzi": "昨天我给妈妈打了一个电话。",
+        "pinyin": "Zuótiān wǒ gěi māma dǎ le yí gè diànhuà.",
+        "segments": [
+          "昨天",
+          "我",
+          "给",
+          "妈妈",
+          "打",
+          "了",
+          "一个",
+          "电话",
+          "。"
+        ],
+        "sourceItemId": "EX-打电话-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 12
+      },
+      {
+        "hanzi": "你看一下时间，现在几点了？",
+        "pinyin": "Nǐ kàn yíxià shíjiān, xiànzài jǐ diǎn le?",
+        "segments": [
+          "你",
+          "看",
+          "一下",
+          "时间",
+          "，",
+          "现在",
+          "几点",
+          "了",
+          "？"
+        ],
+        "sourceItemId": "EX-一下-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "我们休息一下吧。",
+        "pinyin": "Wǒmen xiūxi yíxià ba.",
+        "segments": [
+          "我们",
+          "休息",
+          "一下",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-一下-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "我是这个饭馆的服务员。",
+        "pinyin": "Wǒ shì zhège fànguǎn de fúwùyuán.",
+        "segments": [
+          "我",
+          "是",
+          "这个",
+          "饭馆",
+          "的",
+          "服务员",
+          "。"
+        ],
+        "sourceItemId": "EX-服务员-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "我想找一下这里的服务员。",
+        "pinyin": "Wǒ xiǎng zhǎo yíxià zhèlǐ de fúwùyuán.",
+        "segments": [
+          "我",
+          "想",
+          "找",
+          "一下",
+          "这里",
+          "的",
+          "服务员",
+          "。"
+        ],
+        "sourceItemId": "EX-服务员-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "王女士是我的大学同学。",
+        "pinyin": "Wáng nǚshì shì wǒ de dàxué tóngxué.",
+        "segments": [
+          "王女士",
+          "是",
+          "我",
+          "的",
+          "大学",
+          "同学",
+          "。"
+        ],
+        "sourceItemId": "EX-女士-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "女士们、先生们，大家好！",
+        "pinyin": "Nǚshìmen, xiānshengmen, dàjiā hǎo!",
+        "segments": [
+          "女士们",
+          "、",
+          "先生们",
+          "，",
+          "大家",
+          "好",
+          "！"
+        ],
+        "sourceItemId": "EX-女士-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "您请坐，请喝茶。",
+        "pinyin": "Nín qǐng zuò, qǐng hē chá.",
+        "segments": [
+          "您",
+          "请",
+          "坐",
+          "，",
+          "请",
+          "喝",
+          "茶",
+          "。"
+        ],
+        "sourceItemId": "EX-请-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 27
+      },
+      {
+        "hanzi": "请给我一杯热水，谢谢。",
+        "pinyin": "Qǐng gěi wǒ yì bēi rè shuǐ, xièxie.",
+        "segments": [
+          "请",
+          "给",
+          "我",
+          "一杯",
+          "热水",
+          "，",
+          "谢谢",
+          "。"
+        ],
+        "sourceItemId": "EX-请-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 27
+      },
+      {
+        "hanzi": "我们坐在那边吧。",
+        "pinyin": "Wǒmen zuò zài nàbian ba.",
+        "segments": [
+          "我们",
+          "坐",
+          "在",
+          "那边",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-坐-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 28
+      },
+      {
+        "hanzi": "她坐在我前边。",
+        "pinyin": "Tā zuò zài wǒ qiánbian.",
+        "segments": [
+          "她",
+          "坐",
+          "在",
+          "我",
+          "前边",
+          "。"
+        ],
+        "sourceItemId": "EX-坐-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 28
+      },
+      {
+        "hanzi": "给你一个苹果。",
+        "pinyin": "Gěi nǐ yí gè píngguǒ.",
+        "segments": [
+          "给",
+          "你",
+          "一个",
+          "苹果",
+          "。"
+        ],
+        "sourceItemId": "EX-给-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 29
+      },
+      {
+        "hanzi": "哥哥给了我一个新电脑。",
+        "pinyin": "Gēge gěi le wǒ yí gè xīn diànnǎo.",
+        "segments": [
+          "哥哥",
+          "给",
+          "了",
+          "我",
+          "一个",
+          "新",
+          "电脑",
+          "。"
+        ],
+        "sourceItemId": "EX-给-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 29
+      },
+      {
+        "hanzi": "我想要一杯茶。",
+        "pinyin": "Wǒ xiǎng yào yì bēi chá.",
+        "segments": [
+          "我",
+          "想要",
+          "一杯",
+          "茶",
+          "。"
+        ],
+        "sourceItemId": "EX-杯-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 30
+      },
+      {
+        "hanzi": "今天早上我喝了一杯牛奶。",
+        "pinyin": "Jīntiān zǎoshang wǒ hē le yì bēi niúnǎi.",
+        "segments": [
+          "今天",
+          "早上",
+          "我",
+          "喝",
+          "了",
+          "一杯",
+          "牛奶",
+          "。"
+        ],
+        "sourceItemId": "EX-杯-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 30
+      },
+      {
+        "hanzi": "我要一杯热水，谢谢。",
+        "pinyin": "Wǒ yào yì bēi rè shuǐ, xièxie.",
+        "segments": [
+          "我",
+          "要",
+          "一杯",
+          "热水",
+          "，",
+          "谢谢",
+          "。"
+        ],
+        "sourceItemId": "EX-要-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 31
+      },
+      {
+        "hanzi": "儿子想要一个新手机。",
+        "pinyin": "Érzi xiǎng yào yí gè xīn shǒujī.",
+        "segments": [
+          "儿子",
+          "想要",
+          "一个",
+          "新",
+          "手机",
+          "。"
+        ],
+        "sourceItemId": "EX-要-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 31
+      },
+      {
+        "hanzi": "你吃早饭了吗？",
+        "pinyin": "Nǐ chī zǎofàn le ma?",
+        "segments": [
+          "你",
+          "吃",
+          "早饭",
+          "了",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-早饭-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "今天学校的早饭很好吃。",
+        "pinyin": "Jīntiān xuéxiào de zǎofàn hěn hǎochī.",
+        "segments": [
+          "今天",
+          "学校",
+          "的",
+          "早饭",
+          "很",
+          "好吃",
+          "。"
+        ],
+        "sourceItemId": "EX-早饭-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "这个房间真大！",
+        "pinyin": "Zhège fángjiān zhēn dà!",
+        "segments": [
+          "这个",
+          "房间",
+          "真",
+          "大",
+          "！"
+        ],
+        "sourceItemId": "EX-这个-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我喜欢这个杯子。",
+        "pinyin": "Wǒ xǐhuan zhège bēizi.",
+        "segments": [
+          "我",
+          "喜欢",
+          "这个",
+          "杯子",
+          "。"
+        ],
+        "sourceItemId": "EX-这个-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我想再吃一块面包。",
+        "pinyin": "Wǒ xiǎng zài chī yí kuài miànbāo.",
+        "segments": [
+          "我",
+          "想",
+          "再",
+          "吃",
+          "一块",
+          "面包",
+          "。"
+        ],
+        "sourceItemId": "EX-面包-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "您做的面包真好吃！",
+        "pinyin": "Nín zuò de miànbāo zhēn hǎochī!",
+        "segments": [
+          "您",
+          "做",
+          "的",
+          "面包",
+          "真",
+          "好吃",
+          "！"
+        ],
+        "sourceItemId": "EX-面包-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "我昨天在超市买了三斤鸡蛋。",
+        "pinyin": "Wǒ zuótiān zài chāoshì mǎi le sān jīn jīdàn.",
+        "segments": [
+          "我",
+          "昨天",
+          "在",
+          "超市",
+          "买",
+          "了",
+          "三斤",
+          "鸡蛋",
+          "。"
+        ],
+        "sourceItemId": "EX-鸡蛋-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "我的早饭是两个鸡蛋、一杯牛奶、一块面包。",
+        "pinyin": "Wǒ de zǎofàn shì liǎng gè jīdàn, yì bēi niúnǎi, yí kuài miànbāo.",
+        "segments": [
+          "我",
+          "的",
+          "早饭",
+          "是",
+          "两个",
+          "鸡蛋",
+          "、",
+          "一杯",
+          "牛奶",
+          "、",
+          "一块",
+          "面包",
+          "。"
+        ],
+        "sourceItemId": "EX-鸡蛋-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "先生，请坐。",
+        "pinyin": "Xiānsheng, qǐng zuò.",
+        "segments": [
+          "先生",
+          "，",
+          "请",
+          "坐",
+          "。"
+        ],
+        "sourceItemId": "EX-先生-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "李先生今天没上班，您明天再打电话吧。",
+        "pinyin": "Lǐ xiānsheng jīntiān méi shàngbān, nín míngtiān zài dǎ diànhuà ba.",
+        "segments": [
+          "李先生",
+          "今天",
+          "没",
+          "上班",
+          "，",
+          "您",
+          "明天",
+          "再",
+          "打电话",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-先生-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "这个面包我吃了一半。",
+        "pinyin": "Zhège miànbāo wǒ chī le yíbàn.",
+        "segments": [
+          "这个",
+          "面包",
+          "我",
+          "吃",
+          "了",
+          "一半",
+          "。"
+        ],
+        "sourceItemId": "EX-一半-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "这个苹果我们一人一半吧。",
+        "pinyin": "Zhège píngguǒ wǒmen yì rén yíbàn ba.",
+        "segments": [
+          "这个",
+          "苹果",
+          "我们",
+          "一人",
+          "一半",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-一半-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "很多中国人喜欢喝茶。",
+        "pinyin": "Hěn duō Zhōngguó rén xǐhuan hē chá.",
+        "segments": [
+          "很多",
+          "中国人",
+          "喜欢",
+          "喝",
+          "茶",
+          "。"
+        ],
+        "sourceItemId": "EX-茶-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 50
+      },
+      {
+        "hanzi": "桌子上有一杯热茶。",
+        "pinyin": "Zhuōzi shang yǒu yì bēi rè chá.",
+        "segments": [
+          "桌子上",
+          "有",
+          "一杯",
+          "热",
+          "茶",
+          "。"
+        ],
+        "sourceItemId": "EX-茶-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 50
+      },
+      {
+        "hanzi": "我可以再问您一个问题吗？",
+        "pinyin": "Wǒ kěyǐ zài wèn nín yí gè wèntí ma?",
+        "segments": [
+          "我",
+          "可以",
+          "再",
+          "问",
+          "您",
+          "一个",
+          "问题",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "S-read1-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "你们可以看这本书。",
+        "pinyin": "Nǐmen kěyǐ kàn zhè běn shū.",
+        "segments": [
+          "你们",
+          "可以",
+          "看",
+          "这",
+          "本",
+          "书",
+          "。"
+        ],
+        "sourceItemId": "S-read1-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "我可以坐吗？",
+        "pinyin": "Wǒ kěyǐ zuò ma?",
+        "segments": [
+          "我",
+          "可以",
+          "坐",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "S-read1-3A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "可以，请坐！",
+        "pinyin": "Kěyǐ, qǐng zuò!",
+        "segments": [
+          "可以",
+          "，",
+          "请",
+          "坐",
+          "！"
+        ],
+        "sourceItemId": "S-read1-3B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "你可以打电话问一下。",
+        "pinyin": "Nǐ kěyǐ dǎ diànhuà wèn yíxià.",
+        "segments": [
+          "你",
+          "可以",
+          "打电话",
+          "问",
+          "一下",
+          "。"
+        ],
+        "sourceItemId": "S-read2-1",
+        "pinyinProvenance": "source",
+        "sourcePage": 20,
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "请休息一下。",
+        "pinyin": "Qǐng xiūxi yíxià.",
+        "segments": [
+          "请",
+          "休息",
+          "一下",
+          "。"
+        ],
+        "sourceItemId": "S-read2-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 20
+      },
+      {
+        "hanzi": "你看一下吧。",
+        "pinyin": "Nǐ kàn yíxià ba.",
+        "segments": [
+          "你",
+          "看",
+          "一下",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "S-read2-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 20
+      },
+      {
+        "hanzi": "请你读一下这个句子。",
+        "pinyin": "Qǐng nǐ dú yíxià zhège jùzi.",
+        "segments": [
+          "请",
+          "你",
+          "读",
+          "一下",
+          "这个",
+          "句子",
+          "。"
+        ],
+        "sourceItemId": "S-read2-4",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 20
+      },
+      {
+        "hanzi": "请给我一杯牛奶。",
+        "pinyin": "Qǐng gěi wǒ yì bēi niúnǎi.",
+        "segments": [
+          "请",
+          "给",
+          "我",
+          "一杯",
+          "牛奶",
+          "。"
+        ],
+        "sourceItemId": "S-read3-1",
+        "pinyinProvenance": "source",
+        "sourcePage": 44,
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "白家月给安妮一个苹果。",
+        "pinyin": "Bái Jiāyuè gěi Ānnī yí gè píngguǒ.",
+        "segments": [
+          "白家月",
+          "给",
+          "安妮",
+          "一个",
+          "苹果",
+          "。"
+        ],
+        "sourceItemId": "S-read3-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "我问老师两个问题。",
+        "pinyin": "Wǒ wèn lǎoshī liǎng gè wèntí.",
+        "segments": [
+          "我",
+          "问",
+          "老师",
+          "两个",
+          "问题",
+          "。"
+        ],
+        "sourceItemId": "S-read3-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "王老师，我可以再问您一个问题吗？",
+        "pinyin": "Wáng lǎoshī, wǒ kěyǐ zài wèn nín yí gè wèntí ma?",
+        "segments": [
+          "王老师",
+          "，",
+          "我",
+          "可以",
+          "再",
+          "问",
+          "您",
+          "一个",
+          "问题",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "D1-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "可以。",
+        "pinyin": "Kěyǐ.",
+        "segments": [
+          "可以",
+          "。"
+        ],
+        "sourceItemId": "D1-2a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "你有什么问题？",
+        "pinyin": "Nǐ yǒu shénme wèntí?",
+        "segments": [
+          "你",
+          "有",
+          "什么",
+          "问题",
+          "？"
+        ],
+        "sourceItemId": "D1-2b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "那个小店卖不卖手机？",
+        "pinyin": "Nàge xiǎodiàn mài bu mài shǒujī?",
+        "segments": [
+          "那个",
+          "小店",
+          "卖",
+          "不",
+          "卖",
+          "手机",
+          "？"
+        ],
+        "sourceItemId": "D1-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 3,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "我不知道。",
+        "pinyin": "Wǒ bù zhīdào.",
+        "segments": [
+          "我",
+          "不",
+          "知道",
+          "。"
+        ],
+        "sourceItemId": "D1-4a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "王一飞"
+        }
+      },
+      {
+        "hanzi": "女士，请坐！您喝什么？",
+        "pinyin": "Nǚshì, qǐng zuò! Nín hē shénme?",
+        "segments": [
+          "女士",
+          "，",
+          "请",
+          "坐",
+          "！",
+          "您",
+          "喝",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "D2-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "服务员"
+        }
+      },
+      {
+        "hanzi": "我看一下。",
+        "pinyin": "Wǒ kàn yíxià.",
+        "segments": [
+          "我",
+          "看",
+          "一下",
+          "。"
+        ],
+        "sourceItemId": "D2-2a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "好的。",
+        "pinyin": "Hǎo de.",
+        "segments": [
+          "好",
+          "的",
+          "。"
+        ],
+        "sourceItemId": "D2-3a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "服务员"
+        }
+      },
+      {
+        "hanzi": "您还要什么？",
+        "pinyin": "Nín hái yào shénme?",
+        "segments": [
+          "您",
+          "还",
+          "要",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "D2-3b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "服务员"
+        }
+      },
+      {
+        "hanzi": "我还没吃早饭，再要这个面包和鸡蛋吧。",
+        "pinyin": "Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.",
+        "segments": [
+          "我",
+          "还",
+          "没",
+          "吃",
+          "早饭",
+          "，",
+          "再",
+          "要",
+          "这个",
+          "面包",
+          "和",
+          "鸡蛋",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "D2-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "先生，请坐！您要什么？",
+        "pinyin": "Xiānsheng, qǐng zuò! Nín yào shénme?",
+        "segments": [
+          "先生",
+          "，",
+          "请",
+          "坐",
+          "！",
+          "您",
+          "要",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "D3-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "服务员"
+        }
+      },
+      {
+        "hanzi": "我要一斤饺子。",
+        "pinyin": "Wǒ yào yì jīn jiǎozi.",
+        "segments": [
+          "我",
+          "要",
+          "一斤",
+          "饺子",
+          "。"
+        ],
+        "sourceItemId": "D3-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "一斤饺子40个。",
+        "pinyin": "Yì jīn jiǎozi sìshí gè.",
+        "segments": [
+          "一斤",
+          "饺子",
+          "40",
+          "个",
+          "。"
+        ],
+        "sourceItemId": "D3-3b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "服务员"
+        }
+      },
+      {
+        "hanzi": "40个太多了，我要一半吧。",
+        "pinyin": "Sìshí gè tài duō le, wǒ yào yíbàn ba.",
+        "segments": [
+          "40",
+          "个",
+          "太",
+          "多",
+          "了",
+          "，",
+          "我",
+          "要",
+          "一半",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "D3-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "半斤是20个。",
+        "pinyin": "Bàn jīn shì èrshí gè.",
+        "segments": [
+          "半斤",
+          "是",
+          "20",
+          "个",
+          "。"
+        ],
+        "sourceItemId": "D3-5a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "服务员"
+        }
+      },
+      {
+        "hanzi": "您想喝什么？",
+        "pinyin": "Nín xiǎng hē shénme?",
+        "segments": [
+          "您",
+          "想",
+          "喝",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "D3-5b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "服务员"
+        }
+      },
+      {
+        "hanzi": "请给我一杯茶吧。",
+        "pinyin": "Qǐng gěi wǒ yì bēi chá ba.",
+        "segments": [
+          "请",
+          "给",
+          "我",
+          "一杯",
+          "茶",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "D3-6",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 6,
+          "speaker": "刘明"
+        }
+      }
+    ]
+  }
+}

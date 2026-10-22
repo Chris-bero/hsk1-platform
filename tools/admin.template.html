@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HSK 1 — Admin Console</title>
+<style>
+/* @@STYLE@@ */
+/* ===== admin-specific ===== */
+.adminwrap{max-width:1100px;margin:0 auto;padding:26px 22px 70px;width:100%}
+.adminhdr{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap}
+.adminhdr .brand small{color:var(--warn)}
+.report{background:var(--bg2);border:1px solid var(--line2);border-radius:var(--radius-s);padding:14px 16px;margin-top:10px;font-size:13px}
+.report h4{font-size:13px;margin-bottom:6px;color:var(--warn)}
+.report ul{margin:4px 0 8px 18px;color:var(--muted)}
+.actbtns{display:flex;gap:6px;flex-wrap:wrap}
+textarea#importta{width:100%;min-height:210px;line-height:1.55}
+details.schema{margin-top:12px;font-size:13px;color:var(--muted)}
+details.schema summary{cursor:pointer;color:var(--cat-vocab);font-weight:600}
+details.schema pre{background:var(--bg2);border:1px solid var(--line2);border-radius:var(--radius-s);padding:12px;overflow-x:auto;margin-top:8px;font-size:12px;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+"use strict";
+window.addEventListener("error",function(ev){
+  try{var d=document.createElement("div");
+  d.style.cssText="position:fixed;left:0;right:0;top:0;z-index:999;background:#7a1020;color:#fff;padding:10px 16px;font:12px ui-monospace,monospace;white-space:pre-wrap";
+  d.textContent="PAGE ERROR: "+(ev.message||"unknown")+" @ line "+(ev.lineno||"?")+" — copy this message to the developer";
+  (document.body||document.documentElement).appendChild(d);}catch(e){}
+});
+/* =====================================================================
+   ADMIN CONSOLE — separate page from the student app (index.html).
+   Shares the same localStorage database and the SAME core engine code,
+   which is injected at build time from index.html between the
+   @@CORE-START@@ / @@CORE-END@@ markers. Do not edit the core here:
+   edit index.html, then run:  python3 tools/build_admin.py
+   ===================================================================== */
+/* @@CORE@@ */
+
+/* =====================================================================
+   Admin UI (this file only)
+   ===================================================================== */
+const $A=(s,r=document)=>r.querySelector(s);
+function deleteChapter(id){
+  const ch=chapterById(id);if(!ch)return;
+  if(!confirm('Delete chapter "'+ch.title+'" and ALL its vocab, sentences and generated questions?\nStudent attempt history is kept (questions become orphaned in stats).'))return;
+  DB.chapters=DB.chapters.filter(c=>c.id!==id);
+  DB.vocab=DB.vocab.filter(v=>v.chapterId!==id);
+  DB.sentences=DB.sentences.filter(s=>s.chapterId!==id);
+  DB.questions=DB.questions.filter(q=>q.chapterId!==id);
+  saveDB();render();
+}
+function revalidate(id){const ch=chapterById(id);if(!ch)return;
+  ch.validation=validateChapter(id);
+  if(isReady(ch))ch.status=ch.validation.ok?(ch.validation.flagged>0?"review":"ready"):"review";
+  saveDB();render();}
+function regenerate(id){const ch=chapterById(id);if(!ch)return;
+  if(!confirm("Regenerate the question bank for this chapter? Existing bank questions for it are replaced (attempts history is kept)."))return;
+  const rep=genQuestionsForChapter(id);
+  ch.validation={...validateChapter(id),gen:rep};
+  if(isReady(ch))ch.status=ch.validation.ok?(ch.validation.flagged>0?"review":"ready"):"review";
+  saveDB();render();}
+function deleteUserAccount(id){
+  const x=DB.users.find(u=>u.id===id);if(!x||x.id===me().id)return;
+  if(!confirm("Delete account "+x.name+" and all their progress on this device?"))return;
+  DB.users=DB.users.filter(u=>u.id!==id);
+  DB.attempts=DB.attempts.filter(a=>a.userId!==id);
+  DB.exams=DB.exams.filter(e=>e.userId!==id);
+  DB.timeLog=DB.timeLog.filter(t=>t.userId!==id);
+  delete DB.vocabProgress[id];delete DB.chapterProgress[id];delete DB.settings[id];
+  saveDB();render();}
+
+let openReport=null;
+let adminTab=(location.hash==="#teacher")?"teacher":"content";
+function render(){
+  applyTheme();
+  applyPinyinClass();
+  ensureCurriculumImported();
+  document.body.classList.remove("navcollapsed");
+  const app=$A("#app");app.innerHTML="";
+  const u=me();
+  if(!u||u.role!=="admin"){drawGate(app,u);return;}
+  drawConsole(app,u);
+}
+function drawGate(app,u){
+  const wrap=h("div",{class:"authwrap"});
+  wrap.appendChild(h("div",{style:"text-align:center;margin-bottom:20px"},
+    h("div",{class:"logo hanzi",style:"width:56px;height:56px;border-radius:14px;background:var(--accent-grad);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:26px;font-weight:800;box-shadow:0 6px 20px rgba(232,54,93,.4)"},"🛠"),
+    h("h1",{style:"font-size:20px;margin-top:10px"},"Admin Console"),
+    h("p",{style:"color:var(--muted);font-size:13px"},"HSK 1 Practice & Tests — content management")));
+  const card=h("div",{class:"card"});
+  if(u){ // logged in as student
+    card.appendChild(h("div",{class:"notice err"},"You are logged in as ",h("b",{},u.name)," (student role). Administrative functions are restricted to admin accounts."));
+    card.appendChild(h("div",{style:"display:flex;gap:10px"},
+      h("button",{class:"btn",onclick:()=>{DB.sessionUserId=null;saveDB();render();}},"Switch account"),
+      h("a",{href:"index.html",class:"btn ghost"},"← Student site")));
+    wrap.appendChild(card);app.appendChild(wrap);return;
+  }
+  const err=h("div",{class:"notice err",style:"display:none"});
+  const nameI=h("input",{placeholder:"Admin display name",autocomplete:"username",style:"width:100%"});
+  const passI=h("input",{type:"password",placeholder:"Password",autocomplete:"current-password",style:"width:100%"});
+  card.appendChild(err);
+  card.appendChild(h("div",{class:"field"},h("label",{},"Display name"),nameI));
+  card.appendChild(h("div",{class:"field"},h("label",{},"Password"),passI));
+  const go=()=>{
+    const r=login(nameI.value,passI.value);
+    if(r.err){err.textContent=r.err;err.style.display="block";return;}
+    if(r.ok.role!=="admin"){
+      DB.sessionUserId=null;saveDB();
+      err.textContent="Account \""+r.ok.name+"\" has the student role. The first registered account on the student site receives admin automatically; you can also promote accounts from another admin session.";
+      err.style.display="block";return;}
+    render();
+  };
+  passI.addEventListener("keydown",e=>{if(e.key==="Enter")go();});
+  card.appendChild(h("button",{class:"btn primary",style:"width:100%",onclick:go},"Log in as admin"));
+  card.appendChild(h("p",{style:"font-size:11px;color:var(--dim);margin-top:12px;text-align:center"},
+    "No account yet? Register on the student site first — the first account becomes admin automatically."));
+  card.appendChild(h("div",{style:"text-align:center;margin-top:6px"},h("a",{href:"index.html",style:"font-size:13px"},"← Back to student site")));
+  wrap.appendChild(card);app.appendChild(wrap);
+}
+function drawConsole(app,u){
+  const wrap=h("div",{class:"adminwrap fade"});
+  const flaggedTotal=DB.chapters.reduce((a,c)=>a+((c.validation&&c.validation.flagged)||0),0);
+  wrap.appendChild(h("div",{class:"adminhdr"},
+    h("a",{href:"index.html",class:"brand",style:"color:inherit"},
+      h("div",{class:"logo hanzi"},"汉"),
+      h("div",{},h("div",{},"HSK 1 Admin Console"),h("small",{},"content management · separate from the student site"))),
+    h("div",{class:"spacer",style:"flex:1"}),
+    h("span",{class:"chip review"},"🛠 "+u.name),
+    h("a",{href:"index.html",class:"btn sm"},"← Student site"),
+    h("button",{class:"btn sm ghost",onclick:()=>{DB.sessionUserId=null;saveDB();render();}},"Logout")));
+
+  /* tabs: content vs teacher dashboard */
+  wrap.appendChild(h("div",{class:"tabs",style:"margin-bottom:18px"},
+    h("button",{class:adminTab==="content"?"on":"",onclick:()=>{adminTab="content";render();}},"📚 Content & Sync"),
+    h("button",{class:adminTab==="teacher"?"on":"",onclick:()=>{adminTab="teacher";render();}},"🎓 Teacher Dashboard")));
+  if(adminTab==="teacher"){drawTeacher(wrap);return;}
+
+  /* stats */
+  wrap.appendChild(h("div",{class:"grid g4",style:"margin-bottom:20px"},
+    h("div",{class:"stat"},h("div",{class:"sic"},"📚"),h("div",{class:"v"},DB.chapters.length),h("div",{class:"l"},"Chapters"),
+      h("div",{class:"d"},DB.chapters.filter(c=>c.status==="pending").length+" pending · "+DB.chapters.filter(isReady).length+" ready")),
+    h("div",{class:"stat"},h("div",{class:"sic"},"📝"),h("div",{class:"v"},DB.questions.length),h("div",{class:"l"},"Bank questions"),
+      h("div",{class:"d"},DB.vocab.length+" words · "+DB.sentences.length+" sentences")),
+    h("div",{class:"stat"},h("div",{class:"sic",style:"color:var(--warn);background:var(--warn-soft)"},"⚠"),h("div",{class:"v",style:"color:var(--warn)"},flaggedTotal),h("div",{class:"l"},"Flagged for review"),
+      h("div",{class:"d"},"excluded from exams until approved")),
+    h("div",{class:"stat"},h("div",{class:"sic",style:"color:var(--cat-vocab);background:rgba(84,199,251,.12)"}, "👥"),h("div",{class:"v"},DB.users.length),h("div",{class:"l"},"Accounts"),
+      h("div",{class:"d"},DB.users.filter(x=>x.role==="admin").length+" admin"))));
+
+  /* chapters table */
+  const tcard=h("div",{class:"card",style:"padding:8px 16px 16px;margin-bottom:20px;overflow-x:auto"});
+  tcard.appendChild(h("h3",{style:"font-size:15px;margin:10px 0"},"Chapters"));
+  if(!DB.chapters.length)tcard.appendChild(h("div",{class:"empty",style:"padding:30px"},h("h3",{},"No chapters"),h("p",{},"Import processed chapter JSON below, or load the technical test fixture to verify the engine.")));
+  else{
+    const tbl=h("table",{class:"tbl"},h("thead",{},h("tr",{},h("th",{},"Ch"),h("th",{},"Title"),h("th",{},"Status"),h("th",{},"Words"),h("th",{},"Sentences"),h("th",{},"Questions"),h("th",{},"Validation"),h("th",{},"Actions"))));
+    const tb=h("tbody",{});
+    DB.chapters.slice().sort((a,b)=>a.num-b.num).forEach(ch=>{
+      const v=ch.validation;
+      const tr=h("tr",{},
+        h("td",{},ch.num+(ch.isFixture?" ⚙":"")),
+        h("td",{},ch.title,h("div",{class:"mono",style:"color:var(--dim);font-size:11px"},ch.sourceFile||"—")),
+        h("td",{},h("span",{class:"chip "+(isReady(ch)?(ch.status==="review"?"review":"ready"):"pending")},ch.status)),
+        h("td",{},vocabOf(ch.id).length),h("td",{},sentencesOf(ch.id).length),h("td",{},questionsOf(ch.id).length),
+        h("td",{style:"font-size:12px"},v?(v.ok?(v.flagged?"⚠ "+v.flagged+" flagged":"✓ passed"):"✗ "+v.issues.length+" issues"):"—"),
+        h("td",{},h("div",{class:"actbtns"},
+          h("button",{class:"btn sm ghost",onclick:()=>{openReport=openReport===ch.id?null:ch.id;render();}},"report"),
+          h("button",{class:"btn sm ghost",onclick:()=>revalidate(ch.id)},"re-validate"),
+          h("button",{class:"btn sm ghost",onclick:()=>regenerate(ch.id)},"regenerate"),
+          h("button",{class:"btn sm ghost",style:"color:var(--bad)",onclick:()=>deleteChapter(ch.id)},"delete"))));
+      tb.appendChild(tr);
+      if(openReport===ch.id){
+        const val=v||validateChapter(ch.id);
+        const rep=h("tr",{},h("td",{colspan:"8"},h("div",{class:"report"},
+          h("h4",{},"Source & coverage report — "+ch.title),
+          h("div",{class:"mono",style:"color:var(--muted);font-size:12px;margin-bottom:6px"},
+            "source file: "+(ch.sourceFile||"—")+" · imported: "+fmtDate(ch.importedAt)+
+            " · words: "+val.counts.words+" · sentences: "+val.counts.sentences+" · questions: "+val.counts.questions+
+            (val.gen?" · generated by type: "+JSON.stringify(val.gen.byType):"")),
+          h("h4",{},val.issues.length?"Blocking issues ("+val.issues.length+")":"No blocking issues ✓"),
+          val.issues.length?h("ul",{},...val.issues.map(i=>h("li",{},i))):null,
+          h("h4",{style:"color:var(--cat-vocab)"},val.warnings.length?"Warnings ("+val.warnings.length+")":"No warnings"),
+          val.warnings.length?h("ul",{},...val.warnings.slice(0,30).map(i=>h("li",{},i))):null,
+          val.flagged?h("div",{style:"color:var(--warn);font-size:12.5px"},val.flagged+" question(s) flagged 'review' — they are excluded from exams until source content is sufficient or you approve them."):null)));
+        tb.appendChild(rep);
+      }
+    });
+    tbl.appendChild(tb);tcard.appendChild(tbl);
+  }
+  wrap.appendChild(tcard);
+
+  /* import */
+  const out=h("div",{});
+  const ta=h("textarea",{id:"importta",class:"mono",spellcheck:"false",placeholder:'{\n  "chapter": {"num": 1, "title": "...(exact title from source)...", "sourceFile": "chapter01.pdf",\n               "representative": {"hanzi":"...","pinyin":"...","english":"..."}},\n  "vocab": [{"hanzi":"...","pinyin":"...","english":"...","sourcePage":12,"sourceItemId":"W1","pinyinVerified":true}],\n  "sentences": [{"hanzi":"...","pinyin":"...","english":"...","segments":["...","...","。"],"sourcePage":13,"sourceItemId":"S1"}]\n}'});
+  wrap.appendChild(h("div",{class:"card",style:"margin-bottom:20px"},
+    h("h3",{style:"font-size:15px;margin-bottom:8px"},"Import chapter JSON"),
+    h("p",{style:"font-size:12.5px;color:var(--muted);margin-bottom:10px"},
+      "The JSON must contain ONLY content extracted from the instructor-supplied files. The engine generates questions from it, runs validation, and sets status to Ready (or Needs Review when anything is flagged). segments.join(\"\") must equal hanzi exactly."),
+    ta,out,
+    h("div",{style:"display:flex;gap:10px;margin-top:12px;flex-wrap:wrap"},
+      h("button",{class:"btn primary",onclick:()=>{
+        out.innerHTML="";
+        let payload;try{payload=JSON.parse(ta.value);}catch(e){out.appendChild(h("div",{class:"notice err",style:"margin-top:12px"},"Invalid JSON: "+e.message));return;}
+        const r=importChapterJSON(payload);
+        if(!r.ok){out.appendChild(h("div",{class:"notice err",style:"margin-top:12px"},"Import failed: "+r.errors.join("; ")));return;}
+        out.appendChild(h("div",{class:"notice "+(r.chapter.status==="ready"?"ok":"warn"),style:"margin-top:12px"},
+          "Imported \""+r.chapter.title+"\" → status: "+r.chapter.status+
+          " · words: "+r.validation.counts.words+" · sentences: "+r.validation.counts.sentences+
+          " · questions generated: "+r.gen.generated+" (flagged: "+r.gen.flagged+")"+
+          (r.validation.issues.length?" · ISSUES: "+r.validation.issues.join("; "):"")+
+          (r.validation.warnings.length?" · "+r.validation.warnings.length+" warning(s) — open the chapter report.":"")));
+        ta.value="";render();
+      }},"Import & validate"),
+      h("button",{class:"btn",onclick:()=>{const added=loadFixture();render();if(!added)alert("Fixture already loaded.");}},"⚙ Load technical test fixture"),
+      DB.chapters.some(c=>c.isFixture)?h("button",{class:"btn ghost",style:"color:var(--bad)",onclick:()=>{removeFixture();render();}},"Remove fixture"):null),
+    h("details",{class:"schema"},h("summary",{},"JSON schema reference"),
+      h("pre",{},'chapter.num        number (display order)\nchapter.title      string — EXACT title from the source material\nchapter.sourceFile string — provenance (e.g. "hsk1_ch01.pdf")\nchapter.representative  optional {hanzi,pinyin,english} from source\nvocab[]            {hanzi*, pinyin, english*, sourcePage, sourceItemId, pinyinVerified}\nsentences[]        {hanzi*, pinyin, english*, segments[], altOrders[][], sourcePage, sourceItemId}\n\n* required. pinyinVerified=true ONLY when pinyin came from the source\n  or was explicitly confirmed. Missing pinyin is flagged, never invented.\nsegments: word units whose join("") reconstructs hanzi EXACTLY\n(including punctuation). altOrders: other accepted builder orders.'))));
+
+  /* google sheets sync */
+  const sc=SYNC.cfg();
+  const urlI=h("input",{value:sc.url||"",placeholder:"https://script.google.com/macros/s/…/exec",style:"width:100%",class:"mono"});
+  const tokI=h("input",{value:sc.token||"",placeholder:"shared secret token",style:"width:100%",class:"mono"});
+  const stBox=h("div",{style:"font-size:12.5px;color:var(--muted);margin-top:10px"},
+    "Status: "+(SYNC.enabled()?"configured":"not configured")+" · queue: "+SYNC.queue().length+
+    " · last: "+(SYNC.last()?(SYNC.last().ok?"OK ("+(SYNC.last().sent||0)+" rows)":"failed: "+(SYNC.last().error||"")):"—"));
+  const outS=h("div",{});
+  wrap.appendChild(h("div",{class:"card",style:"margin-bottom:20px"},
+    h("h3",{style:"font-size:15px;margin-bottom:6px"},"Google Sheets sync (lecture-site Sheet)"),
+    h("p",{style:"font-size:12.5px;color:var(--muted);margin-bottom:10px"},
+      "Paste the Apps Script Web-app URL from tools/sheets_bridge.gs (deployed in the HSK 1 3.0 spreadsheet) plus the shared token. Login then authenticates against the Students tab, and every attempt/session/vocab/exam event is pushed to the same Sheet (LoginLog, Sessions, LearningEvents, StudentQuizStats, QuizStats, StudentLessonProgress, StudentVocabularyProgress). Offline-first: events queue locally and retry; nothing is lost or duplicated (upserts by key)."),
+    h("div",{class:"field"},h("label",{},"Web app URL"),urlI),
+    h("div",{class:"field"},h("label",{},"Token"),tokI),
+    h("div",{style:"display:flex;gap:8px;flex-wrap:wrap"},
+      h("button",{class:"btn primary sm",onclick:()=>{SYNC.save({url:urlI.value.trim(),token:tokI.value.trim()});outS.innerHTML="";outS.appendChild(h("div",{class:"notice ok",style:"margin-top:10px"},"Saved. Students will see the unified Sheet login on the login page."));render();}},"Save"),
+      h("button",{class:"btn sm",onclick:async()=>{outS.innerHTML="";
+        try{const r=await SYNC.ping();
+          outS.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?("Connected ✓ tabs: "+(r.tabs||[]).join(", ")):"Error: "+r.error));}
+        catch(e){outS.appendChild(h("div",{class:"notice err",style:"margin-top:10px"},"Unreachable: "+e));}}},"Test connection"),
+      h("button",{class:"btn sm",onclick:async()=>{outS.innerHTML="";
+        const r=await SYNC.flush();
+        outS.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?("Flushed "+(r.sent||0)+" queued message(s)"):"Failed: "+(r.error||r.reason||"unknown")));render();}},"Sync now"),
+      h("button",{class:"btn sm",onclick:async()=>{outS.innerHTML="";
+        const lessons=DB.chapters.map(c=>({LessonID:"lesson-"+c.num,LessonNum:c.num,Title:c.title,
+          WordsCount:vocabOf(c.id).length,SentencesCount:sentencesOf(c.id).length,
+          QuestionsCount:questionsOf(c.id).length,Status:c.status}));
+        try{const r=await SYNC.post("catalog",{lessons});
+          outS.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?("Catalog pushed: "+r.lessons+" lessons"):"Error: "+r.error));}
+        catch(e){outS.appendChild(h("div",{class:"notice err",style:"margin-top:10px"},"Unreachable: "+e));}}},"Push lessons catalog")),
+    outS,stBox));
+
+  /* accounts */
+  wrap.appendChild(h("div",{class:"card"},
+    h("h3",{style:"font-size:15px;margin-bottom:8px"},"Accounts on this device"),
+    ...DB.users.map(x=>h("div",{class:"kv"},
+      h("span",{},x.name+" ",h("span",{class:"mono",style:"color:var(--dim);font-size:11px"},x.studentId)," · joined "+fmtDate(x.createdAt)),
+      h("span",{style:"display:flex;gap:8px;align-items:center"},
+        h("span",{class:"chip "+(x.role==="admin"?"review":"pending")},x.role),
+        x.id!==u.id?h("button",{class:"btn sm ghost",onclick:()=>{x.role=x.role==="admin"?"student":"admin";saveDB();render();}},"toggle role"):h("span",{style:"color:var(--dim);font-size:12px"},"you"),
+        x.id!==u.id?h("button",{class:"btn sm ghost",style:"color:var(--bad)",onclick:()=>deleteUserAccount(x.id)},"delete"):null)))));
+  wrap.appendChild(h("div",{class:"footer-note"},"Admin Console — prototype. Shares the localStorage database with the student site on this device. In production this page must be served separately with server-side role enforcement."));
+  app.appendChild(wrap);
+}
+/* =====================================================================
+   TEACHER DASHBOARD — lives ONLY on this separate admin site
+   ===================================================================== */
+function drawTeacher(wrap){
+  const srcNote=h("p",{class:"sub"},"Loading analytics…");
+  wrap.appendChild(srcNote);
+  const body=h("div",{});wrap.appendChild(body);
+  (async()=>{
+   try{
+    let raw;
+    if(SYNC.enabled()){
+      try{const r=await SYNC.post("analytics",{});
+        if(r&&r.ok)raw=r; else {raw=localRawTables();raw.source="local — sheet error: "+((r&&r.error)||"?");}
+      }catch(e){raw=localRawTables();raw.source="local — sheet unreachable";}
+    }else raw=localRawTables();
+    const A=aggregateAnalytics(raw);
+    const fromSheet=String(raw.source).indexOf("sheet")===0;
+    const rawCounts="raw rows → students:"+(raw.students||[]).length+" · events:"+(raw.events||[]).length+" · sessions:"+(raw.sessions||[]).length+" · lessonProg:"+(raw.slp||[]).length+" · vocabProg:"+(raw.svp||[]).length;
+    if(fromSheet&&A.cohort.attempts===0){
+      wrap.appendChild(h("div",{class:"notice info"},"Connected and working — the Sheet simply has no practice data yet. Data appears after a student signs in on the STUDENT site with their Sheet credentials (name/StudentID + Code, e.g. Ebra + 8520) and answers questions. Local admin practice is intentionally NOT pushed (it has no StudentID in the Sheet). "+rawCounts));
+    }else{
+      wrap.appendChild(h("div",{style:"font-size:11px;color:var(--dim);margin-bottom:10px"},rawCounts));
+    }
+    srcNote.innerHTML="";
+    srcNote.appendChild(document.createTextNode("Source: "+(fromSheet?"Google Sheet — ALL devices & students":"LOCAL DEVICE DATA ONLY (configure Sheet sync in the Content tab for cross-device tracking)")+" · updated "+new Date().toLocaleTimeString()+"  "));
+    srcNote.appendChild(h("button",{class:"btn sm ghost",onclick:()=>render()},"↻ Refresh"));
+    let sel=null;
+    const bar=(pct,color)=>h("div",{class:"bar"},h("div",{style:"width:"+Math.max(0,Math.min(100,pct||0))+"%;background:"+(color||"var(--accent)")}));
+    const lessonLabel=id=>{const m=String(id).match(/lesson-(\d+)/);const c=m?DB.chapters.find(c=>c.num===+m[1]):null;return c?("Ch "+c.num+" · "+c.title.slice(0,26)):String(id);};
+    function draw(){
+      body.innerHTML="";
+      const C=A.cohort;
+      body.appendChild(h("div",{class:"grid g4",style:"margin-bottom:14px"},
+        h("div",{class:"stat"},h("div",{class:"sic"},"👥"),h("div",{class:"v"},C.students),h("div",{class:"l"},"Students"),h("div",{class:"d"},C.active+" active in last 7 days")),
+        h("div",{class:"stat"},h("div",{class:"sic",style:"color:var(--ok);background:var(--ok-soft)"},"✓"),h("div",{class:"v"},C.correct),h("div",{class:"l"},"Correct answers"),h("div",{class:"d"},C.incorrect+" incorrect · "+C.skipped+" skipped")),
+        h("div",{class:"stat"},h("div",{class:"sic"},"🎯"),h("div",{class:"v"},C.accuracy===null?"—":C.accuracy+"%"),h("div",{class:"l"},"Cohort accuracy"),h("div",{class:"d"},C.attempts+" counted attempts")),
+        h("div",{class:"stat"},h("div",{class:"sic"},"⏱"),h("div",{class:"v"},fmtDur(C.seconds)),h("div",{class:"l"},"Total time"),h("div",{class:"d"},C.sessions+" sessions · "+C.exams+" exams"))));
+      const days=A.byDay.slice(-21);
+      if(days.length){
+        const maxA=Math.max(...days.map(d=>d.attempts),1),maxS=Math.max(...days.map(d=>d.seconds),1);
+        body.appendChild(h("div",{class:"card",style:"margin-bottom:14px"},
+          h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"Activity & time by day (last "+days.length+" active days)"),
+          h("div",{style:"display:flex;gap:5px;align-items:flex-end;height:90px"},
+            ...days.map(d=>h("div",{title:d.date+" · "+d.attempts+" attempts · "+d.correct+" correct · "+fmtDur(d.seconds),
+              style:"flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;height:100%"},
+              h("div",{style:"width:100%;border-radius:3px 3px 0 0;background:"+(d.attempts?(d.correct/d.attempts>=0.8?"var(--ok)":d.correct/d.attempts>=0.5?"var(--warn)":"var(--bad)"):"var(--line2)")+";height:"+Math.round(d.attempts/maxA*70)+"%"}),
+              h("div",{style:"width:100%;border-radius:0 0 3px 3px;background:var(--cat-vocab);opacity:.75;height:"+Math.max(2,Math.round(d.seconds/maxS*25))+"%"})))),
+          h("p",{style:"font-size:11px;color:var(--dim);margin-top:6px"},"upper bar = attempts (colour = accuracy), lower = practice time")));
+      }
+      body.appendChild(h("div",{class:"grid g2",style:"margin-bottom:14px"},
+        h("div",{class:"card"},h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"Accuracy by activity type (cohort)"),
+          ...A.byActivity.map(a=>h("div",{style:"display:grid;grid-template-columns:190px 1fr 90px;gap:10px;align-items:center;font-size:12.5px;margin-bottom:7px"},
+            h("span",{},(ACT[a.type]||{n:a.type}).n),bar(a.attempts?Math.round(a.correct/a.attempts*100):0,a.attempts&&a.correct/a.attempts>=0.8?"var(--ok)":"var(--warn)"),
+            h("span",{style:"color:var(--muted)"},(a.attempts?Math.round(a.correct/a.attempts*100):0)+"% · "+a.attempts)))),
+        h("div",{class:"card"},h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"Per-lesson coverage & accuracy"),
+          h("div",{style:"overflow-x:auto"},h("table",{class:"tbl"},h("tbody",{},...A.byLesson.map(l=>h("tr",{},
+            h("td",{},lessonLabel(l.lessonId)),
+            h("td",{style:"color:var(--muted);font-size:12px"},l.started+" started · "+l.completed+" completed"),
+            h("td",{style:"font-size:12px"},l.attempts+" att."),
+            h("td",{style:"min-width:90px"},bar(l.accuracy||0,(l.accuracy||0)>=80?"var(--ok)":"var(--warn)")),
+            h("td",{style:"font-size:12px"},(l.accuracy==null?"—":l.accuracy+"%"))))))))));
+      body.appendChild(h("div",{class:"card",style:"margin-bottom:14px"},
+        h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"Most-missed questions (cohort)"),
+        A.topMissed.length?h("div",{style:"overflow-x:auto"},h("table",{class:"tbl"},
+          h("thead",{},h("tr",{},h("th",{},"Question"),h("th",{},"Lesson"),h("th",{},"Activity"),h("th",{},"Wrong"),h("th",{},"Attempts"))),
+          h("tbody",{},...A.topMissed.slice(0,10).map(m=>h("tr",{},
+            h("td",{class:"mono",style:"font-size:11.5px"},m.questionId),
+            h("td",{style:"font-size:12px"},lessonLabel(m.lessonId)),
+            h("td",{style:"font-size:12px"},(ACT[m.activity]||{n:m.activity}).n),
+            h("td",{style:"color:var(--bad)"},m.wrong),
+            h("td",{style:"color:var(--muted)"},m.attempts))))))
+        :h("p",{style:"color:var(--muted);font-size:13px"},"No incorrect answers recorded yet.")));
+      if(sel&&A.per[sel])drawStudent(A.per[sel]);
+      else body.appendChild(h("div",{class:"card"},
+        h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"All students — click a row for the individual report"),
+        h("div",{style:"overflow-x:auto"},h("table",{class:"tbl"},
+          h("thead",{},h("tr",{},h("th",{},"Student"),h("th",{},"Attempts"),h("th",{},"✓"),h("th",{},"✗"),h("th",{},"Accuracy"),h("th",{},"Time"),h("th",{},"Lessons"),h("th",{},"Mastered"),h("th",{},"Last active"))),
+          h("tbody",{},...(A.students.length?A.students:[{id:"—",name:"(no students found in source)",attempts:0,correct:0,incorrect:0,accuracy:null,seconds:0,lessonsStarted:0,lessonsCompleted:0,wordsMastered:0,lastTs:null}]).map(st=>h("tr",{style:"cursor:pointer",onclick:()=>{sel=st.id;draw();}},
+            h("td",{},h("b",{},st.name),h("div",{class:"mono",style:"font-size:10.5px;color:var(--dim)"},st.id)),
+            h("td",{},st.attempts),h("td",{style:"color:var(--ok)"},st.correct),h("td",{style:"color:var(--bad)"},st.incorrect),
+            h("td",{},st.accuracy===null?"—":st.accuracy+"%"),h("td",{},fmtDur(st.seconds)),
+            h("td",{style:"font-size:12px"},st.lessonsStarted+" / "+st.lessonsCompleted),
+            h("td",{},st.wordsMastered),
+            h("td",{style:"font-size:12px;color:var(--dim)"},st.lastTs?fmtDate(st.lastTs):"never"))))))));
+      function drawStudent(p){
+        const tiles=h("div",{class:"grid g4"},
+          h("div",{class:"stat"},h("div",{class:"v"},p.attempts),h("div",{class:"l"},"Attempts"),h("div",{class:"d"},p.correct+" ✓ · "+p.incorrect+" ✗ · "+p.skipped+" skipped")),
+          h("div",{class:"stat"},h("div",{class:"v",style:"color:"+(p.accuracy>=80?"var(--ok)":p.accuracy>=50?"var(--warn)":"var(--bad)")},p.accuracy===null?"—":p.accuracy+"%"),h("div",{class:"l"},"Accuracy")),
+          h("div",{class:"stat"},h("div",{class:"v"},fmtDur(p.seconds)),h("div",{class:"l"},"Time"),h("div",{class:"d"},p.sessions+" sessions · "+p.exams+" exams")),
+          h("div",{class:"stat"},h("div",{class:"v"},p.lessonsStarted+"/"+p.lessonsCompleted),h("div",{class:"l"},"Lessons start/complete"),h("div",{class:"d"},p.wordsMastered+" mastered · "+p.wordsRevision+" revision")));
+        const lesT=h("table",{class:"tbl"},h("tbody",{},...Object.entries(p.byLesson).map(([id,v])=>h("tr",{},
+          h("td",{style:"font-size:12px"},lessonLabel(id)),h("td",{style:"font-size:12px"},v.attempts+" att."),
+          h("td",{style:"font-size:12px"},(v.attempts?Math.round(v.correct/v.attempts*100):0)+"%")))));
+        const actT=h("table",{class:"tbl"},h("tbody",{},...Object.entries(p.byActivity).map(([t,v])=>h("tr",{},
+          h("td",{style:"font-size:12px"},(ACT[t]||{n:t}).n),h("td",{style:"font-size:12px"},v.attempts+" att."),
+          h("td",{style:"font-size:12px"},Math.round(v.correct/v.attempts*100)+"%")))));
+        const gridA=h("div",{class:"grid g2",style:"margin-top:14px"},
+          h("div",{},h("h4",{style:"font-size:13px;margin-bottom:8px"},"Per lesson"),lesT),
+          h("div",{},h("h4",{style:"font-size:13px;margin-bottom:8px"},"Per activity"),actT));
+        const missEl=Object.keys(p.missed).length
+          ?h("table",{class:"tbl"},h("tbody",{},...Object.entries(p.missed).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([qid,n])=>h("tr",{},
+              h("td",{class:"mono",style:"font-size:11px"},qid),h("td",{style:"color:var(--bad);font-size:12px"},n+"×")))))
+          :h("p",{style:"font-size:12.5px;color:var(--muted)"},"Nothing missed yet 🎉");
+        const recEl=p.recent.length
+          ?h("table",{class:"tbl"},h("tbody",{},...p.recent.slice(0,8).map(r=>h("tr",{},
+              h("td",{style:"font-size:11.5px;color:"+(r.skipped?"var(--dim)":r.correct?"var(--ok)":"var(--bad)")},r.skipped?"skip":r.correct?"✓":"✗"),
+              h("td",{style:"font-size:11.5px"},(ACT[r.type]||{n:r.type}).n),
+              h("td",{class:"mono",style:"font-size:10px;color:var(--dim)"},new Date(r.ts).toLocaleString())))))
+          :h("p",{style:"font-size:12.5px;color:var(--muted)"},"No activity yet.");
+        const gridB=h("div",{class:"grid g2",style:"margin-top:14px"},
+          h("div",{},h("h4",{style:"font-size:13px;margin-bottom:8px"},"Most missed (this student)"),missEl),
+          h("div",{},h("h4",{style:"font-size:13px;margin-bottom:8px"},"Recent activity"),recEl));
+        const hdr=h("div",{style:"display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px"},
+          h("h3",{style:"font-size:16px"},"👤 "+p.name),
+          h("span",{class:"mono",style:"font-size:11px;color:var(--dim)"},p.id),
+          h("div",{style:"flex:1"}),
+          h("button",{class:"btn sm ghost",onclick:()=>{sel=null;draw();}},"← All students"));
+        body.appendChild(h("div",{class:"card",style:"border-left:4px solid var(--accent)"},hdr,tiles,gridA,gridB));
+      }
+    }
+    draw();
+   }catch(e){
+     body.innerHTML="";
+     body.appendChild(h("div",{class:"notice err"},"Teacher dashboard error: "+(e&&e.message?e.message:String(e))+" — copy this message to the developer."));
+   }
+  })();
+}
+render();
+</script>
+</body>
+</html>

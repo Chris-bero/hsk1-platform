@@ -1,0 +1,1636 @@
+{
+  "bundleCode": "ch10-fltrp-lesson10",
+  "rev": 6,
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第10课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P71/P73/P75 (课文1–3 dialogues)",
+    "extractedPages": "1–62 (full)",
+    "notes": "Vocab from 生词 tables 10-2/10-4/10-6. Example sentences from vocab cards (no English in source). Dialogue lines + pinyin from screenshots; multi-sentence lines split (苹果三块五一斤。这些七块二… / 这家商店衣服真多！这件一百元… / 好的。小明能穿吗？ / 不能。这些是…). Read-aloud 这儿的水果真不少！ merged with identical dialogue line. Money-equation line 三元两角八分=三块两毛八分 kept as source sentence. Skipped: p4 warm-up items, p22/p37 listening stems, p20/p35/p58 annotation labels, extension chips. Sentence pinyin absent from source completed per instructor request (2026-10-21), tagged instructor-requested."
+  },
+  "payload": {
+    "chapter": {
+      "num": 10,
+      "title": "这儿的苹果真便宜！ The apples here are really affordable!",
+      "sourceFile": "《新HSK教程1》第10课.pdf",
+      "representative": {
+        "hanzi": "这儿的苹果真便宜！",
+        "pinyin": "Zhèr de píngguǒ zhēn piányi!",
+        "english": "The apples here are really affordable!"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "杯子",
+        "pinyin": "bēizi",
+        "english": "cup; glass",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W10-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "售货员",
+        "pinyin": "shòuhuòyuán",
+        "english": "shop assistant; salesperson; vendor",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W10-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "这边",
+        "pinyin": "zhèbiān",
+        "english": "here; this side",
+        "pos": "pron.",
+        "sourcePage": 6,
+        "sourceItemId": "W10-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "钱",
+        "pinyin": "qián",
+        "english": "money",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W10-2-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "这些",
+        "pinyin": "zhèxiē",
+        "english": "these",
+        "pos": "pron.",
+        "sourcePage": 6,
+        "sourceItemId": "W10-2-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "块",
+        "pinyin": "kuài",
+        "english": "for silver dollars or paper money",
+        "pos": "m.",
+        "sourcePage": 6,
+        "sourceItemId": "W10-2-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "那些",
+        "pinyin": "nàxiē",
+        "english": "those",
+        "pos": "pron.",
+        "sourcePage": 6,
+        "sourceItemId": "W10-2-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "这儿",
+        "pinyin": "zhèr",
+        "english": "here",
+        "pos": "pron.",
+        "sourcePage": 23,
+        "sourceItemId": "W10-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "水果",
+        "pinyin": "shuǐguǒ",
+        "english": "fruit",
+        "pos": "n.",
+        "sourcePage": 23,
+        "sourceItemId": "W10-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "少",
+        "pinyin": "shǎo",
+        "english": "few; little",
+        "pos": "adj.",
+        "sourcePage": 23,
+        "sourceItemId": "W10-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "斤",
+        "pinyin": "jīn",
+        "english": "jin",
+        "pos": "m.",
+        "sourcePage": 23,
+        "sourceItemId": "W10-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "苹果",
+        "pinyin": "píngguǒ",
+        "english": "apple",
+        "pos": "n.",
+        "sourcePage": 23,
+        "sourceItemId": "W10-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "便宜",
+        "pinyin": "piányi",
+        "english": "cheap; affordable",
+        "pos": "adj.",
+        "sourcePage": 23,
+        "sourceItemId": "W10-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "商店",
+        "pinyin": "shāngdiàn",
+        "english": "stop; store",
+        "pos": "n.",
+        "sourcePage": 38,
+        "sourceItemId": "W10-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "衣服",
+        "pinyin": "yīfu",
+        "english": "clothes",
+        "pos": "n.",
+        "sourcePage": 38,
+        "sourceItemId": "W10-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "件",
+        "pinyin": "jiàn",
+        "english": "piece",
+        "pos": "m.",
+        "sourcePage": 38,
+        "sourceItemId": "W10-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "元",
+        "pinyin": "yuán",
+        "english": "yuan",
+        "pos": "m.",
+        "sourcePage": 38,
+        "sourceItemId": "W10-6-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "怎么样",
+        "pinyin": "zěnmeyàng",
+        "english": "(used to enquire about the nature, condition, manner, etc. of sth) how",
+        "pos": "pron.",
+        "sourcePage": 38,
+        "sourceItemId": "W10-6-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "贵",
+        "pinyin": "guì",
+        "english": "expensive",
+        "pos": "adj.",
+        "sourcePage": 39,
+        "sourceItemId": "W10-6-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "穿",
+        "pinyin": "chuān",
+        "english": "wear; put on",
+        "pos": "v.",
+        "sourcePage": 39,
+        "sourceItemId": "W10-6-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "女",
+        "pinyin": "nǚ",
+        "english": "female; women",
+        "pos": "adj.",
+        "sourcePage": 39,
+        "sourceItemId": "W10-6-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "男",
+        "pinyin": "nán",
+        "english": "male; man",
+        "pos": "adj.",
+        "sourcePage": 39,
+        "sourceItemId": "W10-6-9",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "那儿",
+        "pinyin": "nàr",
+        "english": "there; that place",
+        "pos": "pron.",
+        "sourcePage": 39,
+        "sourceItemId": "W10-6-10",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "这儿的苹果真便宜！",
+        "pinyin": "Zhèr de píngguǒ zhēn piányi!",
+        "segments": [
+          "这儿",
+          "的",
+          "苹果",
+          "真",
+          "便宜",
+          "！"
+        ],
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source",
+        "english": "The apples here are really affordable!",
+        "sourcePage": 2
+      },
+      {
+        "hanzi": "在一家小店，王一雪在买杯子。",
+        "pinyin": "Zài yì jiā xiǎo diàn, Wáng Yīxuě zài mǎi bēizi.",
+        "segments": [
+          "在",
+          "一家",
+          "小店",
+          "，",
+          "王一雪",
+          "在",
+          "买",
+          "杯子",
+          "。"
+        ],
+        "sourceItemId": "S-intro1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "In a small shop, Wang Yixue was buying a cup.",
+        "sourcePage": 5
+      },
+      {
+        "hanzi": "在菜市场，王一雪在买水果。",
+        "pinyin": "Zài càishìchǎng, Wáng Yīxuě zài mǎi shuǐguǒ.",
+        "segments": [
+          "在",
+          "菜市场",
+          "，",
+          "王一雪",
+          "在",
+          "买",
+          "水果",
+          "。"
+        ],
+        "sourceItemId": "S-intro2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "At the market, Wang Yixue was buying fruit.",
+        "sourcePage": 21
+      },
+      {
+        "hanzi": "在商场里，刘明和王一雪在给孩子买衣服。",
+        "pinyin": "Zài shāngchǎng lǐ, Liú Míng hé Wáng Yīxuě zài gěi háizi mǎi yīfu.",
+        "segments": [
+          "在",
+          "商场",
+          "里",
+          "，",
+          "刘明",
+          "和",
+          "王一雪",
+          "在",
+          "给",
+          "孩子",
+          "买",
+          "衣服",
+          "。"
+        ],
+        "sourceItemId": "S-intro3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "In the shopping mall, Liu Ming and WangYixue were shopping for clothes for their children.",
+        "sourcePage": 36
+      },
+      {
+        "hanzi": "中国的货币叫人民币。人民币的单位由大到小是“元、角、分”，口语中也分别说“块、毛、分”。表达顺序是：元/块→角/毛→分。",
+        "pinyin": "Zhōngguó de huòbì jiào Rénmínbì. Rénmínbì de dānwèi yóu dà dào xiǎo shì “yuán, jiǎo, fēn”, kǒuyǔ zhōng yě fēnbié shuō “kuài, máo, fēn”. Biǎodá shùnxù shì: yuán/kuài→jiǎo/mao→fēn.",
+        "segments": [
+          "中国",
+          "的",
+          "货币",
+          "叫",
+          "人民币",
+          "。",
+          "人民币",
+          "的",
+          "单位",
+          "由",
+          "大",
+          "到",
+          "小",
+          "是",
+          "“元、角、分”",
+          "，",
+          "口语",
+          "中",
+          "也",
+          "分别",
+          "说",
+          "“块、毛、分”",
+          "。",
+          "表达",
+          "顺序",
+          "是",
+          "：",
+          "元/块",
+          "→",
+          "角/毛",
+          "→",
+          "分",
+          "。"
+        ],
+        "sourceItemId": "S-grammar1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "China’s currency is known as Renminbi (RMB). Its units, ranked from the largest to the smallest, are “yuan”, “jiao, and “fen”, which are colloquially referred to as “kuai”, “mao”, and “fen” respectively. The standard order of denomination is: yuan/kuai→jiao/mao→fen.",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "形容词可以直接作谓语，前面可用程度副词或否定副词。",
+        "pinyin": "Xíngróngcí kěyǐ zhíjiē zuò wèiyǔ, qiánmiàn kě yòng chéngdù fùcí huò fǒudìng fùcí.",
+        "segments": [
+          "形容词",
+          "可以",
+          "直接",
+          "作",
+          "谓语",
+          "，",
+          "前面",
+          "可",
+          "用",
+          "程度",
+          "副词",
+          "或",
+          "否定",
+          "副词",
+          "。"
+        ],
+        "sourceItemId": "S-grammar2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "Adjectives can be used directly as predicates, with adverbs of degree or negative adverbs optionally placed before them.",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "疑问代词“怎么样”用于征求意见、询问状况等。",
+        "pinyin": "Yíwèndàicí “zěnmeyàng” yòng yú zhēngqiú yìjiàn, xúnwèn zhuàngkuàng děng.",
+        "segments": [
+          "疑问代词",
+          "“怎么样”",
+          "用于",
+          "征求",
+          "意见",
+          "、",
+          "询问",
+          "状况",
+          "等",
+          "。"
+        ],
+        "sourceItemId": "S-grammar3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "The interrogative pronoun “怎么样” is used to ask for opinions or inquire about a situation, and so on.",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "三元两角八分=三块两毛八分",
+        "pinyin": "Sān yuán liǎng jiǎo bā fēn = sān kuài liǎng máo bā fēn",
+        "segments": [
+          "三元两角八分",
+          "=",
+          "三块两毛八分"
+        ],
+        "sourceItemId": "S-read0-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 19
+      },
+      {
+        "hanzi": "这个杯子太小了。",
+        "pinyin": "Zhège bēizi tài xiǎo le.",
+        "segments": [
+          "这个",
+          "杯子",
+          "太",
+          "小",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-杯子-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 7
+      },
+      {
+        "hanzi": "昨天我买了四个杯子。",
+        "pinyin": "Zuótiān wǒ mǎi le sì gè bēizi.",
+        "segments": [
+          "昨天",
+          "我",
+          "买",
+          "了",
+          "四个",
+          "杯子",
+          "。"
+        ],
+        "sourceItemId": "EX-杯子-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 7
+      },
+      {
+        "hanzi": "我是这个商店的售货员。",
+        "pinyin": "Wǒ shì zhège shāngdiàn de shòuhuòyuán.",
+        "segments": [
+          "我",
+          "是",
+          "这个",
+          "商店",
+          "的",
+          "售货员",
+          "。"
+        ],
+        "sourceItemId": "EX-售货员-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "这个杯子多少钱？",
+        "pinyin": "Zhège bēizi duōshao qián?",
+        "segments": [
+          "这个",
+          "杯子",
+          "多少",
+          "钱",
+          "？"
+        ],
+        "sourceItemId": "EX-售货员-A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "不知道，问一下售货员吧。",
+        "pinyin": "Bù zhīdao, wèn yíxià shòuhuòyuán ba.",
+        "segments": [
+          "不知道",
+          "，",
+          "问",
+          "一下",
+          "售货员",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-售货员-B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "来这边坐吧。",
+        "pinyin": "Lái zhèbiān zuò ba.",
+        "segments": [
+          "来",
+          "这边",
+          "坐",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-这边-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "我住在这边。",
+        "pinyin": "Wǒ zhù zài zhèbiān.",
+        "segments": [
+          "我",
+          "住",
+          "在",
+          "这边",
+          "。"
+        ],
+        "sourceItemId": "EX-这边-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "她这个月没有钱了。",
+        "pinyin": "Tā zhège yuè méiyǒu qián le.",
+        "segments": [
+          "她",
+          "这个",
+          "月",
+          "没有",
+          "钱",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-钱-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "这些苹果八块钱。",
+        "pinyin": "Zhèxiē píngguǒ bā kuài qián.",
+        "segments": [
+          "这些",
+          "苹果",
+          "八块",
+          "钱",
+          "。"
+        ],
+        "sourceItemId": "EX-钱-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "这些苹果15块钱？",
+        "pinyin": "Zhèxiē píngguǒ shíwǔ kuài qián?",
+        "segments": [
+          "这些",
+          "苹果",
+          "15",
+          "块",
+          "钱",
+          "？"
+        ],
+        "sourceItemId": "EX-块-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 11
+      },
+      {
+        "hanzi": "这本书40块钱。",
+        "pinyin": "Zhè běn shū sìshí kuài qián.",
+        "segments": [
+          "这",
+          "本",
+          "书",
+          "40",
+          "块",
+          "钱",
+          "。"
+        ],
+        "sourceItemId": "EX-块-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 11
+      },
+      {
+        "hanzi": "这些人我都认识。",
+        "pinyin": "Zhèxiē rén wǒ dōu rènshi.",
+        "segments": [
+          "这些",
+          "人",
+          "我",
+          "都",
+          "认识",
+          "。"
+        ],
+        "sourceItemId": "EX-这些-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 12
+      },
+      {
+        "hanzi": "这些东西都是你的吗？",
+        "pinyin": "Zhèxiē dōngxi dōu shì nǐ de ma?",
+        "segments": [
+          "这些",
+          "东西",
+          "都",
+          "是",
+          "你",
+          "的",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-这些-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 12
+      },
+      {
+        "hanzi": "那些书是我的。",
+        "pinyin": "Nàxiē shū shì wǒ de.",
+        "segments": [
+          "那些",
+          "书",
+          "是",
+          "我",
+          "的",
+          "。"
+        ],
+        "sourceItemId": "EX-那些-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "那些人来做什么？",
+        "pinyin": "Nàxiē rén lái zuò shénme?",
+        "segments": [
+          "那些",
+          "人",
+          "来",
+          "做",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "EX-那些-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "请问，这儿卖水果吗？",
+        "pinyin": "Qǐngwèn, zhèr mài shuǐguǒ ma?",
+        "segments": [
+          "请问",
+          "，",
+          "这儿",
+          "卖",
+          "水果",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-这儿-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 24
+      },
+      {
+        "hanzi": "这儿有一些苹果。",
+        "pinyin": "Zhèr yǒu yìxiē píngguǒ.",
+        "segments": [
+          "这儿",
+          "有",
+          "一些",
+          "苹果",
+          "。"
+        ],
+        "sourceItemId": "EX-这儿-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 24
+      },
+      {
+        "hanzi": "你喜欢吃什么水果？",
+        "pinyin": "Nǐ xǐhuan chī shénme shuǐguǒ?",
+        "segments": [
+          "你",
+          "喜欢",
+          "吃",
+          "什么",
+          "水果",
+          "？"
+        ],
+        "sourceItemId": "EX-水果-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "水果店在哪儿？",
+        "pinyin": "Shuǐguǒ diàn zài nǎr?",
+        "segments": [
+          "水果店",
+          "在",
+          "哪儿",
+          "？"
+        ],
+        "sourceItemId": "EX-水果-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 25
+      },
+      {
+        "hanzi": "今天她买了不少水果。",
+        "pinyin": "Jīntiān tā mǎi le bùshǎo shuǐguǒ.",
+        "segments": [
+          "今天",
+          "她",
+          "买",
+          "了",
+          "不少",
+          "水果",
+          "。"
+        ],
+        "sourceItemId": "EX-少-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "她认识的中国朋友很少。",
+        "pinyin": "Tā rènshi de Zhōngguó péngyou hěn shǎo.",
+        "segments": [
+          "她",
+          "认识",
+          "的",
+          "中国",
+          "朋友",
+          "很",
+          "少",
+          "。"
+        ],
+        "sourceItemId": "EX-少-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "我买了一斤苹果，很便宜。",
+        "pinyin": "Wǒ mǎi le yì jīn píngguǒ, hěn piányi.",
+        "segments": [
+          "我",
+          "买",
+          "了",
+          "一斤",
+          "苹果",
+          "，",
+          "很",
+          "便宜",
+          "。"
+        ],
+        "sourceItemId": "EX-斤-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 27
+      },
+      {
+        "hanzi": "我早上吃了一个苹果。",
+        "pinyin": "Wǒ zǎoshang chī le yí gè píngguǒ.",
+        "segments": [
+          "我",
+          "早上",
+          "吃",
+          "了",
+          "一个",
+          "苹果",
+          "。"
+        ],
+        "sourceItemId": "EX-苹果-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 28
+      },
+      {
+        "hanzi": "我去超市买了些苹果。",
+        "pinyin": "Wǒ qù chāoshì mǎi le xiē píngguǒ.",
+        "segments": [
+          "我",
+          "去",
+          "超市",
+          "买",
+          "了",
+          "些",
+          "苹果",
+          "。"
+        ],
+        "sourceItemId": "EX-苹果-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 28
+      },
+      {
+        "hanzi": "这件衣服不贵，很便宜。",
+        "pinyin": "Zhè jiàn yīfu bú guì, hěn piányi.",
+        "segments": [
+          "这",
+          "件",
+          "衣服",
+          "不",
+          "贵",
+          "，",
+          "很",
+          "便宜",
+          "。"
+        ],
+        "sourceItemId": "EX-便宜-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 29
+      },
+      {
+        "hanzi": "我觉得这个手机不便宜。",
+        "pinyin": "Wǒ juède zhège shǒujī bù piányi.",
+        "segments": [
+          "我",
+          "觉得",
+          "这个",
+          "手机",
+          "不",
+          "便宜",
+          "。"
+        ],
+        "sourceItemId": "EX-便宜-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 29
+      },
+      {
+        "hanzi": "妈妈去商店买了几件衣服。",
+        "pinyin": "Māma qù shāngdiàn mǎi le jǐ jiàn yīfu.",
+        "segments": [
+          "妈妈",
+          "去",
+          "商店",
+          "买",
+          "了",
+          "几件",
+          "衣服",
+          "。"
+        ],
+        "sourceItemId": "EX-商店-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 40
+      },
+      {
+        "hanzi": "这家商店很小，东西不多。",
+        "pinyin": "Zhè jiā shāngdiàn hěn xiǎo, dōngxi bù duō.",
+        "segments": [
+          "这",
+          "家",
+          "商店",
+          "很",
+          "小",
+          "，",
+          "东西",
+          "不",
+          "多",
+          "。"
+        ],
+        "sourceItemId": "EX-商店-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 40
+      },
+      {
+        "hanzi": "这件衣服是谁的？",
+        "pinyin": "Zhè jiàn yīfu shì shéi de?",
+        "segments": [
+          "这",
+          "件",
+          "衣服",
+          "是",
+          "谁",
+          "的",
+          "？"
+        ],
+        "sourceItemId": "EX-衣服-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "我在外面买衣服呢，不在家。",
+        "pinyin": "Wǒ zài wàimian mǎi yīfu ne, bú zài jiā.",
+        "segments": [
+          "我",
+          "在",
+          "外面",
+          "买",
+          "衣服",
+          "呢",
+          "，",
+          "不",
+          "在",
+          "家",
+          "。"
+        ],
+        "sourceItemId": "EX-衣服-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 41
+      },
+      {
+        "hanzi": "这件事妈妈不知道，你不要说。",
+        "pinyin": "Zhè jiàn shì māma bù zhīdao, nǐ bú yào shuō.",
+        "segments": [
+          "这",
+          "件",
+          "事",
+          "妈妈",
+          "不",
+          "知道",
+          "，",
+          "你",
+          "不要",
+          "说",
+          "。"
+        ],
+        "sourceItemId": "EX-件-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 42
+      },
+      {
+        "hanzi": "我昨天买了三件衣服。",
+        "pinyin": "Wǒ zuótiān mǎi le sān jiàn yīfu.",
+        "segments": [
+          "我",
+          "昨天",
+          "买",
+          "了",
+          "三件",
+          "衣服",
+          "。"
+        ],
+        "sourceItemId": "EX-件-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 42
+      },
+      {
+        "hanzi": "这件衣服一百元。",
+        "pinyin": "Zhè jiàn yīfu yìbǎi yuán.",
+        "segments": [
+          "这",
+          "件",
+          "衣服",
+          "一百",
+          "元",
+          "。"
+        ],
+        "sourceItemId": "EX-元-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 43
+      },
+      {
+        "hanzi": "我喜欢的那个杯子卖二十元。",
+        "pinyin": "Wǒ xǐhuan de nàge bēizi mài èrshí yuán.",
+        "segments": [
+          "我",
+          "喜欢",
+          "的",
+          "那个",
+          "杯子",
+          "卖",
+          "二十",
+          "元",
+          "。"
+        ],
+        "sourceItemId": "EX-元-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 43
+      },
+      {
+        "hanzi": "这件衣服怎么样?",
+        "pinyin": "Zhè jiàn yīfu zěnmeyàng?",
+        "segments": [
+          "这",
+          "件",
+          "衣服",
+          "怎么样",
+          "?"
+        ],
+        "sourceItemId": "EX-怎么样-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "你觉得昨天的电影怎么样？",
+        "pinyin": "Nǐ juède zuótiān de diànyǐng zěnmeyàng?",
+        "segments": [
+          "你",
+          "觉得",
+          "昨天",
+          "的",
+          "电影",
+          "怎么样",
+          "？"
+        ],
+        "sourceItemId": "EX-怎么样-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "这个手机太贵了！",
+        "pinyin": "Zhège shǒujī tài guì le!",
+        "segments": [
+          "这个",
+          "手机",
+          "太",
+          "贵",
+          "了",
+          "！"
+        ],
+        "sourceItemId": "EX-贵-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 45
+      },
+      {
+        "hanzi": "这件衣服我很喜欢，也不贵。",
+        "pinyin": "Zhè jiàn yīfu wǒ hěn xǐhuan, yě bú guì.",
+        "segments": [
+          "这",
+          "件",
+          "衣服",
+          "我",
+          "很",
+          "喜欢",
+          "，",
+          "也",
+          "不",
+          "贵",
+          "。"
+        ],
+        "sourceItemId": "EX-贵-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 45
+      },
+      {
+        "hanzi": "她今天穿的那件衣服很漂亮。",
+        "pinyin": "Tā jīntiān chuān de nà jiàn yīfu hěn piàoliang.",
+        "segments": [
+          "她",
+          "今天",
+          "穿",
+          "的",
+          "那",
+          "件",
+          "衣服",
+          "很",
+          "漂亮",
+          "。"
+        ],
+        "sourceItemId": "EX-穿-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 46
+      },
+      {
+        "hanzi": "弟弟不想穿这件衣服，要穿那件。",
+        "pinyin": "Dìdi bù xiǎng chuān zhè jiàn yīfu, yào chuān nà jiàn.",
+        "segments": [
+          "弟弟",
+          "不",
+          "想",
+          "穿",
+          "这",
+          "件",
+          "衣服",
+          "，",
+          "要",
+          "穿",
+          "那",
+          "件",
+          "。"
+        ],
+        "sourceItemId": "EX-穿-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 46
+      },
+      {
+        "hanzi": "请女同学们来这边。",
+        "pinyin": "Qǐng nǚ tóngxuémen lái zhèbiān.",
+        "segments": [
+          "请",
+          "女",
+          "同学们",
+          "来",
+          "这边",
+          "。"
+        ],
+        "sourceItemId": "EX-女-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 47
+      },
+      {
+        "hanzi": "我不认识那个女老师。",
+        "pinyin": "Wǒ bú rènshi nàge nǚ lǎoshī.",
+        "segments": [
+          "我",
+          "不",
+          "认识",
+          "那个",
+          "女",
+          "老师",
+          "。"
+        ],
+        "sourceItemId": "EX-女-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 47
+      },
+      {
+        "hanzi": "我们医院有很多男医生。",
+        "pinyin": "Wǒmen yīyuàn yǒu hěn duō nán yīshēng.",
+        "segments": [
+          "我们",
+          "医院",
+          "有",
+          "很多",
+          "男",
+          "医生",
+          "。"
+        ],
+        "sourceItemId": "EX-男-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "那个男同学是谁？",
+        "pinyin": "Nàge nán tóngxué shì shéi?",
+        "segments": [
+          "那个",
+          "男",
+          "同学",
+          "是",
+          "谁",
+          "？"
+        ],
+        "sourceItemId": "EX-男-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 48
+      },
+      {
+        "hanzi": "看，那儿有很多学生。",
+        "pinyin": "Kàn, nàr yǒu hěn duō xuéshēng.",
+        "segments": [
+          "看",
+          "，",
+          "那儿",
+          "有",
+          "很多",
+          "学生",
+          "。"
+        ],
+        "sourceItemId": "EX-那儿-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "我们去那儿玩吧。",
+        "pinyin": "Wǒmen qù nàr wán ba.",
+        "segments": [
+          "我们",
+          "去",
+          "那儿",
+          "玩",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "EX-那儿-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "我的房间不大。",
+        "pinyin": "Wǒ de fángjiān bú dà.",
+        "segments": [
+          "我",
+          "的",
+          "房间",
+          "不",
+          "大",
+          "。"
+        ],
+        "sourceItemId": "S-read1-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "那个苹果好吃。",
+        "pinyin": "Nàge píngguǒ hǎochī.",
+        "segments": [
+          "那个",
+          "苹果",
+          "好吃",
+          "。"
+        ],
+        "sourceItemId": "S-read1-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "这个杯子怎么样？",
+        "pinyin": "Zhège bēizi zěnmeyàng?",
+        "segments": [
+          "这个",
+          "杯子",
+          "怎么样",
+          "？"
+        ],
+        "sourceItemId": "S-read2-1A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "我很喜欢，也不贵。",
+        "pinyin": "Wǒ hěn xǐhuan, yě bú guì.",
+        "segments": [
+          "我",
+          "很",
+          "喜欢",
+          "，",
+          "也",
+          "不",
+          "贵",
+          "。"
+        ],
+        "sourceItemId": "S-read2-1B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "这本书怎么样？",
+        "pinyin": "Zhè běn shū zěnmeyàng?",
+        "segments": [
+          "这",
+          "本",
+          "书",
+          "怎么样",
+          "？"
+        ],
+        "sourceItemId": "S-read2-2A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "很好看。",
+        "pinyin": "Hěn hǎokàn.",
+        "segments": [
+          "很",
+          "好看",
+          "。"
+        ],
+        "sourceItemId": "S-read2-2B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "这个菜怎么样？",
+        "pinyin": "Zhège cài zěnmeyàng?",
+        "segments": [
+          "这个",
+          "菜",
+          "怎么样",
+          "？"
+        ],
+        "sourceItemId": "S-read2-3A",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "这个菜不太好吃，我不喜欢。",
+        "pinyin": "Zhège cài bú tài hǎochī, wǒ bù xǐhuan.",
+        "segments": [
+          "这个",
+          "菜",
+          "不太",
+          "好吃",
+          "，",
+          "我",
+          "不",
+          "喜欢",
+          "。"
+        ],
+        "sourceItemId": "S-read2-3B",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 58
+      },
+      {
+        "hanzi": "请问，有杯子吗？",
+        "pinyin": "Qǐngwèn, yǒu bēizi ma?",
+        "segments": [
+          "请问",
+          "，",
+          "有",
+          "杯子",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "D1-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "有，杯子在这边。",
+        "pinyin": "Yǒu, bēizi zài zhèbiān.",
+        "segments": [
+          "有",
+          "，",
+          "杯子",
+          "在",
+          "这边",
+          "。"
+        ],
+        "sourceItemId": "D1-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "售货员"
+        }
+      },
+      {
+        "hanzi": "多少钱一个？",
+        "pinyin": "Duōshao qián yí gè?",
+        "segments": [
+          "多少",
+          "钱",
+          "一个",
+          "？"
+        ],
+        "sourceItemId": "D1-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "这些五块钱一个，那些十块钱一个。",
+        "pinyin": "Zhèxiē wǔ kuài qián yí gè, nàxiē shí kuài qián yí gè.",
+        "segments": [
+          "这些",
+          "五块",
+          "钱",
+          "一个",
+          "，",
+          "那些",
+          "十块",
+          "钱",
+          "一个",
+          "。"
+        ],
+        "sourceItemId": "D1-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "售货员"
+        }
+      },
+      {
+        "hanzi": "我买这个吧。",
+        "pinyin": "Wǒ mǎi zhège ba.",
+        "segments": [
+          "我",
+          "买",
+          "这个",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "D1-5",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 5,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "这儿的水果真不少！",
+        "pinyin": "Zhèr de shuǐguǒ zhēn bù shǎo!",
+        "segments": [
+          "这儿",
+          "的",
+          "水果",
+          "真",
+          "不少",
+          "！"
+        ],
+        "sourceItemId": "S-read1-1",
+        "pinyinProvenance": "source",
+        "sourcePage": 35,
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "您想买什么？",
+        "pinyin": "Nín xiǎng mǎi shénme?",
+        "segments": [
+          "您",
+          "想",
+          "买",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "D2-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "售货员"
+        }
+      },
+      {
+        "hanzi": "我想买两斤苹果。",
+        "pinyin": "Wǒ xiǎng mǎi liǎng jīn píngguǒ.",
+        "segments": [
+          "我",
+          "想",
+          "买",
+          "两斤",
+          "苹果",
+          "。"
+        ],
+        "sourceItemId": "D2-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "苹果三块五一斤。",
+        "pinyin": "Píngguǒ sān kuài wǔ yì jīn.",
+        "segments": [
+          "苹果",
+          "三块五",
+          "一斤",
+          "。"
+        ],
+        "sourceItemId": "D2-4a",
+        "pinyinProvenance": "source",
+        "sourcePage": 27,
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "售货员"
+        }
+      },
+      {
+        "hanzi": "这些七块二，七块钱吧。",
+        "pinyin": "Zhèxiē qī kuài èr, qī kuài qián ba.",
+        "segments": [
+          "这些",
+          "七块二",
+          "，",
+          "七块",
+          "钱",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "D2-4b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "售货员"
+        }
+      },
+      {
+        "hanzi": "好的，这儿的苹果真便宜！",
+        "pinyin": "Hǎo de, zhèr de píngguǒ zhēn piányi!",
+        "segments": [
+          "好",
+          "的",
+          "，",
+          "这儿",
+          "的",
+          "苹果",
+          "真",
+          "便宜",
+          "！"
+        ],
+        "sourceItemId": "D2-5",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 5,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "这家商店衣服真多！",
+        "pinyin": "Zhè jiā shāngdiàn yīfu zhēn duō!",
+        "segments": [
+          "这",
+          "家",
+          "商店",
+          "衣服",
+          "真",
+          "多",
+          "！"
+        ],
+        "sourceItemId": "D3-1a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "这件一百元，怎么样？",
+        "pinyin": "Zhè jiàn yìbǎi yuán, zěnmeyàng?",
+        "segments": [
+          "这",
+          "件",
+          "一百",
+          "元",
+          "，",
+          "怎么样",
+          "？"
+        ],
+        "sourceItemId": "D3-1b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "好看，也不贵。",
+        "pinyin": "Hǎokàn, yě bú guì.",
+        "segments": [
+          "好看",
+          "，",
+          "也",
+          "不",
+          "贵",
+          "。"
+        ],
+        "sourceItemId": "D3-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "小雪能穿，买一件吧。",
+        "pinyin": "Xiǎoxuě néng chuān, mǎi yí jiàn ba.",
+        "segments": [
+          "小雪",
+          "能",
+          "穿",
+          "，",
+          "买",
+          "一件",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "D3-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "好的。",
+        "pinyin": "Hǎo de.",
+        "segments": [
+          "好",
+          "的",
+          "。"
+        ],
+        "sourceItemId": "D3-4a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "小明能穿吗？",
+        "pinyin": "Xiǎomíng néng chuān ma?",
+        "segments": [
+          "小明",
+          "能",
+          "穿",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "D3-4b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "不能。",
+        "pinyin": "Bù néng.",
+        "segments": [
+          "不能",
+          "。"
+        ],
+        "sourceItemId": "D3-5a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "这些是女孩子穿的衣服，男孩子的衣服在那儿。",
+        "pinyin": "Zhèxiē shì nǚ háizi chuān de yīfu, nán háizi de yīfu zài nàr.",
+        "segments": [
+          "这些",
+          "是",
+          "女孩子",
+          "穿",
+          "的",
+          "衣服",
+          "，",
+          "男孩子",
+          "的",
+          "衣服",
+          "在",
+          "那儿",
+          "。"
+        ],
+        "sourceItemId": "D3-5b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "王一雪"
+        }
+      }
+    ]
+  }
+}

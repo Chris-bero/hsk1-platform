@@ -1,0 +1,850 @@
+{
+  "bundleCode": "ch02-fltrp-lesson2",
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第2课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P6–P8 (课文1–3 dialogues)",
+    "extractedPages": "1–39 (full)",
+    "notes": "Vocab from 生词 tables 2-2/2-4/2-6. Example sentences from vocab cards (no English in source). Dialogue lines + pinyin from screenshots. Translated sentences: lesson title (p2), text intros (p4/17/27), grammar examples (p26), tongue twister (p37). Skipped as non-sentences: substitution drill frame 我叫…… (p16), illustration label 贝拉 (p10), word-extension chips (很好/不好/不能/不对/认识他/不认识/很高兴/不高兴/很好/很高兴). No content beyond these files.",
+    "pinyinCompletion": "Sentence pinyin for items absent from the source PDF was added on 2026-10-21 at the INSTRUCTOR'S EXPLICIT REQUEST ('تأكد من عدم وجود PINYIN ناقص'). These entries carry pinyinProvenance='instructor-requested' and are reviewable; source-provided pinyin keeps pinyinProvenance='source'."
+  },
+  "payload": {
+    "chapter": {
+      "num": 2,
+      "title": "我叫李文 My name is Li Wen",
+      "sourceFile": "《新HSK教程1》第2课.pdf",
+      "representative": {
+        "hanzi": "我叫李文",
+        "pinyin": "Wǒ jiào Lǐ Wén",
+        "english": "My name is Li Wen"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "请问",
+        "pinyin": "qǐnɡwèn",
+        "english": "excuse me",
+        "pos": "v.",
+        "sourcePage": 5,
+        "sourceItemId": "W2-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "english": "(singular) you",
+        "pos": "pron.",
+        "sourcePage": 5,
+        "sourceItemId": "W2-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "叫",
+        "pinyin": "jiào",
+        "english": "be called as",
+        "pos": "v.",
+        "sourcePage": 5,
+        "sourceItemId": "W2-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "什么",
+        "pinyin": "shénme",
+        "english": "what",
+        "pos": "pron.",
+        "sourcePage": 5,
+        "sourceItemId": "W2-2-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "名字",
+        "pinyin": "mínɡzi",
+        "english": "name",
+        "pos": "n.",
+        "sourcePage": 5,
+        "sourceItemId": "W2-2-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "english": "I; me",
+        "pos": "pron.",
+        "sourcePage": 5,
+        "sourceItemId": "W2-2-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "english": "not; no",
+        "pos": "adv.",
+        "sourcePage": 18,
+        "sourceItemId": "W2-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "english": "be",
+        "pos": "v.",
+        "sourcePage": 18,
+        "sourceItemId": "W2-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "对不起",
+        "pinyin": "duìbuqǐ",
+        "english": "sorry",
+        "pos": "v.",
+        "sourcePage": 18,
+        "sourceItemId": "W2-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "没关系",
+        "pinyin": "méi ɡuānxi",
+        "english": "that’s all right; never mind",
+        "pos": "",
+        "sourcePage": 18,
+        "sourceItemId": "W2-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "没事",
+        "pinyin": "méishì",
+        "english": "it doesn’t matter",
+        "pos": "v.",
+        "sourcePage": 18,
+        "sourceItemId": "W2-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "english": "very",
+        "pos": "adv.",
+        "sourcePage": 28,
+        "sourceItemId": "W2-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "高兴",
+        "pinyin": "ɡāoxìnɡ",
+        "english": "glad; happy",
+        "pos": "adj.",
+        "sourcePage": 28,
+        "sourceItemId": "W2-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "认识",
+        "pinyin": "rènshi",
+        "english": "know; become acquainted with",
+        "pos": "v.",
+        "sourcePage": 28,
+        "sourceItemId": "W2-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "也",
+        "pinyin": "yě",
+        "english": "also; too",
+        "pos": "adv.",
+        "sourcePage": 28,
+        "sourceItemId": "W2-6-4",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "我叫李文",
+        "pinyin": "Wǒ jiào Lǐ Wén",
+        "english": "My name is Li Wen",
+        "segments": [
+          "我",
+          "叫",
+          "李文"
+        ],
+        "sourcePage": 2,
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "在教室里，王一飞在认识学生。",
+        "english": "Wang Yifei was getting to know the students in the classroom.",
+        "segments": [
+          "在教室里",
+          "，",
+          "王一飞",
+          "在",
+          "认识",
+          "学生",
+          "。"
+        ],
+        "sourcePage": 4,
+        "sourceItemId": "S-intro1",
+        "pinyin": "Zài jiàoshì lǐ, Wáng Yīfēi zài rènshi xuéshēng.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "在校园里，陈天中和白家月打招呼时认错了人。",
+        "english": "On campus, Chen Tianzhong greeted Bai Jiayue but mistook her for someone else.",
+        "segments": [
+          "在校园里",
+          "，",
+          "陈天中",
+          "和",
+          "白家月",
+          "打招呼",
+          "时",
+          "认错",
+          "了",
+          "人",
+          "。"
+        ],
+        "sourcePage": 17,
+        "sourceItemId": "S-intro2",
+        "pinyin": "Zài xiàoyuán lǐ, Chén Tiānzhōng hé Bái Jiāyuè dǎ zhāohu shí rèn cuò le rén.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "在校园里，李文和白家月第一次相遇。",
+        "english": "Li Wen and Bai Jiayue met for the first time on campus.",
+        "segments": [
+          "在校园里",
+          "，",
+          "李文",
+          "和",
+          "白家月",
+          "第一次",
+          "相遇",
+          "。"
+        ],
+        "sourcePage": 27,
+        "sourceItemId": "S-intro3",
+        "pinyin": "Zài xiàoyuán lǐ, Lǐ Wén hé Bái Jiāyuè dì yī cì xiāngyù.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "主语+谓语+宾语。",
+        "english": "Subject+Predicate+Object.",
+        "segments": [
+          "主语",
+          "+",
+          "谓语",
+          "+",
+          "宾语",
+          "。"
+        ],
+        "sourcePage": 26,
+        "sourceItemId": "S-grammar1",
+        "pinyin": "Zhǔyǔ + wèiyǔ + bīnyǔ.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "例如：我（主语）叫（谓语）陈天中（宾语）。",
+        "english": "For example: 我 (Subject) 叫 (Predicate) 陈天中 (Object).",
+        "segments": [
+          "例如",
+          "：",
+          "我",
+          "（主语）",
+          "叫",
+          "（谓语）",
+          "陈天中",
+          "（宾语）",
+          "。"
+        ],
+        "sourcePage": 26,
+        "sourceItemId": "S-grammar2",
+        "pinyin": "Lìrú: wǒ (zhǔyǔ) jiào (wèiyǔ) Chén Tiānzhōng (bīnyǔ).",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "七加一，再减一，加完减完等于几？",
+        "pinyin": "Qī jiā yī, zài jiǎn yī, jiāwán jiǎnwán děnɡyú jǐ?",
+        "english": "Seven plus one, minus one again. Add it up. Take it down. What’s the gain?",
+        "segments": [
+          "七",
+          "加",
+          "一",
+          "，",
+          "再",
+          "减",
+          "一",
+          "，",
+          "加完",
+          "减完",
+          "等于",
+          "几",
+          "？"
+        ],
+        "sourcePage": 37,
+        "sourceItemId": "S-twister1",
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "加完减完还是七。",
+        "pinyin": "Jiāwán jiǎnwán hái shì qī.",
+        "english": "Add it up. Take it down. Still just seven!",
+        "segments": [
+          "加完",
+          "减完",
+          "还是",
+          "七",
+          "。"
+        ],
+        "sourcePage": 37,
+        "sourceItemId": "S-twister2",
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "请问超市在哪儿？",
+        "segments": [
+          "请问",
+          "超市",
+          "在",
+          "哪儿",
+          "？"
+        ],
+        "sourcePage": 6,
+        "sourceItemId": "EX-请问-1",
+        "pinyin": "Qǐngwèn chāoshì zài nǎr?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "请问，您是王老师吗？",
+        "segments": [
+          "请问",
+          "，",
+          "您",
+          "是",
+          "王老师",
+          "吗",
+          "？"
+        ],
+        "sourcePage": 6,
+        "sourceItemId": "EX-请问-2",
+        "pinyin": "Qǐngwèn, nín shì Wáng lǎoshī ma?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你好!",
+        "segments": [
+          "你好",
+          "!"
+        ],
+        "sourcePage": 7,
+        "sourceItemId": "EX-你-1",
+        "pinyin": "Nǐ hǎo!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你是谁？",
+        "segments": [
+          "你",
+          "是",
+          "谁",
+          "？"
+        ],
+        "sourcePage": 7,
+        "sourceItemId": "EX-你-2",
+        "pinyin": "Nǐ shì shéi?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她的名字叫什么？",
+        "segments": [
+          "她",
+          "的",
+          "名字",
+          "叫",
+          "什么",
+          "？"
+        ],
+        "sourcePage": 8,
+        "sourceItemId": "EX-叫-1",
+        "pinyin": "Tā de míngzi jiào shénme?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我的猫叫Coco。",
+        "segments": [
+          "我",
+          "的",
+          "猫",
+          "叫",
+          "Coco",
+          "。"
+        ],
+        "sourcePage": 8,
+        "sourceItemId": "EX-叫-2",
+        "pinyin": "Wǒ de māo jiào Coco.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "这是什么？",
+        "segments": [
+          "这",
+          "是",
+          "什么",
+          "？"
+        ],
+        "sourcePage": 9,
+        "sourceItemId": "EX-什么-1",
+        "pinyin": "Zhè shì shénme?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他什么时候来？",
+        "segments": [
+          "他",
+          "什么",
+          "时候",
+          "来",
+          "？"
+        ],
+        "sourcePage": 9,
+        "sourceItemId": "EX-什么-2",
+        "pinyin": "Tā shénme shíhou lái?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "这个名字真好。",
+        "segments": [
+          "这个",
+          "名字",
+          "真",
+          "好",
+          "。"
+        ],
+        "sourcePage": 10,
+        "sourceItemId": "EX-名字-1",
+        "pinyin": "Zhège míngzi zhēn hǎo.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你的猫叫什么名字？",
+        "segments": [
+          "你",
+          "的",
+          "猫",
+          "叫",
+          "什么",
+          "名字",
+          "？"
+        ],
+        "sourcePage": 10,
+        "sourceItemId": "EX-名字-2",
+        "pinyin": "Nǐ de māo jiào shénme míngzi?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我是学生。",
+        "segments": [
+          "我",
+          "是",
+          "学生",
+          "。"
+        ],
+        "sourcePage": 11,
+        "sourceItemId": "EX-我-1",
+        "pinyin": "Wǒ shì xuéshēng.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我也去。",
+        "segments": [
+          "我",
+          "也",
+          "去",
+          "。"
+        ],
+        "sourcePage": 11,
+        "sourceItemId": "EX-我-2",
+        "pinyin": "Wǒ yě qù.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我不是白家月。",
+        "segments": [
+          "我",
+          "不",
+          "是",
+          "白家月",
+          "。"
+        ],
+        "sourcePage": 19,
+        "sourceItemId": "EX-不-1",
+        "pinyin": "Wǒ bú shì Bái Jiāyuè.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "这个名字不好。",
+        "segments": [
+          "这个",
+          "名字",
+          "不",
+          "好",
+          "。"
+        ],
+        "sourcePage": 19,
+        "sourceItemId": "EX-不-2",
+        "pinyin": "Zhège míngzi bù hǎo.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她是谁？",
+        "segments": [
+          "她",
+          "是",
+          "谁",
+          "？"
+        ],
+        "sourcePage": 20,
+        "sourceItemId": "EX-是-1",
+        "pinyin": "Tā shì shéi?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "对不起！",
+        "pinyin": "Duìbuqǐ!",
+        "segments": [
+          "对不起",
+          "！"
+        ],
+        "sourcePage": 21,
+        "sourceItemId": "EX-对不起-A",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "陈天中"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "没关系！",
+        "pinyin": "Méi guānxi!",
+        "segments": [
+          "没关系",
+          "！"
+        ],
+        "sourcePage": 21,
+        "sourceItemId": "EX-没关系-B",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "白家月"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "没事！",
+        "segments": [
+          "没事",
+          "！"
+        ],
+        "sourcePage": 21,
+        "sourceItemId": "EX-没事-B",
+        "pinyin": "Méishì!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我很好。",
+        "segments": [
+          "我",
+          "很",
+          "好",
+          "。"
+        ],
+        "sourcePage": 29,
+        "sourceItemId": "EX-很-1",
+        "pinyin": "Wǒ hěn hǎo.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我们很高兴。",
+        "segments": [
+          "我们",
+          "很",
+          "高兴",
+          "。"
+        ],
+        "sourcePage": 29,
+        "sourceItemId": "EX-很-2",
+        "pinyin": "Wǒmen hěn gāoxìng.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "很高兴认识你。",
+        "pinyin": "Hěn gāoxìng rènshi nǐ.",
+        "segments": [
+          "很",
+          "高兴",
+          "认识",
+          "你",
+          "。"
+        ],
+        "sourcePage": 30,
+        "sourceItemId": "EX-高兴-1",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "李文"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你为什么不高兴？",
+        "segments": [
+          "你",
+          "为什么",
+          "不",
+          "高兴",
+          "？"
+        ],
+        "sourcePage": 30,
+        "sourceItemId": "EX-高兴-2",
+        "pinyin": "Nǐ wèishénme bù gāoxìng?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "很高兴认识你！",
+        "segments": [
+          "很",
+          "高兴",
+          "认识",
+          "你",
+          "！"
+        ],
+        "sourcePage": 31,
+        "sourceItemId": "EX-认识-1",
+        "pinyin": "Hěn gāoxìng rènshi nǐ!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你认识他吗？",
+        "segments": [
+          "你",
+          "认识",
+          "他",
+          "吗",
+          "？"
+        ],
+        "sourcePage": 31,
+        "sourceItemId": "EX-认识-A",
+        "pinyin": "Nǐ rènshi tā ma?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我不认识他。",
+        "segments": [
+          "我",
+          "不",
+          "认识",
+          "他",
+          "。"
+        ],
+        "sourcePage": 31,
+        "sourceItemId": "EX-认识-B",
+        "pinyin": "Wǒ bú rènshi tā.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我也很高兴。",
+        "segments": [
+          "我",
+          "也",
+          "很",
+          "高兴",
+          "。"
+        ],
+        "sourcePage": 32,
+        "sourceItemId": "EX-也-1",
+        "pinyin": "Wǒ yě hěn gāoxìng.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你也认识她？",
+        "segments": [
+          "你",
+          "也",
+          "认识",
+          "她",
+          "？"
+        ],
+        "sourcePage": 32,
+        "sourceItemId": "EX-也-2",
+        "pinyin": "Nǐ yě rènshi tā?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "请问，你叫什么名字？",
+        "pinyin": "Qǐnɡwèn, nǐ jiào shénme mínɡzi?",
+        "segments": [
+          "请问",
+          "，",
+          "你",
+          "叫",
+          "什么",
+          "名字",
+          "？"
+        ],
+        "sourcePage": 16,
+        "sourceItemId": "D1-1",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "王一飞"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "我叫陈天中。",
+        "pinyin": "Wǒ jiào Chén Tiānzhōng.",
+        "segments": [
+          "我",
+          "叫",
+          "陈天中",
+          "。"
+        ],
+        "sourceItemId": "D1-2",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "陈天中"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你好，安妮！",
+        "pinyin": "Nǐ hǎo, Ānnī!",
+        "segments": [
+          "你好",
+          "，",
+          "安妮",
+          "！"
+        ],
+        "sourceItemId": "D2-1",
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "陈天中"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你好，陈天中！我不是安妮，我是白家月。",
+        "pinyin": "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè.",
+        "segments": [
+          "你好",
+          "，",
+          "陈天中",
+          "！",
+          "我",
+          "不",
+          "是",
+          "安妮",
+          "，",
+          "我",
+          "是",
+          "白家月",
+          "。"
+        ],
+        "sourceItemId": "D2-2",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "白家月"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你好！我叫李文。",
+        "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Wén.",
+        "segments": [
+          "你好",
+          "！",
+          "我",
+          "叫",
+          "李文",
+          "。"
+        ],
+        "sourceItemId": "D3-1",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "李文"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你好！我叫白家月。",
+        "pinyin": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè.",
+        "segments": [
+          "你好",
+          "！",
+          "我",
+          "叫",
+          "白家月",
+          "。"
+        ],
+        "sourceItemId": "D3-2",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "白家月"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "认识你我也很高兴。",
+        "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+        "segments": [
+          "认识",
+          "你",
+          "我",
+          "也",
+          "很",
+          "高兴",
+          "。"
+        ],
+        "sourceItemId": "D3-4",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "白家月"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你叫什么名字？",
+        "segments": [
+          "你",
+          "叫",
+          "什么",
+          "名字",
+          "？"
+        ],
+        "sourcePage": 26,
+        "sourceItemId": "S-read2-1",
+        "pinyin": "Nǐ jiào shénme míngzi?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我叫白家月。",
+        "segments": [
+          "我",
+          "叫",
+          "白家月",
+          "。"
+        ],
+        "sourcePage": 26,
+        "sourceItemId": "S-read2-2",
+        "pinyin": "Wǒ jiào Bái Jiāyuè.",
+        "pinyinProvenance": "instructor-requested"
+      }
+    ]
+  },
+  "rev": 6
+}

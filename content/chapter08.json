@@ -1,0 +1,1554 @@
+{
+  "bundleCode": "ch08-fltrp-lesson8",
+  "rev": 6,
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第8课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P55/P56/P59 (课文1–3 dialogues)",
+    "extractedPages": "1–62 (full)",
+    "notes": "Vocab from 生词 tables 8-2/8-4/8-6 (incl. proper noun 胡医生). Example sentences from vocab cards (no English in source). Dialogue lines + pinyin from screenshots; multi-sentence lines split (好的。下午两点… / 我能到。我在学校… / 是的。我爸爸…). Read-aloud lines merged with identical dialogue lines. Grammar glosses cleaned: 在+…词语（words/phrases…）+动词(verb）→ plain form; 能+动词（verb)→ plain form - reported. Skipped: p4 warm-up items, p26 position-word list line (上、下、里、外、前、后、外边), p28/p46 listening stems, extension chips. Sentence pinyin absent from source completed per instructor request (2026-10-21), tagged instructor-requested."
+  },
+  "payload": {
+    "chapter": {
+      "num": 8,
+      "title": "我爸爸也在医院工作 My father also works at a hospital",
+      "sourceFile": "《新HSK教程1》第8课.pdf",
+      "representative": {
+        "hanzi": "我爸爸也在医院工作",
+        "pinyin": "Wǒ bàba yě zài yīyuàn gōngzuò",
+        "english": "My father also works at a hospital"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "房间",
+        "pinyin": "fángjiān",
+        "english": "room",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W8-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "外",
+        "pinyin": "wài",
+        "english": "outside",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W8-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "只",
+        "pinyin": "zhī",
+        "english": "for certain animals",
+        "pos": "m.",
+        "sourcePage": 6,
+        "sourceItemId": "W8-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "小",
+        "pinyin": "xiǎo",
+        "english": "small; little",
+        "pos": "adj.",
+        "sourcePage": 6,
+        "sourceItemId": "W8-2-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "猫",
+        "pinyin": "māo",
+        "english": "cat",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W8-2-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "没",
+        "pinyin": "méi",
+        "english": "no; not; not yet",
+        "pos": "adv.",
+        "sourcePage": 7,
+        "sourceItemId": "W8-2-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "看见",
+        "pinyin": "kànjiàn",
+        "english": "see; catch sight of",
+        "pos": "v.",
+        "sourcePage": 7,
+        "sourceItemId": "W8-2-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "桌子",
+        "pinyin": "zhuōzi",
+        "english": "table; desk",
+        "pos": "n.",
+        "sourcePage": 7,
+        "sourceItemId": "W8-2-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "下",
+        "pinyin": "xià",
+        "english": "low position or rank",
+        "pos": "n.",
+        "sourcePage": 7,
+        "sourceItemId": "W8-2-9",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "漂亮",
+        "pinyin": "piàoliang",
+        "english": "pretty; beautiful",
+        "pos": "adj.",
+        "sourcePage": 7,
+        "sourceItemId": "W8-2-10",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "english": "at/in",
+        "pos": "prep.",
+        "sourcePage": 29,
+        "sourceItemId": "W8-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "学校",
+        "pinyin": "xuéxiào",
+        "english": "school",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W8-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "书店",
+        "pinyin": "shūdiàn",
+        "english": "bookstore",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W8-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "前",
+        "pinyin": "qián",
+        "english": "front",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W8-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "能",
+        "pinyin": "néng",
+        "english": "can; be able to",
+        "pos": "mod.",
+        "sourcePage": 29,
+        "sourceItemId": "W8-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "到",
+        "pinyin": "dào",
+        "english": "arrive; reach",
+        "pos": "v.",
+        "sourcePage": 29,
+        "sourceItemId": "W8-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "午饭",
+        "pinyin": "wǔfàn",
+        "english": "lunch",
+        "pos": "n.",
+        "sourcePage": 29,
+        "sourceItemId": "W8-4-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "饭",
+        "pinyin": "fàn",
+        "english": "meal",
+        "pos": "n.",
+        "sourcePage": 47,
+        "sourceItemId": "W8-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "大",
+        "pinyin": "dà",
+        "english": "big; large",
+        "pos": "adj.",
+        "sourcePage": 47,
+        "sourceItemId": "W8-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "病人",
+        "pinyin": "bìngrén",
+        "english": "patient",
+        "pos": "n.",
+        "sourcePage": 47,
+        "sourceItemId": "W8-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "多",
+        "pinyin": "duō",
+        "english": "many; much",
+        "pos": "adj.",
+        "sourcePage": 47,
+        "sourceItemId": "W8-6-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "医生",
+        "pinyin": "yīshēng",
+        "english": "doctor",
+        "pos": "n.",
+        "sourcePage": 47,
+        "sourceItemId": "W8-6-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "english": "work",
+        "pos": "v.",
+        "sourcePage": 47,
+        "sourceItemId": "W8-6-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "胡医生",
+        "pinyin": "Hú yīshēng",
+        "english": "Dr. Hu",
+        "pos": "propn",
+        "sourcePage": 48,
+        "sourceItemId": "W8-6-7",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "我爸爸也在医院工作",
+        "pinyin": "Wǒ bàba yě zài yīyuàn gōngzuò",
+        "segments": [
+          "我",
+          "爸爸",
+          "也",
+          "在",
+          "医院",
+          "工作"
+        ],
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source",
+        "english": "My father also works at a hospital",
+        "sourcePage": 2
+      },
+      {
+        "hanzi": "在王一飞家，白家月和陈天中来做客。",
+        "pinyin": "Zài Wáng Yīfēi jiā, Bái Jiāyuè hé Chén Tiānzhōng lái zuòkè.",
+        "segments": [
+          "在",
+          "王一飞",
+          "家",
+          "，",
+          "白家月",
+          "和",
+          "陈天中",
+          "来",
+          "做客",
+          "。"
+        ],
+        "sourceItemId": "S-intro1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "At Wang Yifei's home, Bai Jiayue and Chen Tianzhong came over for a visit.",
+        "sourcePage": 5
+      },
+      {
+        "hanzi": "在教室里，下课后，白家月给李文打电话。",
+        "pinyin": "Zài jiàoshì lǐ, xiàkè hòu, Bái Jiāyuè gěi Lǐ Wén dǎ diànhuà.",
+        "segments": [
+          "在教室里",
+          "，",
+          "下课后",
+          "，",
+          "白家月",
+          "给",
+          "李文",
+          "打电话",
+          "。"
+        ],
+        "sourceItemId": "S-intro2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "After class, Bai Jiayue was calling Li Wen in the classroom.",
+        "sourcePage": 27
+      },
+      {
+        "hanzi": "在医院里，刘明和同事胡医生在聊天儿。",
+        "pinyin": "Zài yīyuàn lǐ, Liú Míng hé tóngshì Hú yīshēng zài liáotiānr.",
+        "segments": [
+          "在医院里",
+          "，",
+          "刘明",
+          "和",
+          "同事",
+          "胡医生",
+          "在",
+          "聊天儿",
+          "。"
+        ],
+        "sourceItemId": "S-intro3",
+        "pinyinProvenance": "instructor-requested",
+        "english": "In the hospital, Liu Ming was chatting with Dr. Hu, his colleague.",
+        "sourcePage": 45
+      },
+      {
+        "hanzi": "在+表示位置、处所的词语+动词表示在什么位置、处所做什么。",
+        "pinyin": "Zài + biǎoshì wèizhì, chùsuǒ de cíyǔ + dòngcí biǎoshì zài shénme wèizhì, chùsuǒ zuò shénme.",
+        "segments": [
+          "在",
+          "+",
+          "表示",
+          "位置",
+          "、",
+          "处所",
+          "的",
+          "词语",
+          "+",
+          "动词",
+          "表示",
+          "在",
+          "什么",
+          "位置",
+          "、",
+          "处所",
+          "做",
+          "什么",
+          "。"
+        ],
+        "sourceItemId": "S-grammar1",
+        "pinyinProvenance": "instructor-requested",
+        "english": "This structure shows where an action takes place.",
+        "sourcePage": 43
+      },
+      {
+        "hanzi": "能+动词，表示有能力、有条件或可能做某事。",
+        "pinyin": "Néng + dòngcí, biǎoshì yǒu nénglì, yǒu tiáojiàn huò kěnéng zuò mǒu shì.",
+        "segments": [
+          "能",
+          "+",
+          "动词",
+          "，",
+          "表示",
+          "有",
+          "能力",
+          "、",
+          "有",
+          "条件",
+          "或",
+          "可能",
+          "做",
+          "某事",
+          "。"
+        ],
+        "sourceItemId": "S-grammar2",
+        "pinyinProvenance": "instructor-requested",
+        "english": "This structure indicates the ability, condition, or possibility of doing something.",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "我家有三个房间。",
+        "pinyin": "Wǒ jiā yǒu sān gè fángjiān.",
+        "segments": [
+          "我",
+          "家",
+          "有",
+          "三个",
+          "房间",
+          "。"
+        ],
+        "sourceItemId": "EX-房间-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "我的房间很漂亮。",
+        "pinyin": "Wǒ de fángjiān hěn piàoliang.",
+        "segments": [
+          "我",
+          "的",
+          "房间",
+          "很",
+          "漂亮",
+          "。"
+        ],
+        "sourceItemId": "EX-房间-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 8
+      },
+      {
+        "hanzi": "我在房间外，她在房间里。",
+        "pinyin": "Wǒ zài fángjiān wài, tā zài fángjiān lǐ.",
+        "segments": [
+          "我",
+          "在",
+          "房间",
+          "外",
+          "，",
+          "她",
+          "在",
+          "房间",
+          "里",
+          "。"
+        ],
+        "sourceItemId": "EX-外-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "学校外有一家商店。",
+        "pinyin": "Xuéxiào wài yǒu yì jiā shāngdiàn.",
+        "segments": [
+          "学校",
+          "外",
+          "有",
+          "一家",
+          "商店",
+          "。"
+        ],
+        "sourceItemId": "EX-外-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 9
+      },
+      {
+        "hanzi": "我有一只猫。",
+        "pinyin": "Wǒ yǒu yì zhī māo.",
+        "segments": [
+          "我",
+          "有",
+          "一只",
+          "猫",
+          "。"
+        ],
+        "sourceItemId": "EX-只-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "他有只狗。",
+        "pinyin": "Tā yǒu zhī gǒu.",
+        "segments": [
+          "他",
+          "有",
+          "只",
+          "狗",
+          "。"
+        ],
+        "sourceItemId": "EX-只-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 10
+      },
+      {
+        "hanzi": "我家有只小猫。",
+        "pinyin": "Wǒ jiā yǒu zhī xiǎo māo.",
+        "segments": [
+          "我",
+          "家",
+          "有",
+          "只",
+          "小猫",
+          "。"
+        ],
+        "sourceItemId": "EX-小-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 11
+      },
+      {
+        "hanzi": "我有一个小妹妹。",
+        "pinyin": "Wǒ yǒu yí gè xiǎo mèimei.",
+        "segments": [
+          "我",
+          "有",
+          "一个",
+          "小",
+          "妹妹",
+          "。"
+        ],
+        "sourceItemId": "EX-小-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 11
+      },
+      {
+        "hanzi": "我很喜欢我的小猫。",
+        "pinyin": "Wǒ hěn xǐhuan wǒ de xiǎo māo.",
+        "segments": [
+          "我",
+          "很",
+          "喜欢",
+          "我",
+          "的",
+          "小猫",
+          "。"
+        ],
+        "sourceItemId": "EX-猫-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 12
+      },
+      {
+        "hanzi": "猫白天喜欢睡觉，晚上喜欢玩。",
+        "pinyin": "Māo báitiān xǐhuan shuìjiào, wǎnshang xǐhuan wán.",
+        "segments": [
+          "猫",
+          "白天",
+          "喜欢",
+          "睡觉",
+          "，",
+          "晚上",
+          "喜欢",
+          "玩",
+          "。"
+        ],
+        "sourceItemId": "EX-猫-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 12
+      },
+      {
+        "hanzi": "我还没吃饭呢。",
+        "pinyin": "Wǒ hái méi chī fàn ne.",
+        "segments": [
+          "我",
+          "还",
+          "没",
+          "吃饭",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "EX-没-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "他没买菜，我现在去买。",
+        "pinyin": "Tā méi mǎi cài, wǒ xiànzài qù mǎi.",
+        "segments": [
+          "他",
+          "没",
+          "买菜",
+          "，",
+          "我",
+          "现在",
+          "去",
+          "买",
+          "。"
+        ],
+        "sourceItemId": "EX-没-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 13
+      },
+      {
+        "hanzi": "我看见小猫了。",
+        "pinyin": "Wǒ kànjiàn xiǎo māo le.",
+        "segments": [
+          "我",
+          "看见",
+          "小猫",
+          "了",
+          "。"
+        ],
+        "sourceItemId": "EX-看见-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 14
+      },
+      {
+        "hanzi": "他没看见我。",
+        "pinyin": "Tā méi kànjiàn wǒ.",
+        "segments": [
+          "他",
+          "没",
+          "看见",
+          "我",
+          "。"
+        ],
+        "sourceItemId": "EX-看见-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 14
+      },
+      {
+        "hanzi": "桌子上有很多菜。",
+        "pinyin": "Zhuōzi shang yǒu hěn duō cài.",
+        "segments": [
+          "桌子上",
+          "有",
+          "很多",
+          "菜",
+          "。"
+        ],
+        "sourceItemId": "EX-桌子-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 15
+      },
+      {
+        "hanzi": "小猫在桌子下睡觉。",
+        "pinyin": "Xiǎo māo zài zhuōzi xià shuìjiào.",
+        "segments": [
+          "小猫",
+          "在",
+          "桌子",
+          "下",
+          "睡觉",
+          "。"
+        ],
+        "sourceItemId": "EX-桌子-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 15
+      },
+      {
+        "hanzi": "车下有一只小猫。",
+        "pinyin": "Chē xià yǒu yì zhī xiǎo māo.",
+        "segments": [
+          "车",
+          "下",
+          "有",
+          "一只",
+          "小猫",
+          "。"
+        ],
+        "sourceItemId": "EX-下-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 16
+      },
+      {
+        "hanzi": "你的书在桌子下呢。",
+        "pinyin": "Nǐ de shū zài zhuōzi xià ne.",
+        "segments": [
+          "你",
+          "的",
+          "书",
+          "在",
+          "桌子",
+          "下",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "EX-下-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 16
+      },
+      {
+        "hanzi": "我的小猫很漂亮。",
+        "pinyin": "Wǒ de xiǎo māo hěn piàoliang.",
+        "segments": [
+          "我",
+          "的",
+          "小猫",
+          "很",
+          "漂亮",
+          "。"
+        ],
+        "sourceItemId": "EX-漂亮-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "你觉得这件衣服漂亮吗？",
+        "pinyin": "Nǐ juède zhè jiàn yīfu piàoliang ma?",
+        "segments": [
+          "你",
+          "觉得",
+          "这",
+          "件",
+          "衣服",
+          "漂亮",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-漂亮-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 17
+      },
+      {
+        "hanzi": "你在哪儿吃饭呢？",
+        "pinyin": "Nǐ zài nǎr chī fàn ne?",
+        "segments": [
+          "你",
+          "在",
+          "哪儿",
+          "吃饭",
+          "呢",
+          "？"
+        ],
+        "sourceItemId": "EX-在-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 30
+      },
+      {
+        "hanzi": "我在商店买衣服呢。",
+        "pinyin": "Wǒ zài shāngdiàn mǎi yīfu ne.",
+        "segments": [
+          "我",
+          "在",
+          "商店",
+          "买",
+          "衣服",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "EX-在-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 30
+      },
+      {
+        "hanzi": "学校里有老师和同学。",
+        "pinyin": "Xuéxiào lǐ yǒu lǎoshī hé tóngxué.",
+        "segments": [
+          "学校",
+          "里",
+          "有",
+          "老师",
+          "和",
+          "同学",
+          "。"
+        ],
+        "sourceItemId": "EX-学校-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 31
+      },
+      {
+        "hanzi": "我很喜欢我们学校。",
+        "pinyin": "Wǒ hěn xǐhuan wǒmen xuéxiào.",
+        "segments": [
+          "我",
+          "很",
+          "喜欢",
+          "我们",
+          "学校",
+          "。"
+        ],
+        "sourceItemId": "EX-学校-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 31
+      },
+      {
+        "hanzi": "我要去书店买书。",
+        "pinyin": "Wǒ yào qù shūdiàn mǎi shū.",
+        "segments": [
+          "我",
+          "要",
+          "去",
+          "书店",
+          "买书",
+          "。"
+        ],
+        "sourceItemId": "EX-书店-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "学校里有一家书店。",
+        "pinyin": "Xuéxiào lǐ yǒu yì jiā shūdiàn.",
+        "segments": [
+          "学校",
+          "里",
+          "有",
+          "一家",
+          "书店",
+          "。"
+        ],
+        "sourceItemId": "EX-书店-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 32
+      },
+      {
+        "hanzi": "他坐在我的前边。",
+        "pinyin": "Tā zuò zài wǒ de qiánbian.",
+        "segments": [
+          "他",
+          "坐",
+          "在",
+          "我",
+          "的",
+          "前边",
+          "。"
+        ],
+        "sourceItemId": "EX-前-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "电脑前的手机是谁的？",
+        "pinyin": "Diànnǎo qián de shǒujī shì shéi de?",
+        "segments": [
+          "电脑",
+          "前",
+          "的",
+          "手机",
+          "是",
+          "谁",
+          "的",
+          "？"
+        ],
+        "sourceItemId": "EX-前-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 33
+      },
+      {
+        "hanzi": "我能做很多菜。",
+        "pinyin": "Wǒ néng zuò hěn duō cài.",
+        "segments": [
+          "我",
+          "能",
+          "做",
+          "很多",
+          "菜",
+          "。"
+        ],
+        "sourceItemId": "EX-能-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "她能说汉语，她妹妹不能。",
+        "pinyin": "Tā néng shuō Hànyǔ, tā mèimei bù néng.",
+        "segments": [
+          "她",
+          "能",
+          "说",
+          "汉语",
+          "，",
+          "她",
+          "妹妹",
+          "不能",
+          "。"
+        ],
+        "sourceItemId": "EX-能-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 34
+      },
+      {
+        "hanzi": "喂，我到了，你在哪儿呢？",
+        "pinyin": "Wèi, wǒ dào le, nǐ zài nǎr ne?",
+        "segments": [
+          "喂",
+          "，",
+          "我",
+          "到",
+          "了",
+          "，",
+          "你",
+          "在",
+          "哪儿",
+          "呢",
+          "？"
+        ],
+        "sourceItemId": "EX-到-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "你两点前能到公司吗？",
+        "pinyin": "Nǐ liǎng diǎn qián néng dào gōngsī ma?",
+        "segments": [
+          "你",
+          "两点",
+          "前",
+          "能",
+          "到",
+          "公司",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-到-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 35
+      },
+      {
+        "hanzi": "我在家里吃午饭。",
+        "pinyin": "Wǒ zài jiā lǐ chī wǔfàn.",
+        "segments": [
+          "我",
+          "在",
+          "家",
+          "里",
+          "吃",
+          "午饭",
+          "。"
+        ],
+        "sourceItemId": "EX-午饭-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 36
+      },
+      {
+        "hanzi": "今天的午饭是面条儿。",
+        "pinyin": "Jīntiān de wǔfàn shì miàntiáor.",
+        "segments": [
+          "今天",
+          "的",
+          "午饭",
+          "是",
+          "面条儿",
+          "。"
+        ],
+        "sourceItemId": "EX-午饭-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 36
+      },
+      {
+        "hanzi": "吃饭的时候不要说话。",
+        "pinyin": "Chī fàn de shíhou bú yào shuōhuà.",
+        "segments": [
+          "吃饭",
+          "的",
+          "时候",
+          "不要",
+          "说话",
+          "。"
+        ],
+        "sourceItemId": "EX-饭-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "今天你做饭，好吗？",
+        "pinyin": "Jīntiān nǐ zuò fàn, hǎo ma?",
+        "segments": [
+          "今天",
+          "你",
+          "做饭",
+          "，",
+          "好",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "EX-饭-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 49
+      },
+      {
+        "hanzi": "我家很大。",
+        "pinyin": "Wǒ jiā hěn dà.",
+        "segments": [
+          "我",
+          "家",
+          "很",
+          "大",
+          "。"
+        ],
+        "sourceItemId": "EX-大-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 50
+      },
+      {
+        "hanzi": "你的房间大不大？",
+        "pinyin": "Nǐ de fángjiān dà bú dà?",
+        "segments": [
+          "你",
+          "的",
+          "房间",
+          "大",
+          "不",
+          "大",
+          "？"
+        ],
+        "sourceItemId": "EX-大-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 50
+      },
+      {
+        "hanzi": "雨不大。",
+        "pinyin": "Yǔ bú dà.",
+        "segments": [
+          "雨",
+          "不",
+          "大",
+          "。"
+        ],
+        "sourceItemId": "EX-大-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 50
+      },
+      {
+        "hanzi": "医院里有很多病人。",
+        "pinyin": "Yīyuàn lǐ yǒu hěn duō bìngrén.",
+        "segments": [
+          "医院",
+          "里",
+          "有",
+          "很多",
+          "病人",
+          "。"
+        ],
+        "sourceItemId": "EX-病人-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 51
+      },
+      {
+        "hanzi": "你是病人，要好好休息。",
+        "pinyin": "Nǐ shì bìngrén, yào hǎohao xiūxi.",
+        "segments": [
+          "你",
+          "是",
+          "病人",
+          "，",
+          "要",
+          "好好",
+          "休息",
+          "。"
+        ],
+        "sourceItemId": "EX-病人-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 51
+      },
+      {
+        "hanzi": "她认识的朋友很多。",
+        "pinyin": "Tā rènshi de péngyou hěn duō.",
+        "segments": [
+          "她",
+          "认识",
+          "的",
+          "朋友",
+          "很",
+          "多",
+          "。"
+        ],
+        "sourceItemId": "EX-多-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 52
+      },
+      {
+        "hanzi": "妈妈买的东西太多了！",
+        "pinyin": "Māma mǎi de dōngxi tài duō le!",
+        "segments": [
+          "妈妈",
+          "买",
+          "的",
+          "东西",
+          "太",
+          "多",
+          "了",
+          "！"
+        ],
+        "sourceItemId": "EX-多-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 52
+      },
+      {
+        "hanzi": "生病了要去看医生。",
+        "pinyin": "Shēng bìng le yào qù kàn yīshēng.",
+        "segments": [
+          "生病",
+          "了",
+          "要",
+          "去",
+          "看",
+          "医生",
+          "。"
+        ],
+        "sourceItemId": "EX-医生-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 53
+      },
+      {
+        "hanzi": "医生在医院看病。",
+        "pinyin": "Yīshēng zài yīyuàn kàn bìng.",
+        "segments": [
+          "医生",
+          "在",
+          "医院",
+          "看病",
+          "。"
+        ],
+        "sourceItemId": "EX-医生-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 53
+      },
+      {
+        "hanzi": "你问问医生，我的病怎么样了？",
+        "pinyin": "Nǐ wènwen yīshēng, wǒ de bìng zěnmeyàng le?",
+        "segments": [
+          "你",
+          "问问",
+          "医生",
+          "，",
+          "我",
+          "的",
+          "病",
+          "怎么样",
+          "了",
+          "？"
+        ],
+        "sourceItemId": "EX-医生-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 53
+      },
+      {
+        "hanzi": "老师在学校工作。",
+        "pinyin": "Lǎoshī zài xuéxiào gōngzuò.",
+        "segments": [
+          "老师",
+          "在",
+          "学校",
+          "工作",
+          "。"
+        ],
+        "sourceItemId": "EX-工作-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 54
+      },
+      {
+        "hanzi": "白天，人们都在工作。",
+        "pinyin": "Báitiān, rénmen dōu zài gōngzuò.",
+        "segments": [
+          "白天",
+          "，",
+          "人们",
+          "都",
+          "在",
+          "工作",
+          "。"
+        ],
+        "sourceItemId": "EX-工作-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 54
+      },
+      {
+        "hanzi": "房间里有一只小猫。",
+        "pinyin": "Fángjiān lǐ yǒu yì zhī xiǎo māo.",
+        "segments": [
+          "房间",
+          "里",
+          "有",
+          "一只",
+          "小猫",
+          "。"
+        ],
+        "sourceItemId": "S-read1-1",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "我们去书店外吧。",
+        "pinyin": "Wǒmen qù shūdiàn wài ba.",
+        "segments": [
+          "我们",
+          "去",
+          "书店",
+          "外",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "S-read1-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "小雪的手机在桌子上呢。",
+        "pinyin": "Xiǎoxuě de shǒujī zài zhuōzi shang ne.",
+        "segments": [
+          "小雪",
+          "的",
+          "手机",
+          "在",
+          "桌子上",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "S-read1-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 26
+      },
+      {
+        "hanzi": "他爸爸在医院工作。",
+        "pinyin": "Tā bàba zài yīyuàn gōngzuò.",
+        "segments": [
+          "他",
+          "爸爸",
+          "在",
+          "医院",
+          "工作",
+          "。"
+        ],
+        "sourceItemId": "S-read2-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 43
+      },
+      {
+        "hanzi": "你在哪儿买菜？",
+        "pinyin": "Nǐ zài nǎr mǎi cài?",
+        "segments": [
+          "你",
+          "在",
+          "哪儿",
+          "买菜",
+          "？"
+        ],
+        "sourceItemId": "S-read2-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 43
+      },
+      {
+        "hanzi": "爸爸能去。",
+        "pinyin": "Bàba néng qù.",
+        "segments": [
+          "爸爸",
+          "能",
+          "去",
+          "。"
+        ],
+        "sourceItemId": "S-read3-2",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "我不能去学校吃午饭。",
+        "pinyin": "Wǒ bù néng qù xuéxiào chī wǔfàn.",
+        "segments": [
+          "我",
+          "不能",
+          "去",
+          "学校",
+          "吃",
+          "午饭",
+          "。"
+        ],
+        "sourceItemId": "S-read3-3",
+        "pinyinProvenance": "instructor-requested",
+        "sourcePage": 44
+      },
+      {
+        "hanzi": "房间外有一只小猫。",
+        "pinyin": "Fángjiān wài yǒu yì zhī xiǎo māo.",
+        "segments": [
+          "房间",
+          "外",
+          "有",
+          "一只",
+          "小猫",
+          "。"
+        ],
+        "sourceItemId": "D1-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "我没看见，它在哪儿呢？",
+        "pinyin": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+        "segments": [
+          "我",
+          "没",
+          "看见",
+          "，",
+          "它",
+          "在",
+          "哪儿",
+          "呢",
+          "？"
+        ],
+        "sourceItemId": "D1-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "陈天中"
+        }
+      },
+      {
+        "hanzi": "它在桌子下呢。",
+        "pinyin": "Tā zài zhuōzi xià ne.",
+        "segments": [
+          "它",
+          "在",
+          "桌子",
+          "下",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "D1-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 3,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "这只小猫真漂亮！",
+        "pinyin": "Zhè zhī xiǎo māo zhēn piàoliang!",
+        "segments": [
+          "这",
+          "只",
+          "小猫",
+          "真",
+          "漂亮",
+          "！"
+        ],
+        "sourceItemId": "D1-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "陈天中"
+        }
+      },
+      {
+        "hanzi": "我们在哪儿见呢？",
+        "pinyin": "Wǒmen zài nǎr jiàn ne?",
+        "segments": [
+          "我们",
+          "在",
+          "哪儿",
+          "见",
+          "呢",
+          "？"
+        ],
+        "sourceItemId": "D2-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "在学校书店前见吧。",
+        "pinyin": "Zài xuéxiào shūdiàn qián jiàn ba.",
+        "segments": [
+          "在",
+          "学校",
+          "书店",
+          "前",
+          "见",
+          "吧",
+          "。"
+        ],
+        "sourceItemId": "D2-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "好的。",
+        "pinyin": "Hǎo de.",
+        "segments": [
+          "好",
+          "的",
+          "。"
+        ],
+        "sourceItemId": "D2-3a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "下午两点你能到吗？",
+        "pinyin": "Xiàwǔ liǎng diǎn nǐ néng dào ma?",
+        "segments": [
+          "下午",
+          "两点",
+          "你",
+          "能",
+          "到",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "S-read3-1",
+        "pinyinProvenance": "source",
+        "sourcePage": 44,
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "白家月"
+        }
+      },
+      {
+        "hanzi": "我能到。",
+        "pinyin": "Wǒ néng dào.",
+        "segments": [
+          "我",
+          "能",
+          "到",
+          "。"
+        ],
+        "sourceItemId": "D2-4a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "我在学校吃午饭。",
+        "pinyin": "Wǒ zài xuéxiào chī wǔfàn.",
+        "segments": [
+          "我",
+          "在",
+          "学校",
+          "吃",
+          "午饭",
+          "。"
+        ],
+        "sourceItemId": "S-read2-1",
+        "pinyinProvenance": "source",
+        "sourcePage": 43,
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "李文"
+        }
+      },
+      {
+        "hanzi": "小胡，还没吃饭呢？",
+        "pinyin": "Xiǎo Hú, hái méi chī fàn ne?",
+        "segments": [
+          "小胡",
+          "，",
+          "还",
+          "没",
+          "吃饭",
+          "呢",
+          "？"
+        ],
+        "sourceItemId": "D3-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "没吃呢。",
+        "pinyin": "Méi chī ne.",
+        "segments": [
+          "没",
+          "吃",
+          "呢",
+          "。"
+        ],
+        "sourceItemId": "D3-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "胡医生"
+        }
+      },
+      {
+        "hanzi": "大医院病人多，医生非常忙。",
+        "pinyin": "Dà yīyuàn bìngrén duō, yīshēng fēicháng máng.",
+        "segments": [
+          "大",
+          "医院",
+          "病人",
+          "多",
+          "，",
+          "医生",
+          "非常",
+          "忙",
+          "。"
+        ],
+        "sourceItemId": "D3-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "是的。",
+        "pinyin": "Shì de.",
+        "segments": [
+          "是",
+          "的",
+          "。"
+        ],
+        "sourceItemId": "D3-4a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "胡医生"
+        }
+      },
+      {
+        "hanzi": "我爸爸也在医院工作，他也非常忙。",
+        "pinyin": "Wǒ bàba yě zài yīyuàn gōngzuò, tā yě fēicháng máng.",
+        "segments": [
+          "我",
+          "爸爸",
+          "也",
+          "在",
+          "医院",
+          "工作",
+          "，",
+          "他",
+          "也",
+          "非常",
+          "忙",
+          "。"
+        ],
+        "sourceItemId": "D3-4b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "胡医生"
+        }
+      },
+      {
+        "hanzi": "你家有两个医生？",
+        "pinyin": "Nǐ jiā yǒu liǎng gè yīshēng?",
+        "segments": [
+          "你",
+          "家",
+          "有",
+          "两个",
+          "医生",
+          "？"
+        ],
+        "sourceItemId": "D3-5",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "对。",
+        "pinyin": "Duì.",
+        "segments": [
+          "对",
+          "。"
+        ],
+        "sourceItemId": "D3-6",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 6,
+          "speaker": "胡医生"
+        }
+      }
+    ]
+  }
+}

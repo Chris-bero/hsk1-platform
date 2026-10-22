@@ -1,0 +1,688 @@
+{
+  "bundleCode": "ch01-fltrp-lesson1",
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第1课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P1–P3 (课文1–3 dialogues)",
+    "extractedPages": "1–36 (full)",
+    "notes": "Vocab from 生词 tables 1-2/1-4/1-6. Example sentences from vocab cards (no English in source). Dialogue lines + their pinyin from screenshots. Translated sentences: lesson title (p2), text intros (p4/p10/p24), tongue twister (p34). No content beyond these files.",
+    "pinyinCompletion": "Sentence pinyin for items absent from the source PDF was added on 2026-10-21 at the INSTRUCTOR'S EXPLICIT REQUEST ('تأكد من عدم وجود PINYIN ناقص'). These entries carry pinyinProvenance='instructor-requested' and are reviewable; source-provided pinyin keeps pinyinProvenance='source'."
+  },
+  "payload": {
+    "chapter": {
+      "num": 1,
+      "title": "AI小语，你好！ Hello, AI Xiaoyu!",
+      "sourceFile": "《新HSK教程1》第1课.pdf",
+      "representative": {
+        "hanzi": "AI小语，你好！",
+        "pinyin": "AI Xiǎoyǔ, nǐ hǎo!",
+        "english": "Hello, AI Xiaoyu!"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "你好",
+        "pinyin": "nǐ hǎo",
+        "english": "hello",
+        "pos": "",
+        "sourcePage": 5,
+        "sourceItemId": "W1-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "王老师",
+        "pinyin": "Wáng lǎoshī",
+        "english": "Ms. Wang",
+        "pos": "propn",
+        "sourcePage": 5,
+        "sourceItemId": "W1-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "请问",
+        "pinyin": "qǐngwèn",
+        "english": "excuse me",
+        "pos": "v.",
+        "sourcePage": 9,
+        "sourceItemId": "W1-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "大家",
+        "pinyin": "dàjiā",
+        "english": "everybody",
+        "pos": "pron.",
+        "sourcePage": 11,
+        "sourceItemId": "W1-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "english": "good; fine",
+        "pos": "adj.",
+        "sourcePage": 11,
+        "sourceItemId": "W1-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "学生",
+        "pinyin": "xuéshēng",
+        "english": "student",
+        "pos": "n.",
+        "sourcePage": 11,
+        "sourceItemId": "W1-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "们",
+        "pinyin": "men",
+        "english": "used after a personal pronoun or a noun to show plural number",
+        "pos": "suf.",
+        "sourcePage": 11,
+        "sourceItemId": "W1-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "老师",
+        "pinyin": "lǎoshī",
+        "english": "teacher",
+        "pos": "n.",
+        "sourcePage": 11,
+        "sourceItemId": "W1-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "您",
+        "pinyin": "nín",
+        "english": "you",
+        "pos": "pron.",
+        "sourcePage": 11,
+        "sourceItemId": "W1-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "你们",
+        "pinyin": "nǐ men",
+        "english": "(plural) you",
+        "pos": "pron.",
+        "sourcePage": 11,
+        "sourceItemId": "W1-4-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "谢谢",
+        "pinyin": "xièxie",
+        "english": "thank you",
+        "pos": "v.",
+        "sourcePage": 25,
+        "sourceItemId": "W1-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "不客气",
+        "pinyin": "bú kèqi",
+        "english": "you’re welcome",
+        "pos": "",
+        "sourcePage": 25,
+        "sourceItemId": "W1-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "同学",
+        "pinyin": "tóngxué",
+        "english": "classmate",
+        "pos": "n.",
+        "sourcePage": 25,
+        "sourceItemId": "W1-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "再见",
+        "pinyin": "zàijiàn",
+        "english": "goodbye",
+        "pos": "v.",
+        "sourcePage": 25,
+        "sourceItemId": "W1-6-4",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "AI小语，你好！",
+        "pinyin": "AI Xiǎoyǔ, nǐ hǎo!",
+        "english": "Hello, AI Xiaoyu!",
+        "segments": [
+          "AI小语",
+          "，",
+          "你好",
+          "！"
+        ],
+        "sourcePage": 2,
+        "sourceItemId": "S-title",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "王一飞"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "开学第一天，在办公室里，王一飞和AI助教小语打招呼。",
+        "english": "On the first day of school, in the office, Wang Yifei was greeting the AI assistant Xiaoyu.",
+        "segments": [
+          "开学第一天",
+          "，",
+          "在办公室里",
+          "，",
+          "王一飞",
+          "和",
+          "AI助教小语",
+          "打招呼",
+          "。"
+        ],
+        "sourcePage": 4,
+        "sourceItemId": "S-intro1",
+        "pinyin": "Kāixué dì yī tiān, zài bàngōngshì lǐ, Wáng Yīfēi hé AI zhùjiào Xiǎoyǔ dǎ zhāohu.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "开学第一天，课堂上，学生们学习打招呼用语。",
+        "english": "On the first day of school, in class, the students were learning greeting expressions.",
+        "segments": [
+          "开学第一天",
+          "，",
+          "课堂上",
+          "，",
+          "学生们",
+          "学习",
+          "打招呼",
+          "用语",
+          "。"
+        ],
+        "sourcePage": 10,
+        "sourceItemId": "S-intro2",
+        "pinyin": "Kāixué dì yī tiān, kètáng shàng, xuéshēngmen xuéxí dǎ zhāohu yòngyǔ.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "开学第一天，课堂上，学生们学习致谢语、告别语。",
+        "english": "On the first day of school, in class, the students were learning expressions of gratitude and farewell.",
+        "segments": [
+          "开学第一天",
+          "，",
+          "课堂上",
+          "，",
+          "学生们",
+          "学习",
+          "致谢语",
+          "、",
+          "告别语",
+          "。"
+        ],
+        "sourcePage": 24,
+        "sourceItemId": "S-intro3",
+        "pinyin": "Kāixué dì yī tiān, kètáng shàng, xuéshēngmen xuéxí zhìxièyǔ, gàobiéyǔ.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "妈种麻，我放马。",
+        "pinyin": "Mā zhòng má, wǒ fàng mǎ.",
+        "english": "Mom plants flax. I tend the horse.",
+        "segments": [
+          "妈",
+          "种",
+          "麻",
+          "，",
+          "我",
+          "放",
+          "马",
+          "。"
+        ],
+        "sourcePage": 34,
+        "sourceItemId": "S-twister1",
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "马吃麻，妈骂马。",
+        "pinyin": "Mǎ chī má, mā mà mǎ.",
+        "english": "The horse eats the flax. Mom scolds the horse.",
+        "segments": [
+          "马",
+          "吃",
+          "麻",
+          "，",
+          "妈",
+          "骂",
+          "马",
+          "。"
+        ],
+        "sourcePage": 34,
+        "sourceItemId": "S-twister2",
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你好，王老师！",
+        "segments": [
+          "你好",
+          "，",
+          "王老师",
+          "！"
+        ],
+        "sourcePage": 6,
+        "sourceItemId": "EX-你好-1",
+        "pinyin": "Nǐ hǎo, Wáng lǎoshī!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "同学，你好！",
+        "segments": [
+          "同学",
+          "，",
+          "你好",
+          "！"
+        ],
+        "sourcePage": 6,
+        "sourceItemId": "EX-你好-2",
+        "pinyin": "Tóngxué, nǐ hǎo!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "大家好！",
+        "pinyin": "Dàjiā hǎo!",
+        "segments": [
+          "大家",
+          "好",
+          "！"
+        ],
+        "sourcePage": 12,
+        "sourceItemId": "EX-大家-1",
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "王一飞"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "谢谢大家！",
+        "segments": [
+          "谢谢",
+          "大家",
+          "！"
+        ],
+        "sourcePage": 12,
+        "sourceItemId": "EX-大家-2",
+        "pinyin": "Xièxie dàjiā!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他学习很好。",
+        "segments": [
+          "他",
+          "学习",
+          "很",
+          "好",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "EX-好-1",
+        "pinyin": "Tā xuéxí hěn hǎo.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我中文不好。",
+        "segments": [
+          "我",
+          "中文",
+          "不",
+          "好",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "EX-好-2",
+        "pinyin": "Wǒ Zhōngwén bù hǎo.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是李老师的学生。",
+        "segments": [
+          "他",
+          "是",
+          "李老师",
+          "的",
+          "学生",
+          "。"
+        ],
+        "sourcePage": 14,
+        "sourceItemId": "EX-学生-1",
+        "pinyin": "Tā shì Lǐ lǎoshī de xuéshēng.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你们学校有多少学生？",
+        "segments": [
+          "你们",
+          "学校",
+          "有",
+          "多少",
+          "学生",
+          "？"
+        ],
+        "sourcePage": 14,
+        "sourceItemId": "EX-学生-2",
+        "pinyin": "Nǐmen xuéxiào yǒu duōshao xuéshēng?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你们好吗？",
+        "segments": [
+          "你们",
+          "好",
+          "吗",
+          "？"
+        ],
+        "sourcePage": 15,
+        "sourceItemId": "EX-们-1",
+        "pinyin": "Nǐmen hǎo ma?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他们正在上课。",
+        "segments": [
+          "他们",
+          "正在",
+          "上课",
+          "。"
+        ],
+        "sourcePage": 15,
+        "sourceItemId": "EX-们-2",
+        "pinyin": "Tāmen zhèngzài shàngkè.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他是老师。",
+        "segments": [
+          "他",
+          "是",
+          "老师",
+          "。"
+        ],
+        "sourcePage": 16,
+        "sourceItemId": "EX-老师-1",
+        "pinyin": "Tā shì lǎoshī.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她是我的中文老师。",
+        "segments": [
+          "她",
+          "是",
+          "我",
+          "的",
+          "中文",
+          "老师",
+          "。"
+        ],
+        "sourcePage": 16,
+        "sourceItemId": "EX-老师-2",
+        "pinyin": "Tā shì wǒ de Zhōngwén lǎoshī.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "您好！",
+        "segments": [
+          "您",
+          "好",
+          "！"
+        ],
+        "sourcePage": 17,
+        "sourceItemId": "EX-您-1",
+        "pinyin": "Nín hǎo!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "您去哪儿？",
+        "segments": [
+          "您",
+          "去",
+          "哪儿",
+          "？"
+        ],
+        "sourcePage": 17,
+        "sourceItemId": "EX-您-2",
+        "pinyin": "Nín qù nǎr?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "老师，您好！",
+        "pinyin": "Lǎoshī, nín hǎo!",
+        "segments": [
+          "老师",
+          "，",
+          "您",
+          "好",
+          "！"
+        ],
+        "sourcePage": 17,
+        "sourceItemId": "EX-您-3",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "学生们"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "谢谢你们。",
+        "segments": [
+          "谢谢",
+          "你们",
+          "。"
+        ],
+        "sourcePage": 18,
+        "sourceItemId": "EX-你们-1",
+        "pinyin": "Xièxie nǐmen.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你们是哪里人？",
+        "segments": [
+          "你们",
+          "是",
+          "哪里",
+          "人",
+          "？"
+        ],
+        "sourcePage": 18,
+        "sourceItemId": "EX-你们-2",
+        "pinyin": "Nǐmen shì nǎlǐ rén?",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "谢谢你！",
+        "segments": [
+          "谢谢",
+          "你",
+          "！"
+        ],
+        "sourcePage": 26,
+        "sourceItemId": "EX-谢谢-1",
+        "pinyin": "Xièxie nǐ!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "谢谢！",
+        "pinyin": "Xièxie!",
+        "segments": [
+          "谢谢",
+          "！"
+        ],
+        "sourcePage": 27,
+        "sourceItemId": "EX-不客气-A",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "学生们"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "不客气！",
+        "pinyin": "Bú kèqi!",
+        "segments": [
+          "不客气",
+          "！"
+        ],
+        "sourcePage": 27,
+        "sourceItemId": "EX-不客气-B",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "小语"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "同学们好！",
+        "segments": [
+          "同学们",
+          "好",
+          "！"
+        ],
+        "sourcePage": 28,
+        "sourceItemId": "EX-同学-1",
+        "pinyin": "Tóngxuémen hǎo!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我和他是同学。",
+        "segments": [
+          "我",
+          "和",
+          "他",
+          "是",
+          "同学",
+          "。"
+        ],
+        "sourcePage": 28,
+        "sourceItemId": "EX-同学-2",
+        "pinyin": "Wǒ hé tā shì tóngxué.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "再见，明天见！",
+        "segments": [
+          "再见",
+          "，",
+          "明天",
+          "见",
+          "！"
+        ],
+        "sourcePage": 29,
+        "sourceItemId": "EX-再见-1",
+        "pinyin": "Zàijiàn, míngtiān jiàn!",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我下班了，再见。",
+        "segments": [
+          "我",
+          "下班",
+          "了",
+          "，",
+          "再见",
+          "。"
+        ],
+        "sourcePage": 29,
+        "sourceItemId": "EX-再见-2",
+        "pinyin": "Wǒ xiàbān le, zàijiàn.",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "王老师，你好！",
+        "pinyin": "Wáng lǎoshī, nǐ hǎo!",
+        "segments": [
+          "王老师",
+          "，",
+          "你好",
+          "！"
+        ],
+        "sourceItemId": "D1-2",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "小语"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你们好！",
+        "pinyin": "Nǐmen hǎo!",
+        "segments": [
+          "你们",
+          "好",
+          "！"
+        ],
+        "sourceItemId": "D2-3",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "小语"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "你好，小语！",
+        "pinyin": "Nǐ hǎo, Xiǎoyǔ!",
+        "segments": [
+          "你好",
+          "，",
+          "小语",
+          "！"
+        ],
+        "sourceItemId": "D2-4",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "学生们"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "同学们，再见！",
+        "pinyin": "Tóngxuémen, zàijiàn!",
+        "segments": [
+          "同学们",
+          "，",
+          "再见",
+          "！"
+        ],
+        "sourceItemId": "D3-3",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "王一飞"
+        },
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "老师，再见！",
+        "pinyin": "Lǎoshī, zàijiàn!",
+        "segments": [
+          "老师",
+          "，",
+          "再见",
+          "！"
+        ],
+        "sourceItemId": "D3-4",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "学生们"
+        },
+        "pinyinProvenance": "source"
+      }
+    ]
+  },
+  "rev": 6
+}

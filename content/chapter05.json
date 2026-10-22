@@ -1,0 +1,1375 @@
+{
+  "bundleCode": "ch05-fltrp-lesson5",
+  "rev": 6,
+  "sourceProvenance": {
+    "primaryFile": "《新HSK教程1》第5课.pdf",
+    "dialogueSource": "instructor screenshots of textbook P28/P30/P32 (课文1–3 dialogues)",
+    "extractedPages": "1–58 (full)",
+    "notes": "Vocab from 生词 tables 5-2/5-4/5-6. Example sentences from vocab cards (no English in source). Dialogue lines + pinyin from screenshots; multi-sentence dialogue lines split. Slash variants on p13 expanded into separate sentences (星期天/星期日… → 2 variants each, reported normalization). p39 grammar line cleaned of inline gloss: 会+动词(verb)表示… → 会+动词表示…. Skipped: p4 warm-up picture items, p22 arrow formula 年→月→日/号→星期, p23 annotation 'predicate: a nominal phrase', p25/p41 listening-MCQ stems, extension chips (一些菜/一些面条儿/一些苹果/做菜/真好吃/新衣服/喜欢/不喜欢/它是一只漂亮的小狗 kept as sentence). Sentence pinyin absent from source completed per instructor request (2026-10-21), tagged 'instructor-requested'."
+  },
+  "payload": {
+    "chapter": {
+      "num": 5,
+      "title": "今天我休息 I'm off today",
+      "sourceFile": "《新HSK教程1》第5课.pdf",
+      "representative": {
+        "hanzi": "今天我休息",
+        "pinyin": "Jīntiān wǒ xiūxi",
+        "english": "I'm off today"
+      }
+    },
+    "vocab": [
+      {
+        "hanzi": "今天",
+        "pinyin": "jīntiān",
+        "english": "today",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W5-2-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "号",
+        "pinyin": "hào",
+        "english": "date",
+        "pos": "m.",
+        "sourcePage": 6,
+        "sourceItemId": "W5-2-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "月",
+        "pinyin": "yuè",
+        "english": "month",
+        "pos": "n.",
+        "sourcePage": 6,
+        "sourceItemId": "W5-2-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "日",
+        "pinyin": "rì",
+        "english": "day",
+        "pos": "m.",
+        "sourcePage": 6,
+        "sourceItemId": "W5-2-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "星期",
+        "pinyin": "xīngqī",
+        "english": "week",
+        "pos": "n.",
+        "sourcePage": 7,
+        "sourceItemId": "W5-2-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "星期日",
+        "pinyin": "Xīngqīrì",
+        "english": "Sunday",
+        "pos": "n.",
+        "sourcePage": 7,
+        "sourceItemId": "W5-2-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "星期天",
+        "pinyin": "Xīngqītiān",
+        "english": "Sunday",
+        "pos": "n.",
+        "sourcePage": 7,
+        "sourceItemId": "W5-2-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "休息",
+        "pinyin": "xiūxi",
+        "english": "have a rest",
+        "pos": "v.",
+        "sourcePage": 7,
+        "sourceItemId": "W5-2-8",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "huì",
+        "english": "can; be able to",
+        "pos": "mod.",
+        "sourcePage": 26,
+        "sourceItemId": "W5-4-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "做饭",
+        "pinyin": "zuò fàn",
+        "english": "cook",
+        "pos": "",
+        "sourcePage": 26,
+        "sourceItemId": "W5-4-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "做",
+        "pinyin": "zuò",
+        "english": "make; produce",
+        "pos": "v.",
+        "sourcePage": 26,
+        "sourceItemId": "W5-4-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "面条儿",
+        "pinyin": "miàntiáor",
+        "english": "noodles",
+        "pos": "n.",
+        "sourcePage": 26,
+        "sourceItemId": "W5-4-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "饺子",
+        "pinyin": "jiǎozi",
+        "english": "jiaozi",
+        "pos": "n.",
+        "sourcePage": 26,
+        "sourceItemId": "W5-4-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "一些",
+        "pinyin": "yìxiē",
+        "english": "some",
+        "pos": "num.-m.",
+        "sourcePage": 26,
+        "sourceItemId": "W5-4-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "菜",
+        "pinyin": "cài",
+        "english": "dish; course",
+        "pos": "n.",
+        "sourcePage": 26,
+        "sourceItemId": "W5-4-7",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "下班",
+        "pinyin": "xiàbān",
+        "english": "get off work",
+        "pos": "v.",
+        "sourcePage": 43,
+        "sourceItemId": "W5-6-1",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "新",
+        "pinyin": "xīn",
+        "english": "new",
+        "pos": "adj.",
+        "sourcePage": 43,
+        "sourceItemId": "W5-6-2",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "电脑",
+        "pinyin": "diànnǎo",
+        "english": "computer",
+        "pos": "n.",
+        "sourcePage": 43,
+        "sourceItemId": "W5-6-3",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "真",
+        "pinyin": "zhēn",
+        "english": "really; truly",
+        "pos": "adv.",
+        "sourcePage": 43,
+        "sourceItemId": "W5-6-4",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "好看",
+        "pinyin": "hǎokàn",
+        "english": "good-looking; nice",
+        "pos": "adj.",
+        "sourcePage": 43,
+        "sourceItemId": "W5-6-5",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "喜欢",
+        "pinyin": "xǐhuan",
+        "english": "like",
+        "pos": "v.",
+        "sourcePage": 43,
+        "sourceItemId": "W5-6-6",
+        "pinyinVerified": true
+      },
+      {
+        "hanzi": "它",
+        "pinyin": "tā",
+        "english": "it",
+        "pos": "pron.",
+        "sourcePage": 43,
+        "sourceItemId": "W5-6-7",
+        "pinyinVerified": true
+      }
+    ],
+    "sentences": [
+      {
+        "hanzi": "今天我休息",
+        "pinyin": "Jīntiān wǒ xiūxi",
+        "english": "I'm off today",
+        "segments": [
+          "今天",
+          "我",
+          "休息"
+        ],
+        "sourcePage": 2,
+        "sourceItemId": "S-title",
+        "pinyinProvenance": "source"
+      },
+      {
+        "hanzi": "在家里，刘明和王一雪在聊天儿。",
+        "pinyin": "Zài jiā lǐ, Liú Míng hé Wáng Yīxuě zài liáotiānr.",
+        "english": "At home, Liu Ming and Wang Yixue were chatting.",
+        "segments": [
+          "在家里",
+          "，",
+          "刘明",
+          "和",
+          "王一雪",
+          "在",
+          "聊天儿",
+          "。"
+        ],
+        "sourcePage": 5,
+        "sourceItemId": "S-intro1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "在公司里，王一雪和杨同乐休息时聊天儿。",
+        "pinyin": "Zài gōngsī lǐ, Wáng Yīxuě hé Yáng Tónglè xiūxi shí liáotiānr.",
+        "english": "At the company, Wang Yixue and Yang Tongle were chatting during a break.",
+        "segments": [
+          "在公司里",
+          "，",
+          "王一雪",
+          "和",
+          "杨同乐",
+          "休息时",
+          "聊天儿",
+          "。"
+        ],
+        "sourcePage": 24,
+        "sourceItemId": "S-intro2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "在公司里，王一雪和杨同乐下班时聊天儿。",
+        "pinyin": "Zài gōngsī lǐ, Wáng Yīxuě hé Yáng Tónglè xiàbān shí liáotiānr.",
+        "english": "At the company, Wang Yixue and Yang Tongle were chatting after work.",
+        "segments": [
+          "在公司里",
+          "，",
+          "王一雪",
+          "和",
+          "杨同乐",
+          "下班时",
+          "聊天儿",
+          "。"
+        ],
+        "sourcePage": 40,
+        "sourceItemId": "S-intro3",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "本课学习日期、星期的表达。",
+        "pinyin": "Běn kè xuéxí rìqī, xīngqī de biǎodá.",
+        "english": "This lesson focuses on how to express dates and days of the week in Chinese.",
+        "segments": [
+          "本课",
+          "学习",
+          "日期",
+          "、",
+          "星期",
+          "的",
+          "表达",
+          "。"
+        ],
+        "sourcePage": 22,
+        "sourceItemId": "S-grammar1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "名词谓语句谓语部分只有名词或名词性成分，这部分词语一般是表达时间、日期、年龄等的词语。",
+        "pinyin": "Míngcí wèiyǔ jù wèiyǔ bùfen zhǐ yǒu míngcí huò míngcí xìng chéngfèn, zhè bùfen cíyǔ yìbān shì biǎodá shíjiān, rìqī, niánlíng děng de cíyǔ.",
+        "english": "In a nominal-predicate sentence, the predicate consists only of a noun or a nominal phrase, usually used to indicate time, date, age, and so on.",
+        "segments": [
+          "名词谓语句",
+          "谓语",
+          "部分",
+          "只有",
+          "名词",
+          "或",
+          "名词性",
+          "成分",
+          "，",
+          "这",
+          "部分",
+          "词语",
+          "一般",
+          "是",
+          "表达",
+          "时间",
+          "、",
+          "日期",
+          "、",
+          "年龄",
+          "等",
+          "的",
+          "词语",
+          "。"
+        ],
+        "sourcePage": 23,
+        "sourceItemId": "S-grammar2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "会+动词表示通过学习后，懂得怎样做或有能力做。",
+        "pinyin": "Huì + dòngcí biǎoshì tōngguò xuéxí hòu, dǒngde zěnyàng zuò huò yǒu nénglì zuò.",
+        "english": "This structure indicates the knowledge or ability to perform an action that is acquired through learning.",
+        "segments": [
+          "会",
+          "+",
+          "动词",
+          "表示",
+          "通过",
+          "学习",
+          "后",
+          "，",
+          "懂得",
+          "怎样",
+          "做",
+          "或",
+          "有",
+          "能力",
+          "做",
+          "。"
+        ],
+        "sourcePage": 39,
+        "sourceItemId": "S-grammar3",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我今天很高兴。",
+        "pinyin": "Wǒ jīntiān hěn gāoxìng.",
+        "segments": [
+          "我",
+          "今天",
+          "很",
+          "高兴",
+          "。"
+        ],
+        "sourcePage": 8,
+        "sourceItemId": "EX-今天-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今天他来找我。",
+        "pinyin": "Jīntiān tā lái zhǎo wǒ.",
+        "segments": [
+          "今天",
+          "他",
+          "来",
+          "找",
+          "我",
+          "。"
+        ],
+        "sourcePage": 8,
+        "sourceItemId": "EX-今天-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今天是2026年3月6日。",
+        "pinyin": "Jīntiān shì èr líng èr liù nián sān yuè liù rì.",
+        "segments": [
+          "今天",
+          "是",
+          "2026",
+          "年",
+          "3",
+          "月",
+          "6",
+          "日",
+          "。"
+        ],
+        "sourcePage": 9,
+        "sourceItemId": "EX-月-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我工作了三个月。",
+        "pinyin": "Wǒ gōngzuò le sān gè yuè.",
+        "segments": [
+          "我",
+          "工作",
+          "了",
+          "三个",
+          "月",
+          "。"
+        ],
+        "sourcePage": 9,
+        "sourceItemId": "EX-月-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我们3月1号上课。",
+        "pinyin": "Wǒmen sān yuè yī hào shàngkè.",
+        "segments": [
+          "我们",
+          "3",
+          "月",
+          "1",
+          "号",
+          "上课",
+          "。"
+        ],
+        "sourcePage": 10,
+        "sourceItemId": "EX-号-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你几号上班？",
+        "pinyin": "Nǐ jǐ hào shàngbān?",
+        "segments": [
+          "你",
+          "几",
+          "号",
+          "上班",
+          "？"
+        ],
+        "sourcePage": 10,
+        "sourceItemId": "EX-号-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "明天是9月7日。",
+        "pinyin": "Míngtiān shì jiǔ yuè qī rì.",
+        "segments": [
+          "明天",
+          "是",
+          "9",
+          "月",
+          "7",
+          "日",
+          "。"
+        ],
+        "sourcePage": 11,
+        "sourceItemId": "EX-日-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今天星期几？",
+        "pinyin": "Jīntiān xīngqī jǐ?",
+        "segments": [
+          "今天",
+          "星期",
+          "几",
+          "？"
+        ],
+        "sourcePage": 12,
+        "sourceItemId": "EX-星期-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她要去美国两个星期。",
+        "pinyin": "Tā yào qù Měiguó liǎng gè xīngqī.",
+        "segments": [
+          "她",
+          "要",
+          "去",
+          "美国",
+          "两个",
+          "星期",
+          "。"
+        ],
+        "sourcePage": 12,
+        "sourceItemId": "EX-星期-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "星期天我不上学。",
+        "pinyin": "Xīngqītiān wǒ bú shàngxué.",
+        "segments": [
+          "星期天",
+          "我",
+          "不",
+          "上学",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "EX-星期天-1a",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "星期日我不上学。",
+        "pinyin": "Xīngqīrì wǒ bú shàngxué.",
+        "segments": [
+          "星期日",
+          "我",
+          "不",
+          "上学",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "EX-星期天-1b",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "星期天我和妹妹在家里玩。",
+        "pinyin": "Xīngqītiān wǒ hé mèimei zài jiā lǐ wán.",
+        "segments": [
+          "星期天",
+          "我",
+          "和",
+          "妹妹",
+          "在",
+          "家里",
+          "玩",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "EX-星期天-2a",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "星期日我和妹妹在家里玩。",
+        "pinyin": "Xīngqīrì wǒ hé mèimei zài jiā lǐ wán.",
+        "segments": [
+          "星期日",
+          "我",
+          "和",
+          "妹妹",
+          "在",
+          "家里",
+          "玩",
+          "。"
+        ],
+        "sourcePage": 13,
+        "sourceItemId": "EX-星期天-2b",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "星期天我休息。",
+        "pinyin": "Xīngqītiān wǒ xiūxi.",
+        "segments": [
+          "星期天",
+          "我",
+          "休息",
+          "。"
+        ],
+        "sourcePage": 14,
+        "sourceItemId": "EX-休息-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他想好好休息一下。",
+        "pinyin": "Tā xiǎng hǎohao xiūxi yíxià.",
+        "segments": [
+          "他",
+          "想",
+          "好好",
+          "休息",
+          "一下",
+          "。"
+        ],
+        "sourcePage": 14,
+        "sourceItemId": "EX-休息-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我会说中文。",
+        "pinyin": "Wǒ huì shuō Zhōngwén.",
+        "segments": [
+          "我",
+          "会",
+          "说",
+          "中文",
+          "。"
+        ],
+        "sourcePage": 27,
+        "sourceItemId": "EX-会-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他会写字。",
+        "pinyin": "Tā huì xiězì.",
+        "segments": [
+          "他",
+          "会",
+          "写字",
+          "。"
+        ],
+        "sourcePage": 27,
+        "sourceItemId": "EX-会-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我们都会做饭。",
+        "pinyin": "Wǒmen dōu huì zuò fàn.",
+        "segments": [
+          "我们",
+          "都",
+          "会",
+          "做饭",
+          "。"
+        ],
+        "sourcePage": 28,
+        "sourceItemId": "EX-做饭-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我喜欢做饭。",
+        "pinyin": "Wǒ xǐhuan zuò fàn.",
+        "segments": [
+          "我",
+          "喜欢",
+          "做饭",
+          "。"
+        ],
+        "sourcePage": 28,
+        "sourceItemId": "EX-做饭-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我做了三个菜。",
+        "pinyin": "Wǒ zuò le sān gè cài.",
+        "segments": [
+          "我",
+          "做",
+          "了",
+          "三个",
+          "菜",
+          "。"
+        ],
+        "sourcePage": 29,
+        "sourceItemId": "EX-做-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今天做什么吃？",
+        "pinyin": "Jīntiān zuò shénme chī?",
+        "segments": [
+          "今天",
+          "做",
+          "什么",
+          "吃",
+          "？"
+        ],
+        "sourcePage": 29,
+        "sourceItemId": "EX-做-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我喜欢吃面条儿。",
+        "pinyin": "Wǒ xǐhuan chī miàntiáor.",
+        "segments": [
+          "我",
+          "喜欢",
+          "吃",
+          "面条儿",
+          "。"
+        ],
+        "sourcePage": 30,
+        "sourceItemId": "EX-面条儿-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "妈妈今天做面条儿。",
+        "pinyin": "Māma jīntiān zuò miàntiáor.",
+        "segments": [
+          "妈妈",
+          "今天",
+          "做",
+          "面条儿",
+          "。"
+        ],
+        "sourcePage": 30,
+        "sourceItemId": "EX-面条儿-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "饺子很好吃。",
+        "pinyin": "Jiǎozi hěn hǎochī.",
+        "segments": [
+          "饺子",
+          "很",
+          "好吃",
+          "。"
+        ],
+        "sourcePage": 31,
+        "sourceItemId": "EX-饺子-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "很多中国人喜欢吃饺子。",
+        "pinyin": "Hěn duō Zhōngguó rén xǐhuan chī jiǎozi.",
+        "segments": [
+          "很多",
+          "中国人",
+          "喜欢",
+          "吃",
+          "饺子",
+          "。"
+        ],
+        "sourcePage": 31,
+        "sourceItemId": "EX-饺子-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今天做的一些菜我很喜欢吃。",
+        "pinyin": "Jīntiān zuò de yìxiē cài wǒ hěn xǐhuan chī.",
+        "segments": [
+          "今天",
+          "做",
+          "的",
+          "一些",
+          "菜",
+          "我",
+          "很",
+          "喜欢",
+          "吃",
+          "。"
+        ],
+        "sourcePage": 32,
+        "sourceItemId": "EX-一些-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "一些人喜欢饺子也喜欢面条儿。",
+        "pinyin": "Yìxiē rén xǐhuan jiǎozi yě xǐhuan miàntiáor.",
+        "segments": [
+          "一些",
+          "人",
+          "喜欢",
+          "饺子",
+          "也",
+          "喜欢",
+          "面条儿",
+          "。"
+        ],
+        "sourcePage": 32,
+        "sourceItemId": "EX-一些-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她想学做菜。",
+        "pinyin": "Tā xiǎng xué zuò cài.",
+        "segments": [
+          "她",
+          "想",
+          "学",
+          "做菜",
+          "。"
+        ],
+        "sourcePage": 33,
+        "sourceItemId": "EX-菜-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我爸爸喜欢吃我妈妈做的菜。",
+        "pinyin": "Wǒ bàba xǐhuan chī wǒ māma zuò de cài.",
+        "segments": [
+          "我",
+          "爸爸",
+          "喜欢",
+          "吃",
+          "我",
+          "妈妈",
+          "做",
+          "的",
+          "菜",
+          "。"
+        ],
+        "sourcePage": 33,
+        "sourceItemId": "EX-菜-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "下班了我可以休息。",
+        "pinyin": "Xiàbān le wǒ kěyǐ xiūxi.",
+        "segments": [
+          "下班",
+          "了",
+          "我",
+          "可以",
+          "休息",
+          "。"
+        ],
+        "sourcePage": 44,
+        "sourceItemId": "EX-下班-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "她六点下班。",
+        "pinyin": "Tā liù diǎn xiàbān.",
+        "segments": [
+          "她",
+          "六点",
+          "下班",
+          "。"
+        ],
+        "sourcePage": 44,
+        "sourceItemId": "EX-下班-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我买了一件新衣服。",
+        "pinyin": "Wǒ mǎi le yí jiàn xīn yīfu.",
+        "segments": [
+          "我",
+          "买",
+          "了",
+          "一件",
+          "新",
+          "衣服",
+          "。"
+        ],
+        "sourcePage": 45,
+        "sourceItemId": "EX-新-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "明天是新的一天。",
+        "pinyin": "Míngtiān shì xīn de yì tiān.",
+        "segments": [
+          "明天",
+          "是",
+          "新",
+          "的",
+          "一天",
+          "。"
+        ],
+        "sourcePage": 45,
+        "sourceItemId": "EX-新-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我想要一个新电脑。",
+        "pinyin": "Wǒ xiǎng yào yí gè xīn diànnǎo.",
+        "segments": [
+          "我",
+          "想要",
+          "一个",
+          "新",
+          "电脑",
+          "。"
+        ],
+        "sourcePage": 46,
+        "sourceItemId": "EX-电脑-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "这个电脑非常贵。",
+        "pinyin": "Zhège diànnǎo fēicháng guì.",
+        "segments": [
+          "这个",
+          "电脑",
+          "非常",
+          "贵",
+          "。"
+        ],
+        "sourcePage": 46,
+        "sourceItemId": "EX-电脑-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "这个菜真好吃！",
+        "pinyin": "Zhège cài zhēn hǎochī!",
+        "segments": [
+          "这个",
+          "菜",
+          "真",
+          "好吃",
+          "！"
+        ],
+        "sourcePage": 47,
+        "sourceItemId": "EX-真-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "那个同学真漂亮！",
+        "pinyin": "Nàge tóngxué zhēn piàoliang!",
+        "segments": [
+          "那个",
+          "同学",
+          "真",
+          "漂亮",
+          "！"
+        ],
+        "sourcePage": 47,
+        "sourceItemId": "EX-真-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "这件新衣服真好看！",
+        "pinyin": "Zhè jiàn xīn yīfu zhēn hǎokàn!",
+        "segments": [
+          "这",
+          "件",
+          "新",
+          "衣服",
+          "真",
+          "好看",
+          "！"
+        ],
+        "sourcePage": 48,
+        "sourceItemId": "EX-好看-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "这本书很好看。",
+        "pinyin": "Zhè běn shū hěn hǎokàn.",
+        "segments": [
+          "这",
+          "本",
+          "书",
+          "很",
+          "好看",
+          "。"
+        ],
+        "sourcePage": 48,
+        "sourceItemId": "EX-好看-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "他很喜欢李老师。",
+        "pinyin": "Tā hěn xǐhuan Lǐ lǎoshī.",
+        "segments": [
+          "他",
+          "很",
+          "喜欢",
+          "李老师",
+          "。"
+        ],
+        "sourcePage": 49,
+        "sourceItemId": "EX-喜欢-1",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我喜欢玩电脑。",
+        "pinyin": "Wǒ xǐhuan wán diànnǎo.",
+        "segments": [
+          "我",
+          "喜欢",
+          "玩",
+          "电脑",
+          "。"
+        ],
+        "sourcePage": 49,
+        "sourceItemId": "EX-喜欢-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "你的猫喜欢吃什么？",
+        "pinyin": "Nǐ de māo xǐhuan chī shénme?",
+        "segments": [
+          "你",
+          "的",
+          "猫",
+          "喜欢",
+          "吃",
+          "什么",
+          "？"
+        ],
+        "sourcePage": 50,
+        "sourceItemId": "EX-它-A",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "它喜欢吃鱼。",
+        "pinyin": "Tā xǐhuan chī yú.",
+        "segments": [
+          "它",
+          "喜欢",
+          "吃",
+          "鱼",
+          "。"
+        ],
+        "sourcePage": 50,
+        "sourceItemId": "EX-它-B",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "它是一只漂亮的小狗。",
+        "pinyin": "Tā shì yì zhī piàoliang de xiǎo gǒu.",
+        "segments": [
+          "它",
+          "是",
+          "一只",
+          "漂亮",
+          "的",
+          "小狗",
+          "。"
+        ],
+        "sourcePage": 50,
+        "sourceItemId": "EX-它-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今天5月1号。",
+        "pinyin": "Jīntiān wǔ yuè yī hào.",
+        "segments": [
+          "今天",
+          "5",
+          "月",
+          "1",
+          "号",
+          "。"
+        ],
+        "sourcePage": 23,
+        "sourceItemId": "S-read1-1B",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我妹妹12岁。",
+        "pinyin": "Wǒ mèimei shí'èr suì.",
+        "segments": [
+          "我",
+          "妹妹",
+          "12",
+          "岁",
+          "。"
+        ],
+        "sourcePage": 23,
+        "sourceItemId": "S-read1-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我会做面条儿。",
+        "pinyin": "Wǒ huì zuò miàntiáor.",
+        "segments": [
+          "我",
+          "会",
+          "做",
+          "面条儿",
+          "。"
+        ],
+        "sourcePage": 39,
+        "sourceItemId": "S-read2-2",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "我不会做菜。",
+        "pinyin": "Wǒ bú huì zuò cài.",
+        "segments": [
+          "我",
+          "不会",
+          "做菜",
+          "。"
+        ],
+        "sourcePage": 39,
+        "sourceItemId": "S-read2-3",
+        "pinyinProvenance": "instructor-requested"
+      },
+      {
+        "hanzi": "今天几号？",
+        "pinyin": "Jīntiān jǐ hào?",
+        "segments": [
+          "今天",
+          "几",
+          "号",
+          "？"
+        ],
+        "sourcePage": 23,
+        "sourceItemId": "S-read1-1A",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "今天9月8号。",
+        "pinyin": "Jīntiān jiǔ yuè bā hào.",
+        "segments": [
+          "今天",
+          "9",
+          "月",
+          "8",
+          "号",
+          "。"
+        ],
+        "sourceItemId": "D1-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 2,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "星期几？",
+        "pinyin": "Xīngqī jǐ?",
+        "segments": [
+          "星期",
+          "几",
+          "？"
+        ],
+        "sourceItemId": "D1-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "星期日。",
+        "pinyin": "Xīngqīrì.",
+        "segments": [
+          "星期日",
+          "。"
+        ],
+        "sourceItemId": "D1-4a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "今天我休息。",
+        "pinyin": "Jīntiān wǒ xiūxi.",
+        "segments": [
+          "今天",
+          "我",
+          "休息",
+          "。"
+        ],
+        "sourceItemId": "D1-4b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 1,
+          "line": 4,
+          "speaker": "刘明"
+        }
+      },
+      {
+        "hanzi": "你会做饭吗？",
+        "pinyin": "Nǐ huì zuò fàn ma?",
+        "segments": [
+          "你",
+          "会",
+          "做饭",
+          "吗",
+          "？"
+        ],
+        "sourcePage": 39,
+        "sourceItemId": "S-read2-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "我会做。",
+        "pinyin": "Wǒ huì zuò.",
+        "segments": [
+          "我",
+          "会",
+          "做",
+          "。"
+        ],
+        "sourceItemId": "D2-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 2,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "你会做什么？",
+        "pinyin": "Nǐ huì zuò shénme?",
+        "segments": [
+          "你",
+          "会",
+          "做",
+          "什么",
+          "？"
+        ],
+        "sourceItemId": "D2-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "我会做面条儿、饺子，也会做一些菜。",
+        "pinyin": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài.",
+        "segments": [
+          "我",
+          "会",
+          "做",
+          "面条儿",
+          "、",
+          "饺子",
+          "，",
+          "也",
+          "会",
+          "做",
+          "一些",
+          "菜",
+          "。"
+        ],
+        "sourceItemId": "D2-4a",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "星期天我也做饭。",
+        "pinyin": "Xīngqītiān wǒ yě zuò fàn.",
+        "segments": [
+          "星期天",
+          "我",
+          "也",
+          "做饭",
+          "。"
+        ],
+        "sourceItemId": "D2-4b",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 2,
+          "line": 4,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "同乐，下班吗？",
+        "pinyin": "Tónglè, xiàbān ma?",
+        "segments": [
+          "同乐",
+          "，",
+          "下班",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "D3-1",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 1,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "下班。",
+        "pinyin": "Xiàbān.",
+        "segments": [
+          "下班",
+          "。"
+        ],
+        "sourceItemId": "D3-2",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 2,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "这是你的新电脑吗？",
+        "pinyin": "Zhè shì nǐ de xīn diànnǎo ma?",
+        "segments": [
+          "这",
+          "是",
+          "你",
+          "的",
+          "新",
+          "电脑",
+          "吗",
+          "？"
+        ],
+        "sourceItemId": "D3-3",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 3,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "是的，是我的新电脑。",
+        "pinyin": "Shì de, shì wǒ de xīn diànnǎo.",
+        "segments": [
+          "是",
+          "的",
+          "，",
+          "是",
+          "我",
+          "的",
+          "新",
+          "电脑",
+          "。"
+        ],
+        "sourceItemId": "D3-4",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 4,
+          "speaker": "杨同乐"
+        }
+      },
+      {
+        "hanzi": "真好看！",
+        "pinyin": "Zhēn hǎokàn!",
+        "segments": [
+          "真",
+          "好看",
+          "！"
+        ],
+        "sourceItemId": "D3-5",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 5,
+          "speaker": "王一雪"
+        }
+      },
+      {
+        "hanzi": "我也很喜欢它。",
+        "pinyin": "Wǒ yě hěn xǐhuan tā.",
+        "segments": [
+          "我",
+          "也",
+          "很",
+          "喜欢",
+          "它",
+          "。"
+        ],
+        "sourceItemId": "D3-6",
+        "pinyinProvenance": "source",
+        "dialogue": {
+          "text": 3,
+          "line": 6,
+          "speaker": "杨同乐"
+        }
+      }
+    ]
+  }
+}

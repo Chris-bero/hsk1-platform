@@ -1,0 +1,103 @@
+V	前边	qiánbian	front	n.	6	W9-2-1
+V	边	bian/biān	indicating locality/edge; side	suf./n.	6	W9-2-2
+V	家	jiā	for families or enterprises	m.	6	W9-2-3
+V	那个	nàge	that	pron.	6	W9-2-4
+V	外边	wàibian	outside	n.	6	W9-2-5
+V	椅子	yǐzi	chair	n.	20	W9-4-1
+V	上	shang/shàng	used after a noun, indicating position/higher position	n.	20	W9-4-2
+V	本	běn	for books	m.	20	W9-4-3
+V	书	shū	book	n.	20	W9-4-4
+V	那	nà	that	pron.	20	W9-4-5
+V	第	dì	marker of ordinal numbers	pref.	20	W9-4-6
+V	学习	xuéxí	study; learn	v.	20	W9-4-7
+V	做	zuò	do; engage in	v.	36	W9-6-1
+V	白天	báitiān	day; daytime	n.	36	W9-6-2
+V	读书	dúshū	read a book	v.	36	W9-6-3
+V	和	hé	with	prep.	36	W9-6-4
+V	朋友	péngyou	friend	n.	36	W9-6-5
+V	唱	chàng	sing	v.	36	W9-6-6
+V	歌	gē	song	n.	37	W9-6-7
+V	好听	hǎotīng	pleasant to hear	adj.	37	W9-6-8
+V	电视	diànshì	television	n.	37	W9-6-9
+V	狗	gǒu	dog	n.	37	W9-6-10
+V	玩	wán	play; have fun	v.	37	W9-6-11
+S	我明天上午在学校学习	Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí	I'll be studying at school tomorrow morning	2	S-title	source	我|明天|上午|在|学校|学习
+S	在校园里，李文和白家月在聊天儿。	Zài xiàoyuán lǐ, Lǐ Wén hé Bái Jiāyuè zài liáotiānr.	On campus, Li Wen and Bai Jiayue were chatting.	5	S-intro1	req	在校园里|，|李文|和|白家月|在|聊天儿|。
+S	在教室里，下课后，白家月和陈天中在对话。	Zài jiàoshì lǐ, xiàkè hòu, Bái Jiāyuè hé Chén Tiānzhōng zài duìhuà.	After class, Bai Jiayue and Chen Tianzhong were talking in the classroom.	18	S-intro2	req	在教室里|，|下课后|，|白家月|和|陈天中|在|对话|。
+S	在办公室里，休息时，王一雪和杨同乐谈论周末生活。	Zài bàngōngshì lǐ, xiūxi shí, Wáng Yīxuě hé Yáng Tónglè tánlùn zhōumò shēnghuó.	In the office, Wang Yixue and Yang Tongle were talking about their weekend lives during a break.	34	S-intro3	req	在办公室里|，|休息时|，|王一雪|和|杨同乐|谈论|周末|生活|。
+S	存现句是表示某个地方或位置存在某人或某物的句子，一般以“有”或“是”为标记。否定时，宾语前不能使用数量词语。	Cúnxiàn jù shì biǎoshì mǒu gè dìfang huò wèizhì cúnzài mǒu rén huò mǒu wù de jùzi, yìbān yǐ “yǒu” huò “shì” wéi biāojì. Fǒudìng shí, bīnyǔ qián bù néng shǐyòng shùliàng cíyǔ.	Existential sentences indicate the existence of someone or something in a specific place or location, generally marked by “有” or “是”. When negating, no numeral-measure word phrase is used before the object.	16	S-grammar1	req	存现句|是|表示|某个|地方|或|位置|存在|某人|或|某物|的|句子|，|一般|以|“有”|或|“是”|为|标记|。|否定|时|，|宾语|前|不能|使用|数量|词语|。
+S	时间词语和处所词语同时作状语时，时间词语要在处所词语前。	Shíjiān cíyǔ hé chùsuǒ cíyǔ tóngshí zuò zhuàngyǔ shí, shíjiān cíyǔ yào zài chùsuǒ cíyǔ qián.	When time and location expressions function as adverbials simultaneously, the time expressions should precede the location expressions.	17	S-grammar2	req	时间|词语|和|处所|词语|同时|作|状语|时|，|时间|词语|要|在|处所|词语|前|。
+S	“第”位于整数的数词前，表示序数。	“Dì” wèiyú zhěngshù de shùcí qián, biǎoshì xùshù.	“第” precedes cardinal numbers to indicate ordinal numbers.	33	S-grammar3	req	“第”|位于|整数|的|数词|前|，|表示|序数|。
+S	我在他们前边。	Wǒ zài tāmen qiánbian.		7	EX-前边-1	req	我|在|他们|前边|。
+S	超市前边是一家书店。	Chāoshì qiánbian shì yì jiā shūdiàn.		7	EX-前边-2	req	超市|前边|是|一家|书店|。
+S	你后边是谁？	Nǐ hòubian shì shéi?		8	EX-边-1	req	你|后边|是|谁|？
+S	桌子有四条边。	Zhuōzi yǒu sì tiáo biān.		8	EX-边-2	req	桌子|有|四条|边|。
+S	那是一家新书店。	Nà shì yì jiā xīn shūdiàn.		9	EX-家-1	req	那|是|一家|新|书店|。
+S	你想去哪家店？	Nǐ xiǎng qù nǎ jiā diàn?		9	EX-家-2	req	你|想|去|哪家|店|？
+S	那个人我认识。	Nàge rén wǒ rènshi.		10	EX-那个-1	req	那个|人|我|认识|。
+S	我觉得那个菜非常好吃。	Wǒ juède nàge cài fēicháng hǎochī.		10	EX-那个-2	req	我|觉得|那个|菜|非常|好吃|。
+S	外边在下雨。	Wàibian zài xià yǔ.		11	EX-外边-1	req	外边|在|下雨|。
+S	你学了30分钟了，看看外边吧。	Nǐ xué le sānshí fēnzhōng le, kànkan wàibian ba.		11	EX-外边-2	req	你|学|了|30|分钟|了|，|看看|外边|吧|。
+S	小猫在椅子上睡觉。	Xiǎo māo zài yǐzi shang shuìjiào.		21	EX-椅子-1	req	小猫|在|椅子上|睡觉|。
+S	椅子下边有一本书。	Yǐzi xiàbian yǒu yì běn shū.		21	EX-椅子-2	req	椅子|下边|有|一本|书|。
+S	书上的这些字，你认识哪个？	Shū shang de zhèxiē zì, nǐ rènshi nǎ ge?		22	EX-上-1	req	书上|的|这些|字|，|你|认识|哪个|？
+S	桌子上面有什么？	Zhuōzi shàngmiàn yǒu shénme?		22	EX-上-2	req	桌子|上面|有|什么|？
+S	今天发了七本书。	Jīntiān fā le qī běn shū.		23	EX-本-1	req	今天|发|了|七本|书|。
+S	我喜欢读这本书。	Wǒ xǐhuan dú zhè běn shū.		23	EX-本-2	req	我|喜欢|读|这|本|书|。
+S	人要多看书。	Rén yào duō kàn shū.		24	EX-书-1	req	人|要|多|看书|。
+S	我上午在家读书。	Wǒ shàngwǔ zài jiā dúshū.		24	EX-书-2	req	我|上午|在|家|读书|。
+S	那是什么？	Nà shì shénme?		25	EX-那-1	req	那|是|什么|？
+S	那只小狗真好看！	Nà zhī xiǎo gǒu zhēn hǎokàn!		25	EX-那-2	req	那|只|小狗|真|好看|！
+S	你看的第一本中文书是什么书？	Nǐ kàn de dì yī běn Zhōngwén shū shì shénme shū?		26	EX-第-1	req	你|看|的|第一本|中文|书|是|什么|书|？
+S	我是第一！	Wǒ shì dì yī!		26	EX-第-2	req	我|是|第一|！
+S	我要好好学习。	Wǒ yào hǎohao xuéxí.		27	EX-学习-1	req	我|要|好好|学习|。
+S	他想学习中文。	Tā xiǎng xuéxí Zhōngwén.		27	EX-学习-2	req	他|想|学习|中文|。
+S	爸爸在做早饭。	Bàba zài zuò zǎofàn.		38	EX-做-1	req	爸爸|在|做|早饭|。
+S	我有很多事要做。	Wǒ yǒu hěn duō shì yào zuò.		38	EX-做-2	req	我|有|很多|事|要|做|。
+S	今天白天我都在家。	Jīntiān báitiān wǒ dōu zài jiā.		39	EX-白天-1	req	今天|白天|我|都|在|家|。
+S	人们白天工作，晚上休息。	Rénmen báitiān gōngzuò, wǎnshang xiūxi.		39	EX-白天-2	req	人们|白天|工作|，|晚上|休息|。
+S	星期天我要去书店读书。	Xīngqītiān wǒ yào qù shūdiàn dúshū.		40	EX-读书-1	req	星期天|我|要|去|书店|读书|。
+S	妹妹非常喜欢读书。	Mèimei fēicháng xǐhuan dúshū.		40	EX-读书-2	req	妹妹|非常|喜欢|读书|。
+S	我和你去吧。	Wǒ hé nǐ qù ba.		41	EX-和-1	req	我|和|你|去|吧|。
+S	我喜欢和我家的小狗玩。	Wǒ xǐhuan hé wǒ jiā de xiǎo gǒu wán.		41	EX-和-2	req	我|喜欢|和|我|家|的|小狗|玩|。
+S	我们是好朋友。	Wǒmen shì hǎo péngyou.		42	EX-朋友-1	req	我们|是|好|朋友|。
+S	他的朋友很多。	Tā de péngyou hěn duō.		42	EX-朋友-2	req	他|的|朋友|很|多|。
+S	她会唱很多中文歌。	Tā huì chàng hěn duō Zhōngwén gē.		43	EX-唱-1	req	她|会|唱|很多|中文|歌|。
+S	王老师唱歌很好听。	Wáng lǎoshī chàng gē hěn hǎotīng.		43	EX-唱-2	req	王老师|唱歌|很|好听|。
+S	妹妹喜欢唱歌。	Mèimei xǐhuan chàng gē.		44	EX-歌-1	req	妹妹|喜欢|唱歌|。
+S	我喜欢听法语歌。	Wǒ xǐhuan tīng Fǎyǔ gē.		44	EX-歌-2	req	我|喜欢|听|法语|歌|。
+S	他唱歌很好听。	Tā chàng gē hěn hǎotīng.		45	EX-好听-1	req	他|唱歌|很|好听|。
+S	她说话真好听。	Tā shuōhuà zhēn hǎotīng.		45	EX-好听-2	req	她|说话|真|好听|。
+S	妹妹要看电视。	Mèimei yào kàn diànshì.		46	EX-电视-1	req	妹妹|要|看|电视|。
+S	我们去买新电视吧。	Wǒmen qù mǎi xīn diànshì ba.		46	EX-电视-2	req	我们|去|买|新|电视|吧|。
+S	我们都喜欢小狗。	Wǒmen dōu xǐhuan xiǎo gǒu.		47	EX-狗-1	req	我们|都|喜欢|小狗|。
+S	我家有一只狗。	Wǒ jiā yǒu yì zhī gǒu.		47	EX-狗-2	req	我|家|有|一只|狗|。
+S	我喜欢玩电脑。	Wǒ xǐhuan wán diànnǎo.		48	EX-玩-1	req	我|喜欢|玩|电脑|。
+S	回家后我和小狗玩了20分钟。	Huí jiā hòu wǒ hé xiǎo gǒu wán le èrshí fēnzhōng.		48	EX-玩-2	req	回家|后|我|和|小狗|玩|了|20|分钟|。
+S	电影院前边是一家超市。	Diànyǐngyuàn qiánbian shì yì jiā chāoshì.		16	S-read1-2	req	电影院|前边|是|一家|超市|。
+S	电影院前边不是超市。	Diànyǐngyuàn qiánbian bú shì chāoshì.		16	S-read1-3	req	电影院|前边|不是|超市|。
+S	桌子上没有小猫。	Zhuōzi shang méiyǒu xiǎo māo.		16	S-read1-4	req	桌子上|没有|小猫|。
+S	安妮下午在家里学中文。	Ānnī xiàwǔ zài jiā lǐ xué Zhōngwén.		17	S-read2-2	req	安妮|下午|在|家|里|学|中文|。
+S	陈天中明天中午在学校吃午饭。	Chén Tiānzhōng míngtiān zhōngwǔ zài xuéxiào chī wǔfàn.		17	S-read2-3	req	陈天中|明天|中午|在|学校|吃|午饭|。
+S	第一，第二，第三	Dì yī, dì èr, dì sān		33	S-read3-1	req	第一|，|第二|，|第三
+S	第一个，第二个，第一本	Dì yī gè, dì èr gè, dì yī běn		33	S-read3-2	req	第一个|，|第二个|，|第一本
+S	第一个学生，第一本书	Dì yī gè xuéshēng, dì yī běn shū		33	S-read3-3	req	第一个|学生|，|第一本|书
+S	学校前边有一家电影院。	Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.		16	S-read1-1	src	学校|前边|有|一家|电影院|。	1,1,李文
+S	对。	Duì.		-	D1-2a	src	对|。	1,2,白家月
+S	我们晚上去那个电影院看电影吧。	Wǒmen wǎnshang qù nàge diànyǐngyuàn kàn diànyǐng ba.		-	D1-2b	src	我们|晚上|去|那个|电影院|看电影|吧|。	1,2,白家月
+S	好！	Hǎo!		-	D1-3a	src	好|！	1,3,李文
+S	我们七点在电影院外边见，好吗？	Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn, hǎo ma?		-	D1-3b	src	我们|七点|在|电影院|外边|见|，|好吗|？	1,3,李文
+S	好的，晚上七点见！	Hǎo de, wǎnshang qī diǎn jiàn!		-	D1-4	src	好|的|，|晚上|七点|见|！	1,4,白家月
+S	椅子上有一本中文书，那是谁的书？	Yǐzi shang yǒu yì běn Zhōngwén shū, nà shì shéi de shū?		-	D2-1	src	椅子上|有|一本|中文|书|，|那|是|谁|的|书|？	2,1,白家月
+S	是我的书，谢谢。	Shì wǒ de shū, xièxie.		-	D2-2a	src	是|我|的|书|，|谢谢|。	2,2,陈天中
+S	这是我的第二本中文书。	Zhè shì wǒ de dì-èr běn Zhōngwén shū.		-	D2-2b	src	这|是|我|的|第二本|中文|书|。	2,2,陈天中
+S	不客气。	Bú kèqi.		-	D2-3a	src	不客气|。	2,3,白家月
+S	你明天上午在哪儿？	Nǐ míngtiān shàngwǔ zài nǎr?		-	D2-3b	src	你|明天|上午|在|哪儿|？	2,3,白家月
+S	我明天上午在学校学习。	Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.		-	D2-4	src	我|明天|上午|在|学校|学习|。	2,4,陈天中
+S	明天星期六，你做什么？	Míngtiān Xīngqīliù, nǐ zuò shénme?		-	D3-1	src	明天|星期六|，|你|做|什么|？	3,1,王一雪
+S	我白天在家里读书，晚上和朋友们去外边唱歌。	Wǒ báitiān zài jiā lǐ dúshū, wǎnshang hé péngyoumen qù wàibian chàng gē.		-	D3-2	src	我|白天|在|家|里|读书|，|晚上|和|朋友们|去|外边|唱歌|。	3,2,杨同乐
+S	你唱歌很好听。	Nǐ chàng gē hěn hǎotīng.		-	D3-3	src	你|唱歌|很|好听|。	3,3,王一雪
+S	谢谢！	Xièxie!		-	D3-4a	src	谢谢|！	3,4,杨同乐
+S	您星期六做什么？	Nín Xīngqīliù zuò shénme?		-	D3-4b	src	您|星期六|做|什么|？	3,4,杨同乐
+S	我在家里做饭、看电视，和孩子们、小狗玩。	Wǒ zài jiā lǐ zuò fàn, kàn diànshì, hé háizimen, xiǎo gǒu wán.		-	D3-5	src	我|在|家|里|做饭|、|看|电视|，|和|孩子们|、|小狗|玩|。	3,5,王一雪
+S	我也有一只小狗。	Wǒ yě yǒu yì zhī xiǎo gǒu.		-	D3-6	src	我|也|有|一只|小狗|。	3,6,杨同乐

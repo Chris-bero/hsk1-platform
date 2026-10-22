@@ -1,0 +1,17 @@
+require('./domstub.js');
+const fs=require('fs');
+const idx=fs.readFileSync('/tmp/app.js','utf8');
+const adm=fs.readFileSync('/tmp/admin.js','utf8');
+let pass=0,fail=0;
+const ok=(n,c)=>{c?(pass++,console.log("PASS",n)):(fail++,console.log("FAIL",n));};
+ok("student site: teacher dashboard UI removed",!idx.includes("drawTeacher")&&!idx.includes("VIEW: TEACHER DASHBOARD"));
+ok("student site: /teacher redirects to separate admin site",idx.includes('routes["/teacher"]=()=>{')&&idx.includes('location.replace("admin.html#teacher")'));
+ok("student site: no admin console UI (redirect only)",idx.includes('routes["/admin"]=()=>{')&&!idx.includes('function drawConsole'));
+ok("student site: no 🎓 nav item",!idx.includes("Teacher Dashboard</span>")&&!idx.includes('"🎓"'));
+ok("admin site: teacher dashboard present",adm.includes("function drawTeacher")&&adm.includes("Teacher Dashboard"));
+ok("admin site: analytics core shared",adm.includes("function aggregateAnalytics")&&adm.includes("function localRawTables"));
+ok("admin site: sync management present",adm.includes("Google Sheets sync (lecture-site Sheet)"));
+ok("student site keeps analytics core (shared)",idx.includes("function aggregateAnalytics"));
+ok("student site: zero admin-console UI or links",!idx.includes('"🛠"')&&!idx.includes('href:"admin.html"')&&!idx.includes('Admin Console</span>'));
+console.log("===== separation: "+pass+" passed, "+fail+" failed =====");
+process.exit(fail?1:0);
