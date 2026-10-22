@@ -16,13 +16,19 @@ global.fetch=async(url,opts)=>{calls.push({url,opts:JSON.parse(opts.body)});
     : a==="ping"?{ok:true,tabs:["Students","Sessions"]}:{ok:true,written:{attempts:1}}};};
 
 (async()=>{
-  // 1 disabled → no-op
-  ok("sync disabled by default",T.SYNC.enabled()===false);
+  // 1 baked-in deployment default; explicit empty save disables; reset restores
+  ok("sync enabled by baked-in deployment default",T.SYNC.enabled()===true&&T.SYNC.cfg().url.indexOf("https://script.google.com/macros/s/")===0&&T.SYNC.cfg().token.length>0);
+  ok("usingDefault() true before any save",T.SYNC.usingDefault()===true);
+  T.SYNC.save({url:"",token:""});
+  ok("explicit empty save disables sync",T.SYNC.enabled()===false);
   T.SYNC.enqueue("attempt",{x:1});
   ok("enqueue is no-op when disabled",T.SYNC.queue().length===0);
+  T.SYNC.reset();
+  ok("reset() restores build default",T.SYNC.enabled()===true&&T.SYNC.usingDefault()===true);
   // 2 enable + enqueue batches by kind
   T.SYNC.save({url:"https://example/exec",token:"tok123"});
   ok("enabled after save",T.SYNC.enabled()===true);
+  ok("saved override replaces default",T.SYNC.cfg().url==="https://example/exec"&&T.SYNC.usingDefault()===false);
   T.SYNC.enqueue("attempt",{StudentID:"stu-0001",QuestionID:"vocab_c2e:W1"});
   T.SYNC.enqueue("vocab",{StudentID:"stu-0001",WordID:"W1"});
   T.SYNC.enqueue("session",{SessionID:"s1",StudentID:"stu-001"});

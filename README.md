@@ -17,16 +17,22 @@ display **Content Pending** until their source material is imported and validate
 ## 1. Quick start
 
 1. Open `index.html` (student site) in any modern browser — no server or build step.
-2. **Register the first account** — it automatically receives the `admin` role (site owner).
+2. **One-time owner setup:** open `admin.html` (staff console) — if no account exists on that
+   domain yet, it offers "Create owner account" (first account receives the `admin` role
+   automatically). Self-registration for students does not exist anywhere in the platform.
 3. Admin content management lives in a **separate page: `admin.html`** (link appears in the
    sidebar for admin accounts only; students are blocked). There you can load the
    **⚙ technical test fixture** (placeholder tokens, NOT curriculum) or import a processed
    chapter JSON (§4).
-4. Students register their own accounts; each sees only their own progress.
+4. **Students sign in with Sheet credentials only** (name or StudentID + access code from the
+   `Students` tab — the same credentials as the lecture site). There is no student
+   registration form and no local-password fallback: if the Google Sheet is unreachable or
+   not yet configured on that domain, student sign-in is blocked with a clear message.
+   Every sign-in and answered question is tracked to the student's `StudentID`.
 5. The sidebar can be **collapsed to icons** via the « button (persisted per user; full
    drawer behavior is kept on mobile).
 
-Run automated tests: `./tests/run.sh` (requires Node + python3; 40 logic tests).
+Run automated tests: `./tests/run.sh` (requires Node + python3; 21 suites incl. registration-policy checks).
 
 ## 2. What is implemented (Phases 1–4 + engine core)
 
@@ -449,8 +455,11 @@ Validation: 0 issues, 0 flagged → **Ready**.
 
 The practice site now shares the lecture site's **login** and pushes **comprehensive
 per-student tracking** into the same spreadsheet ("HSK 1 3.0"), via a real Google Apps
-Script bridge (`tools/sheets_bridge.gs`). Nothing is sent until an admin configures URL +
-token; until then tracking stays local (the app never claims a connection it doesn't have).
+Script bridge (`tools/sheets_bridge.gs`). Since 2026-10-22 the deployed build ships with the
+bridge credentials **baked in** (`SYNC_DEFAULTS`), so student sign-in and tracking work on any
+domain with zero per-browser setup; the staff console can override or disable them per browser
+(Sheets Sync card), and until the bridge is reachable tracking stays local (the app never claims
+a connection it doesn't have).
 
 ### Deploy (once, ~3 minutes) — SEPARATE standalone Apps Script project!
 Your spreadsheet already hosts the lecture site's own Apps Script project (Code.gs with its
@@ -459,8 +468,18 @@ definitions would collide and break the lecture site. Instead:
 1. https://script.google.com → **New project** (standalone) → paste `tools/sheets_bridge.gs`.
 2. Set `SPREADSHEET_ID` (from the sheet URL `/d/<id>/edit`) and `TOKEN` (a secret string).
 3. **Deploy → New deployment → Web app** (Execute as: *Me*, Access: *Anyone*) → copy the `/exec` URL.
-4. **Admin site** (`admin.html` — separate from the student site) → *Google Sheets sync* card → paste URL + token → *Save* → *Test connection* (lists the tabs it sees).
+4. **Admin site** (`admin.html` — separate from the student site) → *Google Sheets sync* card: the shipped build already contains the `/exec` URL + token as `SYNC_DEFAULTS` (Config source: *build default*), pre-filled in the card — press *Test connection* (lists the tabs it sees). Only press *Save* if you re-deployed the bridge with a new URL/token (the save overrides for that browser; *Restore build default* reverts).
 5. Optional: *Push lessons catalog* writes/updates the `Lessons` tab from the validated bundles.
+
+### Admin site redesign — "Mission Control" (2026-10-22)
+`admin.html` was rebuilt from scratch as a dark ops-console: left sidebar navigation
+(Overview / Teacher Analytics / Content Pipeline / Sheets Sync / Accounts), topbar with live
+status LEDs (SYNC LIVE·OFF·ERR, outbound queue depth, flagged count, staff chip), monospace
+metrics, KPI tiles with accent rails, dense data tables with sticky headers, and the full
+teacher analytics suite (cohort KPIs, throughput-by-day chart, per-activity accuracy,
+per-lesson coverage, most-missed with miss-rate bars, student roster → individual dossier).
+**The sync URL & token are stored under the same keys (`hsk1_sync_cfg`) and are pre-filled
+in the Sync tab — your existing connection settings survive the redesign untouched.**
 
 ### Separation of sites (owner decision 2026-10-21)
 - `index.html` = **students only**: practice, exams, personal stats, wrong answers, settings.
@@ -469,8 +488,9 @@ definitions would collide and break the lecture site. Instead:
   **Teacher Dashboard** tab (cohort + per-student analytics, from the Sheet when connected).
 
 ### Behaviour
-- **Unified login:** login page authenticates against the `Students` tab (StudentID or name + `Code`, `AccountStatus=active`). On success a local profile is created/linked (`sheetId`) so all local progress maps to the Sheet student. Local accounts remain as offline fallback (untracked, labeled). Every login writes a `LoginLog` row.
-- **Tracking pushed (batched every 4 s, queued offline, retried, upserted — no duplicates):**
+- **Unified login (sheet-only, registration disabled by owner decision):** the student login page authenticates exclusively against the `Students` tab (StudentID or name + `Code`, `AccountStatus=active`). On success a local profile is created/linked (`sheetId`) so all progress maps to the Sheet student; the header chip shows `⬆ stu-XXXX` when linked. There is no self-registration and no local-password fallback for students — if the Sheet is disabled/unreachable on that browser, sign-in is refused with guidance to contact the teacher. Every successful login writes a `LoginLog` row (Site=practice). Staff/owner accounts are created once via the `admin.html` gate (first-time owner setup) and never appear in the Sheet.
+- **Baked-in deployment default (owner-approved 2026-10-22):** the bridge web-app URL + token (`SYNC_DEFAULTS`) are compiled into `index.html`/`admin.html`, so **every student browser on any deployed domain (Vercel / GitHub Pages / local) can sign in via the Sheet with zero per-device setup** — previously the connection lived only in each browser's localStorage, which blocked every fresh device (the "Sheet sign-in is not configured on this browser" notice). The staff console's Sheets Sync card can still override the values per browser (Save), disable sync on that device (save empty values), or revert (Restore build default); the `Config source` row shows which is active. The token remains a light classroom gate, not a security boundary.
+- **Tracking pushed (batched every 2 s, queued offline, retried, upserted — no duplicates):**
   | Event | Sheet tab | Key |
   |---|---|---|
   | each submitted/skipped attempt | `LearningEvents` (append) + `StudentQuizStats` + `QuizStats` (upsert/bump) | StudentID+QuestionID / QuestionID |
@@ -495,6 +515,10 @@ and their own views only ever query their own records).
 - **Cohort view:** KPI tiles (students + active-7d, correct/incorrect/skipped, accuracy, total
   time + sessions + exams), per-day attempts/time chart (bar colour = accuracy), accuracy by
   activity type, per-lesson started/completed/accuracy, cohort most-missed questions.
+- **Per-chapter analysis:** a chapter table (students, attempts, accuracy bar, time on chapter,
+  words mastered/learning/revision, exam results); clicking a chapter opens its **dossier**:
+  KPI tiles + by-activity accuracy + by-student breakdown + most-missed questions inside that
+  chapter. Aggregated by `aggregateAnalytics().lessons` (unit-tested).
 - **Per-student drill-down:** click any row → attempts/correct/incorrect/skipped, accuracy,
   time & sessions, lessons started/completed, words mastered/needs-revision, per-lesson and
   per-activity tables, personal most-missed list, recent activity feed, exam count.

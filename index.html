@@ -22261,10 +22261,21 @@ function ensureCurriculumImported(){
   return n;
 }
 /* @@SYNC-START@@ Google Sheets bridge client (offline-first, fail-silent, never blocks practice) */
+/* Deployment-wide bridge credentials BAKED INTO THE BUILD (owner-approved 2026-10-22): every student
+   browser on any deployed domain (Vercel / GitHub Pages / local) can sign in via the school Sheet with
+   zero per-device setup. The staff console (Sheets Sync card) may override these values per browser;
+   saving empty values disables sync on that device only. Token is a light classroom gate, not security. */
+const SYNC_DEFAULTS={
+  url:"https://script.google.com/macros/s/AKfycbz71MNiMuOdrF2Cg9J23zkP10iyfUrDxIUD4j3xPSEuhD0iT9gsyEqW6o9MLH0srGj7/exec",
+  token:"85246"};
 const SYNC={
   KEY:"hsk1_sync_cfg", QKEY:"hsk1_sync_queue", LKEY:"hsk1_sync_last",
-  cfg(){try{return JSON.parse(localStorage.getItem(this.KEY))||{url:"",token:""};}catch(e){return{url:"",token:""};}},
-  save(c){localStorage.setItem(this.KEY,JSON.stringify(c));},
+  cfg(){try{const raw=localStorage.getItem(this.KEY);
+      if(raw){const c=JSON.parse(raw);if(c&&typeof c==="object")return{url:String(c.url||""),token:String(c.token||"")};}}catch(e){}
+    return{url:SYNC_DEFAULTS.url,token:SYNC_DEFAULTS.token};},
+  save(c){localStorage.setItem(this.KEY,JSON.stringify({url:(c&&c.url)||"",token:(c&&c.token)||""}));},
+  reset(){localStorage.removeItem(this.KEY);},
+  usingDefault(){return !localStorage.getItem(this.KEY);},
   enabled(){const c=this.cfg();return !!(c.url&&c.token);},
   queue(){try{return JSON.parse(localStorage.getItem(this.QKEY))||[];}catch(e){return[];}},
   last(){try{return JSON.parse(localStorage.getItem(this.LKEY))||null;}catch(e){return null;}},
@@ -22273,7 +22284,7 @@ const SYNC={
     if(q.length>500)q.splice(0,q.length-500);
     localStorage.setItem(this.QKEY,JSON.stringify(q));this.schedule();},
   _t:null,
-  schedule(){if(this._t||typeof setTimeout==="undefined")return;this._t=setTimeout(()=>{this._t=null;this.flush();},4000);},
+  schedule(){if(this._t||typeof setTimeout==="undefined")return;this._t=setTimeout(()=>{this._t=null;this.flush();},2000);},
   async post(action,payload){const c=this.cfg();
     const r=await fetch(c.url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},
       body:JSON.stringify({action,token:c.token,payload})});
@@ -22341,8 +22352,26 @@ function aggregateAnalytics(raw){
   examEv.forEach(e=>{const p=P(e.StudentID);if(p)p.exams++;});
   students.forEach(s=>{const p=per[s.id];p.accuracy=p.attempts?Math.round(p.correct/p.attempts*100):null;
     p.recent.sort((a,b)=>b.ts.localeCompare(a.ts));p.recent=p.recent.slice(0,12);});
+  /* per-lesson deep dive */
+  const lessons={};
+  const L=id=>lessons[id]=lessons[id]||{lessonId:id,students:{},byActivity:{},missed:{},seconds:0,exams:0,vocab:{mastered:0,learning:0,revision:0}};
+  counted.forEach(e=>{const l=L(nid(e.LessonID));
+    const st=l.students[nid(e.StudentID)]=l.students[nid(e.StudentID)]||{attempts:0,correct:0};
+    st.attempts++;if(isC(e))st.correct++;
+    const a=l.byActivity[nid(e.ActivityType)]=l.byActivity[nid(e.ActivityType)]||{attempts:0,correct:0};
+    a.attempts++;if(isC(e))a.correct++;
+    if(!isC(e))l.missed[nid(e.QuestionID)]=(l.missed[nid(e.QuestionID)]||0)+1;});
+  (raw.sessions||[]).forEach(x=>{L(nid(x.LessonID)).seconds+=Number(x.Seconds)||0;});
+  examEv.forEach(e=>{L(nid(e.LessonID)).exams++;});
+  (raw.svp||[]).forEach(v=>{const l=L(nid(v.LessonID));const stt=nid(v.State);
+    if(stt==="mastered")l.vocab.mastered++;else if(stt==="needs_revision")l.vocab.revision++;else if(stt==="learning")l.vocab.learning++;});
+  Object.values(lessons).forEach(l=>{l.studentList=Object.entries(l.students).map(([id,v])=>({id,attempts:v.attempts,correct:v.correct,accuracy:v.attempts?Math.round(v.correct/v.attempts*100):null})).sort((a,b)=>b.attempts-a.attempts);
+    l.missedList=Object.entries(l.missed).map(([qid,n])=>({qid,n})).sort((a,b)=>b.n-a.n);
+    l.attempts=Object.values(l.students).reduce((a,v)=>a+v.attempts,0);
+    l.correct=Object.values(l.students).reduce((a,v)=>a+v.correct,0);
+    l.accuracy=l.attempts?Math.round(l.correct/l.attempts*100):null;});
   const weekAgo=new Date(Date.now()-7*864e5).toISOString();
-  return{source:raw.source||"?",
+  return{source:raw.source||"?",lessons: Object.values(lessons).sort((a,b)=>String(a.lessonId).localeCompare(String(b.lessonId))),
     cohort:{students:students.length,active:students.filter(s=>per[s.id].lastTs>=weekAgo).length,
       attempts:counted.length,correct:correct.length,incorrect:counted.length-correct.length,
       skipped:attempts.length-counted.length,
@@ -22406,6 +22435,7 @@ function renderShell(view){
       h("button",{id:"tgTimed",class:"iconbtn"+(st.timed?" on":""),title:"Timed Practice: "+(st.timed?"ON":"OFF"),
         onclick:()=>{saveSettings({timed:!mySettings().timed});syncHeaderToggles();}},"⏱"),
       h("button",{id:"tgTheme",class:"iconbtn",title:"Theme",onclick:()=>{const t=mySettings().theme;saveSettings({theme:t==="dark"?"light":"dark"});syncHeaderToggles();}},st.theme==="dark"?"☾":"☀"),
+      u?h("span",{class:"chip "+(u.sheetId?"ready":"review"),style:"font:700 10px var(--mono);letter-spacing:.5px",title:u.sheetId?"Your answers are pushed to the Google Sheet":"Local-only account: your answers are NOT pushed to the Sheet (sign in with your Sheet name/ID + code to be tracked)"},u.sheetId?"⬆ "+u.sheetId:"LOCAL ONLY"):null,
       h("a",{href:"#/wrong",class:"iconbtn",title:"Wrong Answers"},wrongCount?h("span",{class:"badge"},wrongCount):"✗"),
       u?h("a",{href:"#/profile",class:"avatar",style:"background:"+u.color,title:u.name},u.name[0].toUpperCase()):null,
     ));
@@ -22474,51 +22504,40 @@ function notFound(){return h("div",{class:"empty"},h("div",{class:"big"},"🧭")
    ===================================================================== */
 routes["/login"]=()=>{
   const app=$("#app");app.innerHTML="";
-  let mode="login";
   const wrap=h("div",{class:"authwrap fade"});
-  function draw(){
-    wrap.innerHTML="";
-    wrap.appendChild(h("div",{style:"text-align:center;margin-bottom:20px"},
-      h("div",{class:"logo hanzi",style:"width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#c62f45);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:26px;font-weight:800"},"汉"),
-      h("h1",{style:"font-size:20px;margin-top:10px"},"HSK 1 Practice & Tests"),
-      h("p",{style:"color:var(--muted);font-size:13px"},"Student accounts · progress · analytics")));
-    const card=h("div",{class:"card"});
-    const err=h("div",{class:"notice err",style:"display:none"});
-    card.appendChild(err);
-    card.appendChild(h("div",{class:"tabs"},
-      h("button",{class:mode==="login"?"on":"",onclick:()=>{mode="login";draw();}},"Log in"),
-      h("button",{class:mode==="register"?"on":"",onclick:()=>{mode="register";draw();}},"Register")));
-    const syncOn=SYNC.enabled();
-    if(syncOn)card.appendChild(h("div",{class:"notice info"},"Unified login with the lecture site: use your StudentID or name + access code from the Google Sheet. Local accounts remain as offline fallback."));
-    const nameI=h("input",{placeholder:syncOn?"StudentID or display name":"Display name",autocomplete:"username",style:"width:100%"});
-    const codeI=h("input",{type:"password",placeholder:"Access code (Sheet)",autocomplete:"off",style:"width:100%"});
-    const passI=h("input",{type:"password",placeholder:"Password",autocomplete:"current-password",style:"width:100%"});
-    card.appendChild(h("div",{class:"field"},h("label",{},syncOn?"StudentID / name":"Display name"),nameI));
-    if(syncOn)card.appendChild(h("div",{class:"field"},h("label",{},"Access code"),codeI));
-    card.appendChild(h("div",{class:"field"},h("label",{},"Password"+(syncOn?" (local fallback only)":"")),passI));
-    const submit=async()=>{
-      if(mode==="login"&&syncOn){
-        try{
-          const res=await SYNC.login(nameI.value.trim(),codeI.value.trim());
-          if(res&&res.ok){linkSheetStudent(res.student);location.hash="#/dashboard";render();return;}
-          if(res&&!res.ok&&res.error!=="student not found"){
-            err.textContent="Sheet login: "+res.error;err.style.display="block";return;}
-        }catch(e){/* sheet unreachable → local fallback below */}
-      }
-      const r=mode==="login"?login(nameI.value,passI.value):register(nameI.value,passI.value);
-      if(r.err){err.textContent=r.err;err.style.display="block";return;}
-      const u2=me();
-      if(u2&&u2.sheetId&&SYNC.enabled())SYNC.logLogin({StudentID:u2.sheetId,Method:"local",LocalID:u2.id,OK:true});
-      location.hash="#/dashboard";render();
-    };
-    passI.addEventListener("keydown",e=>{if(e.key==="Enter")submit();});
-    card.appendChild(h("button",{class:"btn primary",style:"width:100%",onclick:submit},mode==="login"?"Log in":"Create account"));
-    card.appendChild(h("p",{style:"font-size:11px;color:var(--dim);margin-top:12px;text-align:center"},
-      "Prototype auth: accounts live in this browser only (localStorage). No email or personal data is required or collected. A real deployment must use a proper auth backend (e.g. Supabase Auth)."));
-    wrap.appendChild(card);
-    app.appendChild(wrap);
-  }
-  draw();
+  wrap.appendChild(h("div",{style:"text-align:center;margin-bottom:20px"},
+    h("div",{class:"logo hanzi",style:"width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#c62f45);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:26px;font-weight:800;box-shadow:0 6px 20px rgba(232,54,93,.4)"},"汉"),
+    h("h1",{style:"font-size:20px;margin-top:10px"},"HSK 1 Practice & Tests"),
+    h("p",{style:"color:var(--muted);font-size:13px"},"Student sign-in · Sheet-managed accounts")));
+  const card=h("div",{class:"card"});
+  const err=h("div",{class:"notice err",style:"display:none"});
+  card.appendChild(err);
+  card.appendChild(h("div",{class:"notice info"},"Self-registration is disabled by policy. Your account is created by the teacher in the school Sheet (Students tab). Sign in with your <b>name or StudentID + access code</b> — every session is tracked to your StudentID."));
+  const nameI=h("input",{placeholder:"Student name or StudentID (e.g. stu-0001)",autocomplete:"username",style:"width:100%"});
+  const codeI=h("input",{type:"password",placeholder:"Access code",autocomplete:"current-password",style:"width:100%"});
+  card.appendChild(h("div",{class:"field"},h("label",{},"Name / StudentID"),nameI));
+  card.appendChild(h("div",{class:"field"},h("label",{},"Access code"),codeI));
+  const submit=async()=>{
+    err.style.display="none";
+    if(!SYNC.enabled()){
+      err.textContent="Sheet sign-in is disabled on this browser (staff override). The teacher can re-connect it from the staff console (Sheets Sync card → Restore build default). Student accounts cannot be created locally.";
+      err.style.display="block";return;}
+    if(!nameI.value.trim()||!codeI.value.trim()){
+      err.textContent="Enter both your name/StudentID and your access code.";err.style.display="block";return;}
+    let res;
+    try{res=await SYNC.login(nameI.value.trim(),codeI.value.trim());}
+    catch(e){err.textContent="Cannot reach the school Sheet ("+e+"). Check the connection and try again.";err.style.display="block";return;}
+    if(!res||!res.ok){
+      err.textContent="Sign-in rejected: "+((res&&res.error)||"unknown")+". Ask your teacher if you forgot your code.";
+      err.style.display="block";return;}
+    linkSheetStudent(res.student);
+    location.hash="#/dashboard";render();
+  };
+  codeI.addEventListener("keydown",e=>{if(e.key==="Enter")submit();});
+  card.appendChild(h("button",{class:"btn primary",style:"width:100%",onclick:submit},"Sign in"));
+  card.appendChild(h("p",{style:"font-size:11px;color:var(--dim);margin-top:12px;text-align:center"},
+    "Tracking: sign-ins and answered questions are pushed to the school Sheet under your StudentID. No other personal data is collected."));
+  wrap.appendChild(card);app.appendChild(wrap);
 };
 
 /* =====================================================================
@@ -22760,7 +22779,7 @@ function runTimer(chId){ // practice-time tracker for a session
         SYNC.enqueue("lesson",{StudentID:sid,LessonID:lessonIdOf(chId),StartedAt:cp.startedAt||"",
           LastPracticedAt:cp.lastPracticedAt||"",ActivitiesUsed:Object.keys(acts).length,
           Attempts:A,Correct:C,Accuracy:A?Math.round(C/A*100):"",CompletedAt:cp.completedAt||""});}
-      SYNC.schedule();
+      SYNC.schedule();SYNC.flush();
     }}};
 }
 
@@ -23550,7 +23569,7 @@ routes["/settings"]=content=>{
     (()=>{const i=h("input",{type:"number",min:1,max:10,value:st.masteryCorrect,style:"width:90px",onchange:e=>saveSettings({masteryCorrect:Math.max(1,+e.target.value||3)})});return i;})());
   row("Google Sheets sync",SYNC.enabled()
       ? "Connected to the lecture-site Sheet. Queue: "+SYNC.queue().length+" pending · last: "+(SYNC.last()?(SYNC.last().ok?"OK ("+(SYNC.last().sent||0)+" rows)":"failed: "+(SYNC.last().error||""))+" @ "+new Date(SYNC.last().ts).toLocaleTimeString():"—")+". Managed from the separate staff site."
-      : "Not configured — tracking stays local on this device. Admin can connect the lecture-site Sheet from the separate staff site.",
+      : "Disabled on this browser (staff override) — tracking stays local on this device. The staff console can restore the built-in Sheet connection (Sheets Sync card → Restore build default).",
     h("span",{class:"chip "+(SYNC.enabled()?"ready":"pending")},SYNC.enabled()?"connected":"local only"));
   row("Mastery: distinct days required","…spread across at least this many different days. Any wrong answer resets the word to Needs Revision.",
     (()=>{const i=h("input",{type:"number",min:1,max:30,value:st.masteryDays,style:"width:90px",onchange:e=>saveSettings({masteryDays:Math.max(1,+e.target.value||2)})});return i;})());

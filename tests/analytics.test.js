@@ -9,10 +9,10 @@ const ok=(n,c,i="")=>{c?(pass++,console.log("PASS",n)):(fail++,console.log("FAIL
 
 const RAW={source:"sheet",
  students:[{StudentID:"s1",StudentName:"A"},{StudentID:"s2",StudentName:"B"}],
- sessions:[{SessionID:"x1",StudentID:"s1",Seconds:600,EndedAt:"2026-10-20T10:00:00Z"},
-           {SessionID:"x2",StudentID:"s2",Seconds:300,EndedAt:"2026-10-21T10:00:00Z"}],
+ sessions:[{SessionID:"x1",StudentID:"s1",LessonID:"lesson-1",Seconds:600,EndedAt:"2026-10-20T10:00:00Z"},
+           {SessionID:"x2",StudentID:"s2",LessonID:"lesson-1",Seconds:300,EndedAt:"2026-10-21T10:00:00Z"}],
  slp:[{StudentID:"s1",LessonID:"lesson-1",CompletedAt:""},{StudentID:"s1",LessonID:"lesson-2",CompletedAt:"2026-10-20"},{StudentID:"s2",LessonID:"lesson-1",CompletedAt:""}],
- svp:[{StudentID:"s1",State:"mastered"},{StudentID:"s1",State:"mastered"},{StudentID:"s1",State:"needs_revision"},{StudentID:"s2",State:"learning"}],
+ svp:[{StudentID:"s1",LessonID:"lesson-1",State:"mastered"},{StudentID:"s1",LessonID:"lesson-1",State:"mastered"},{StudentID:"s1",LessonID:"lesson-1",State:"needs_revision"},{StudentID:"s2",LessonID:"lesson-1",State:"learning"}],
  sqs:[],qs:[],
  events:[
   {StudentID:"s1",Ts:"2026-10-20T09:00:00Z",EventType:"attempt",LessonID:"lesson-1",QuestionID:"q1",ActivityType:"vocab_c2e",Correct:"true",Skipped:"false"},
@@ -37,6 +37,16 @@ ok("per-student time/sessions",s1.seconds===600&&s1.sessions===1&&s2.seconds===3
 ok("per-student lessons & mastery",s1.lessonsStarted===2&&s1.lessonsCompleted===1&&s1.wordsMastered===2&&s1.wordsRevision===1&&s2.wordsLearning===1);
 ok("per-student missed & recent",s1.missed["q2"]===1&&s1.recent.length===3&&s1.recent[0].ts.startsWith("2026-10-20T09:02"));
 ok("per-student exams",s2.exams===1&&s1.exams===0);
+// per-lesson deep dive
+const L1=A.lessons.find(l=>l.lessonId==="lesson-1");
+ok("per-lesson: students & attempts",L1&&Object.keys(L1.students).length===2&&L1.attempts===3);
+ok("per-lesson: accuracy & correct",L1.correct===1&&L1.accuracy===33);
+ok("per-lesson: seconds from sessions",L1.seconds===900);
+ok("per-lesson: byActivity",L1.byActivity["vocab_c2e"].attempts===3);
+ok("per-lesson: missed list (q2 wrong twice)",L1.missedList.length===1&&L1.missedList[0].qid==="q2"&&L1.missedList[0].n===2);
+ok("per-lesson: vocab states",L1.vocab.mastered===2&&L1.vocab.revision===1&&L1.vocab.learning===1);
+ok("per-lesson: studentList sorted",L1.studentList[0].attempts>=L1.studentList[1].attempts);
+ok("per-lesson: exams counted",L1.exams===1);
 // local fallback shape
 const L=T.localRawTables();
 ok("localRawTables returns same schema",["students","sessions","slp","svp","events"].every(k=>Array.isArray(L[k]))&&L.source==="local");

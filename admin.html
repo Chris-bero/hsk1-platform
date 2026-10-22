@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HSK 1 — Admin Console</title>
+<title>HSK 1 — Mission Control</title>
 <style>
 :root{
   --bg:#0f1117; --bg2:#141722; --card:#191d29; --card2:#202634; --line:rgba(255,255,255,.075); --line2:rgba(255,255,255,.14);
@@ -290,18 +290,114 @@ body.pyoff .pyoff-only{display:inline!important}
   .rescircle .pct{font-size:26px}
 }
 @media(max-width:520px){.brand small{display:none}.brand{font-size:14.5px}}
-/* ===== admin-specific ===== */
-.adminwrap{max-width:1100px;margin:0 auto;padding:26px 22px 70px;width:100%}
-.adminhdr{display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap}
-.adminhdr .brand small{color:var(--warn)}
-.report{background:var(--bg2);border:1px solid var(--line2);border-radius:var(--radius-s);padding:14px 16px;margin-top:10px;font-size:13px}
-.report h4{font-size:13px;margin-bottom:6px;color:var(--warn)}
-.report ul{margin:4px 0 8px 18px;color:var(--muted)}
-.actbtns{display:flex;gap:6px;flex-wrap:wrap}
-textarea#importta{width:100%;min-height:210px;line-height:1.55}
-details.schema{margin-top:12px;font-size:13px;color:var(--muted)}
-details.schema summary{cursor:pointer;color:var(--cat-vocab);font-weight:600}
-details.schema pre{background:var(--bg2);border:1px solid var(--line2);border-radius:var(--radius-s);padding:12px;overflow-x:auto;margin-top:8px;font-size:12px;line-height:1.5}
+/* ===== mission-control design system (admin site only) ===== */
+:root{
+  --bg:#0a0e13; --panel:#0f151c; --panel2:#141c26; --line:#1c2836; --line2:#2a3a4e;
+  --txt:#dce7f3; --mut:#8296ab; --dim:#5a6d82;
+  --cyan:#4cc9f0; --cyan2:#7dd8f5; --cyan-soft:rgba(76,201,240,.12);
+  --coral:#ff5f52; --coral-soft:rgba(255,95,82,.12);
+  --ok:#3ddc84; --ok-soft:rgba(61,220,132,.10);
+  --warn:#ffc24d; --warn-soft:rgba(255,194,77,.10);
+  --mono:ui-monospace,"Cascadia Code","SF Mono",Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--txt);font:14px/1.5 "Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;
+  background:radial-gradient(900px 400px at 80% -100px,rgba(76,201,240,.07),transparent 60%),
+             radial-gradient(700px 380px at -10% 40%,rgba(255,95,82,.05),transparent 60%)}
+.mono{font-family:var(--mono)}
+button{font-family:inherit;cursor:pointer}
+input,textarea,select{font-family:inherit;color:var(--txt);background:var(--panel2);border:1px solid var(--line2);border-radius:8px;padding:9px 12px;font-size:13px;outline:none}
+input:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px var(--cyan-soft)}
+a{color:var(--cyan2);text-decoration:none}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:var(--line2);border-radius:6px}
+
+/* shell */
+.shell{display:flex;min-height:100vh;position:relative;z-index:1}
+aside{width:236px;flex-shrink:0;border-right:1px solid var(--line);background:linear-gradient(180deg,var(--panel),#0b1016);display:flex;flex-direction:column;padding:18px 12px;gap:2px;position:sticky;top:0;height:100vh}
+.brand{display:flex;gap:10px;align-items:center;padding:4px 8px 16px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--cyan),#2b7ea8);display:flex;align-items:center;justify-content:center;font-weight:800;color:#04222e;font-family:var(--mono);font-size:15px;box-shadow:0 4px 16px rgba(76,201,240,.35)}
+.brand b{font-size:14px;letter-spacing:.3px}
+.brand small{display:block;font:600 9.5px var(--mono);color:var(--dim);letter-spacing:1.4px;text-transform:uppercase}
+nav .nitem{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:none;color:var(--mut);padding:10px 12px;border-radius:9px;font-size:13px;font-weight:600;transition:.15s;position:relative}
+nav .nitem:hover{background:var(--panel2);color:var(--txt)}
+nav .nitem.on{background:var(--cyan-soft);color:var(--cyan2)}
+nav .nitem.on::before{content:"";position:absolute;left:-12px;top:9px;bottom:9px;width:3px;border-radius:0 3px 3px 0;background:var(--cyan)}
+nav .nitem .ic{width:18px;text-align:center;font-size:14px}
+nav .nitem .cnt{margin-left:auto;font:700 10px var(--mono);background:var(--panel2);border:1px solid var(--line2);color:var(--mut);border-radius:8px;padding:1px 7px}
+nav .nitem .cnt.hot{background:var(--warn-soft);border-color:var(--warn);color:var(--warn)}
+.sidefoot{margin-top:auto;padding:10px 8px 0;border-top:1px solid var(--line);font:10.5px var(--mono);color:var(--dim);line-height:1.7}
+main{flex:1;min-width:0;padding:0 26px 60px}
+.topbar{display:flex;align-items:center;gap:12px;padding:14px 0;margin-bottom:20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);z-index:5}
+.topbar h1{font-size:17px;letter-spacing:-.2px}
+.topbar .crumb{font:600 10px var(--mono);color:var(--dim);letter-spacing:1.6px;text-transform:uppercase}
+.topbar .sp{flex:1}
+.led{display:inline-flex;align-items:center;gap:7px;font:700 10.5px var(--mono);letter-spacing:.8px;text-transform:uppercase;padding:5px 11px;border-radius:20px;border:1px solid var(--line2);background:var(--panel);color:var(--mut)}
+.led i{width:7px;height:7px;border-radius:50%;background:var(--dim);box-shadow:0 0 8px currentColor}
+.led.ok{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 40%,transparent);background:var(--ok-soft)}.led.ok i{background:var(--ok)}
+.led.warn{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,transparent);background:var(--warn-soft)}.led.warn i{background:var(--warn)}
+.led.err{color:var(--coral);border-color:color-mix(in srgb,var(--coral) 40%,transparent);background:var(--coral-soft)}.led.err i{background:var(--coral)}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:8px 15px;border-radius:8px;border:1px solid var(--line2);background:var(--panel2);color:var(--txt);font-weight:600;font-size:12.5px;transition:.15s}
+.btn:hover{border-color:var(--dim)}
+.btn.pri{background:linear-gradient(135deg,var(--cyan),#2f9dc9);border-color:transparent;color:#03222d;box-shadow:0 4px 14px rgba(76,201,240,.3)}
+.btn.danger{color:var(--coral);border-color:color-mix(in srgb,var(--coral) 45%,transparent)}
+.btn.sm{padding:5px 11px;font-size:11.5px;border-radius:7px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* panels & data */
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1100px){.g4,.g5{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.g2,.g3,.g4,.g5{grid-template-columns:1fr}aside{display:none}}
+.kpi{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:10px;padding:14px 16px;position:relative;overflow:hidden}
+.kpi::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--kc,var(--cyan));opacity:.7}
+.kpi .v{font:700 24px/1.1 var(--mono);letter-spacing:-.5px;color:var(--kc,var(--txt))}
+.kpi .l{font:700 9.5px var(--mono);letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-top:5px}
+.kpi .d{font-size:11px;color:var(--mut);margin-top:4px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.phead{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--panel2),transparent)}
+.phead h3{font-size:13px;letter-spacing:.2px}
+.phead .sub{font:10.5px var(--mono);color:var(--dim)}
+.phead .sp{flex:1}
+.pbody{padding:14px 16px}
+table.tbl{width:100%;border-collapse:collapse;font-size:12.5px}
+table.tbl th{text-align:left;font:700 9.5px var(--mono);letter-spacing:1.3px;text-transform:uppercase;color:var(--dim);padding:9px 12px;border-bottom:1px solid var(--line2);background:var(--panel2);position:sticky;top:0}
+table.tbl td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tbl tr:last-child td{border-bottom:none}
+table.tbl tbody tr:hover{background:color-mix(in srgb,var(--panel2) 70%,transparent)}
+table.tbl .num{font-family:var(--mono);font-size:12px}
+.pill{display:inline-flex;align-items:center;gap:6px;font:700 10px var(--mono);letter-spacing:.6px;text-transform:uppercase;padding:3px 10px;border-radius:20px;border:1px solid}
+.pill i{width:6px;height:6px;border-radius:50%;background:currentColor}
+.pill.ok{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 40%,transparent);background:var(--ok-soft)}
+.pill.warn{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,transparent);background:var(--warn-soft)}
+.pill.err{color:var(--coral);border-color:color-mix(in srgb,var(--coral) 40%,transparent);background:var(--coral-soft)}
+.pill.mut{color:var(--mut);border-color:var(--line2);background:var(--panel2)}
+.pill.cy{color:var(--cyan);border-color:color-mix(in srgb,var(--cyan) 40%,transparent);background:var(--cyan-soft)}
+.bar{height:8px;background:var(--panel2);border:1px solid var(--line);border-radius:4px;overflow:hidden;min-width:70px}
+.bar>div{height:100%;background:linear-gradient(90deg,var(--cyan),#2f9dc9)}
+.bar.g>div{background:linear-gradient(90deg,var(--ok),#1fa860)}
+.bar.w>div{background:linear-gradient(90deg,var(--warn),#e09a20)}
+.notice{border-radius:8px;padding:11px 14px;font-size:12.5px;border:1px solid;margin-bottom:12px}
+.notice.info{background:var(--cyan-soft);border-color:color-mix(in srgb,var(--cyan) 35%,transparent);color:var(--cyan2)}
+.notice.ok{background:var(--ok-soft);border-color:color-mix(in srgb,var(--ok) 35%,transparent);color:var(--ok)}
+.notice.err{background:var(--coral-soft);border-color:color-mix(in srgb,var(--coral) 35%,transparent);color:#ff9a92}
+.notice.warn{background:var(--warn-soft);border-color:color-mix(in srgb,var(--warn) 35%,transparent);color:var(--warn)}
+.kv{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+.kv:last-child{border-bottom:none}
+.kv .k{color:var(--mut)}
+.kv .val{font-family:var(--mono);font-size:12px}
+textarea{width:100%;min-height:180px;font:12px/1.6 var(--mono);resize:vertical}
+.field label{display:block;font:700 10px var(--mono);letter-spacing:1.4px;text-transform:uppercase;color:var(--dim);margin-bottom:6px}
+.field{margin-bottom:14px}
+.authwrap{max-width:430px;margin:9vh auto;padding:0 14px}
+.authwrap .panel{padding:0}
+.authwrap .pbody{padding:24px}
+.hint{font-size:11.5px;color:var(--dim);line-height:1.7}
+details.schema summary{cursor:pointer;color:var(--cyan);font:600 12px var(--mono);padding:6px 0}
+details.schema pre{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto;font:11.5px/1.6 var(--mono);margin-top:8px;color:var(--mut)}
+.fade{animation:fi .25s cubic-bezier(.22,1,.36,1)}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
 </style>
 </head>
 <body>
@@ -315,10 +411,9 @@ window.addEventListener("error",function(ev){
   (document.body||document.documentElement).appendChild(d);}catch(e){}
 });
 /* =====================================================================
-   ADMIN CONSOLE — separate page from the student app (index.html).
-   Shares the same localStorage database and the SAME core engine code,
-   which is injected at build time from index.html between the
-   @@CORE-START@@ / @@CORE-END@@ markers. Do not edit the core here:
+   ADMIN / TEACHER MISSION CONTROL — separate site from the student app.
+   Shares the core engine + SYNC client injected from index.html between
+   @@CORE-START@@ / @@CORE-END@@. Do not edit the core here:
    edit index.html, then run:  python3 tools/build_admin.py
    ===================================================================== */
 /* ---------- tiny DOM helpers ---------- */
@@ -22265,10 +22360,21 @@ function ensureCurriculumImported(){
   return n;
 }
 /* @@SYNC-START@@ Google Sheets bridge client (offline-first, fail-silent, never blocks practice) */
+/* Deployment-wide bridge credentials BAKED INTO THE BUILD (owner-approved 2026-10-22): every student
+   browser on any deployed domain (Vercel / GitHub Pages / local) can sign in via the school Sheet with
+   zero per-device setup. The staff console (Sheets Sync card) may override these values per browser;
+   saving empty values disables sync on that device only. Token is a light classroom gate, not security. */
+const SYNC_DEFAULTS={
+  url:"https://script.google.com/macros/s/AKfycbz71MNiMuOdrF2Cg9J23zkP10iyfUrDxIUD4j3xPSEuhD0iT9gsyEqW6o9MLH0srGj7/exec",
+  token:"85246"};
 const SYNC={
   KEY:"hsk1_sync_cfg", QKEY:"hsk1_sync_queue", LKEY:"hsk1_sync_last",
-  cfg(){try{return JSON.parse(localStorage.getItem(this.KEY))||{url:"",token:""};}catch(e){return{url:"",token:""};}},
-  save(c){localStorage.setItem(this.KEY,JSON.stringify(c));},
+  cfg(){try{const raw=localStorage.getItem(this.KEY);
+      if(raw){const c=JSON.parse(raw);if(c&&typeof c==="object")return{url:String(c.url||""),token:String(c.token||"")};}}catch(e){}
+    return{url:SYNC_DEFAULTS.url,token:SYNC_DEFAULTS.token};},
+  save(c){localStorage.setItem(this.KEY,JSON.stringify({url:(c&&c.url)||"",token:(c&&c.token)||""}));},
+  reset(){localStorage.removeItem(this.KEY);},
+  usingDefault(){return !localStorage.getItem(this.KEY);},
   enabled(){const c=this.cfg();return !!(c.url&&c.token);},
   queue(){try{return JSON.parse(localStorage.getItem(this.QKEY))||[];}catch(e){return[];}},
   last(){try{return JSON.parse(localStorage.getItem(this.LKEY))||null;}catch(e){return null;}},
@@ -22277,7 +22383,7 @@ const SYNC={
     if(q.length>500)q.splice(0,q.length-500);
     localStorage.setItem(this.QKEY,JSON.stringify(q));this.schedule();},
   _t:null,
-  schedule(){if(this._t||typeof setTimeout==="undefined")return;this._t=setTimeout(()=>{this._t=null;this.flush();},4000);},
+  schedule(){if(this._t||typeof setTimeout==="undefined")return;this._t=setTimeout(()=>{this._t=null;this.flush();},2000);},
   async post(action,payload){const c=this.cfg();
     const r=await fetch(c.url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},
       body:JSON.stringify({action,token:c.token,payload})});
@@ -22345,8 +22451,26 @@ function aggregateAnalytics(raw){
   examEv.forEach(e=>{const p=P(e.StudentID);if(p)p.exams++;});
   students.forEach(s=>{const p=per[s.id];p.accuracy=p.attempts?Math.round(p.correct/p.attempts*100):null;
     p.recent.sort((a,b)=>b.ts.localeCompare(a.ts));p.recent=p.recent.slice(0,12);});
+  /* per-lesson deep dive */
+  const lessons={};
+  const L=id=>lessons[id]=lessons[id]||{lessonId:id,students:{},byActivity:{},missed:{},seconds:0,exams:0,vocab:{mastered:0,learning:0,revision:0}};
+  counted.forEach(e=>{const l=L(nid(e.LessonID));
+    const st=l.students[nid(e.StudentID)]=l.students[nid(e.StudentID)]||{attempts:0,correct:0};
+    st.attempts++;if(isC(e))st.correct++;
+    const a=l.byActivity[nid(e.ActivityType)]=l.byActivity[nid(e.ActivityType)]||{attempts:0,correct:0};
+    a.attempts++;if(isC(e))a.correct++;
+    if(!isC(e))l.missed[nid(e.QuestionID)]=(l.missed[nid(e.QuestionID)]||0)+1;});
+  (raw.sessions||[]).forEach(x=>{L(nid(x.LessonID)).seconds+=Number(x.Seconds)||0;});
+  examEv.forEach(e=>{L(nid(e.LessonID)).exams++;});
+  (raw.svp||[]).forEach(v=>{const l=L(nid(v.LessonID));const stt=nid(v.State);
+    if(stt==="mastered")l.vocab.mastered++;else if(stt==="needs_revision")l.vocab.revision++;else if(stt==="learning")l.vocab.learning++;});
+  Object.values(lessons).forEach(l=>{l.studentList=Object.entries(l.students).map(([id,v])=>({id,attempts:v.attempts,correct:v.correct,accuracy:v.attempts?Math.round(v.correct/v.attempts*100):null})).sort((a,b)=>b.attempts-a.attempts);
+    l.missedList=Object.entries(l.missed).map(([qid,n])=>({qid,n})).sort((a,b)=>b.n-a.n);
+    l.attempts=Object.values(l.students).reduce((a,v)=>a+v.attempts,0);
+    l.correct=Object.values(l.students).reduce((a,v)=>a+v.correct,0);
+    l.accuracy=l.attempts?Math.round(l.correct/l.attempts*100):null;});
   const weekAgo=new Date(Date.now()-7*864e5).toISOString();
-  return{source:raw.source||"?",
+  return{source:raw.source||"?",lessons: Object.values(lessons).sort((a,b)=>String(a.lessonId).localeCompare(String(b.lessonId))),
     cohort:{students:students.length,active:students.filter(s=>per[s.id].lastTs>=weekAgo).length,
       attempts:counted.length,correct:correct.length,incorrect:counted.length-correct.length,
       skipped:attempts.length-counted.length,
@@ -22380,6 +22504,9 @@ function localRawTables(){
    Admin UI (this file only)
    ===================================================================== */
 const $A=(s,r=document)=>r.querySelector(s);
+let tab=(location.hash==="#teacher")?"analytics":"overview";
+let openReport=null;
+
 function deleteChapter(id){
   const ch=chapterById(id);if(!ch)return;
   if(!confirm('Delete chapter "'+ch.title+'" and ALL its vocab, sentences and generated questions?\nStudent attempt history is kept (questions become orphaned in stats).'))return;
@@ -22409,202 +22536,250 @@ function deleteUserAccount(id){
   delete DB.vocabProgress[id];delete DB.chapterProgress[id];delete DB.settings[id];
   saveDB();render();}
 
-let openReport=null;
-let adminTab=(location.hash==="#teacher")?"teacher":"content";
+/* ---------------- shell ---------------- */
 function render(){
-  applyTheme();
-  applyPinyinClass();
+  applyTheme();applyPinyinClass();
+  document.documentElement.setAttribute("data-theme","dark");
   ensureCurriculumImported();
-  document.body.classList.remove("navcollapsed");
   const app=$A("#app");app.innerHTML="";
   const u=me();
   if(!u||u.role!=="admin"){drawGate(app,u);return;}
-  drawConsole(app,u);
+  drawShell(app,u);
 }
 function drawGate(app,u){
-  const wrap=h("div",{class:"authwrap"});
-  wrap.appendChild(h("div",{style:"text-align:center;margin-bottom:20px"},
-    h("div",{class:"logo hanzi",style:"width:56px;height:56px;border-radius:14px;background:var(--accent-grad);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:26px;font-weight:800;box-shadow:0 6px 20px rgba(232,54,93,.4)"},"🛠"),
-    h("h1",{style:"font-size:20px;margin-top:10px"},"Admin Console"),
-    h("p",{style:"color:var(--muted);font-size:13px"},"HSK 1 Practice & Tests — content management")));
-  const card=h("div",{class:"card"});
-  if(u){ // logged in as student
-    card.appendChild(h("div",{class:"notice err"},"You are logged in as ",h("b",{},u.name)," (student role). Administrative functions are restricted to admin accounts."));
-    card.appendChild(h("div",{style:"display:flex;gap:10px"},
-      h("button",{class:"btn",onclick:()=>{DB.sessionUserId=null;saveDB();render();}},"Switch account"),
-      h("a",{href:"index.html",class:"btn ghost"},"← Student site")));
-    wrap.appendChild(card);app.appendChild(wrap);return;
+  const wrap=h("div",{class:"authwrap fade"});
+  const card=h("div",{class:"panel"},
+    h("div",{class:"phead"},h("div",{class:"logo mono",style:"width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--cyan),#2b7ea8);color:#04222e;display:flex;align-items:center;justify-content:center;font-weight:800"},"HSK"),
+      h("h3",{},"Mission Control — staff access only")),
+    h("div",{class:"pbody"}));
+  if(u){
+    card.querySelector(".pbody").appendChild(
+      h("div",{class:"notice err"},"Logged in as <b>"+u.name+"</b> (student role). Staff functions require an admin account."),
+      h("div",{style:"display:flex;gap:10px"},
+        h("button",{class:"btn",onclick:()=>{DB.sessionUserId=null;saveDB();render();}},"Switch account"),
+        h("a",{href:"index.html",class:"btn"},"← Student site")));
+  }else if(!DB.users.length){
+    const err0=h("div",{class:"notice err",style:"display:none"});
+    const nI=h("input",{placeholder:"Owner display name",style:"width:100%"});
+    const pI2=h("input",{type:"password",placeholder:"Owner password (min 4 chars)",style:"width:100%"});
+    card.querySelector(".pbody").appendChild(
+      h("div",{class:"notice warn"},"First-time owner setup on this device/domain — create the staff owner account (it receives the admin role automatically). Students can NOT self-register anywhere: their accounts live in the school Sheet (Students tab)."),
+      err0,
+      h("div",{class:"field"},h("label",{},"Owner name"),nI),
+      h("div",{class:"field"},h("label",{},"Owner password"),pI2),
+      h("button",{class:"btn pri",style:"width:100%",onclick:()=>{const r=register(nI.value,pI2.value);
+        if(r.err){err0.textContent=r.err;err0.style.display="block";return;} render();}},"Create owner account"));
+  }else{
+    const err=h("div",{class:"notice err",style:"display:none"});
+    const nameI=h("input",{placeholder:"Owner display name",style:"width:100%"});
+    const passI=h("input",{type:"password",placeholder:"Password",style:"width:100%"});
+    const go=()=>{const r=login(nameI.value,passI.value);
+      if(r.err){err.textContent=r.err;err.style.display="block";return;}
+      if(r.ok.role!=="admin"){DB.sessionUserId=null;saveDB();
+        err.textContent="Account \""+r.ok.name+"\" does not have the admin role.";
+        err.style.display="block";return;}
+      render();};
+    passI.addEventListener("keydown",e=>{if(e.key==="Enter")go();});
+    card.querySelector(".pbody").appendChild(err,
+      h("div",{class:"field"},h("label",{},"Display name"),nameI),
+      h("div",{class:"field"},h("label",{},"Password"),passI),
+      h("button",{class:"btn pri",style:"width:100%",onclick:go},"Authenticate"),
+      h("p",{class:"hint",style:"margin-top:12px;text-align:center"},"Owner accounts only — students sign in on the student site with their Sheet name/StudentID + access code."),
+      h("div",{style:"text-align:center;margin-top:8px"},h("a",{href:"index.html",style:"font-size:12px"},"← Back to student site")));
   }
-  const err=h("div",{class:"notice err",style:"display:none"});
-  const nameI=h("input",{placeholder:"Admin display name",autocomplete:"username",style:"width:100%"});
-  const passI=h("input",{type:"password",placeholder:"Password",autocomplete:"current-password",style:"width:100%"});
-  card.appendChild(err);
-  card.appendChild(h("div",{class:"field"},h("label",{},"Display name"),nameI));
-  card.appendChild(h("div",{class:"field"},h("label",{},"Password"),passI));
-  const go=()=>{
-    const r=login(nameI.value,passI.value);
-    if(r.err){err.textContent=r.err;err.style.display="block";return;}
-    if(r.ok.role!=="admin"){
-      DB.sessionUserId=null;saveDB();
-      err.textContent="Account \""+r.ok.name+"\" has the student role. The first registered account on the student site receives admin automatically; you can also promote accounts from another admin session.";
-      err.style.display="block";return;}
-    render();
-  };
-  passI.addEventListener("keydown",e=>{if(e.key==="Enter")go();});
-  card.appendChild(h("button",{class:"btn primary",style:"width:100%",onclick:go},"Log in as admin"));
-  card.appendChild(h("p",{style:"font-size:11px;color:var(--dim);margin-top:12px;text-align:center"},
-    "No account yet? Register on the student site first — the first account becomes admin automatically."));
-  card.appendChild(h("div",{style:"text-align:center;margin-top:6px"},h("a",{href:"index.html",style:"font-size:13px"},"← Back to student site")));
   wrap.appendChild(card);app.appendChild(wrap);
 }
-function drawConsole(app,u){
-  const wrap=h("div",{class:"adminwrap fade"});
-  const flaggedTotal=DB.chapters.reduce((a,c)=>a+((c.validation&&c.validation.flagged)||0),0);
-  wrap.appendChild(h("div",{class:"adminhdr"},
-    h("a",{href:"index.html",class:"brand",style:"color:inherit"},
-      h("div",{class:"logo hanzi"},"汉"),
-      h("div",{},h("div",{},"HSK 1 Admin Console"),h("small",{},"content management · separate from the student site"))),
-    h("div",{class:"spacer",style:"flex:1"}),
-    h("span",{class:"chip review"},"🛠 "+u.name),
-    h("a",{href:"index.html",class:"btn sm"},"← Student site"),
-    h("button",{class:"btn sm ghost",onclick:()=>{DB.sessionUserId=null;saveDB();render();}},"Logout")));
-
-  /* tabs: content vs teacher dashboard */
-  wrap.appendChild(h("div",{class:"tabs",style:"margin-bottom:18px"},
-    h("button",{class:adminTab==="content"?"on":"",onclick:()=>{adminTab="content";render();}},"📚 Content & Sync"),
-    h("button",{class:adminTab==="teacher"?"on":"",onclick:()=>{adminTab="teacher";render();}},"🎓 Teacher Dashboard")));
-  if(adminTab==="teacher"){drawTeacher(wrap);return;}
-
-  /* stats */
-  wrap.appendChild(h("div",{class:"grid g4",style:"margin-bottom:20px"},
-    h("div",{class:"stat"},h("div",{class:"sic"},"📚"),h("div",{class:"v"},DB.chapters.length),h("div",{class:"l"},"Chapters"),
-      h("div",{class:"d"},DB.chapters.filter(c=>c.status==="pending").length+" pending · "+DB.chapters.filter(isReady).length+" ready")),
-    h("div",{class:"stat"},h("div",{class:"sic"},"📝"),h("div",{class:"v"},DB.questions.length),h("div",{class:"l"},"Bank questions"),
-      h("div",{class:"d"},DB.vocab.length+" words · "+DB.sentences.length+" sentences")),
-    h("div",{class:"stat"},h("div",{class:"sic",style:"color:var(--warn);background:var(--warn-soft)"},"⚠"),h("div",{class:"v",style:"color:var(--warn)"},flaggedTotal),h("div",{class:"l"},"Flagged for review"),
-      h("div",{class:"d"},"excluded from exams until approved")),
-    h("div",{class:"stat"},h("div",{class:"sic",style:"color:var(--cat-vocab);background:rgba(84,199,251,.12)"}, "👥"),h("div",{class:"v"},DB.users.length),h("div",{class:"l"},"Accounts"),
-      h("div",{class:"d"},DB.users.filter(x=>x.role==="admin").length+" admin"))));
-
-  /* chapters table */
-  const tcard=h("div",{class:"card",style:"padding:8px 16px 16px;margin-bottom:20px;overflow-x:auto"});
-  tcard.appendChild(h("h3",{style:"font-size:15px;margin:10px 0"},"Chapters"));
-  if(!DB.chapters.length)tcard.appendChild(h("div",{class:"empty",style:"padding:30px"},h("h3",{},"No chapters"),h("p",{},"Import processed chapter JSON below, or load the technical test fixture to verify the engine.")));
-  else{
-    const tbl=h("table",{class:"tbl"},h("thead",{},h("tr",{},h("th",{},"Ch"),h("th",{},"Title"),h("th",{},"Status"),h("th",{},"Words"),h("th",{},"Sentences"),h("th",{},"Questions"),h("th",{},"Validation"),h("th",{},"Actions"))));
-    const tb=h("tbody",{});
-    DB.chapters.slice().sort((a,b)=>a.num-b.num).forEach(ch=>{
-      const v=ch.validation;
-      const tr=h("tr",{},
-        h("td",{},ch.num+(ch.isFixture?" ⚙":"")),
-        h("td",{},ch.title,h("div",{class:"mono",style:"color:var(--dim);font-size:11px"},ch.sourceFile||"—")),
-        h("td",{},h("span",{class:"chip "+(isReady(ch)?(ch.status==="review"?"review":"ready"):"pending")},ch.status)),
-        h("td",{},vocabOf(ch.id).length),h("td",{},sentencesOf(ch.id).length),h("td",{},questionsOf(ch.id).length),
-        h("td",{style:"font-size:12px"},v?(v.ok?(v.flagged?"⚠ "+v.flagged+" flagged":"✓ passed"):"✗ "+v.issues.length+" issues"):"—"),
-        h("td",{},h("div",{class:"actbtns"},
-          h("button",{class:"btn sm ghost",onclick:()=>{openReport=openReport===ch.id?null:ch.id;render();}},"report"),
-          h("button",{class:"btn sm ghost",onclick:()=>revalidate(ch.id)},"re-validate"),
-          h("button",{class:"btn sm ghost",onclick:()=>regenerate(ch.id)},"regenerate"),
-          h("button",{class:"btn sm ghost",style:"color:var(--bad)",onclick:()=>deleteChapter(ch.id)},"delete"))));
-      tb.appendChild(tr);
-      if(openReport===ch.id){
-        const val=v||validateChapter(ch.id);
-        const rep=h("tr",{},h("td",{colspan:"8"},h("div",{class:"report"},
-          h("h4",{},"Source & coverage report — "+ch.title),
-          h("div",{class:"mono",style:"color:var(--muted);font-size:12px;margin-bottom:6px"},
-            "source file: "+(ch.sourceFile||"—")+" · imported: "+fmtDate(ch.importedAt)+
-            " · words: "+val.counts.words+" · sentences: "+val.counts.sentences+" · questions: "+val.counts.questions+
-            (val.gen?" · generated by type: "+JSON.stringify(val.gen.byType):"")),
-          h("h4",{},val.issues.length?"Blocking issues ("+val.issues.length+")":"No blocking issues ✓"),
-          val.issues.length?h("ul",{},...val.issues.map(i=>h("li",{},i))):null,
-          h("h4",{style:"color:var(--cat-vocab)"},val.warnings.length?"Warnings ("+val.warnings.length+")":"No warnings"),
-          val.warnings.length?h("ul",{},...val.warnings.slice(0,30).map(i=>h("li",{},i))):null,
-          val.flagged?h("div",{style:"color:var(--warn);font-size:12.5px"},val.flagged+" question(s) flagged 'review' — they are excluded from exams until source content is sufficient or you approve them."):null)));
-        tb.appendChild(rep);
-      }
-    });
-    tbl.appendChild(tb);tcard.appendChild(tbl);
-  }
-  wrap.appendChild(tcard);
-
-  /* import */
-  const out=h("div",{});
-  const ta=h("textarea",{id:"importta",class:"mono",spellcheck:"false",placeholder:'{\n  "chapter": {"num": 1, "title": "...(exact title from source)...", "sourceFile": "chapter01.pdf",\n               "representative": {"hanzi":"...","pinyin":"...","english":"..."}},\n  "vocab": [{"hanzi":"...","pinyin":"...","english":"...","sourcePage":12,"sourceItemId":"W1","pinyinVerified":true}],\n  "sentences": [{"hanzi":"...","pinyin":"...","english":"...","segments":["...","...","。"],"sourcePage":13,"sourceItemId":"S1"}]\n}'});
-  wrap.appendChild(h("div",{class:"card",style:"margin-bottom:20px"},
-    h("h3",{style:"font-size:15px;margin-bottom:8px"},"Import chapter JSON"),
-    h("p",{style:"font-size:12.5px;color:var(--muted);margin-bottom:10px"},
-      "The JSON must contain ONLY content extracted from the instructor-supplied files. The engine generates questions from it, runs validation, and sets status to Ready (or Needs Review when anything is flagged). segments.join(\"\") must equal hanzi exactly."),
-    ta,out,
-    h("div",{style:"display:flex;gap:10px;margin-top:12px;flex-wrap:wrap"},
-      h("button",{class:"btn primary",onclick:()=>{
-        out.innerHTML="";
-        let payload;try{payload=JSON.parse(ta.value);}catch(e){out.appendChild(h("div",{class:"notice err",style:"margin-top:12px"},"Invalid JSON: "+e.message));return;}
-        const r=importChapterJSON(payload);
-        if(!r.ok){out.appendChild(h("div",{class:"notice err",style:"margin-top:12px"},"Import failed: "+r.errors.join("; ")));return;}
-        out.appendChild(h("div",{class:"notice "+(r.chapter.status==="ready"?"ok":"warn"),style:"margin-top:12px"},
-          "Imported \""+r.chapter.title+"\" → status: "+r.chapter.status+
-          " · words: "+r.validation.counts.words+" · sentences: "+r.validation.counts.sentences+
-          " · questions generated: "+r.gen.generated+" (flagged: "+r.gen.flagged+")"+
-          (r.validation.issues.length?" · ISSUES: "+r.validation.issues.join("; "):"")+
-          (r.validation.warnings.length?" · "+r.validation.warnings.length+" warning(s) — open the chapter report.":"")));
-        ta.value="";render();
-      }},"Import & validate"),
-      h("button",{class:"btn",onclick:()=>{const added=loadFixture();render();if(!added)alert("Fixture already loaded.");}},"⚙ Load technical test fixture"),
-      DB.chapters.some(c=>c.isFixture)?h("button",{class:"btn ghost",style:"color:var(--bad)",onclick:()=>{removeFixture();render();}},"Remove fixture"):null),
-    h("details",{class:"schema"},h("summary",{},"JSON schema reference"),
-      h("pre",{},'chapter.num        number (display order)\nchapter.title      string — EXACT title from the source material\nchapter.sourceFile string — provenance (e.g. "hsk1_ch01.pdf")\nchapter.representative  optional {hanzi,pinyin,english} from source\nvocab[]            {hanzi*, pinyin, english*, sourcePage, sourceItemId, pinyinVerified}\nsentences[]        {hanzi*, pinyin, english*, segments[], altOrders[][], sourcePage, sourceItemId}\n\n* required. pinyinVerified=true ONLY when pinyin came from the source\n  or was explicitly confirmed. Missing pinyin is flagged, never invented.\nsegments: word units whose join("") reconstructs hanzi EXACTLY\n(including punctuation). altOrders: other accepted builder orders.'))));
-
-  /* google sheets sync */
-  const sc=SYNC.cfg();
-  const urlI=h("input",{value:sc.url||"",placeholder:"https://script.google.com/macros/s/…/exec",style:"width:100%",class:"mono"});
-  const tokI=h("input",{value:sc.token||"",placeholder:"shared secret token",style:"width:100%",class:"mono"});
-  const stBox=h("div",{style:"font-size:12.5px;color:var(--muted);margin-top:10px"},
-    "Status: "+(SYNC.enabled()?"configured":"not configured")+" · queue: "+SYNC.queue().length+
-    " · last: "+(SYNC.last()?(SYNC.last().ok?"OK ("+(SYNC.last().sent||0)+" rows)":"failed: "+(SYNC.last().error||"")):"—"));
-  const outS=h("div",{});
-  wrap.appendChild(h("div",{class:"card",style:"margin-bottom:20px"},
-    h("h3",{style:"font-size:15px;margin-bottom:6px"},"Google Sheets sync (lecture-site Sheet)"),
-    h("p",{style:"font-size:12.5px;color:var(--muted);margin-bottom:10px"},
-      "Paste the Apps Script Web-app URL from tools/sheets_bridge.gs (deployed in the HSK 1 3.0 spreadsheet) plus the shared token. Login then authenticates against the Students tab, and every attempt/session/vocab/exam event is pushed to the same Sheet (LoginLog, Sessions, LearningEvents, StudentQuizStats, QuizStats, StudentLessonProgress, StudentVocabularyProgress). Offline-first: events queue locally and retry; nothing is lost or duplicated (upserts by key)."),
-    h("div",{class:"field"},h("label",{},"Web app URL"),urlI),
-    h("div",{class:"field"},h("label",{},"Token"),tokI),
-    h("div",{style:"display:flex;gap:8px;flex-wrap:wrap"},
-      h("button",{class:"btn primary sm",onclick:()=>{SYNC.save({url:urlI.value.trim(),token:tokI.value.trim()});outS.innerHTML="";outS.appendChild(h("div",{class:"notice ok",style:"margin-top:10px"},"Saved. Students will see the unified Sheet login on the login page."));render();}},"Save"),
-      h("button",{class:"btn sm",onclick:async()=>{outS.innerHTML="";
-        try{const r=await SYNC.ping();
-          outS.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?("Connected ✓ tabs: "+(r.tabs||[]).join(", ")):"Error: "+r.error));}
-        catch(e){outS.appendChild(h("div",{class:"notice err",style:"margin-top:10px"},"Unreachable: "+e));}}},"Test connection"),
-      h("button",{class:"btn sm",onclick:async()=>{outS.innerHTML="";
-        const r=await SYNC.flush();
-        outS.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?("Flushed "+(r.sent||0)+" queued message(s)"):"Failed: "+(r.error||r.reason||"unknown")));render();}},"Sync now"),
-      h("button",{class:"btn sm",onclick:async()=>{outS.innerHTML="";
-        const lessons=DB.chapters.map(c=>({LessonID:"lesson-"+c.num,LessonNum:c.num,Title:c.title,
-          WordsCount:vocabOf(c.id).length,SentencesCount:sentencesOf(c.id).length,
-          QuestionsCount:questionsOf(c.id).length,Status:c.status}));
-        try{const r=await SYNC.post("catalog",{lessons});
-          outS.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?("Catalog pushed: "+r.lessons+" lessons"):"Error: "+r.error));}
-        catch(e){outS.appendChild(h("div",{class:"notice err",style:"margin-top:10px"},"Unreachable: "+e));}}},"Push lessons catalog")),
-    outS,stBox));
-
-  /* accounts */
-  wrap.appendChild(h("div",{class:"card"},
-    h("h3",{style:"font-size:15px;margin-bottom:8px"},"Accounts on this device"),
-    ...DB.users.map(x=>h("div",{class:"kv"},
-      h("span",{},x.name+" ",h("span",{class:"mono",style:"color:var(--dim);font-size:11px"},x.studentId)," · joined "+fmtDate(x.createdAt)),
-      h("span",{style:"display:flex;gap:8px;align-items:center"},
-        h("span",{class:"chip "+(x.role==="admin"?"review":"pending")},x.role),
-        x.id!==u.id?h("button",{class:"btn sm ghost",onclick:()=>{x.role=x.role==="admin"?"student":"admin";saveDB();render();}},"toggle role"):h("span",{style:"color:var(--dim);font-size:12px"},"you"),
-        x.id!==u.id?h("button",{class:"btn sm ghost",style:"color:var(--bad)",onclick:()=>deleteUserAccount(x.id)},"delete"):null)))));
-  wrap.appendChild(h("div",{class:"footer-note"},"Admin Console — prototype. Shares the localStorage database with the student site on this device. In production this page must be served separately with server-side role enforcement."));
-  app.appendChild(wrap);
+function syncLed(){
+  if(!SYNC.enabled())return h("span",{class:"led warn"},h("i",{}),"SYNC OFF");
+  const l=SYNC.last();
+  if(!l)return h("span",{class:"led"},h("i",{}),"SYNC IDLE");
+  return l.ok?h("span",{class:"led ok"},h("i",{}),"SYNC LIVE"):h("span",{class:"led err"},h("i",{}),"SYNC ERR");
 }
-/* =====================================================================
-   TEACHER DASHBOARD — lives ONLY on this separate admin site
-   ===================================================================== */
-function drawTeacher(wrap){
-  const srcNote=h("p",{class:"sub"},"Loading analytics…");
-  wrap.appendChild(srcNote);
-  const body=h("div",{});wrap.appendChild(body);
+function drawShell(app,u){
+  const flagged=DB.chapters.reduce((a,c)=>a+((c.validation&&c.validation.flagged)||0),0);
+  const q=SYNC.queue().length;
+  const shell=h("div",{class:"shell"});
+  const nav=h("nav",{},
+    ...[["overview","◧","Overview",""],
+        ["analytics","📈","Teacher Analytics",""],
+        ["content","⛁","Content Pipeline",flagged?"hot":""],
+        ["sync","⇄","Sheets Sync",q?"hot":""],
+        ["accounts","👥","Accounts",""]].map(([k,ic,lb,hot])=>
+      h("button",{class:"nitem"+(tab===k?" on":""),onclick:()=>{tab=k;render();}},
+        h("span",{class:"ic"},ic),lb,
+        k==="content"&&flagged?h("span",{class:"cnt hot"},flagged):null,
+        k==="sync"&&q?h("span",{class:"cnt hot"},q):null)));
+  shell.appendChild(h("aside",{},
+    h("div",{class:"brand"},
+      h("div",{class:"logo"},"漢"),
+      h("div",{},h("b",{},"HSK 1 Mission Control"),h("small",{},"staff · v15 curriculum"))),
+    nav,
+    h("div",{class:"sidefoot"},
+      "core rev: "+(DB.schemaVersion||1)+" · bundles: "+CURRICULUM_BUNDLE.length+
+      "<br>bank: "+DB.questions.length+" q · "+DB.vocab.length+" w · "+DB.sentences.length+" s"+
+      "<br>storage: localStorage (this device)"+
+      "<br>sheet: "+(SYNC.enabled()?"linked":"not linked"))));
+  const main=h("main",{});
+  const titles={overview:["System Overview","state of curriculum, validation & sync"],
+    analytics:["Teacher Analytics","cohort + per-student performance"],
+    content:["Content Pipeline","import → validate → publish"],
+    sync:["Google Sheets Sync","bridge to the lecture-site sheet"],
+    accounts:["Accounts & Roles","device-local identities"]};
+  main.appendChild(h("div",{class:"topbar"},
+    h("div",{},h("div",{class:"crumb"},"admin / "+tab),h("h1",{},titles[tab][0])),
+    h("span",{class:"sub",style:"font:11px var(--mono);color:var(--dim)"},titles[tab][1]),
+    h("div",{class:"sp"}),
+    syncLed(),
+    q?h("span",{class:"led warn"},h("i",{}),"QUEUE "+q):null,
+    flagged?h("span",{class:"led warn"},h("i",{}),flagged+" FLAGGED"):null,
+    h("span",{class:"led"},h("i",{style:"background:var(--cyan)"}),u.name.toUpperCase()),
+    h("a",{href:"index.html",class:"btn sm"},"Student site"),
+    h("button",{class:"btn sm",onclick:()=>{DB.sessionUserId=null;saveDB();render();}},"Logout")));
+  const body=h("div",{class:"fade"});
+  main.appendChild(body);shell.appendChild(main);app.appendChild(shell);
+  ({overview:drawOverview,analytics:drawAnalytics,content:drawContent,sync:drawSync,accounts:drawAccounts})[tab](body,u);
+}
+/* ---------------- overview ---------------- */
+function drawOverview(body,u){
+  const ready=DB.chapters.filter(isReady).length;
+  const flagged=DB.chapters.reduce((a,c)=>a+((c.validation&&c.validation.flagged)||0),0);
+  const issues=DB.chapters.filter(c=>c.validation&&!c.validation.ok);
+  body.appendChild(h("div",{class:"grid g5",style:"margin-bottom:14px"},
+    h("div",{class:"kpi",style:"--kc:var(--cyan)"},h("div",{class:"v"},DB.chapters.length),h("div",{class:"l"},"Chapters"),h("div",{class:"d"},ready+" ready · "+(DB.chapters.length-ready)+" other")),
+    h("div",{class:"kpi",style:"--kc:var(--cyan)"},h("div",{class:"v"},DB.questions.length),h("div",{class:"l"},"Bank questions"),h("div",{class:"d"},DB.vocab.length+" words · "+DB.sentences.length+" sentences")),
+    h("div",{class:"kpi",style:"--kc:"+(flagged?"var(--warn)":"var(--ok)")},h("div",{class:"v"},flagged),h("div",{class:"l"},"Flagged for review"),h("div",{class:"d"},"excluded from practice & exams")),
+    h("div",{class:"kpi",style:"--kc:var(--coral)"},h("div",{class:"v"},issues.length),h("div",{class:"l"},"Blocking issues"),h("div",{class:"d"},issues.length?"open Content Pipeline":"all validations passed")),
+    h("div",{class:"kpi",style:"--kc:var(--ok)"},h("div",{class:"v"},DB.users.length),h("div",{class:"l"},"Accounts"),h("div",{class:"d"},DB.users.filter(x=>x.role==="admin").length+" admin · "+(SYNC.enabled()?"sheet linked":"local only")))));
+  body.appendChild(h("div",{class:"grid g2"},
+    h("div",{class:"panel"},h("div",{class:"phead"},h("h3",{},"Curriculum integrity"),h("div",{class:"sp"}),
+        h("button",{class:"btn sm",onclick:()=>{tab="content";render();}},"open pipeline")),
+      h("div",{class:"pbody"},
+        ...DB.chapters.slice().sort((a,b)=>a.num-b.num).map(c=>h("div",{class:"kv"},
+          h("span",{class:"k"},"Ch "+c.num+" · "+c.title.slice(0,34)),
+          h("span",{},
+            h("span",{class:"pill "+(c.status==="ready"?"ok":c.status==="review"?"warn":"mut"),style:"margin-right:6px"},h("i",{}),c.status),
+            h("span",{class:"num",style:"color:var(--dim)"},questionsOf(c.id).length+" q")))))),
+    h("div",{class:"panel"},h("div",{class:"phead"},h("h3",{},"Sync & storage diagnostics")),
+      h("div",{class:"pbody"},
+        h("div",{class:"kv"},h("span",{class:"k"},"Bridge"),h("span",{class:"val"},SYNC.enabled()?"configured":"not configured")),
+        h("div",{class:"kv"},h("span",{class:"k"},"Web-app URL"),h("span",{class:"val"},(SYNC.cfg().url||"—").slice(8,52)+"…")),
+        h("div",{class:"kv"},h("span",{class:"k"},"Outbound queue"),h("span",{class:"val"},SYNC.queue().length+" msg")),
+        h("div",{class:"kv"},h("span",{class:"k"},"Last push"),h("span",{class:"val"},SYNC.last()?(SYNC.last().ok?"OK "+(SYNC.last().sent||0)+" rows":"ERR "+(SYNC.last().error||"")):"—")),
+        h("div",{class:"kv"},h("span",{class:"k"},"Local attempts"),h("span",{class:"val"},DB.attempts.length)),
+        h("div",{class:"kv"},h("span",{class:"k"},"Local sessions"),h("span",{class:"val"},DB.timeLog.length+" day-rows")),
+        h("div",{style:"margin-top:10px;display:flex;gap:8px"},
+          h("button",{class:"btn sm",onclick:()=>{tab="sync";render();}},"manage sync"),
+          h("button",{class:"btn sm",onclick:async()=>{const r=await SYNC.flush();render();return r;}},"flush queue now"))))));
+}
+/* ---------------- content pipeline ---------------- */
+function drawContent(body,u){
+  const tcard=h("div",{class:"panel",style:"margin-bottom:14px"},
+    h("div",{class:"phead"},h("h3",{},"Chapters"),h("div",{class:"sub"},DB.chapters.length+" bundles · rev-aware re-import"),h("div",{class:"sp"}),
+      h("button",{class:"btn sm",onclick:()=>{if(loadFixture()){render();}else alert("Fixture already loaded.");}},"⚙ load test fixture"),
+      DB.chapters.some(c=>c.isFixture)?h("button",{class:"btn sm danger",onclick:()=>{removeFixture();render();}},"remove fixture"):null),
+    h("div",{style:"overflow-x:auto"},
+      h("table",{class:"tbl"},
+        h("thead",{},h("tr",{},h("th",{},"Ch"),h("th",{},"Title / source"),h("th",{},"Status"),h("th",{},"W"),h("th",{},"S"),h("th",{},"Q"),h("th",{},"Validation"),h("th",{},"Actions"))),
+        h("tbody",{},...DB.chapters.slice().sort((a,b)=>a.num-b.num).flatMap(ch=>{
+          const v=ch.validation;
+          const row=h("tr",{},
+            h("td",{class:"num"},ch.num+(ch.isFixture?"⚙":"")),
+            h("td",{},h("div",{},ch.title),h("div",{class:"mono",style:"font-size:10.5px;color:var(--dim)"},(ch.sourceFile||"—")+" · rev "+(ch.bundleRev||1))),
+            h("td",{},h("span",{class:"pill "+(ch.status==="ready"?"ok":ch.status==="review"?"warn":"mut")},h("i",{}),ch.status)),
+            h("td",{class:"num"},vocabOf(ch.id).length),h("td",{class:"num"},sentencesOf(ch.id).length),h("td",{class:"num"},questionsOf(ch.id).length),
+            h("td",{},v?(v.ok?(v.flagged?h("span",{class:"pill warn"},h("i",{}),v.flagged+" flagged"):h("span",{class:"pill ok"},h("i",{}),"passed")):h("span",{class:"pill err"},h("i",{}),v.issues.length+" issues")):h("span",{class:"pill mut"},"—")),
+            h("td",{},h("div",{style:"display:flex;gap:6px;flex-wrap:wrap"},
+              h("button",{class:"btn sm",onclick:()=>{openReport=openReport===ch.id?null:ch.id;render();}},"report"),
+              h("button",{class:"btn sm",onclick:()=>revalidate(ch.id)},"re-validate"),
+              h("button",{class:"btn sm",onclick:()=>regenerate(ch.id)},"regenerate"),
+              h("button",{class:"btn sm danger",onclick:()=>deleteChapter(ch.id)},"delete"))));
+          if(openReport===ch.id){
+            const val=v||validateChapter(ch.id);
+            return [row,h("tr",{},h("td",{colspan:"8"},h("div",{class:"notice info",style:"margin:6px 12px"},
+              h("div",{class:"mono",style:"font-size:11.5px;margin-bottom:6px"},
+                "source: "+(ch.sourceFile||"—")+" · imported: "+fmtDate(ch.importedAt)+" · words: "+val.counts.words+" · sentences: "+val.counts.sentences+" · questions: "+val.counts.questions+(val.gen?" · byType: "+JSON.stringify(val.gen.byType):"")),
+              val.issues.length?h("div",{},h("b",{style:"color:var(--coral)"},"Blocking issues:"),h("ul",{style:"margin:4px 0 4px 18px"},...val.issues.map(i=>h("li",{},i)))):h("div",{style:"color:var(--ok)"},"No blocking issues ✓"),
+              val.warnings.length?h("div",{style:"margin-top:6px"},h("b",{style:"color:var(--warn)"},"Warnings ("+val.warnings.length+"):"),h("ul",{style:"margin:4px 0 4px 18px"},...val.warnings.slice(0,25).map(i=>h("li",{},i)))):null)))];
+          }
+          return [row];
+        })))));
+  body.appendChild(tcard);
+  const out=h("div",{});
+  const ta=h("textarea",{spellcheck:"false",placeholder:'{\n  "chapter": {"num": 16, "title": "...(exact title from source)...", "sourceFile": "....pdf"},\n  "vocab": [{"hanzi":"...","pinyin":"...","english":"...","sourcePage":1,"sourceItemId":"W1","pinyinVerified":true}],\n  "sentences": [{"hanzi":"...","pinyin":"...","english":"...","segments":["...","..."],"sourcePage":2,"sourceItemId":"S1"}]\n}'});
+  body.appendChild(h("div",{class:"panel"},
+    h("div",{class:"phead"},h("h3",{},"Import chapter JSON"),h("div",{class:"sub"},"extract → validate → publish gate")),
+    h("div",{class:"pbody"},
+      h("p",{class:"hint",style:"margin-bottom:10px"},"The JSON must contain ONLY content extracted from instructor-supplied files. segments.join(\"\") must equal hanzi exactly. Validation decides Ready vs Needs Review."),
+      ta,out,
+      h("div",{style:"display:flex;gap:8px;margin-top:12px;flex-wrap:wrap"},
+        h("button",{class:"btn pri",onclick:()=>{
+          out.innerHTML="";let payload;
+          try{payload=JSON.parse(ta.value);}catch(e){out.appendChild(h("div",{class:"notice err",style:"margin-top:10px"},"Invalid JSON: "+e.message));return;}
+          const r=importChapterJSON(payload);
+          if(!r.ok){out.appendChild(h("div",{class:"notice err",style:"margin-top:10px"},"Import failed: "+r.errors.join("; ")));return;}
+          out.appendChild(h("div",{class:"notice "+(r.chapter.status==="ready"?"ok":"warn"),style:"margin-top:10px"},
+            "Imported \""+r.chapter.title+"\" → "+r.chapter.status+" · words "+r.validation.counts.words+" · sentences "+r.validation.counts.sentences+" · questions "+r.gen.generated+" (flagged "+r.gen.flagged+")"));
+          ta.value="";render();}},"Import & validate")),
+      h("details",{class:"schema",style:"margin-top:12px"},h("summary",{},"JSON schema reference"),
+        h("pre",{},'chapter.num / chapter.title* / chapter.sourceFile / chapter.representative{hanzi,pinyin,english}\nvocab[]*   {hanzi*, pinyin, english*, pos, sourcePage, sourceItemId, pinyinVerified}\nsentences[]{hanzi*, pinyin, english, segments[]*, altOrders[][], sourcePage, sourceItemId, dialogue{text,line,speaker}, pinyinProvenance}\n* required · pinyinVerified=true ONLY when pinyin came from the source or the instructor confirmed it.')))));
+}
+function lessonTable(A){
+  const barL=(pct,cls)=>h("div",{class:"bar "+(cls||"")},h("div",{style:"width:"+Math.max(0,Math.min(100,pct||0))+"%"}));
+  const lessonLabelL=id=>{const m=String(id).match(/lesson-(\d+)/);const c=m?DB.chapters.find(c=>c.num===+m[1]):null;return c?("Ch "+c.num+" · "+c.title.slice(0,24)):String(id);};
+  const rows=A.byLesson.map(l=>{
+    const acc=l.accuracy==null?null:l.accuracy;
+    const accCell=h("td",{},h("div",{style:"display:flex;gap:8px;align-items:center"},barL(acc||0,acc>=80?"g":"w"),h("span",{class:"num",style:"color:var(--mut)"},acc==null?"—":acc+"%")));
+    return h("tr",{},h("td",{},lessonLabelL(l.lessonId)),h("td",{class:"num"},l.started),h("td",{class:"num"},l.completed),h("td",{class:"num"},l.attempts),accCell);
+  });
+  return h("table",{class:"tbl"},h("thead",{},h("tr",{},h("th",{},"Lesson"),h("th",{},"Started"),h("th",{},"Completed"),h("th",{},"Attempts"),h("th",{},"Accuracy"))),h("tbody",{},...rows));
+}
+function missedPanel(A){
+  const barM=pct=>h("div",{class:"bar w"},h("div",{style:"width:"+Math.max(0,Math.min(100,pct||0))+"%"}));
+  const lessonLabelM=id=>{const m=String(id).match(/lesson-(\d+)/);const c=m?DB.chapters.find(c=>c.num===+m[1]):null;return c?("Ch "+c.num+" · "+c.title.slice(0,24)):String(id);};
+  const inner=A.topMissed.length
+    ? h("div",{style:"overflow-x:auto"},
+        h("table",{class:"tbl"},
+          h("thead",{},h("tr",{},h("th",{},"QuestionID"),h("th",{},"Lesson"),h("th",{},"Activity"),h("th",{},"Wrong"),h("th",{},"Attempts"),h("th",{},"Miss rate"))),
+          h("tbody",{},...A.topMissed.slice(0,12).map(m=>
+            h("tr",{},
+              h("td",{class:"mono",style:"font-size:11px"},m.questionId),
+              h("td",{},lessonLabelM(m.lessonId)),
+              h("td",{},(ACT[m.activity]||{n:m.activity}).n),
+              h("td",{class:"num",style:"color:var(--coral)"},m.wrong),
+              h("td",{class:"num"},m.attempts),
+              h("td",{},barM(Math.round(m.wrong/m.attempts*100))))))))
+    : h("div",{class:"pbody"},h("p",{class:"hint"},"No incorrect answers recorded yet."));
+  return h("div",{class:"panel",style:"margin-bottom:14px"},
+    h("div",{class:"phead"},h("h3",{},"Most-missed questions (cohort)"),h("div",{class:"sub"},"revision targeting")),
+    inner);
+}
+function chapterPanel(A,bar,lessonLabel,getSel,setSel){
+  const rows=(A.lessons||[]).map(l=>{
+    const tr=h("tr",{style:"cursor:pointer"},
+      h("td",{},h("b",{},lessonLabel(l.lessonId))),
+      h("td",{class:"num"},Object.keys(l.students).length),
+      h("td",{class:"num"},l.attempts),
+      h("td",{},h("div",{style:"display:flex;gap:8px;align-items:center"},bar(l.accuracy||0,(l.accuracy||0)>=80?"g":"w"),h("span",{class:"num",style:"color:var(--mut)"},l.accuracy==null?"—":l.accuracy+"%"))),
+      h("td",{class:"num"},fmtDur(l.seconds)),
+      h("td",{class:"num"},l.vocab.mastered+"✓ / "+l.vocab.learning+"L / "+l.vocab.revision+"R"),
+      h("td",{class:"num"},l.exams));
+    tr.onclick=()=>{setSel(getSel()===l.lessonId?null:l.lessonId);window.__redraw&&window.__redraw();};
+    return tr;
+  });
+  const tbl=h("table",{class:"tbl"},
+    h("thead",{},h("tr",{},h("th",{},"Chapter"),h("th",{},"Students"),h("th",{},"Attempts"),h("th",{},"Accuracy"),h("th",{},"Time"),h("th",{},"Words"),h("th",{},"Exams"))),
+    h("tbody",{},...rows));
+  const empty=h("div",{class:"pbody"},h("p",{class:"hint"},"No per-lesson activity recorded yet."));
+  return h("div",{class:"panel",style:"margin-bottom:14px"},
+    h("div",{class:"phead"},h("h3",{},"Per-chapter analysis"),h("div",{class:"sub"},"click a chapter row → full dossier")),
+    h("div",{style:"overflow-x:auto"},tbl),
+    (A.lessons&&A.lessons.length)?null:empty);
+}
+/* ---------------- teacher analytics ---------------- */
+function drawAnalytics(body,u){
+  const srcNote=h("div",{style:"margin-bottom:12px"});
+  body.appendChild(srcNote);
+  const wrap=h("div",{});body.appendChild(wrap);
   (async()=>{
    try{
     let raw;
@@ -22615,115 +22790,189 @@ function drawTeacher(wrap){
     }else raw=localRawTables();
     const A=aggregateAnalytics(raw);
     const fromSheet=String(raw.source).indexOf("sheet")===0;
-    const rawCounts="raw rows → students:"+(raw.students||[]).length+" · events:"+(raw.events||[]).length+" · sessions:"+(raw.sessions||[]).length+" · lessonProg:"+(raw.slp||[]).length+" · vocabProg:"+(raw.svp||[]).length;
-    if(fromSheet&&A.cohort.attempts===0){
-      wrap.appendChild(h("div",{class:"notice info"},"Connected and working — the Sheet simply has no practice data yet. Data appears after a student signs in on the STUDENT site with their Sheet credentials (name/StudentID + Code, e.g. Ebra + 8520) and answers questions. Local admin practice is intentionally NOT pushed (it has no StudentID in the Sheet). "+rawCounts));
-    }else{
-      wrap.appendChild(h("div",{style:"font-size:11px;color:var(--dim);margin-bottom:10px"},rawCounts));
-    }
-    srcNote.innerHTML="";
-    srcNote.appendChild(document.createTextNode("Source: "+(fromSheet?"Google Sheet — ALL devices & students":"LOCAL DEVICE DATA ONLY (configure Sheet sync in the Content tab for cross-device tracking)")+" · updated "+new Date().toLocaleTimeString()+"  "));
-    srcNote.appendChild(h("button",{class:"btn sm ghost",onclick:()=>render()},"↻ Refresh"));
-    let sel=null;
-    const bar=(pct,color)=>h("div",{class:"bar"},h("div",{style:"width:"+Math.max(0,Math.min(100,pct||0))+"%;background:"+(color||"var(--accent)")}));
-    const lessonLabel=id=>{const m=String(id).match(/lesson-(\d+)/);const c=m?DB.chapters.find(c=>c.num===+m[1]):null;return c?("Ch "+c.num+" · "+c.title.slice(0,26)):String(id);};
+    const rc="raw rows → students:"+(raw.students||[]).length+" · events:"+(raw.events||[]).length+" · sessions:"+(raw.sessions||[]).length+" · lessonProg:"+(raw.slp||[]).length+" · vocabProg:"+(raw.svp||[]).length;
+    srcNote.appendChild(h("div",{style:"display:flex;gap:10px;align-items:center;flex-wrap:wrap"},
+      h("span",{class:"led "+(fromSheet?"ok":"warn")},h("i",{}),fromSheet?"SOURCE: GOOGLE SHEET (ALL DEVICES)":"SOURCE: LOCAL DEVICE ONLY"),
+      h("span",{class:"mono",style:"font-size:10.5px;color:var(--dim)"},rc),
+      h("div",{style:"flex:1"}),
+      h("button",{class:"btn sm",onclick:()=>render()},"↻ refresh")));
+    if(fromSheet&&A.cohort.attempts===0)
+      srcNote.appendChild(h("div",{class:"notice info",style:"margin-top:10px"},"Connected and working — the Sheet has no practice data yet. Data appears after a student signs in on the student site with Sheet credentials (name/StudentID + Code) and answers questions. Local admin practice is intentionally not pushed."));
+    let sel=null;let lessonSel=null;
+    const bar=(pct,cls)=>h("div",{class:"bar "+(cls||"")},h("div",{style:"width:"+Math.max(0,Math.min(100,pct||0))+"%"}));
+    const lessonLabel=id=>{const m=String(id).match(/lesson-(\d+)/);const c=m?DB.chapters.find(c=>c.num===+m[1]):null;return c?("Ch "+c.num+" · "+c.title.slice(0,24)):String(id);};
     function draw(){
-      body.innerHTML="";
+      window.__redraw=draw;
+      wrap.innerHTML="";
       const C=A.cohort;
-      body.appendChild(h("div",{class:"grid g4",style:"margin-bottom:14px"},
-        h("div",{class:"stat"},h("div",{class:"sic"},"👥"),h("div",{class:"v"},C.students),h("div",{class:"l"},"Students"),h("div",{class:"d"},C.active+" active in last 7 days")),
-        h("div",{class:"stat"},h("div",{class:"sic",style:"color:var(--ok);background:var(--ok-soft)"},"✓"),h("div",{class:"v"},C.correct),h("div",{class:"l"},"Correct answers"),h("div",{class:"d"},C.incorrect+" incorrect · "+C.skipped+" skipped")),
-        h("div",{class:"stat"},h("div",{class:"sic"},"🎯"),h("div",{class:"v"},C.accuracy===null?"—":C.accuracy+"%"),h("div",{class:"l"},"Cohort accuracy"),h("div",{class:"d"},C.attempts+" counted attempts")),
-        h("div",{class:"stat"},h("div",{class:"sic"},"⏱"),h("div",{class:"v"},fmtDur(C.seconds)),h("div",{class:"l"},"Total time"),h("div",{class:"d"},C.sessions+" sessions · "+C.exams+" exams"))));
+      wrap.appendChild(h("div",{class:"grid g5",style:"margin-bottom:14px"},
+        h("div",{class:"kpi",style:"--kc:var(--cyan)"},h("div",{class:"v"},C.students),h("div",{class:"l"},"Students"),h("div",{class:"d"},C.active+" active · 7d")),
+        h("div",{class:"kpi",style:"--kc:var(--ok)"},h("div",{class:"v"},C.correct),h("div",{class:"l"},"Correct"),h("div",{class:"d"},C.incorrect+" wrong · "+C.skipped+" skipped")),
+        h("div",{class:"kpi",style:"--kc:"+(C.accuracy>=80?"var(--ok)":C.accuracy>=50?"var(--warn)":"var(--coral)")},h("div",{class:"v"},C.accuracy===null?"—":C.accuracy+"%"),h("div",{class:"l"},"Accuracy"),h("div",{class:"d"},C.attempts+" counted attempts")),
+        h("div",{class:"kpi",style:"--kc:var(--cyan)"},h("div",{class:"v"},fmtDur(C.seconds)),h("div",{class:"l"},"Time on task"),h("div",{class:"d"},C.sessions+" sessions")),
+        h("div",{class:"kpi",style:"--kc:var(--warn)"},h("div",{class:"v"},C.exams),h("div",{class:"l"},"Exam results"),h("div",{class:"d"},"sheet exam_result events"))));
       const days=A.byDay.slice(-21);
       if(days.length){
         const maxA=Math.max(...days.map(d=>d.attempts),1),maxS=Math.max(...days.map(d=>d.seconds),1);
-        body.appendChild(h("div",{class:"card",style:"margin-bottom:14px"},
-          h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"Activity & time by day (last "+days.length+" active days)"),
-          h("div",{style:"display:flex;gap:5px;align-items:flex-end;height:90px"},
-            ...days.map(d=>h("div",{title:d.date+" · "+d.attempts+" attempts · "+d.correct+" correct · "+fmtDur(d.seconds),
-              style:"flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;height:100%"},
-              h("div",{style:"width:100%;border-radius:3px 3px 0 0;background:"+(d.attempts?(d.correct/d.attempts>=0.8?"var(--ok)":d.correct/d.attempts>=0.5?"var(--warn)":"var(--bad)"):"var(--line2)")+";height:"+Math.round(d.attempts/maxA*70)+"%"}),
-              h("div",{style:"width:100%;border-radius:0 0 3px 3px;background:var(--cat-vocab);opacity:.75;height:"+Math.max(2,Math.round(d.seconds/maxS*25))+"%"})))),
-          h("p",{style:"font-size:11px;color:var(--dim);margin-top:6px"},"upper bar = attempts (colour = accuracy), lower = practice time")));
+        wrap.appendChild(h("div",{class:"panel",style:"margin-bottom:14px"},
+          h("div",{class:"phead"},h("h3",{},"Throughput & time by day"),h("div",{class:"sub"},"last "+days.length+" active days · bar colour = accuracy")),
+          h("div",{class:"pbody"},
+            h("div",{style:"display:flex;gap:5px;align-items:flex-end;height:110px"},
+              ...days.map(d=>h("div",{title:d.date+" · "+d.attempts+" att · "+d.correct+" ok · "+fmtDur(d.seconds),
+                style:"flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;height:100%"},
+                h("div",{style:"width:100%;border-radius:3px 3px 0 0;background:"+(d.attempts?(d.correct/d.attempts>=0.8?"var(--ok)":d.correct/d.attempts>=0.5?"var(--warn)":"var(--coral)"):"var(--line2)")+";height:"+Math.round(d.attempts/maxA*72)+"%"}),
+                h("div",{style:"width:100%;border-radius:0 0 3px 3px;background:var(--cyan);opacity:.65;height:"+Math.max(2,Math.round(d.seconds/maxS*26))+"%"})))),
+            h("p",{class:"hint",style:"margin-top:8px"},"upper = attempts (colour = accuracy) · lower = practice time"))));
       }
-      body.appendChild(h("div",{class:"grid g2",style:"margin-bottom:14px"},
-        h("div",{class:"card"},h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"Accuracy by activity type (cohort)"),
-          ...A.byActivity.map(a=>h("div",{style:"display:grid;grid-template-columns:190px 1fr 90px;gap:10px;align-items:center;font-size:12.5px;margin-bottom:7px"},
-            h("span",{},(ACT[a.type]||{n:a.type}).n),bar(a.attempts?Math.round(a.correct/a.attempts*100):0,a.attempts&&a.correct/a.attempts>=0.8?"var(--ok)":"var(--warn)"),
-            h("span",{style:"color:var(--muted)"},(a.attempts?Math.round(a.correct/a.attempts*100):0)+"% · "+a.attempts)))),
-        h("div",{class:"card"},h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"Per-lesson coverage & accuracy"),
-          h("div",{style:"overflow-x:auto"},h("table",{class:"tbl"},h("tbody",{},...A.byLesson.map(l=>h("tr",{},
-            h("td",{},lessonLabel(l.lessonId)),
-            h("td",{style:"color:var(--muted);font-size:12px"},l.started+" started · "+l.completed+" completed"),
-            h("td",{style:"font-size:12px"},l.attempts+" att."),
-            h("td",{style:"min-width:90px"},bar(l.accuracy||0,(l.accuracy||0)>=80?"var(--ok)":"var(--warn)")),
-            h("td",{style:"font-size:12px"},(l.accuracy==null?"—":l.accuracy+"%"))))))))));
-      body.appendChild(h("div",{class:"card",style:"margin-bottom:14px"},
-        h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"Most-missed questions (cohort)"),
-        A.topMissed.length?h("div",{style:"overflow-x:auto"},h("table",{class:"tbl"},
-          h("thead",{},h("tr",{},h("th",{},"Question"),h("th",{},"Lesson"),h("th",{},"Activity"),h("th",{},"Wrong"),h("th",{},"Attempts"))),
-          h("tbody",{},...A.topMissed.slice(0,10).map(m=>h("tr",{},
-            h("td",{class:"mono",style:"font-size:11.5px"},m.questionId),
-            h("td",{style:"font-size:12px"},lessonLabel(m.lessonId)),
-            h("td",{style:"font-size:12px"},(ACT[m.activity]||{n:m.activity}).n),
-            h("td",{style:"color:var(--bad)"},m.wrong),
-            h("td",{style:"color:var(--muted)"},m.attempts))))))
-        :h("p",{style:"color:var(--muted);font-size:13px"},"No incorrect answers recorded yet.")));
+      wrap.appendChild(h("div",{class:"grid g2",style:"margin-bottom:14px"},
+        h("div",{class:"panel"},h("div",{class:"phead"},h("h3",{},"Accuracy by activity type")),
+          h("div",{class:"pbody"},...A.byActivity.map(a=>{const acc=a.attempts?Math.round(a.correct/a.attempts*100):0;
+            return h("div",{style:"display:grid;grid-template-columns:180px 1fr 100px;gap:10px;align-items:center;font-size:12px;margin-bottom:8px"},
+              h("span",{},(ACT[a.type]||{n:a.type}).n),bar(acc,acc>=80?"g":acc>=50?"w":""),
+              h("span",{class:"num",style:"color:var(--mut)"},acc+"% · "+a.attempts));}))),
+        h("div",{class:"panel"},h("div",{class:"phead"},h("h3",{},"Per-lesson coverage")),
+          h("div",{style:"overflow-x:auto"},lessonTable(A)))));
+      wrap.appendChild(missedPanel(A));
+      /* ---- per-chapter analysis ---- */
+      wrap.appendChild(chapterPanel(A,bar,lessonLabel,()=>lessonSel,(v)=>{lessonSel=v;}));
+      if(lessonSel){
+        const l=A.lessons.find(x=>x.lessonId===lessonSel);
+        if(l)wrap.appendChild(h("div",{class:"panel",style:"margin-bottom:14px;border-color:var(--line2)"},
+          h("div",{class:"phead"},h("h3",{},"📘 "+lessonLabel(l.lessonId)+" — dossier"),h("div",{class:"sp"}),
+            h("button",{class:"btn sm",onclick:()=>{lessonSel=null;draw();}},"close")),
+          h("div",{class:"pbody"},
+            h("div",{class:"grid g4",style:"margin-bottom:12px"},
+              h("div",{class:"kpi"},h("div",{class:"v"},l.attempts),h("div",{class:"l"},"Attempts"),h("div",{class:"d"},l.correct+" correct")),
+              h("div",{class:"kpi",style:"--kc:"+(l.accuracy>=80?"var(--ok)":l.accuracy>=50?"var(--warn)":"var(--coral)")},h("div",{class:"v"},l.accuracy==null?"—":l.accuracy+"%"),h("div",{class:"l"},"Accuracy")),
+              h("div",{class:"kpi",style:"--kc:var(--cyan)"},h("div",{class:"v"},fmtDur(l.seconds)),h("div",{class:"l"},"Time on chapter"),h("div",{class:"d"},l.exams+" exam results")),
+              h("div",{class:"kpi",style:"--kc:var(--ok)"},h("div",{class:"v"},l.vocab.mastered),h("div",{class:"l"},"Words mastered"),h("div",{class:"d"},l.vocab.learning+" learning · "+l.vocab.revision+" revision"))),
+            h("div",{class:"grid g3"},
+              h("div",{},h("h4",{style:"font:700 10px var(--mono);letter-spacing:1.4px;color:var(--dim);margin-bottom:8px"},"BY ACTIVITY"),
+                h("table",{class:"tbl"},h("tbody",{},...Object.entries(l.byActivity).map(([t,v])=>h("tr",{},
+                  h("td",{},(ACT[t]||{n:t}).n),h("td",{class:"num"},v.attempts),
+                  h("td",{class:"num"},Math.round(v.correct/v.attempts*100)+"%")))))),
+              h("div",{},h("h4",{style:"font:700 10px var(--mono);letter-spacing:1.4px;color:var(--dim);margin-bottom:8px"},"BY STUDENT"),
+                l.studentList.length?h("table",{class:"tbl"},h("tbody",{},...l.studentList.map(st=>h("tr",{},
+                  h("td",{class:"mono",style:"font-size:11px"},st.id),h("td",{class:"num"},st.attempts),
+                  h("td",{class:"num"},st.accuracy==null?"—":st.accuracy+"%"))))):h("p",{class:"hint"},"No attempts.")),
+              h("div",{},h("h4",{style:"font:700 10px var(--mono);letter-spacing:1.4px;color:var(--dim);margin-bottom:8px"},"MOST MISSED IN CHAPTER"),
+                l.missedList.length?h("table",{class:"tbl"},h("tbody",{},...l.missedList.slice(0,8).map(m=>h("tr",{},
+                  h("td",{class:"mono",style:"font-size:11px"},m.qid),
+                  h("td",{class:"num",style:"color:var(--coral)"},m.n+"×"))))):h("p",{class:"hint"},"No misses in this chapter."))))));
+      }
       if(sel&&A.per[sel])drawStudent(A.per[sel]);
-      else body.appendChild(h("div",{class:"card"},
-        h("h3",{style:"font-size:14.5px;margin-bottom:10px"},"All students — click a row for the individual report"),
+      else wrap.appendChild(h("div",{class:"panel"},
+        h("div",{class:"phead"},h("h3",{},"Students"),h("div",{class:"sub"},"click a row → individual dossier")),
         h("div",{style:"overflow-x:auto"},h("table",{class:"tbl"},
-          h("thead",{},h("tr",{},h("th",{},"Student"),h("th",{},"Attempts"),h("th",{},"✓"),h("th",{},"✗"),h("th",{},"Accuracy"),h("th",{},"Time"),h("th",{},"Lessons"),h("th",{},"Mastered"),h("th",{},"Last active"))),
-          h("tbody",{},...(A.students.length?A.students:[{id:"—",name:"(no students found in source)",attempts:0,correct:0,incorrect:0,accuracy:null,seconds:0,lessonsStarted:0,lessonsCompleted:0,wordsMastered:0,lastTs:null}]).map(st=>h("tr",{style:"cursor:pointer",onclick:()=>{sel=st.id;draw();}},
-            h("td",{},h("b",{},st.name),h("div",{class:"mono",style:"font-size:10.5px;color:var(--dim)"},st.id)),
-            h("td",{},st.attempts),h("td",{style:"color:var(--ok)"},st.correct),h("td",{style:"color:var(--bad)"},st.incorrect),
-            h("td",{},st.accuracy===null?"—":st.accuracy+"%"),h("td",{},fmtDur(st.seconds)),
-            h("td",{style:"font-size:12px"},st.lessonsStarted+" / "+st.lessonsCompleted),
-            h("td",{},st.wordsMastered),
-            h("td",{style:"font-size:12px;color:var(--dim)"},st.lastTs?fmtDate(st.lastTs):"never"))))))));
+          h("thead",{},h("tr",{},h("th",{},"Student"),h("th",{},"Attempts"),h("th",{},"✓"),h("th",{},"✗"),h("th",{},"Acc"),h("th",{},"Time"),h("th",{},"Lessons"),h("th",{},"Words mastered"),h("th",{},"Last active"))),
+          h("tbody",{},...(A.students.length?A.students:[{id:"—",name:"(no students in source)",attempts:0,correct:0,incorrect:0,accuracy:null,seconds:0,lessonsStarted:0,lessonsCompleted:0,wordsMastered:0,lastTs:null}]).map(st=>h("tr",{style:"cursor:pointer",onclick:()=>{sel=st.id;draw();}},
+            h("td",{},h("b",{},st.name),h("div",{class:"mono",style:"font-size:10px;color:var(--dim)"},st.id)),
+            h("td",{class:"num"},st.attempts),
+            h("td",{class:"num",style:"color:var(--ok)"},st.correct),
+            h("td",{class:"num",style:"color:var(--coral)"},st.incorrect),
+            h("td",{class:"num"},st.accuracy===null?"—":st.accuracy+"%"),
+            h("td",{class:"num"},fmtDur(st.seconds)),
+            h("td",{class:"num"},st.lessonsStarted+"/"+st.lessonsCompleted),
+            h("td",{class:"num"},st.wordsMastered),
+            h("td",{class:"num",style:"color:var(--dim)"},st.lastTs?fmtDate(st.lastTs):"never"))))))));
       function drawStudent(p){
-        const tiles=h("div",{class:"grid g4"},
-          h("div",{class:"stat"},h("div",{class:"v"},p.attempts),h("div",{class:"l"},"Attempts"),h("div",{class:"d"},p.correct+" ✓ · "+p.incorrect+" ✗ · "+p.skipped+" skipped")),
-          h("div",{class:"stat"},h("div",{class:"v",style:"color:"+(p.accuracy>=80?"var(--ok)":p.accuracy>=50?"var(--warn)":"var(--bad)")},p.accuracy===null?"—":p.accuracy+"%"),h("div",{class:"l"},"Accuracy")),
-          h("div",{class:"stat"},h("div",{class:"v"},fmtDur(p.seconds)),h("div",{class:"l"},"Time"),h("div",{class:"d"},p.sessions+" sessions · "+p.exams+" exams")),
-          h("div",{class:"stat"},h("div",{class:"v"},p.lessonsStarted+"/"+p.lessonsCompleted),h("div",{class:"l"},"Lessons start/complete"),h("div",{class:"d"},p.wordsMastered+" mastered · "+p.wordsRevision+" revision")));
+        const tiles=h("div",{class:"grid g5",style:"margin-bottom:12px"},
+          h("div",{class:"kpi"},h("div",{class:"v"},p.attempts),h("div",{class:"l"},"Attempts"),h("div",{class:"d"},p.correct+" ✓ · "+p.incorrect+" ✗ · "+p.skipped+" skip")),
+          h("div",{class:"kpi",style:"--kc:"+(p.accuracy>=80?"var(--ok)":p.accuracy>=50?"var(--warn)":"var(--coral)")},h("div",{class:"v"},p.accuracy===null?"—":p.accuracy+"%"),h("div",{class:"l"},"Accuracy")),
+          h("div",{class:"kpi",style:"--kc:var(--cyan)"},h("div",{class:"v"},fmtDur(p.seconds)),h("div",{class:"l"},"Time"),h("div",{class:"d"},p.sessions+" sessions · "+p.exams+" exams")),
+          h("div",{class:"kpi",style:"--kc:var(--warn)"},h("div",{class:"v"},p.lessonsStarted+"/"+p.lessonsCompleted),h("div",{class:"l"},"Lessons"),h("div",{class:"d"},"started / completed")),
+          h("div",{class:"kpi",style:"--kc:var(--ok)"},h("div",{class:"v"},p.wordsMastered),h("div",{class:"l"},"Words mastered"),h("div",{class:"d"},p.wordsLearning+" learning · "+p.wordsRevision+" revision")));
         const lesT=h("table",{class:"tbl"},h("tbody",{},...Object.entries(p.byLesson).map(([id,v])=>h("tr",{},
-          h("td",{style:"font-size:12px"},lessonLabel(id)),h("td",{style:"font-size:12px"},v.attempts+" att."),
-          h("td",{style:"font-size:12px"},(v.attempts?Math.round(v.correct/v.attempts*100):0)+"%")))));
+          h("td",{},lessonLabel(id)),h("td",{class:"num"},v.attempts+" att"),
+          h("td",{class:"num"},(v.attempts?Math.round(v.correct/v.attempts*100):0)+"%")))));
         const actT=h("table",{class:"tbl"},h("tbody",{},...Object.entries(p.byActivity).map(([t,v])=>h("tr",{},
-          h("td",{style:"font-size:12px"},(ACT[t]||{n:t}).n),h("td",{style:"font-size:12px"},v.attempts+" att."),
-          h("td",{style:"font-size:12px"},Math.round(v.correct/v.attempts*100)+"%")))));
-        const gridA=h("div",{class:"grid g2",style:"margin-top:14px"},
-          h("div",{},h("h4",{style:"font-size:13px;margin-bottom:8px"},"Per lesson"),lesT),
-          h("div",{},h("h4",{style:"font-size:13px;margin-bottom:8px"},"Per activity"),actT));
+          h("td",{},(ACT[t]||{n:t}).n),h("td",{class:"num"},v.attempts+" att"),
+          h("td",{class:"num"},Math.round(v.correct/v.attempts*100)+"%")))));
         const missEl=Object.keys(p.missed).length
           ?h("table",{class:"tbl"},h("tbody",{},...Object.entries(p.missed).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([qid,n])=>h("tr",{},
-              h("td",{class:"mono",style:"font-size:11px"},qid),h("td",{style:"color:var(--bad);font-size:12px"},n+"×")))))
-          :h("p",{style:"font-size:12.5px;color:var(--muted)"},"Nothing missed yet 🎉");
+              h("td",{class:"mono",style:"font-size:11px"},qid),h("td",{class:"num",style:"color:var(--coral)"},n+"×")))))
+          :h("p",{class:"hint"},"Nothing missed yet 🎉");
         const recEl=p.recent.length
-          ?h("table",{class:"tbl"},h("tbody",{},...p.recent.slice(0,8).map(r=>h("tr",{},
-              h("td",{style:"font-size:11.5px;color:"+(r.skipped?"var(--dim)":r.correct?"var(--ok)":"var(--bad)")},r.skipped?"skip":r.correct?"✓":"✗"),
-              h("td",{style:"font-size:11.5px"},(ACT[r.type]||{n:r.type}).n),
+          ?h("table",{class:"tbl"},h("tbody",{},...p.recent.slice(0,10).map(r=>h("tr",{},
+              h("td",{class:"num",style:"color:"+(r.skipped?"var(--dim)":r.correct?"var(--ok)":"var(--coral)")},r.skipped?"skip":r.correct?"✓":"✗"),
+              h("td",{},(ACT[r.type]||{n:r.type}).n),
               h("td",{class:"mono",style:"font-size:10px;color:var(--dim)"},new Date(r.ts).toLocaleString())))))
-          :h("p",{style:"font-size:12.5px;color:var(--muted)"},"No activity yet.");
-        const gridB=h("div",{class:"grid g2",style:"margin-top:14px"},
-          h("div",{},h("h4",{style:"font-size:13px;margin-bottom:8px"},"Most missed (this student)"),missEl),
-          h("div",{},h("h4",{style:"font-size:13px;margin-bottom:8px"},"Recent activity"),recEl));
-        const hdr=h("div",{style:"display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px"},
-          h("h3",{style:"font-size:16px"},"👤 "+p.name),
-          h("span",{class:"mono",style:"font-size:11px;color:var(--dim)"},p.id),
-          h("div",{style:"flex:1"}),
-          h("button",{class:"btn sm ghost",onclick:()=>{sel=null;draw();}},"← All students"));
-        body.appendChild(h("div",{class:"card",style:"border-left:4px solid var(--accent)"},hdr,tiles,gridA,gridB));
+          :h("p",{class:"hint"},"No activity yet.");
+        wrap.appendChild(h("div",{class:"panel",style:"border-color:var(--line2)"},
+          h("div",{class:"phead"},h("h3",{},"👤 "+p.name),h("div",{class:"mono",style:"font-size:10.5px;color:var(--dim)"},p.id),h("div",{class:"sp"}),
+            h("button",{class:"btn sm",onclick:()=>{sel=null;draw();}},"← all students")),
+          h("div",{class:"pbody"},tiles,
+            h("div",{class:"grid g2",style:"margin-bottom:12px"},
+              h("div",{},h("h4",{class:"mono",style:"font:700 10px var(--mono);letter-spacing:1.4px;color:var(--dim);margin-bottom:8px"},"PER LESSON"),lesT),
+              h("div",{},h("h4",{style:"font:700 10px var(--mono);letter-spacing:1.4px;color:var(--dim);margin-bottom:8px"},"PER ACTIVITY"),actT)),
+            h("div",{class:"grid g2"},
+              h("div",{},h("h4",{style:"font:700 10px var(--mono);letter-spacing:1.4px;color:var(--dim);margin-bottom:8px"},"MOST MISSED"),missEl),
+              h("div",{},h("h4",{style:"font:700 10px var(--mono);letter-spacing:1.4px;color:var(--dim);margin-bottom:8px"},"RECENT ACTIVITY"),recEl)))));
       }
     }
     draw();
    }catch(e){
-     body.innerHTML="";
-     body.appendChild(h("div",{class:"notice err"},"Teacher dashboard error: "+(e&&e.message?e.message:String(e))+" — copy this message to the developer."));
+     wrap.innerHTML="";
+     wrap.appendChild(h("div",{class:"notice err"},"Teacher dashboard error: "+(e&&e.message?e.message:String(e))+" — copy this message to the developer."));
    }
   })();
+}
+/* ---------------- sheets sync ---------------- */
+function drawSync(body,u){
+  const sc=SYNC.cfg();
+  const urlI=h("input",{value:sc.url||"",placeholder:"https://script.google.com/macros/s/…/exec",class:"mono",style:"width:100%"});
+  const tokI=h("input",{value:sc.token||"",placeholder:"shared secret token",class:"mono",style:"width:100%"});
+  const out=h("div",{});
+  const st=h("div",{class:"kv",style:"margin-top:12px"},h("span",{class:"k"},"Queue / last push"),
+    h("span",{class:"val"},SYNC.queue().length+" msg · "+(SYNC.last()?(SYNC.last().ok?"OK "+(SYNC.last().sent||0)+" rows":"ERR "+(SYNC.last().error||"")):"—")));
+  body.appendChild(h("div",{class:"panel"},
+    h("div",{class:"phead"},h("h3",{},"Bridge configuration"),h("div",{class:"sp"}),syncLed()),
+    h("div",{class:"pbody"},
+      h("p",{class:"hint",style:"margin-bottom:12px"},"This build ships with the deployment's bridge credentials BAKED IN (SYNC_DEFAULTS), so every student browser on this domain signs in via the school Sheet with zero setup. Saving here overrides them for THIS browser only; saving empty values disables sync on this device. The bridge lives in a STANDALONE Apps Script project (tools/sheets_bridge.gs) pointing at the lecture-site spreadsheet by id."),
+      h("div",{class:"field"},h("label",{},"Web app URL"),urlI),
+      h("div",{class:"field"},h("label",{},"Token"),tokI),
+      h("div",{style:"display:flex;gap:8px;flex-wrap:wrap"},
+        h("button",{class:"btn pri",onclick:()=>{SYNC.save({url:urlI.value.trim(),token:tokI.value.trim()});render();}},"Save"),
+        h("button",{class:"btn",onclick:()=>{SYNC.reset();render();}},"Restore build default"),
+        h("button",{class:"btn",onclick:async()=>{out.innerHTML="";
+          try{const r=await SYNC.ping();
+            out.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?"Connected ✓ tabs: "+(r.tabs||[]).join(", "):"Error: "+r.error));}
+          catch(e){out.appendChild(h("div",{class:"notice err",style:"margin-top:10px"},"Unreachable: "+e));}}},"Test connection"),
+        h("button",{class:"btn",onclick:async()=>{const r=await SYNC.flush();out.innerHTML="";
+          out.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?"Flushed "+(r.sent||0)+" queued message(s)":"Failed: "+(r.error||r.reason||"unknown")));render();}},"Sync now"),
+        h("button",{class:"btn",onclick:async()=>{out.innerHTML="";
+          const lessons=DB.chapters.map(c=>({LessonID:"lesson-"+c.num,LessonNum:c.num,Title:c.title,
+            WordsCount:vocabOf(c.id).length,SentencesCount:sentencesOf(c.id).length,
+            QuestionsCount:questionsOf(c.id).length,Status:c.status}));
+          try{const r=await SYNC.post("catalog",{lessons});
+            out.appendChild(h("div",{class:"notice "+(r.ok?"ok":"err"),style:"margin-top:10px"},r.ok?"Catalog pushed: "+r.lessons+" lessons":"Error: "+r.error));}
+          catch(e){out.appendChild(h("div",{class:"notice err",style:"margin-top:10px"},"Unreachable: "+e));}}},"Push lessons catalog")),
+      out,st,
+      h("div",{class:"kv"},h("span",{class:"k"},"Config source"),h("span",{class:"val"},SYNC.usingDefault()?"build default (baked in — applies to every browser on this domain)":"saved override on this device only")),
+      h("div",{class:"kv"},h("span",{class:"k"},"How it works"),h("span",{class:"val"},"batch every 2s + flush at session end · retry on failure · upserts by key")))));
+  if(SYNC.enabled()&&!SYNC.queue().length&&!(SYNC.last()&&SYNC.last().ok))
+    body.appendChild(h("div",{class:"notice warn",style:"margin-top:12px"},"Sheet is connected but has received nothing yet. Expected until a student signs in on the STUDENT site with Sheet credentials (name/StudentID + Code, e.g. Ebra + 8520) and answers questions. Local admin accounts are NEVER pushed (no StudentID in the Sheet). Checklist: 1) green chip with stu-XXXX in the student header after login · 2) queue drains to 0 · 3) rows appear in LearningEvents/Sessions."));
+  body.appendChild(h("div",{style:"margin-top:12px"},
+    h("h4",{style:"font:700 10px var(--mono);letter-spacing:1.4px;color:var(--dim);margin-bottom:8px"},"ACCOUNT LINKAGE ON THIS DEVICE"),
+    ...DB.users.map(x=>h("div",{class:"kv"},
+      h("span",{class:"k"},x.name+" ("+x.studentId+")"),
+      h("span",{class:"val"},x.sheetId?h("span",{class:"pill cy"},"pushed as "+x.sheetId):h("span",{class:"pill mut"},"local only - never pushed"))))));
+}
+/* ---------------- accounts ---------------- */
+function drawAccounts(body,u){
+  body.appendChild(h("div",{class:"panel"},
+    h("div",{class:"phead"},h("h3",{},"Accounts on this device"),h("div",{class:"sub"},"local identities · sheet linkage via sheetId")),
+    h("div",{style:"overflow-x:auto"},h("table",{class:"tbl"},
+      h("thead",{},h("tr",{},h("th",{},"Name"),h("th",{},"Local ID"),h("th",{},"Sheet link"),h("th",{},"Role"),h("th",{},"Joined"),h("th",{},"Actions"))),
+      h("tbody",{},...DB.users.map(x=>h("tr",{},
+        h("td",{},h("b",{},x.name)),
+        h("td",{class:"mono",style:"font-size:11px;color:var(--dim)"},x.studentId),
+        h("td",{class:"mono",style:"font-size:11px"},x.sheetId?h("span",{class:"pill cy"},h("i",{}),x.sheetId):h("span",{class:"pill mut"},"local only")),
+        h("td",{},h("span",{class:"pill "+(x.role==="admin"?"warn":"mut")},h("i",{}),x.role)),
+        h("td",{class:"num",style:"color:var(--dim)"},fmtDate(x.createdAt)),
+        h("td",{},h("div",{style:"display:flex;gap:6px"},
+          x.id!==u.id?h("button",{class:"btn sm",onclick:()=>{x.role=x.role==="admin"?"student":"admin";saveDB();render();}},"toggle role"):null,
+          x.id!==u.id?h("button",{class:"btn sm danger",onclick:()=>deleteUserAccount(x.id)},"delete"):h("span",{class:"mono",style:"font-size:10.5px;color:var(--dim)"},"you"))))))))));
 }
 render();
 </script>
