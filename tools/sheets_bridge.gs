@@ -11,8 +11,9 @@
  *  2. Paste this whole file (rename it e.g. PracticeBridge.gs).
  *  3. Set SPREADSHEET_ID below = the id in your sheet URL:
  *     docs.google.com/spreadsheets/d/<THIS_PART>/edit
- *  4. Change TOKEN to a secret string; the practice site Admin Console must be
- *     configured with the SAME token.
+ *  4. TOKEN is ALREADY set below to the live value (85246) baked into the
+ *     practice-site build - do NOT change it unless you deliberately rotate
+ *     it (then also update Admin Console -> Sheets Sync on every browser).
  *  5. Deploy -> New deployment -> Web app:
  *       - Execute as: Me   - Who has access: Anyone
  *     Copy the Web app URL (ends with /exec).
@@ -26,9 +27,9 @@
  *  - Every write is keyed/upserted, so retries never duplicate rows.
  * =====================================================================
  */
-/* !! AFTER EVERY CODE UPDATE YOU PASTE: re-set these two lines FIRST, then deploy a new version. !! */
-const SPREADSHEET_ID = 'PASTE_YOUR_SPREADSHEET_ID';  // from the sheet URL /d/<id>/edit
-const TOKEN = 'CHANGE_ME_TOKEN';
+/* !! AFTER EVERY CODE UPDATE YOU PASTE: check these two lines FIRST, then deploy a NEW VERSION. !! */
+const SPREADSHEET_ID = 'PASTE_YOUR_SPREADSHEET_ID';  // copy EXACTLY from the sheet URL /d/<THIS_PART>/edit (watch M vs V!)
+const TOKEN = '85246';  // live token - matches the value baked into the practice site; keep as is
 const SITE  = 'practice';
 function ss_(){
   if(!SPREADSHEET_ID || SPREADSHEET_ID.indexOf('PASTE_')===0)
